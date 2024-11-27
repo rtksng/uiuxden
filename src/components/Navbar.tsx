@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Container>
-      <nav className="flex items-center justify-between py-2  lg:py-9  ">
+      <nav className="flex items-center justify-between py-2  lg:py-9 relative z-50 ">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="UIUXden Logo" />
         </div>

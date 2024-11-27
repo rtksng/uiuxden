@@ -12,3 +12,21 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.casestudy{
+  background-image: url(../src/assets/casestudybg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 932px;
+}
+.itemcase{
+  background-image: url(../src/assets/casestudybg2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 495px;
+
+}
+.reviewcardbg{
+  background-image: url(../src/assets/reviewcardbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

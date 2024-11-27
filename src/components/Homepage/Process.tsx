@@ -6,8 +6,8 @@ const Process = () => {
   return (
     <section className="mt-[200px]">
       <Container>
-        <div className="flex items-center">
-          <div className="max-w-[350px]">
+        <div className="flex items-end justify-between">
+          <div className="max-w-[400px] p-5 relative bottom-16">
             <h5 className="text-[60px] font-semibold leading-none">Our</h5>{" "}
             <h2 className="text-[85px] font-semibold">Process</h2>
             <p className="text-neutral-600 text-2xl">
@@ -15,9 +15,9 @@ const Process = () => {
               something invaluable.
             </p>
           </div>
-          <div className="grid grid-cols-12">
-            <div className="col-span-4">
-              <div className="flex ps-[18px] pe-[34px] relative">
+          <div className="grid grid-flow-col auto-cols-max me-24">
+            <div className="w-[320px] p-5 relative h-full">
+              <div className="flex  ">
                 <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
                   1
                 </div>
@@ -27,50 +27,180 @@ const Process = () => {
                     Requirement Gathering
                   </h2>
                   <p className="text-neutral-600 mt-3">
-                    Client vision is our top <br /> priority.  We ask, listen, to
+                    Client vision is our top <br /> priority. We ask, listen, to
                     understand what matters most.
                   </p>
                 </div>
-                <div className="absolute right-0 bottom-0 h-[290px]">
-                  <img src={rightBar} className="max-h-full" alt="bar" />
-                </div>
+              </div>
+              <div>
+                <img
+                  src={rightBar}
+                  className="h-[290px] absolute right-0 bottom-0"
+                  alt="bar"
+                />
               </div>
             </div>
-            <div className="col-span-4">
-              <div className="flex ps-[18px] pe-[34px] relative">
-              <div className="absolute right-0 bottom-0 ">
-                  <img src={rightBar} className="max-h-full" alt="bar" />
-                </div>
+            <div className="w-[320px] p-5 relative h-full">
+              <div className="flex  ">
                 <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
-                2
+                  1
                 </div>
                 <div className="text-primary-dark2">
                   <TbReportAnalytics size={76} className="-ms-3" />
                   <h2 className="mt-3  text-[30px] font-semibold leading-10">
-                  Brainstorming
+                    Requirement Gathering
                   </h2>
                   <p className="text-neutral-600 mt-3">
-                  Great ideas start here. Together we unleash possibilities and turn challenges into opportunities.
+                    Client vision is our top <br /> priority. We ask, listen, to
+                    understand what matters most.
                   </p>
                 </div>
               </div>
+              <div>
+                <img
+                  src={rightBar}
+                  className="h-[290px] absolute right-0 bottom-0"
+                  alt="bar"
+                />
+              </div>
             </div>
-            <div className="col-span-4">
-              <div className="flex  ps-[18px] pe-[34px] relative">
-                
+            <div className="w-[320px] p-5 relative h-full">
+              <div className="flex  ">
                 <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
-                3
+                  1
                 </div>
                 <div className="text-primary-dark2">
                   <TbReportAnalytics size={76} className="-ms-3" />
                   <h2 className="mt-3  text-[30px] font-semibold leading-10">
-                  UX Strategy
-                  & Design
+                    Requirement Gathering
                   </h2>
                   <p className="text-neutral-600 mt-3">
-                  We map the journey, avoid the potholes, anticipate the bumps to ensure no one gets lost.
+                    Client vision is our top <br /> priority. We ask, listen, to
+                    understand what matters most.
                   </p>
                 </div>
+              </div>
+              <div>
+                <img
+                  src={rightBar}
+                  className="h-[290px] absolute right-0 bottom-0"
+                  alt="bar"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-flow-col auto-cols-max border-t-[1px] border-t-primary-dark2">
+          <div className="max-w-[320px] p-5  h-full relative">
+            <div className="flex">
+              <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+                1
+              </div>
+              <div className="text-primary-dark2">
+                <TbReportAnalytics size={76} className="-ms-3" />
+                <h2 className="mt-3  text-[30px] font-semibold leading-10">
+                  Requirement Gathering
+                </h2>
+                <p className="text-neutral-600 mt-3">
+                  Client vision is our top <br /> priority. We ask, listen, to
+                  understand what matters most.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src={rightBar}
+                className="h-[290px] absolute right-0 top-0"
+                alt="bar"
+              />
+            </div>
+          </div>
+          <div className="max-w-[320px] p-5  h-full relative">
+            <div className="flex">
+              <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+                1
+              </div>
+              <div className="text-primary-dark2">
+                <TbReportAnalytics size={76} className="-ms-3" />
+                <h2 className="mt-3  text-[30px] font-semibold leading-10">
+                  Requirement Gathering
+                </h2>
+                <p className="text-neutral-600 mt-3">
+                  Client vision is our top <br /> priority. We ask, listen, to
+                  understand what matters most.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src={rightBar}
+                className="h-[290px] absolute right-0 top-0"
+                alt="bar"
+              />
+            </div>
+          </div>
+          <div className="max-w-[320px] p-5  h-full relative">
+            <div className="flex">
+              <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+                1
+              </div>
+              <div className="text-primary-dark2">
+                <TbReportAnalytics size={76} className="-ms-3" />
+                <h2 className="mt-3  text-[30px] font-semibold leading-10">
+                  Requirement Gathering
+                </h2>
+                <p className="text-neutral-600 mt-3">
+                  Client vision is our top <br /> priority. We ask, listen, to
+                  understand what matters most.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src={rightBar}
+                className="h-[290px] absolute right-0 top-0"
+                alt="bar"
+              />
+            </div>
+          </div>
+          <div className="max-w-[320px] p-5  h-full relative">
+            <div className="flex">
+              <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+                1
+              </div>
+              <div className="text-primary-dark2">
+                <TbReportAnalytics size={76} className="-ms-3" />
+                <h2 className="mt-3  text-[30px] font-semibold leading-10">
+                  Requirement Gathering
+                </h2>
+                <p className="text-neutral-600 mt-3">
+                  Client vision is our top <br /> priority. We ask, listen, to
+                  understand what matters most.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src={rightBar}
+                className="h-[290px] absolute right-0 top-0"
+                alt="bar"
+              />
+            </div>
+          </div>
+          <div className="max-w-[320px] p-5  h-full relative">
+            <div className="flex">
+              <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+                1
+              </div>
+              <div className="text-primary-dark2">
+                <TbReportAnalytics size={76} className="-ms-3" />
+                <h2 className="mt-3  text-[30px] font-semibold leading-10">
+                  Requirement Gathering
+                </h2>
+                <p className="text-neutral-600 mt-3">
+                  Client vision is our top <br /> priority. We ask, listen, to
+                  understand what matters most.
+                </p>
               </div>
             </div>
           </div>

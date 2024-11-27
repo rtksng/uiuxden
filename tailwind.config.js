@@ -23,8 +23,10 @@ export default {
         },
         secondary: {
           DEFAULT: "#64748B",
-          light: "#94A3B8",
+          light: "#67D17E",
+          light2: "#3ABF88",
           dark: "#5A5A5A",
+
         },
         success: "#10B981",
         danger: "#EF4444",
