@@ -5,14 +5,31 @@ import Rating from "../components/Homepage/Rating";
 import Process from "../components/Homepage/Process";
 import CaseStudy from "../components/Homepage/CaseStudy";
 import Review from "../components/Homepage/Review";
+import Footer from "../components/Footer";
 import { motion, useScroll, useTransform } from "framer-motion";
 import banner from "../assets/banner.jpg";
 import girl from "../assets/girl.svg";
 import girlfill from "../assets/girlfill.svg";
 import Container from "../components/Container";
+import boy from "../assets/boy.svg";
+import boyfill from "../assets/boyfill.svg";
+import girl2 from "../assets/girl2.svg";
+import girl2fill from "../assets/girl2fill.svg";
+import teacher from "../assets/teacher.svg";
+import teacherfill from "../assets/teacherfill.svg";
+import { useEffect, useState } from "react";
 const Home = () => {
   const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10); // Adjust threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const imageOpacity = useTransform(scrollY, [0, 700], [1, 0]);
   const imageScale = useTransform(scrollY, [0, 700], [1, 3]);
 
@@ -21,11 +38,15 @@ const Home = () => {
 
   const textTranslateY = useTransform(scrollY, [0, 700], [25, -200]);
   const textScale = useTransform(scrollY, [0, 700], [1, 1.5]);
-  const textOpacity = useTransform(scrollY, [0, 1000, 1050], [1, 1, 0]);
+  const textOpacity = useTransform(scrollY, [0, 900, 950], [1, 1, 0]);
 
   return (
     <main>
-      <div className="fixed top-0 left-0 w-full z-50">
+      <div
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+        }`}
+      >
         <Navbar />
       </div>
 
@@ -71,10 +92,64 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <div>
+      <div className="relative z-[100]">
         <section>
           <Container>
-            <img src={girl} alt="girl" />
+            <div className="flex justify-between items-end max-w-6xl mx-auto">
+              <div className="flex gap-3">
+                <div className="relative group">
+                  <img
+                    src={girl}
+                    alt="girl"
+                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                  />
+                  <img
+                    src={girlfill}
+                    alt="girl fill"
+                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  />
+                </div>
+                <div className="relative group">
+                  <img
+                    src={boy}
+                    alt="girl"
+                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                  />
+
+                  <img
+                    src={boyfill}
+                    alt="girl fill"
+                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  />
+                </div>
+                <div className="relative group">
+                  <img
+                    src={girl2}
+                    alt="girl"
+                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                  />
+
+                  <img
+                    src={girl2fill}
+                    alt="girl fill"
+                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="relative group">
+                <img
+                  src={teacher}
+                  alt="girl"
+                  className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                />
+
+                <img
+                  src={teacherfill}
+                  alt="girl fill"
+                  className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                />
+              </div>
+            </div>
           </Container>
         </section>
         <DrivenDesign />
@@ -83,6 +158,7 @@ const Home = () => {
         <Process />
         <CaseStudy />
         <Review />
+        <Footer />
       </div>
     </main>
   );
