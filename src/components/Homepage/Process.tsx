@@ -16,7 +16,7 @@ const Process = () => {
             </p>
           </div>
           <div className="grid grid-cols-12">
-            <div className="col-span-4">
+            <div className="col-span-4 h-full">
               <div className="flex ps-[18px] pe-[34px] relative">
                 <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
                   1
@@ -31,12 +31,12 @@ const Process = () => {
                     understand what matters most.
                   </p>
                 </div>
-                <div className="absolute right-0 bottom-0 h-[290px]">
+                <div >
                   <img src={rightBar} className="max-h-full" alt="bar" />
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 h-full">
               <div className="flex ps-[18px] pe-[34px] relative">
               <div className="absolute right-0 bottom-0 ">
                   <img src={rightBar} className="max-h-full" alt="bar" />
@@ -55,7 +55,7 @@ const Process = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 h-full">
               <div className="flex  ps-[18px] pe-[34px] relative">
                 
                 <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
