@@ -5,6 +5,7 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
+  className?: string; // Added className as an optional prop
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   disabled = false,
+  className = "", // Default to an empty string
 }) => {
   const baseStyles =
     "px-[46px] py-4 rounded-full text-base font-medium transition duration-200";
@@ -22,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const styles = `${baseStyles} ${
     variant === "primary" ? primaryStyles : secondaryStyles
-  } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`;
+  } ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`; // Include custom className
 
   return (
     <button className={styles} onClick={onClick} disabled={disabled}>

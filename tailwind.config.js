@@ -10,9 +10,10 @@ export default {
         "screen-1600": "1600px",
       },
       backgroundImage: {
-        "gradient-fill":
-          "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%)",
-          "gradient-fill-lr": "linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%)",
+        "gradient-fill": "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%)",
+        "gradient-fill-lr": "linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%)",
+        "radial-gradient": "radial-gradient(44.94% 112.59% at 11.28% 39.72%, #DFDDCD 0%, #97DE9A 100%), radial-gradient(34.64% 157.63% at 80.39% 67.39%, #DFDDCD 0%, rgba(255, 255, 255, 0) 100%)",
+
       },
       colors: {
         primary: {
