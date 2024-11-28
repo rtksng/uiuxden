@@ -135,7 +135,7 @@ export function VelocityScroll({
                     </span>
 
                 </div>
-                {/* {`${point1} ${point2} ${point3} ${point4} ${point5}`} */}
+         
             </ParallaxText>
         </div>
     );

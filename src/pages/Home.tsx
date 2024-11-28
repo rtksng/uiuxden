@@ -6,7 +6,12 @@ import Process from "../components/Homepage/Process";
 import CaseStudy from "../components/Homepage/CaseStudy";
 import Review from "../components/Homepage/Review";
 import Footer from "../components/Footer";
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  AnimatePresence,
+} from "framer-motion";
 import banner from "../assets/banner.jpg";
 import girl from "../assets/girl.svg";
 import girlfill from "../assets/girlfill.svg";
@@ -22,10 +27,45 @@ import { VelocityScroll } from "../components/Velocity";
 const Home = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showQuestion, setShowQuestion] = useState(true);
+  const [showAnswerOne, setShowAnswerOne] = useState(false);
+  const [showAnswerTwo, setShowAnswerTwo] = useState(false);
+  const [showAnswerThree, setShowAnswerThree] = useState(false);
+
+  useEffect(() => {
+    const runSequence = () => {
+      setShowQuestion(true);
+
+      const timers: number[] = [];
+
+      timers.push(setTimeout(() => setShowAnswerOne(true), 3000));
+      timers.push(setTimeout(() => setShowAnswerOne(false), 6000));
+      timers.push(setTimeout(() => setShowAnswerTwo(true), 6000));
+      timers.push(setTimeout(() => setShowAnswerTwo(false), 9000));
+      timers.push(setTimeout(() => setShowAnswerThree(true), 9000));
+      timers.push(setTimeout(() => setShowAnswerThree(false), 12000));
+      timers.push(setTimeout(() => setShowQuestion(false), 12000));
+
+      setTimeout(() => {
+        timers.forEach((timer) => clearTimeout(timer));
+        setShowAnswerOne(false);
+        setShowAnswerTwo(false);
+        setShowAnswerThree(false);
+      }, 12000);
+
+      return timers;
+    };
+
+    runSequence();
+
+    const intervalId = setInterval(runSequence, 14000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); // Adjust threshold as needed
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,8 +84,9 @@ const Home = () => {
   return (
     <main>
       <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-          }`}
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+        }`}
       >
         <Navbar />
       </div>
@@ -92,62 +133,132 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <div className="relative z-[100]">
+      <div className="relative z-[100] questionsection">
         <section>
           <Container>
             <div className="flex justify-between items-end max-w-6xl mx-auto">
               <div className="flex gap-3">
+                {/* Answer One */}
+                 {/* Answer Three */}
+                 <div className="relative ">
+                  <img
+                    src={boy}
+                    alt="boy"
+                    className={`block transition-opacity duration-500 ease-in-out ${
+                      showAnswerTwo ? "opacity-0" : "opacity-100"
+                    }`}
+                  />
+                  <img
+                    src={boyfill}
+                    alt="boy fill"
+                    className={`absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+                      showAnswerTwo ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                  <AnimatePresence>
+                    {showAnswerTwo && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        className="w-80 answerTwo absolute -top-20 right-24 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                      >
+                        Limit the number of lines displayed and reveal more on
+                        hover.
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <div className="relative group">
                   <img
                     src={girl}
                     alt="girl"
-                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                    className={`block transition-opacity duration-500 ease-in-out ${
+                      showAnswerOne ? "opacity-0" : "opacity-100"
+                    }`}
                   />
                   <img
                     src={girlfill}
                     alt="girl fill"
-                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                    className={`absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+                      showAnswerOne ? "opacity-100" : "opacity-0"
+                    }`}
                   />
+                  <AnimatePresence>
+                    {showAnswerOne && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        className="w-80 answerOne absolute -top-20 right-28 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                      >
+                        Show an ellipsis with a “Read more” button to expand.
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-                <div className="relative group">
-                  <img
-                    src={boy}
-                    alt="girl"
-                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-                  />
 
-                  <img
-                    src={boyfill}
-                    alt="girl fill"
-                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-                  />
-                </div>
+                {/* Answer Two */}
                 <div className="relative group">
                   <img
                     src={girl2}
                     alt="girl"
-                    className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                    className={`block transition-opacity duration-500 ease-in-out ${
+                      showAnswerThree ? "opacity-0" : "opacity-100"
+                    }`}
                   />
-
                   <img
                     src={girl2fill}
                     alt="girl fill"
-                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                    className={`absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+                      showAnswerThree ? "opacity-100" : "opacity-0"
+                    }`}
                   />
+                  <AnimatePresence>
+                    {showAnswerThree && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        className="w-80 answerThree absolute -top-20 right-24 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                      >
+                        Use a fade effect at the end of the text, with no
+                        explicit button.
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
+
+               
               </div>
-              <div className="relative group">
+
+              <div className="relative ">
                 <img
                   src={teacher}
-                  alt="girl"
-                  className="block opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                  alt="teacher"
+                  className={`block transition-opacity duration-500 ease-in-out ${
+                    showQuestion ? "opacity-0" : "opacity-100"
+                  }`}
                 />
-
                 <img
                   src={teacherfill}
-                  alt="girl fill"
-                  className="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  alt="teacher fill"
+                  className={`absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+                    showQuestion ? "opacity-100" : "opacity-0"
+                  }`}
                 />
+                <AnimatePresence>
+                  {showQuestion && (
+                    <motion.div
+                      className="w-80 question absolute -top-16 -right-40 rounded-xl rounded-bl-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
+                    >
+                      How should long text content be truncated in a list item?
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
           </Container>
