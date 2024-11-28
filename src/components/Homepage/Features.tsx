@@ -3,6 +3,14 @@ import Container from "../Container";
 import { Link } from "react-router-dom";
 import tiltarrow from "../../assets/tiltarrow.svg";
 import uxstrategy from "../../assets/uxstrategy.png";
+import Consultancy from "../../assets/Consultancy.png";
+import Accessibility from "../../assets/Accessibility.png";
+import UXAudit from "../../assets/UXAudit.png";
+import Sprints from "../../assets/Sprints.png";
+import ProductBranding from "../../assets/ProductBranding.png";
+import UIDesign from "../../assets/UIDesign.png";
+import SoftwareDevelopment from "../../assets/SoftwareDevelopment.png";
+import WebDevelopment from "../../assets/WebDevelopment.png";
 interface Feature {
   title: string;
   description: string;
@@ -24,13 +32,13 @@ const FeatureCard: React.FC<Feature> = ({
             <h4 className="text-[22px] leading-none mb-2 font-semibold text-primary-dark2">
               {title}
             </h4>
-            <h6 className="text-primary-dark2 text-base max-w-[181px]">
+            <h6 className="text-primary-dark2 text-base max-w-[215px]">
               {description}
             </h6>
           </div>
-          <img src={tiltarrow} alt="arrow" />
+          <img src={tiltarrow} alt="arrow"/>
         </div>
-        <img src={imgSrc} alt={title} className="mt-5 rounded-[20px]" />
+        <img src={imgSrc} alt={title} className="mt-5 rounded-[20px] w-full" />
       </div>
     </Link>
   </div>
@@ -45,51 +53,51 @@ const Features = () => {
       link: "/ux-strategy",
     },
     {
-      title: "Design Thinking",
-      description: "Innovative Solutions through Creative Thinking",
-      imgSrc: uxstrategy,
+      title: "UX Consultancy",
+      description: "Guidance to Elevate Your Product",
+      imgSrc: Consultancy,
       link: "/design-thinking",
     },
     {
-      title: "User Research",
-      description: "Understanding User Needs for Better Design",
-      imgSrc: uxstrategy,
+      title: "Accessibility",
+      description: "Weaving Inclusive Designs for Everyone",
+      imgSrc: Accessibility,
       link: "/user-research",
     },
     {
-      title: "Prototyping",
-      description: "Bringing Ideas to Life with Interactive Models",
-      imgSrc: uxstrategy,
+      title: "Product UX Audit",
+      description: "Evaluating and Enhancing User Journeys",
+      imgSrc: UXAudit,
       link: "/prototyping",
     },
     {
-      title: "Usability Testing",
-      description: "Ensuring Seamless User Experiences",
-      imgSrc: uxstrategy,
+      title: "Design Sprints",
+      description: "The rapid focused process to Solve Complex Problems.",
+      imgSrc: Sprints,
       link: "/usability-testing",
     },
     {
-      title: "Information Architecture",
-      description: "Structuring Information for Accessibility",
-      imgSrc: uxstrategy,
+      title: "Product Branding",
+      description: "Building Brands that Resonate with Users",
+      imgSrc: ProductBranding,
       link: "/information-architecture",
     },
     {
-      title: "Interaction Design",
-      description: "Designing Engaging and Intuitive Interfaces",
-      imgSrc: uxstrategy,
+      title: "UI Design",
+      description: "WIntuitive Interface for Seamless Experiences",
+      imgSrc: UIDesign,
       link: "/interaction-design",
     },
     {
-      title: "Content Strategy",
-      description: "Creating Content that Resonates",
-      imgSrc: uxstrategy,
+      title: "Software Development",
+      description: "Transforming Ideas into Reliable Solutions.",
+      imgSrc: SoftwareDevelopment,
       link: "/content-strategy",
     },
     {
-      title: "Visual Design",
-      description: "Crafting Aesthetic and Functional Visuals",
-      imgSrc: uxstrategy,
+      title: "Web Development",
+      description: "Creating Engaging and Functional Solutions.",
+      imgSrc: WebDevelopment,
       link: "/visual-design",
     },
   ];

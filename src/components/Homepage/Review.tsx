@@ -1,5 +1,4 @@
 import React from "react";
-import review from "../../assets/review.png";
 import horigreen from "../../assets/horigreen.png";
 import Button from "../Button";
 const Review = () => {
@@ -15,7 +14,7 @@ const Review = () => {
             className="col-span-1 group relative overflow-hidden rounded-lg"
           >
             <img
-              src={review}
+              src={`src/assets/review_${index}.png`}
               alt={`review_img_${index}`}
               className="w-full h-full object-cover"
             />
@@ -51,7 +50,7 @@ const Review = () => {
                     by Surbhi Sood
                   </small>
                   <img
-                    src={review}
+                    src={`src/assets/review_${index}.png`}
                     alt="user"
                     className="rounded-full w-[60px] h-[60px] border-secondary-light border-[3px]"
                   />

@@ -18,6 +18,7 @@ import girl2fill from "../assets/girl2fill.svg";
 import teacher from "../assets/teacher.svg";
 import teacherfill from "../assets/teacherfill.svg";
 import { useEffect, useState } from "react";
+import { VelocityScroll } from "../components/Velocity";
 const Home = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,9 +44,8 @@ const Home = () => {
   return (
     <main>
       <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+          }`}
       >
         <Navbar />
       </div>
@@ -151,6 +151,17 @@ const Home = () => {
               </div>
             </div>
           </Container>
+        </section>
+        <section className="bg-gradient-fill2 py-4">
+          <VelocityScroll
+            point1="UI Design"
+            point2="UX Reserach"
+            point3="UX Stretegy"
+            point4="UX Audit"
+            point5="Content Stretegy"
+            default_velocity={2}
+            className="font-display text-center flex gap-[126px] !text-2xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
+          />
         </section>
         <DrivenDesign />
         <Features />
