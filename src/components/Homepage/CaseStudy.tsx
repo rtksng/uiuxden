@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import knowledger from "../../assets/knowledger.svg";
 import paulSchumacher from "../../assets/paulSchumacher.svg";
 import Volt from "../../assets/Volt.svg";
@@ -10,7 +11,7 @@ const CaseStudy = () => {
           We love to make things easy
         </h2>
         <div className="grid grid-cols-3 mt-[140px] gap-[46px] px-[300px]">
-          <div className="col-span-1">
+          <Link to="/knowledger-case-study" className="col-span-1">
             <div className="itemcase flex flex-col items-center justify-center">
               <div className="flex flex-col max-w-[330px] justify-center items-center">
                 <img src={knowledger} alt="Knowledger logo" width={250} />
@@ -20,7 +21,7 @@ const CaseStudy = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
           <div className="col-span-1">
             <div className="itemcase flex flex-col items-center justify-center">
               <div className="flex flex-col max-w-[330px] justify-center items-center">
