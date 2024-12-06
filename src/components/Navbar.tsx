@@ -12,19 +12,19 @@ const NavLinks: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => (
         : "hidden md:flex items-center space-x-6"
     } text-gray-700`}
   >
-    <li>
+    <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">UX Services +</Link>
     </li>
-    <li>
+    <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">Portfolio +</Link>
     </li>
-    <li>
+    <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">Blogs</Link>
     </li>
-    <li>
+    <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">Contact</Link>
     </li>
-    <li>
+    <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">Our Store</Link>
     </li>
   </ul>
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Container>
-      <nav className="flex items-center justify-between py-2  lg:py-9 relative z-50 ">
+      <nav className="flex items-center justify-between py-2  lg:py-2 relative z-50">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="UIUXden Logo" />
         </div>

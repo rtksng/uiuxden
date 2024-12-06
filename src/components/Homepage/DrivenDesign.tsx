@@ -7,7 +7,7 @@ import locofy from "../../assets/locofy.svg";
 import stark from "../../assets/stark.svg";
 const DrivenDesign = () => {
   return (
-    <section>
+    <section className="mt-[200px]">
       <Container>
         <div className="grid grid-cols-12 relative">
           <div className="col-span-4 self-center">

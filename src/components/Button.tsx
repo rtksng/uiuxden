@@ -25,7 +25,6 @@ const Button: React.FC<ButtonProps> = ({
   const styles = `${baseStyles} ${
     variant === "primary" ? primaryStyles : secondaryStyles
   } ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`; // Include custom className
- 
   return (
     <button className={styles} onClick={onClick} disabled={disabled}>
       {children}
