@@ -37,7 +37,7 @@ body {
   height: 476px;
 }
 .mySwiper{
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
 }
 .mySwiper .swiper-pagination-bullet-active{
   background-color: #212121;
