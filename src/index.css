@@ -12,33 +12,55 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.casestudy{
+.mask-card-schumacher {
+  background-image: url(../src/assets/schumacher-cards-border.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.casestudy {
   background-image: url(../src/assets/casestudybg.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 932px;
 }
-.itemcase{
+
+.itemcase {
   background-image: url(../src/assets/casestudybg2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 495px;
 
 }
-.reviewcardbg{
+
+.reviewcardbg {
   background-image: url(../src/assets/reviewcardbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.carouselStudy .innerItem{
+
+.carouselStudy .innerItem {
   background-image: url(../src/assets/SchumacherBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 476px;
 }
-.mySwiper{
+.checked-lines {
+  background-image: url(../src/assets/checked-lines-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.mySwiper {
   padding-bottom: 50px !important;
 }
-.mySwiper .swiper-pagination-bullet-active{
+
+.mySwiper .swiper-pagination-bullet-active {
   background-color: #212121;
+}
+
+.green-linear {
+  background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
 }
