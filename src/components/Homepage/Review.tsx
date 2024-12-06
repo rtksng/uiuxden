@@ -3,7 +3,7 @@ import horigreen from "../../assets/horigreen.png";
 import Button from "../Button";
 const Review = () => {
   return (
-    <section className="mt-[192px]">
+    <section className="mt-[154px]">
       <h2 className="text-center text-[60px] font-semibold">
         Words from UIUX den Minds
       </h2>

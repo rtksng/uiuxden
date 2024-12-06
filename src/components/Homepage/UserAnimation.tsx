@@ -51,8 +51,6 @@ const UserAnimation = () => {
       <Container>
         <div className="flex justify-between items-end max-w-6xl mx-auto">
           <div className="flex gap-3">
-            {/* Answer One */}
-            {/* Answer Three */}
             <div className="relative ">
               <img
                 src={boy}
@@ -161,7 +159,7 @@ const UserAnimation = () => {
             <AnimatePresence>
               {showQuestion && (
                 <motion.div
-                  className="w-80 question absolute -top-16 -right-40 rounded-xl rounded-bl-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                  className="w-80 question absolute -top-16 -right-40 rounded-xl rounded-bl-none font-semibold text-lg bg-black/80 flex items-center justify-center px-4 py-2 text-white"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}

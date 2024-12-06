@@ -6,16 +6,21 @@ import Process from "../components/Homepage/Process";
 import CaseStudy from "../components/Homepage/CaseStudy";
 import Review from "../components/Homepage/Review";
 import Footer from "../components/Footer";
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import banner from "../assets/banner.jpg";
-
+import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 import { useEffect, useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
 const Home = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [addTransitionClass, setAddTransitionClass] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -33,7 +38,13 @@ const Home = () => {
   const textTranslateY = useTransform(scrollY, [0, 700], [25, -200]);
   const textScale = useTransform(scrollY, [0, 700], [1, 1.5]);
   const textOpacity = useTransform(scrollY, [0, 900, 950], [1, 1, 0]);
-
+  useMotionValueEvent(textOpacity, "change", (latest) => {
+    if (latest === 0) {
+      setAddTransitionClass(true);
+    } else if (latest === 1) {
+      setAddTransitionClass(false);
+    }
+  });
   return (
     <main>
       <div
@@ -46,7 +57,9 @@ const Home = () => {
 
       <div className="relative h-[150vh]">
         <motion.div
-          className="fixed inset-0 flex items-center justify-center z-40"
+          className={`fixed inset-0 flex items-center justify-center z-40 ${
+            addTransitionClass ? "transition-all" : ""
+          }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
@@ -104,6 +117,7 @@ const Home = () => {
         <Rating />
         <Process />
         <CaseStudy />
+        <CaseStudyCarousel />
         <Review />
         <Footer />
       </div>
