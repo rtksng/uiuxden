@@ -6,39 +6,65 @@ body {
   font-family: "Urbanist", "sans-serif";
 }
 
-
 .mask-card {
   background-image: url(../src/assets/border.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.casestudy{
+.casestudy {
   background-image: url(../src/assets/casestudybg.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 932px;
 }
-.itemcase{
+.itemcase {
   background-image: url(../src/assets/casestudybg2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 495px;
-
 }
-.reviewcardbg{
+.reviewcardbg {
   background-image: url(../src/assets/reviewcardbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.carouselStudy .innerItem{
+.carouselStudy .innerItem {
   background-image: url(../src/assets/SchumacherBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 476px;
 }
-.mySwiper{
+.mySwiper {
   padding-bottom: 50px !important;
 }
-.mySwiper .swiper-pagination-bullet-active{
+.mySwiper .swiper-pagination-bullet-active {
   background-color: #212121;
+}
+.knowledger {
+  background: linear-gradient(
+    182deg,
+    #9ff8be 1.12%,
+    #eaffe2 76.66%,
+    #f8edba 157.07%
+  );
+}
+.pHighLightBg {
+  background-image: url(../src/assets/gridLines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kcbg {
+  background-image: url(../src/assets/kcbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.projectItem {
+  background: var(
+    --Gradient-Light,
+    linear-gradient(180deg, #9ff8be 0%, #f8edba 87.46%)
+  );
+}
+.center-item{
+  background-color: red;
 }
