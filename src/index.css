@@ -30,3 +30,15 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.carouselStudy .innerItem{
+  background-image: url(../src/assets/SchumacherBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 476px;
+}
+.mySwiper{
+  padding-bottom: 50px;
+}
+.mySwiper .swiper-pagination-bullet-active{
+  background-color: #212121;
+}
