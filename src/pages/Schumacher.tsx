@@ -2,6 +2,11 @@ import Navbar from "../components/Navbar";
 import paulSchumacherDark from "../assets/schumacher-dark.svg";
 import SchumacherHeader from "../assets/schumacher-header-img.png";
 import rightLongArrow from "../assets/right-long-arrow.svg";
+import problemOne from "../assets/problem1-banner.png";
+import SolutionOne from "../assets/solution-img1.png";
+import SolutionTwo from "../assets/solution-img2.png";
+import Midconnector from "../assets/mid-connector.png";
+import Newschumacher from "../assets/new-schumacher-mobile.png";
 import checkedLinesBg from "../assets/checked-lines-bg.png";
 import DrivenDesign from "../components/Homepage/DrivenDesign";
 import Features from "../components/Homepage/Features";
@@ -95,74 +100,202 @@ const Schumacher = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-[-40%] left-0 right-0 w-[60%] m-auto z-[9]" >
+
+                    {/* <div className="absolute bottom-[-40%] left-0 right-0 w-[60%] m-auto z-[9]" >
                         <img src={SchumacherHeader} alt="schumacherlogo" className="mx-auto" />
-                    </div>
+                    </div> */}
                 </Container>
             </div>
 
+            <section className="pHighLightBg relative">
+                <img
+                    src={SchumacherHeader}
+                    alt="KD Graphic"
+                    className="absolute inset-0 -top-[300px] max-w-[1034px] mx-auto"
+                />
 
-            <div className="relative h-[100vh] checked-lines  flex justify-center items-end py-[90px] text-center">
+
+                <p className="text-2xl font-semibold text-center mx-auto max-w-[1350px] pt-[426px] pb-[84px]">
+                    For over 30 years, Schumacher Homes has perfected a clear and exciting process for building homes. They are committed to making the experience enjoyable, simple, and hassle-free. Schumacher Homes focuses on customer satisfaction, guiding you through each step with expertise and care to bring your vision to life.
+                </p>
+            </section>
+
+            <section>
                 <Container>
-                    <h6 className="text-[25px] text-black font-semibold mt-[60px] ">
-                        For over 30 years, Schumacher Homes has perfected a clear and exciting process for building homes. They are committed to making the experience enjoyable, simple, and hassle-free. Schumacher Homes focuses on customer satisfaction, guiding you through each step with expertise and care to bring your vision to life.
-                    </h6>
-                    <div className="grid  grid-cols-3 gap-[70px] mt-[100px]">
-                        <Link to={""} >
-                            <div className="py-[70px] px-[55px] mask-card-schumacher h-full flex flex-col justify-center items-center mx-auto  ">
-
-
-                                <h2 className="text-[30px] text-primary-dark2 font-semibold mb-2">
+                    <div className="grid grid-cols-12 gap-6 mt-[78px]">
+                        <div className="col-span-4">
+                            <div className="mask-card-schumacher py-[60px] px-[40px] h-full">
+                                <h5 className="text-[30px] font-semibold max-w-[150px]">
                                     PLATFORM
-                                </h2>
-                                <p className="text-[22px] text-primary-dark2 font-normal">
+                                </h5>
+                                <p className="text-[22px] ">
                                     Mobile first approach
                                 </p>
-
-                                {/* <img src={tiltarrow} alt="arrow"/> */}
                             </div>
-                            {/* <img src={imgSrc} alt={title} className="mt-5 rounded-[20px] w-full" /> */}
-
-                        </Link>
-
-                        <Link to={""} >
-                            <div className="py-[70px] px-[55px] mask-card-schumacher h-full flex flex-col justify-center items-center mx-auto ">
-
-
-                                <h2 className="text-[30px] text-primary-dark2 font-semibold mb-2">
+                        </div>
+                        <div className="col-span-4">
+                            <div className="mask-card-schumacher py-[60px] px-[40px] h-full">
+                                <h5 className="text-[30px] font-semibold max-w-[150px]">
                                     DELIVERABLE
-                                </h2>
-                                <p className="text-[22px] text-primary-dark2 font-normal">
+                                </h5>
+                                <p className="text-[22px] ">
                                     UX research, competitor analysis, Wireframes and UI on Figma.
                                 </p>
-
-                                {/* <img src={tiltarrow} alt="arrow"/> */}
                             </div>
-                            {/* <img src={imgSrc} alt={title} className="mt-5 rounded-[20px] w-full" /> */}
-
-                        </Link>
-                        <Link to={""} >
-                            <div className="py-[70px] px-[55px] mask-card-schumacher h-full flex flex-col justify-center items-center mx-auto  ">
-
-
-                                <h2 className="text-[30px] text-primary-dark2 font-semibold mb-2">
+                        </div>
+                        <div className="col-span-4">
+                            <div className="mask-card-schumacher py-[60px] px-[40px] h-full">
+                                <h5 className="text-[30px] font-semibold max-w-[150px]">
                                     CLIENT
-                                </h2>
-                                <p className="text-[22px] text-primary-dark2 font-normal">
+                                </h5>
+                                <p className="text-[22px] ">
                                     schumacherhomes.com
                                 </p>
-
-                                {/* <img src={tiltarrow} alt="arrow"/> */}
-
-                                {/* <img src={imgSrc} alt={title} className="mt-5 rounded-[20px] w-full" /> */}
                             </div>
-                        </Link>
-
-
+                        </div>
                     </div>
                 </Container>
+            </section>
 
-            </div>
+            <section className="py-[150px]">
+                <h3 className="text-center text-[60px] font-semibold">
+                    Problem statements with Our Solutions
+                </h3>
+                <Container>
+                    <div className="grid grid-cols-2 gap-20 mt-[70px]">
+                        <div className="col-span-1 self-center">
+                            <div>
+                                <div className="text-[18px] font-semibold text-secondary-light2">
+                                    PROBLEM 1
+                                </div>
+                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                    Users didn’t fully understand what Schumacher Homes is about due to the lack of information on the main homepage.
+                                </div>
+                                <p className="text-xl font-medium">
+                                    The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-span-1">
+                            <img src={problemOne} alt="image" />
+                        </div>
+                    </div>
+                    <div className="mt-[100px]">
+                        <div className="text-[18px] font-semibold text-secondary-light2">
+                            SOLUTION
+                        </div>
+                        <div className="text-[40px] font-semibold mt-4 mb-8">
+                            What we did for this Problem
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-20  items-end pb-[140px]">
+                        <div className="col-span-1 self-start">
+                            <div>
+
+
+                                <div className="grid grid-cols-5 items-start gap-4 ">
+                                    <div className="col-span-3">
+                                        <p className="text-xl font-medium">
+                                            The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
+                                        </p>
+                                    </div>
+                                    <div className="col-span-2">
+                                        <p className="text-xl font-medium">
+                                            Our current navigation structure needs to be expanded to include these crucial sections. Additionally, competitors clearly communicated their value propositions on the homepage, something we need to emulate to highlight what sets us apart and the benefits we offer to our users.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-span-1">
+                            <div className="relative">
+                                <img src={SolutionOne} alt="image" />
+                                <img src={SolutionTwo} alt="image" className="absolute top-[77%] right-[87%]" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-12 gap-20 mt-[100px] items-center py-[140px]">
+                        <div className="col-span-4">
+                            <div className="flex items-center">
+                                <img src={Newschumacher} alt="image" />
+                            </div>
+                        </div>
+                        <div className="col-span-3">
+                            <div className="flex items-center justify-center">
+                                <img src={Midconnector} alt="image" />
+                            </div>
+                        </div>
+                        <div className="col-span-5 ">
+                            <div className="bg-secondary-dark2 rounded-3xl text-xl font-medium text-white mx-auto">
+                                <div className="grid grid-cols-4 items-start gap-4 p-[50px]">
+                                    <div className="col-span-2">
+                                        <p className="mb-4">
+                                            Based on our competitor analysis, we created a detailed plan for the homepage, highlighting all key sections and ensuring easy navigation. We sent this plan to the client and, after receiving approval, developed wireframes to visually map out the layout.
+                                        </p>
+                                        <p>
+                                            Next, we designed the user interface (UI), focusing on a modern and attractive look. We
+                                        </p>
+                                    </div>
+                                    <div className="col-span-2">
+                                        <p className="mb-4">
+                                            carefully chose colors, fonts, and images to make the homepage engaging and user-friendly.
+                                        </p>
+                                        <p className="">
+                                            The final result is a well-structured, visually appealing homepage that clearly communicates our client's value and enhances the user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
+
+            <section className="bg-secondary-dark2">
+                <Container>
+                    <div className="mt-[100px]">
+                        <div className="text-[18px] font-semibold text-secondary-light2">
+                            SOLUTION
+                        </div>
+                        <div className="text-[40px] font-semibold mt-4 mb-8">
+                            What we did for this Problem
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-20  items-end pb-[140px]">
+                        <div className="col-span-1 self-start">
+                            <div>
+
+
+                                <div className="grid grid-cols-5 items-start gap-4 ">
+                                    <div className="col-span-3">
+                                        <p className="text-xl font-medium">
+                                            The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
+                                        </p>
+                                    </div>
+                                    <div className="col-span-2">
+                                        <p className="text-xl font-medium">
+                                            Our current navigation structure needs to be expanded to include these crucial sections. Additionally, competitors clearly communicated their value propositions on the homepage, something we need to emulate to highlight what sets us apart and the benefits we offer to our users.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-span-1">
+                            <div className="relative">
+                                <img src={SolutionOne} alt="image" />
+                                <img src={SolutionTwo} alt="image" className="absolute top-[77%] right-[87%]" />
+                            </div>
+                        </div>
+                    </div>
+
+                </Container>
+            </section>
+
 
         </main>
     );
