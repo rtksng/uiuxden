@@ -84,27 +84,9 @@ const executionData = [
     ],
   },
 ];
-const swiperRef = useRef<any>(null);
 
-const handleSlideChange = () => {
-  if (!swiperRef.current) return;
 
-  const swiper = swiperRef.current.swiper;
-  const slides = swiper.slides;
 
-  slides.forEach((slide: HTMLElement) => {
-    slide.classList.remove("center-item");
-  });
-
-  // Add `center-item` to the currently centered slide
-  const activeIndex = swiper.activeIndex;
-  const centerSlide =
-    slides[activeIndex + Math.floor(swiper.params.slidesPerView / 2)];
-
-  if (centerSlide) {
-    centerSlide.classList.add("center-item");
-  }
-};
 const Knowledger = () => (
   <main>
     <section className="h-screen knowledger">
@@ -361,15 +343,14 @@ const Knowledger = () => (
           </h3>
         </div>
         <Swiper
-      ref={swiperRef}
+     
       modules={[Navigation, Pagination, Autoplay]}
       slidesPerView={3}
       spaceBetween={20}
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000 }}
       loop={true}
-      onSlideChange={handleSlideChange}
-      onSwiper={handleSlideChange} // Handle initial load
+  
       className="my-swiper"
     >
       {/* Define slides manually */}

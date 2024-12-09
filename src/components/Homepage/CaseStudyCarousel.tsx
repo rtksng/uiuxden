@@ -8,7 +8,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const CaseStudyCarousel = () => {
   return (
     <Container>
-      <section className="max-screen-1600 mx-auto my-[150px] carouselStudy">
+      <section className="max-screen-1600 mx-auto  carouselStudy">
         <Swiper
           autoplay={{
             delay: 2500,

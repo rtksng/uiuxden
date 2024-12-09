@@ -117,7 +117,9 @@ const Home = () => {
         <Rating />
         <Process />
         <CaseStudy />
-        <CaseStudyCarousel />
+        <div className="my-[150px]">
+          <CaseStudyCarousel />
+        </div>
         <Review />
         <Footer />
       </div>
