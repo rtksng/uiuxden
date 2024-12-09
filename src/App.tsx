@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Schumacher from "./pages/Schumacher";
 
 import Knowledger from "./pages/CaseStudiesPage/Knowledger";
+import UXStrategy from "./pages/Features/UXStrategy";
+import Portfolio from "./pages/Portfolio";
 const App = () => {
   return (
     <Router>
@@ -12,6 +14,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/knowledger-case-study" element={<Knowledger />} />
           <Route path="/schumacher" element={<Schumacher />} />
+          <Route path="/ux-strategy" element={<UXStrategy />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </Router>

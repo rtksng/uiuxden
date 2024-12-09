@@ -85,6 +85,8 @@ const executionData = [
   },
 ];
 
+
+
 const Knowledger = () => (
   <main>
     <section className="h-screen knowledger">
@@ -341,13 +343,14 @@ const Knowledger = () => (
           </h3>
         </div>
         <Swiper
- 
+     
       modules={[Navigation, Pagination, Autoplay]}
       slidesPerView={3}
       spaceBetween={20}
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000 }}
       loop={true}
+  
       className="my-swiper"
     >
       {/* Define slides manually */}

@@ -85,3 +85,23 @@ body {
 .center-item{
   background-color: red;
 }
+.gradientHeroBg{
+  background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
+}
+.linearCapabilities{
+  background: linear-gradient(87deg, #FFF 0.93%, rgba(255, 255, 255, 0.00) 101.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.chart{
+  background-image: url(../src/assets/capabg2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 620px;
+}
+.tabbg{
+  background-image: url(../src/assets/tabBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

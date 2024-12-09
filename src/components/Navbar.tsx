@@ -16,7 +16,7 @@ const NavLinks: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => (
       <Link to="">UX Services +</Link>
     </li>
     <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="">Portfolio +</Link>
+      <Link to="/portfolio">Portfolio +</Link>
     </li>
     <li className="hover:text-black hover:font-semibold transition-all">
       <Link to="">Blogs</Link>
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
     <Container>
       <nav className="flex items-center justify-between py-2  lg:py-2 relative z-50">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="UIUXden Logo" />
+         <Link to='/'> <img src={logo}  alt="UIUXden Logo" /></Link>
         </div>
 
         <button
