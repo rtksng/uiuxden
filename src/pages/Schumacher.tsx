@@ -7,6 +7,9 @@ import SolutionOne from "../assets/solution-img1.png";
 import SolutionTwo from "../assets/solution-img2.png";
 import Midconnector from "../assets/mid-connector.png";
 import Newschumacher from "../assets/new-schumacher-mobile.png";
+import Problemtwobanner from "../assets/problem2-banner1.png";
+import Problemtwobannerabsolute from "../assets/problem2-banner2.png";
+import AddressedIssue from "../assets/addressedissue-banner.png";
 import checkedLinesBg from "../assets/checked-lines-bg.png";
 import DrivenDesign from "../components/Homepage/DrivenDesign";
 import Features from "../components/Homepage/Features";
@@ -256,43 +259,48 @@ const Schumacher = () => {
 
             <section className="bg-secondary-dark2">
                 <Container>
-                    <div className="mt-[100px]">
-                        <div className="text-[18px] font-semibold text-secondary-light2">
-                            SOLUTION
-                        </div>
-                        <div className="text-[40px] font-semibold mt-4 mb-8">
-                            What we did for this Problem
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-20  items-end pb-[140px]">
+                    <div className="grid grid-cols-2 gap-20  items-end pb-[140px] mt-[100px]">
                         <div className="col-span-1 self-start">
                             <div>
 
-
-                                <div className="grid grid-cols-5 items-start gap-4 ">
-                                    <div className="col-span-3">
-                                        <p className="text-xl font-medium">
-                                            The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
-                                        </p>
-                                    </div>
-                                    <div className="col-span-2">
-                                        <p className="text-xl font-medium">
-                                            Our current navigation structure needs to be expanded to include these crucial sections. Additionally, competitors clearly communicated their value propositions on the homepage, something we need to emulate to highlight what sets us apart and the benefits we offer to our users.
-                                        </p>
-                                    </div>
+                                <div className="text-[18px] font-semibold text-secondary-light2">
+                                    PROBLEM 2
                                 </div>
+                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                    Difficulty in Accessing Key Information Due to Overly Complex Navigation.
+                                </div>
+                                <p className="text-xl font-medium">
+                                    The navigational structure of the Schumacher Homes was found to be overly complicated. Users consistently reported difficulty locating essential pages, most notably the Process page, which is crucial for understanding our building procedures and services. This page contains vital information that helps users navigate the home-building journey, yet it remains buried within a complex and unintuitive menu system.
+                                </p>
 
                             </div>
                         </div>
                         <div className="col-span-1">
                             <div className="relative">
-                                <img src={SolutionOne} alt="image" />
-                                <img src={SolutionTwo} alt="image" className="absolute top-[77%] right-[87%]" />
+                                <img src={Problemtwobanner} alt="image" />
+                                <img src={Problemtwobannerabsolute} alt="image" className="absolute top-[77%] right-[87%]" />
                             </div>
                         </div>
                     </div>
+                    <div className="grid grid-cols-2 gap-20  items-end pb-[140px] mt-[100px]">
+                        <div className="col-span-1 self-start">
+                            <div>
 
+
+                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                    How we addressed this issue.                                </div>
+                                <p className="text-xl font-medium">
+                                    After reviewing Schumacher's website navigation and layout, we found it caused significant confusion among users. To tackle this issue, we analyzed real user data research to understand the extent of the problem. Based on what we learned, we provided recommendations to the client and then developed wireframes and UI designs that follow the best practices in user-friendly design.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div className="col-span-1">
+                            <div className="relative">
+                                <img src={AddressedIssue} alt="image" />
+                            </div>
+                        </div>
+                    </div>
                 </Container>
             </section>
 
