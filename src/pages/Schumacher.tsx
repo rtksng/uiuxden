@@ -223,7 +223,7 @@ const Schumacher = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-12 gap-20 mt-[100px] items-center py-[140px]">
+                    <div className="grid grid-cols-12 gap-3 mt-[100px] items-center py-[140px]">
                         <div className="col-span-4">
                             <div className="flex items-center">
                                 <img src={Newschumacher} alt="image" />
