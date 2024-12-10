@@ -177,7 +177,7 @@ const Schumacher = () => {
                                 <div className="text-[40px] font-semibold mt-4 mb-8">
                                     Users didn’t fully understand what Schumacher Homes is about due to the lack of information on the main homepage.
                                 </div>
-                                <p className="text-xl font-medium">
+                                <p className="text-xl font-medium text-primary-dark2">
                                     The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
                                 </p>
                             </div>
