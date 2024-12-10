@@ -17,6 +17,7 @@ import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 import { useEffect, useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
+import mobileHeaderImg from "../assets/index-mobile-img.png";
 const Home = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,7 +55,26 @@ const Home = () => {
       >
         <Navbar />
       </div>
-
+      <div className="xl:hidden h-screen flex items-center justify-center relative">
+        <div className="px-3">
+          <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center ">
+            Humanize Your Product
+          </h1>
+          <p className="text-2xl md:text-4xl font-medium mt-5 text-center">
+            with our in-depth{" "}
+            <span className="text-secondary-light2 underline underline-offset-8">
+              research oriented
+            </span>{" "}
+            design program
+          </p>
+          <div
+            className="flex justify-center
+          "
+          >
+            {/* <img src={mobileHeaderImg} alt="image" className="max-w-2xl" /> */}
+          </div>
+        </div>
+      </div>
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
           className={`fixed inset-0 flex items-center justify-center z-40 ${
@@ -100,9 +120,9 @@ const Home = () => {
       </div>
 
       <div className="relative z-[100] questionsection">
-       <div className="hidden xl:block">
-       <UserAnimation />
-       </div>
+        <div className="hidden xl:block">
+          <UserAnimation />
+        </div>
         <section className="bg-gradient-fill2 py-4">
           <VelocityScroll
             point1="UI Design"
@@ -116,14 +136,14 @@ const Home = () => {
         </section>
         <DrivenDesign />
         <Features />
-        <Rating />
-        <Process />
+         <Rating />
+       {/* <Process /> */}
         <CaseStudy />
-        <div className="my-[150px]">
+        {/* <div className="my-[150px]">
           <CaseStudyCarousel />
-        </div>
-        <Review />
-        <Footer />
+        </div> */}
+        {/* <Review /> */}
+        {/* <Footer /> */}
       </div>
     </main>
   );

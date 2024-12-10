@@ -5,7 +5,7 @@ import Volt from "../../assets/Volt.svg";
 
 const CaseStudy = () => {
   return (
-    <section className="casestudy mt-[192px] ">
+    <section className="casestudy lg:mt-[192px] sm:mt-15 mt-10 ">
       <div className="pt-[160px] pb-[78px]">
         <h2 className="text-[60px] text-white text-center font-semibold">
           We love to make things easy

@@ -24,15 +24,15 @@ const FeatureCard: React.FC<Feature> = ({
   imgSrc,
   link,
 }) => (
-  <div className="col-span-4">
-    <Link to={link}>
-      <div className="p-7 mask-card">
-        <div className="flex justify-between items-start w-calc-minus-80">
+  <div className="col-span-12 sm:col-span-6 lg:col-span-4 border rounded-3xl md:border-0 md:rounded-none">
+    <Link to={link} >
+      <div className="md:p-7 p-4 mask-card">
+        <div className="flex justify-between items-start md:w-calc-minus-80">
           <div>
             <h4 className="text-[22px] leading-none mb-2 font-semibold text-primary-dark2">
               {title}
             </h4>
-            <h6 className="text-primary-dark2 text-base max-w-[215px]">
+            <h6 className="text-primary-dark2 text-base md:max-w-[215px]">
               {description}
             </h6>
           </div>
@@ -104,12 +104,12 @@ const Features = () => {
 
   return (
     <Container>
-      <section className="mt-[250px]">
-        <h2 className="text-[60px] font-semibold max-w-6xl mx-auto text-center">
+      <section className="xl:mt-[250px] mt-10 sm:mt-16 px-3">
+        <h2 className="lg:text-[60px] md:text-4xl text-2xl font-semibold max-w-6xl mx-auto text-center !leading-[128.5%]">
           User Experiences that Inspire Customers to Stay Connected with Your
           Brand
         </h2>
-        <div className="grid grid-cols-12 mt-[140px] gap-[50px]">
+        <div className="grid grid-cols-12 xl:mt-[140px] mt-5 sm:mt-8 sm:gap-[50px] gap-4">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}

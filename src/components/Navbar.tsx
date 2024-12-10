@@ -16,14 +16,14 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
     className={`${
       isMobile
         ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-full justify-center"
-        : "hidden md:flex items-center space-x-6 "
-    } font-semibold md:font-normal`}
+        : "hidden xl:flex items-center space-x-6 "
+    } font-semibold xl:font-normal`}
   >
     {["UX Services +", "Portfolio +", "Blogs", "Contact", "Our Store"].map(
       (link, idx) => (
         <li
           key={idx}
-          className="hover:text-black hover:font-semibold transition-all  text-2xl md:text-base"
+          className="hover:text-black hover:font-semibold transition-all  text-2xl xl:text-base"
           onClick={onClick}
         >
           <Link to={idx === 1 ? "/portfolio" : ""}>{link}</Link>
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Container>
-      <nav className="flex items-center justify-between py-5 lg:py-2 relative z-50">
+      <nav className="flex items-center justify-between py-5 xl:py-2 relative z-50">
         {/* Logo */}
         <Link to="/">
           <img src={logo} alt="UIUXden Logo" className="max-w-[150px]" />
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden w-10 h-10 border flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
+          className="xl:hidden w-10 h-10 border flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
           onClick={toggleMenu}
         >
           <CgMenuRightAlt size={24} />
@@ -57,12 +57,13 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <NavLinks />
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-8">
+          <div className="flex items-center gap-3">
           {isSearchOpen && (
             <input
               type="text"
               placeholder="Search..."
-              className="w-64 pe-3 ps-6 py-1 text-sm border rounded-full focus:ring-gray-300"
+              className="w-64 pe-3 ps-6 h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
             />
           )}
           <button
@@ -71,6 +72,7 @@ const Navbar: React.FC = () => {
           >
             <CiSearch size={32} />
           </button>
+          </div>
           <Button variant="primary">Let’s talk</Button>
         </div>
 
