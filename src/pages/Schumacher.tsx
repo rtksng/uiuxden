@@ -81,19 +81,19 @@ const Schumacher = () => {
 
             <div className="relative h-[100vh] green-linear ">
                 <Container>
-                    <div className="text-center pt-[200px] flex flex-col items-center">
+                    <div className="text-center pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
                         <img src={paulSchumacherDark} alt="schumacherlogo" width={250} className="mx-auto" />
-                        <h1 className="text-[90px] text-black font-semibold mb-base">
+                        <h1 className="text-[66px]  2xl:text-[90px] text-black  font-semibold mb-base">
                             Building Dream Homes
                         </h1>
-                        <h3 className="text-[32px] text-primary-dark font-medium w-[70%]">
+                        <h3 className="text-[24px] 2xl:text-[32px] text-primary-dark font-medium w-[70%]">
                             <span className="text-primary-dark4">
                                 Schumacher Homes'
                             </span>
                             Three-Decade Journey to Perfecting a Seamless Process
                         </h3>
                     </div>
-                    <div className="absolute bottom-5 left-9 ">
+                    <div className="absolute bottom-5 left-2  2xl:left-9 ">
                         <div className="flex items-center">
                             <img src={rightLongArrow} alt="arrow" width={50} className="mx-auto" />
                             <div className="ml-3">
@@ -117,7 +117,7 @@ const Schumacher = () => {
                 <img
                     src={SchumacherHeader}
                     alt="KD Graphic"
-                    className="absolute inset-0 -top-[300px] max-w-[1034px] mx-auto"
+                    className="absolute inset-0 -top-[220px] 2xl:-top-[280px] max-w-[900px] 2xl:max-w-[1034px] mx-auto"
                 />
 
 
@@ -163,8 +163,8 @@ const Schumacher = () => {
                 </Container>
             </section>
 
-            <section className="py-[150px]">
-                <h3 className="text-center text-[60px] font-semibold">
+            <section className="py-[100px] 2xl:py-[150px]">
+                <h3 className="text-center text-[50px] 2xl:text-[60px] font-semibold">
                     Problem statements with Our Solutions
                 </h3>
                 <Container>
@@ -174,10 +174,10 @@ const Schumacher = () => {
                                 <div className="text-[18px] font-semibold text-secondary-light2">
                                     PROBLEM 1
                                 </div>
-                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8 ">
                                     Users didn’t fully understand what Schumacher Homes is about due to the lack of information on the main homepage.
                                 </div>
-                                <p className="text-xl font-medium text-primary-dark2">
+                                <p className="text-lg 2xl:text-xl font-medium text-primary-dark2 w-[90%]">
                                     The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
                                 </p>
                             </div>
@@ -190,7 +190,7 @@ const Schumacher = () => {
                         <div className="text-[18px] font-semibold text-secondary-light2">
                             SOLUTION
                         </div>
-                        <div className="text-[40px] font-semibold mt-4 mb-8">
+                        <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8">
                             What we did for this Problem
                         </div>
                     </div>
@@ -198,16 +198,14 @@ const Schumacher = () => {
                     <div className="grid grid-cols-2 gap-20  items-end pb-[140px]">
                         <div className="col-span-1 self-start">
                             <div>
-
-
-                                <div className="grid grid-cols-5 items-start gap-4 ">
-                                    <div className="col-span-3">
-                                        <p className="text-xl font-medium">
-                                            The homepage of the Schumacher Homes website currently features only a hero section with a video. There are no additional sections present on the homepage. This lack of content might limit the user's ability to quickly access other important information or features of the site, potentially impacting the overall user experience. Basically they wanted us to recreate the homepage and process page.
+                                <div className="grid grid-cols-12 items-start gap-5  2xl:gap-10 ">
+                                    <div className="col-span-7 2xl:col-span-6">
+                                        <p className="text-lg 2xl:text-xl font-medium text-primary-dark2">
+                                            The client provided us with links to competitor websites, which we used to conduct a comprehensive competitor analysis. Through this analysis, we identified several important sections that are currently missing from our homepage. Based on our findings, we have presented a series of recommendations to the client to enhance the homepage’s UI/UX  Our analysis revealed that competitor websites featured intuitive and comprehensive navigation menus, making it easy for users to find key information quickly. .
                                         </p>
                                     </div>
-                                    <div className="col-span-2">
-                                        <p className="text-xl font-medium">
+                                    <div className="col-span-5 2xl:col-span-6">
+                                        <p className="text-lg 2xl:text-xl font-medium text-primary-dark2">
                                             Our current navigation structure needs to be expanded to include these crucial sections. Additionally, competitors clearly communicated their value propositions on the homepage, something we need to emulate to highlight what sets us apart and the benefits we offer to our users.
                                         </p>
                                     </div>
@@ -218,24 +216,24 @@ const Schumacher = () => {
                         <div className="col-span-1">
                             <div className="relative">
                                 <img src={SolutionOne} alt="image" />
-                                <img src={SolutionTwo} alt="image" className="absolute top-[77%] right-[87%]" />
+                                <img src={SolutionTwo} alt="image" className="absolute top-[80%]  2xl:top-[80%] right-[50%] 2xl:right-[87%]" />
                             </div>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-12 gap-3 mt-[100px] items-center py-[140px]">
+                    <div className="grid grid-cols-12 gap-3 mt-[120px] 2xl:mt-[100px] items-center pt-[70px] pb-0 2xl:py-[140px]">
                         <div className="col-span-4">
                             <div className="flex items-center">
                                 <img src={Newschumacher} alt="image" />
                             </div>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-2">
                             <div className="flex items-center justify-center">
                                 <img src={Midconnector} alt="image" />
                             </div>
                         </div>
-                        <div className="col-span-5 ">
-                            <div className="bg-secondary-dark2 rounded-3xl text-xl font-medium text-white mx-auto">
+                        <div className="col-span-6 ">
+                            <div className="bg-secondary-dark2 rounded-3xl text-lg 2xl:text-xl font-medium text-primary-dark2 text-white mx-auto">
                                 <div className="grid grid-cols-4 items-start gap-4 p-[50px]">
                                     <div className="col-span-2">
                                         <p className="mb-4">
@@ -262,17 +260,17 @@ const Schumacher = () => {
 
             <section className="problem2-section">
                 <Container>
-                    <div className="grid grid-cols-2 gap-20  items-end justify-content-center pt-[150px] pb-[300px] mt-[100px]  border-dashed border-b-2 border-[rgba(255,255,255,0.20)] text-white ">
-                        <div className="col-span-1 self-start">
+                    <div className="grid grid-cols-2 gap-20  items-center justify-content-center pt-[100px] 2xl:pt-[150px] pb-[300px] 2xl:mt-[0px]  border-dashed border-b-2 border-[rgba(255,255,255,0.20)] text-white ">
+                        <div className="col-span-1 ">
                             <div>
 
                                 <div className="text-[18px] font-semibold text-secondary-light2">
                                     PROBLEM 2
                                 </div>
-                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8">
                                     Difficulty in Accessing Key Information Due to Overly Complex Navigation.
                                 </div>
-                                <p className="text-xl font-medium">
+                                <p className="text-lg 2xl:text-xl font-medium ">
                                     The navigational structure of the Schumacher Homes was found to be overly complicated. Users consistently reported difficulty locating essential pages, most notably the Process page, which is crucial for understanding our building procedures and services. This page contains vital information that helps users navigate the home-building journey, yet it remains buried within a complex and unintuitive menu system.
                                 </p>
 
@@ -285,14 +283,14 @@ const Schumacher = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-12 gap-20  items-center py-[130px]  ">
+                    <div className="grid grid-cols-12 gap-20  items-center py-[100px] 2xl:py-[130px]  ">
                         <div className="col-span-1"></div>
 
                         <div className="col-span-6">
-                            <div className="address-content-wrapper w-100 text-white ">
-                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                            <div className="address-content-wrapper w-100 text-white py-[40px] px-[50px] 2xl:pt-[100px] 2xl:pr-[60px] 2xl:pb-[70px] 2xl:pl-[45px] ">
+                                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8">
                                     How we addressed this issue.                                </div>
-                                <p className="text-xl font-medium">
+                                <p className="text-lg 2xl:text-xl font-medium ">
                                     After reviewing Schumacher's website navigation and layout, we found it caused significant confusion among users. To tackle this issue, we analyzed real user data research to understand the extent of the problem. Based on what we learned, we provided recommendations to the client and then developed wireframes and UI designs that follow the best practices in user-friendly design.
                                 </p>
                             </div>
@@ -321,14 +319,14 @@ const Schumacher = () => {
                                 <div className="text-[18px] font-semibold text-secondary-light2">
                                     PROBLEM 3
                                 </div>
-                                <div className="text-[40px] font-semibold mt-4 mb-8">
+                                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8">
                                     Enhancing the Process Screen with Detailed Information
                                 </div>
 
 
 
 
-                                <p className="text-xl font-medium">
+                                <p className="text-lg 2xl:text-xl font-medium text-primary-dark2">
 
                                     The client requested a redesign of the Process screen to incorporate more detailed information. The aim was to provide users with a clearer and more comprehensive understanding of the procedures involved. By expanding the content and improving the layout, the redesigned screen will offer a more informative and user-friendly experience, ensuring that all necessary details are easily accessible and clearly presented.
                                 </p>
@@ -345,9 +343,9 @@ const Schumacher = () => {
                     </div>
 
 
-                    <div className="grid grid-cols-12 gap-0 mt-[100px] items-center py-[140px]">
+                    <div className="grid grid-cols-12 gap-0 mt-[80px] items-center py-[70px] 2xl:py-[140px]">
                         <div className="col-span-12">
-                            <div className="text-[40px] font-semibold mt-4 mb-8 text-center">
+                            <div className="text-[32px] 2xl:text-[40px] font-semibold mt-4 mb-[90px] text-center">
                                 Our approach to solving this problem.
                             </div>
                         </div>
@@ -363,8 +361,8 @@ const Schumacher = () => {
                             </div>
                         </div>
                         <div className="col-span-6 ">
-                            <div className="bg-secondary-dark2 rounded-3xl text-xl font-medium text-white mx-auto">
-                                <div className="grid grid-cols-4 items-start gap-4 p-[50px]">
+                            <div className="bg-secondary-dark2 rounded-3xl text-lg 2xl:text-xl font-medium text-primary-dark2 text-white mx-auto">
+                                <div className="grid grid-cols-4 items-start gap-6 p-[50px]">
                                     <div className="col-span-2">
                                         <p >
                                             We conducted a thorough competitor analysis of the Process screen using the websites provided by the client. This analysis allowed us to identify best practices and effective design elements used by competitors. Based on these insights, we formulated detailed recommendations for enhancing the client's Process screen.
