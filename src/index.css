@@ -11,80 +11,123 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+.mask-card-schumacher {
+  background-image: url(../src/assets/schumacher-cards-border.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
 .casestudy {
   background-image: url(../src/assets/casestudybg.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 932px;
 }
+
 .itemcase {
   background-image: url(../src/assets/casestudybg2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 495px;
 }
+
 .reviewcardbg {
   background-image: url(../src/assets/reviewcardbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .carouselStudy .innerItem {
   background-image: url(../src/assets/SchumacherBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 476px;
 }
+
+.checked-lines {
+  background-image: url(../src/assets/checked-lines-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .mySwiper {
   padding-bottom: 50px !important;
 }
+
 .mySwiper .swiper-pagination-bullet-active {
   background-color: #212121;
 }
-.knowledger {
-  background: linear-gradient(
-    182deg,
-    #9ff8be 1.12%,
-    #eaffe2 76.66%,
-    #f8edba 157.07%
-  );
+
+.green-linear {
+  background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
 }
+
+.knowledger {
+  background: linear-gradient(182deg,
+      #9ff8be 1.12%,
+      #eaffe2 76.66%,
+      #f8edba 157.07%);
+}
+
 .pHighLightBg {
   background-image: url(../src/assets/gridLines.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .kcbg {
   background-image: url(../src/assets/kcbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
 }
+
 .projectItem {
-  background: var(
-    --Gradient-Light,
-    linear-gradient(180deg, #9ff8be 0%, #f8edba 87.46%)
-  );
+  background: var(--Gradient-Light,
+      linear-gradient(180deg, #9ff8be 0%, #f8edba 87.46%));
 }
-.center-item{
+
+.center-item {
   background-color: red;
 }
-.gradientHeroBg{
+
+.gradientHeroBg {
   background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
 }
-.linearCapabilities{
+
+.linearCapabilities {
   background: linear-gradient(87deg, #FFF 0.93%, rgba(255, 255, 255, 0.00) 101.29%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.chart{
+
+.chart {
   background-image: url(../src/assets/capabg2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 620px;
 }
-.tabbg{
+
+.tabbg {
   background-image: url(../src/assets/tabBg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.address-content-wrapper {
+  background-image: url(../src/assets/addressed-content-wrapper.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.problem2-section {
+  background: url(../src/assets/problem2-bg-vector.png) #2D2D2D;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 0%;
 }

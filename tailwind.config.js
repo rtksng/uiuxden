@@ -35,6 +35,7 @@ export default {
           light2: "#3ABF88",
           light3: "#ABF9C4",
           dark: "#5A5A5A",
+          dark2:'#2D2D2D',
         },
         success: "#10B981",
         danger: "#EF4444",

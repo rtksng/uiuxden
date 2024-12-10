@@ -48,18 +48,16 @@ const Home = () => {
   return (
     <main>
       <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+          }`}
       >
         <Navbar />
       </div>
 
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
-          className={`fixed inset-0 flex items-center justify-center z-40 ${
-            addTransitionClass ? "transition-all" : ""
-          }`}
+          className={`fixed inset-0 flex items-center justify-center z-40 ${addTransitionClass ? "transition-all" : ""
+            }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
