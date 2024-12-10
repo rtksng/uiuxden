@@ -55,7 +55,7 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <div className="relative h-[150vh]">
+      <div className="relative h-[150vh] hidden xl:block">
         <motion.div
           className={`fixed inset-0 flex items-center justify-center z-40 ${
             addTransitionClass ? "transition-all" : ""
@@ -100,7 +100,9 @@ const Home = () => {
       </div>
 
       <div className="relative z-[100] questionsection">
-        <UserAnimation />
+       <div className="hidden xl:block">
+       <UserAnimation />
+       </div>
         <section className="bg-gradient-fill2 py-4">
           <VelocityScroll
             point1="UI Design"

@@ -1,32 +1,35 @@
 import React, { useState } from "react";
-import Container from "./Container";
-import logo from "../assets/logo.svg";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
+import Container from "./Container";
 import Button from "./Button";
-const NavLinks: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => (
+import logo from "../assets/logo.svg";
+import { CgMenuRightAlt } from "react-icons/cg";
+
+const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
+  isMobile,
+  onClick,
+}) => (
   <ul
     className={`${
       isMobile
-        ? "flex flex-col items-start px-4 py-2 space-y-4"
-        : "hidden md:flex items-center space-x-6"
-    } text-gray-700`}
+        ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-full justify-center"
+        : "hidden md:flex items-center space-x-6 "
+    } font-semibold md:font-normal`}
   >
-    <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="">UX Services +</Link>
-    </li>
-    <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="/portfolio">Portfolio +</Link>
-    </li>
-    <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="">Blogs</Link>
-    </li>
-    <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="">Contact</Link>
-    </li>
-    <li className="hover:text-black hover:font-semibold transition-all">
-      <Link to="">Our Store</Link>
-    </li>
+    {["UX Services +", "Portfolio +", "Blogs", "Contact", "Our Store"].map(
+      (link, idx) => (
+        <li
+          key={idx}
+          className="hover:text-black hover:font-semibold transition-all  text-2xl md:text-base"
+          onClick={onClick}
+        >
+          <Link to={idx === 1 ? "/portfolio" : ""}>{link}</Link>
+        </li>
+      )
+    )}
   </ul>
 );
 
@@ -34,59 +37,63 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
   return (
     <Container>
-      <nav className="flex items-center justify-between py-2  lg:py-2 relative z-50">
-        <div className="flex items-center space-x-2">
-         <Link to='/'> <img src={logo}  alt="UIUXden Logo" /></Link>
-        </div>
+      <nav className="flex items-center justify-between py-5 lg:py-2 relative z-50">
+        {/* Logo */}
+        <Link to="/">
+          <img src={logo} alt="UIUXden Logo" className="max-w-[150px]" />
+        </Link>
 
+        {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden flex items-center justify-center w-8 h-8 border rounded-full text-gray-500 hover:bg-gray-100 focus:outline-none"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden w-10 h-10 border flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
+          onClick={toggleMenu}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            className="w-5 h-5"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+          <CgMenuRightAlt size={24} />
         </button>
 
+        {/* Desktop Navigation */}
         <NavLinks />
-        <div className="flex items-center space-x-8">
-          <div className="flex gap-2">
-            {isSearchOpen && (
-              <input
-                type="text"
-                placeholder="Search..."
-                className=" w-32 md:w-64 pe-3 ps-6 py-1 text-sm border rounded-full focus:outline-none focus:ring focus:ring-gray-300 transition-all"
-              />
-            )}
-            <button
-              onClick={() => setIsSearchOpen(!isSearchOpen)}
-              className="flex items-center justify-center transitioin-all p-4  rounded-full text-gray-500 hover:bg-gray-100 focus:outline-none"
-            >
-              <CiSearch size={32} />
-            </button>
-          </div>
-
+        <div className="hidden lg:flex items-center space-x-8">
+          {isSearchOpen && (
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-64 pe-3 ps-6 py-1 text-sm border rounded-full focus:ring-gray-300"
+            />
+          )}
+          <button
+            onClick={() => setIsSearchOpen((prev) => !prev)}
+            className="p-4 rounded-full text-gray-500 hover:bg-gray-100"
+          >
+            <CiSearch size={32} />
+          </button>
           <Button variant="primary">Let’s talk</Button>
         </div>
 
-        {isMenuOpen && (
-          <div className="absolute top-14 left-0 w-full bg-white shadow-md md:hidden">
-            <NavLinks isMobile />
-          </div>
-        )}
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-40"
+              initial={{ y: "-100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-100%", opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <button
+                className="absolute top-4 right-4 text-white"
+                onClick={toggleMenu}
+              >
+                <IoClose color="#fff" size={32} />
+              </button>
+              <NavLinks isMobile onClick={toggleMenu} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </Container>
   );
