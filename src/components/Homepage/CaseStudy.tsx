@@ -34,17 +34,17 @@ const CaseStudy = () => {
               </div>
             </div>
           </Link>
-          <div className="col-span-1">
+          <Link to="/voltjourney" className="col-span-1">
             <div className="itemcase flex flex-col items-center justify-center">
               <div className="flex flex-col max-w-[330px] justify-center items-center">
-                <img src={Volt} alt="Knowledger logo" width={250} />
+                <img src={Volt} alt="volt logo" width={250} />
                 <p className="text-white text-center text-[22px] mt-[100px]">
                   Driving a user research to understand user behaviour of teens
                   on Instagram
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

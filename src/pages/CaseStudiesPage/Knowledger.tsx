@@ -140,6 +140,7 @@ const Knowledger = () => (
         </div>
       </Container>
     </section>
+    
     <section className="mt-[70px]">
       <h3 className="text-center text-[60px] font-semibold">
         Technology Stack

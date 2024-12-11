@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Schumacher from "./pages/Schumacher";
+import Voltjourney from "./pages/Voltjourney";
 
 import Knowledger from "./pages/CaseStudiesPage/Knowledger";
 import UXStrategy from "./pages/Features/UXStrategy";
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/knowledger-case-study" element={<Knowledger />} />
           <Route path="/schumacher" element={<Schumacher />} />
+          <Route path="/voltjourney" element={<Voltjourney />} />
           <Route path="/ux-strategy" element={<UXStrategy />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
