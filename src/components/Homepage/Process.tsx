@@ -64,52 +64,68 @@ const steps = [
     title: "Maintenance",
     description:
       "Continuous improvement matters. We keep products updated, secure, and evolving with users’ needs.",
-    icon:process8,
+    icon: process8,
   },
 ];
 
-const StepCard = ({ step }: { step: typeof steps[0] }) => (
-  <div className="xl:w-[320px] col-span-4 p-5 relative">
+const StepCard = ({
+  step,
+  isLast,
+}: {
+  step: (typeof steps)[0];
+  isLast: boolean;
+}) => (
+  <div className="2xl:w-[320px] sm:p-5 p-2 relative">
     <div className="flex">
-      <div className="text-[30px] font-semibold text-primary-dark2 pe-5">
+      <div className="md:text-[30px] font-semibold text-primary-dark2 pe-5">
         {step.number}
       </div>
       <div>
         <img src={step.icon} alt="Icon" />
-        <h2 className="mt-3 text-[30px] font-semibold leading-10">
+        <h2 className="mt-3 text-[20px] md:text-[30px] font-semibold md:leading-10">
           {step.title}
         </h2>
-        <p className="text-neutral-600 mt-3">{step.description}</p>
+        <p className="text-neutral-600 md:mt-3">{step.description}</p>
       </div>
     </div>
-    <img
-      src={rightBar}
-      className="h-[290px] absolute right-0 bottom-0 top-0"
-      alt="bar"
-    />
+    {!isLast && (
+      <img
+        src={rightBar}
+        className="h-[290px] absolute right-0 bottom-0 top-0 hidden xl:block"
+        alt="bar"
+      />
+    )}
   </div>
 );
 
 const Process = () => (
-  <section className="mt-[200px]">
+  <section className="lg:mt-[200px] mt-10 md:mt-20">
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
-        <div className="xl:max-w-[400px] p-5 relative bottom-16">
-          <h5 className="text-[60px] font-semibold leading-none">Our</h5>
-          <h2 className="text-[85px] font-semibold">Process</h2>
-          <p className="text-neutral-600 text-2xl">
+        <div className="xl:max-w-[400px] sm:p-5 p-2 xl:relative xl:bottom-16">
+          <h5 className="lg:text-[60px] text-[24px] font-semibold leading-none">Our</h5>
+          <h2 className="2xl:text-[85px] sm:text-[48px] text-[30px] font-semibold">Process</h2>
+          <p className="text-neutral-600 md:text-[24px]">
             Our process ensures your vision becomes a seamless reality.
           </p>
         </div>
-        <div className="grid grid-cols-12 xl:grid-flow-col xl:auto-cols-max xl:me-24">
-          {steps.slice(0, 3).map((step) => (
-            <StepCard key={step.number} step={step} />
+        <div className="xl:grid   xl:grid-cols-3 xl:me-24">
+          {steps.slice(0, 3).map((step, index) => (
+            <StepCard
+              key={step.number}
+              step={step}
+              isLast={index === steps.slice(0, 3).length - 1}
+            />
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-12 xl:grid-flow-col xl:auto-cols-max border-t-[1px] border-t-primary-dark2">
-        {steps.slice(3).map((step) => (
-          <StepCard key={step.number} step={step} />
+      <div className="xl:grid   xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2">
+        {steps.slice(3).map((step, index) => (
+          <StepCard
+            key={step.number}
+            step={step}
+            isLast={index === steps.slice(3).length - 1}
+          />
         ))}
       </div>
     </Container>

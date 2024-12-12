@@ -3,15 +3,15 @@ import horigreen from "../../assets/horigreen.png";
 import Button from "../Button";
 const Review = () => {
   return (
-    <section className="mt-[154px]">
-      <h2 className="text-center text-[60px] font-semibold">
+    <section className="lg:mt-[154px] mt-10">
+      <h2 className="text-center lg:text-[60px] text-[24px] md:text-[32px] font-semibold">
         Words from UIUX den Minds
       </h2>
-      <div className="grid grid-cols-3 mt-[84px]">
+      <div className="grid grid-cols-3 lg:mt-[84px] mt-6">
         {Array.from({ length: 3 }).map((_, index) => (
           <div
             key={index}
-            className="col-span-1 group relative overflow-hidden rounded-lg"
+            className="sm:col-span-1 col-span-12 group relative overflow-hidden rounded-lg"
           >
             <img
               src={`src/assets/review_${index}.png`}
@@ -19,26 +19,24 @@ const Review = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className=" reviewcardbg absolute inset-x-0 bottom-0 top-[185px]    pt-[110px] pb-[82px] px-10
+              className=" reviewcardbg bg-secondary-light3 2xl:bg-transparent absolute inset-x-0 bottom-0 2xl:top-[20%] py-5 xL:py-10 top-0   2xl:pt-[110px] 2xl:pb-[82px] px-3 xl:px-10
               translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"
             >
               <div className="flex items-center gap-4">
                 <h6 className="text-lg font-semibold">UX Resesarch</h6>
                 <img src={horigreen} alt="line" width={215} />
               </div>
-              <h2 className="text-[32px] font-semibold mt-2">
+              <h2 className="2x:text-[32px] text-2xl font-semibold mt-2">
                 Can User Testing Help You Reduce Product Cycles?
               </h2>
-              <p className="text-neutral-600 mt-[50px] leading-7">
+              <p className="text-neutral-600 2xl:mt-[50px] 2xl:leading-7">
                 Get an in-depth analysis of what’s working well and what’s
                 broken on your product. Get an in-depth analysis of what’s
                 working. Get an in-depth analysis of what’s working well and
                 what’s broken on your product. Get an in-depth analysis of
-                what’s working. Get an in-depth analysis of what’s working well
-                and what’s broken on your product. Get an in-depth analysis of
                 what’s working.
               </p>
-              <div className="flex items-center justify-between mt-12">
+              <div className="flex items-center flex-wrap justify-between mt-6 2xl:mt-12">
                 <Button
                   variant="primary"
                   className="!hover:bg-transparent px-[30px]"

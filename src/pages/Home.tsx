@@ -14,22 +14,15 @@ import {
 } from "framer-motion";
 import banner from "../assets/banner.jpg";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
 import mobileHeaderImg from "../assets/index-mobile-img.png";
 const Home = () => {
   const { scrollY } = useScroll();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [addTransitionClass, setAddTransitionClass] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [addTransitionClass, setAddTransitionClass] = useState(false);
+
   const imageOpacity = useTransform(scrollY, [0, 700], [1, 0]);
   const imageScale = useTransform(scrollY, [0, 700], [1, 3]);
 
@@ -48,13 +41,7 @@ const Home = () => {
   });
   return (
     <main>
-      <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
-      >
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="xl:hidden h-screen flex items-center justify-center relative">
         <div className="px-3">
           <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center ">
@@ -136,14 +123,14 @@ const Home = () => {
         </section>
         <DrivenDesign />
         <Features />
-         <Rating />
-       {/* <Process /> */}
+        <Rating />
+        <Process />
         <CaseStudy />
-        {/* <div className="my-[150px]">
+        <div className="xl:my-[150px] mt-10 sm:mt-20">
           <CaseStudyCarousel />
-        </div> */}
-        {/* <Review /> */}
-        {/* <Footer /> */}
+        </div>
+        <Review />
+        <Footer />
       </div>
     </main>
   );
