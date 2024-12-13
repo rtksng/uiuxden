@@ -111,9 +111,9 @@ const Voltjourney = () => {
                     Benefits for Carriers
                 </h3>
                 <Container>
-                    <div className="grid grid-cols-12 gap-6 mt-[78px]">
+                    <div className="grid grid-cols-12 gap-6 mt-[50px] 2xl:mt-[78px]">
 
-                        <div className="col-span-3">
+                        <div className="col-span-6 2xl:col-span-3">
                             <div className="carrier-benefit-card py-[60px] px-[30px] h-full">
                                 <h5 className="text-[30px] font-semibold max-w-[90%] text-primary-dark2">
                                     Optimize Charging Slot Booking
@@ -123,7 +123,7 @@ const Voltjourney = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-6 2xl:col-span-3">
                             <div className="kcbg py-[60px] px-[30px] h-full">
                                 <h5 className="text-[30px] font-semibold max-w-[80%] text-primary-dark2 ">
                                     Reduced Emissions
@@ -133,7 +133,7 @@ const Voltjourney = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-6 2xl:col-span-3">
                             <div className="kcbg py-[60px] px-[30px] h-full">
                                 <h5 className="text-[30px] font-semibold max-w-[90%] text-primary-dark2">
                                     Improved Compliance
@@ -143,7 +143,7 @@ const Voltjourney = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-6 2xl:col-span-3">
                             <div className="kcbg py-[60px] px-[30px] h-full">
                                 <h5 className="text-[30px] font-semibold max-w-[90%]  text-primary-dark2">
                                     DAI Based Lane Recommendations
@@ -153,7 +153,6 @@ const Voltjourney = () => {
                                 </p>
                             </div>
                         </div>
-
 
                     </div>
                 </Container>
@@ -170,7 +169,7 @@ const Voltjourney = () => {
                         <img
                             src={EmpoweringBanner}
                             alt="KD Graphic"
-                            className="max-w-[900px] 2xl:max-w-[1034px] mx-auto mt-[90px]"
+                            className="max-w-[900px] 2xl:max-w-[1034px] mx-auto mt-[30px] 2xl:mt-[90px]"
                         />
                         <div className="border-[1px] mt-9  border-solid border-primary-dark3 rounded-2xl py-[22px] px-[48px]">
                             <p className="text-lg font-semibold text-center mx-auto text-primary-dark5 ">
@@ -216,7 +215,7 @@ const Voltjourney = () => {
                     <h3 className="text-center text-[60px] font-semibold ">
                         Benefits for Facility Managers
                     </h3>
-                    <div className="grid grid-cols-12 gap-10  items-center py-[100px] 2xl:py-[130px]  ">
+                    <div className="grid grid-cols-12 gap-10  items-start py-[100px] 2xl:py-[130px]  ">
                         <div className="col-span-4">
                             <img src={IncreasedIcon} alt="image" />
                             <h5 className="text-[40px] font-semibold pt-[32px] pb-[14px]">
@@ -254,7 +253,7 @@ const Voltjourney = () => {
                     Benefits for Utilities
                 </h3>
                 <Container>
-                    <div className="grid grid-cols-12 gap-6 mt-[78px]">
+                    <div className="grid grid-cols-12 gap-6 mt-[50px] 2xl:mt-[78px]">
 
 
                         <div className="col-span-4">
