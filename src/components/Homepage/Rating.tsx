@@ -39,16 +39,16 @@ const Rating = () => {
   ];
 
   return (
-    <section className="mt-[180px]">
-      <div className="bg-primary-dark2 py-[160px]">
+    <section className="lg:mt-[180px] mt-10 sm:mt-16">
+      <div className="bg-primary-dark2 lg:py-[160px] py-10">
         <Container>
-          <div className="grid grid-cols-12">
-            <div className="col-span-6 self-center">
-              <h2 className="max-w-[450px] text-[40px] text-white font-semibold">
+          <div className="grid grid-cols-12 ">
+            <div className="lg:col-span-6 col-span-12 self-center">
+              <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
               </h2>
-              <div className="flex items-center mt-[100px] gap-[18px]">
-                <div className="flex -space-x-12">
+              <div className="flex items-center lg:mt-[100px] mt-10 gap-[18px]">
+                <div className="flex -sm:space-x-12 -space-x-8">
                   {Array(5)
                     .fill(0)
                     .map((_, idx) => (
@@ -56,19 +56,19 @@ const Rating = () => {
                         key={idx}
                         src={user}
                         alt="user"
-                        className="rounded-full w-[100px] h-[100px] border-white border-[3px]"
+                        className="rounded-full sm:w-[100px] w-20 sm:h-[100px] h-20 border-white border-[3px]"
                       />
                     ))}
                 </div>
-                <img src={curve} alt="arrow" />
+                <img src={curve} alt="arrow" className="hidden xl:block" />
               </div>
             </div>
-            <div className="col-span-6">
+            <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0">
               <Swiper   modules={[Autoplay]} loop autoplay={{ delay: 3000, disableOnInteraction: false }}>
                 {reviews.map((review, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="bg-primary-dark3 rounded-[20px] m-[4px]">
-                      <div className="flex items-center justify-between border-b-[1px] p-[60px] border-primary-dark">
+                      <div className="flex flex-wrap items-center justify-between border-b-[1px] p-4 lg:p-[60px] border-primary-dark">
                         <div>
                           <h6 className="text-lg text-white font-semibold tracking-widest">
                             REVIEW RATING
@@ -81,12 +81,12 @@ const Rating = () => {
                               ))}
                           </div>
                         </div>
-                        <div className="flex items-center gap-[40px]">
+                        <div className="flex items-center flex-wrap justify-between sm:gap-[40px]">
                           <img src={upwork} width={140} alt="upwork" />
                           <img src={google} width={100} alt="google" />
                         </div>
                       </div>
-                      <div className="p-[60px]">
+                      <div className="p-4 lg:p-[60px]">
                         <h6 className="text-[20px] text-primary-dark4 font-semibold">
                           {review.name}
                         </h6>

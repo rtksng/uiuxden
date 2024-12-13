@@ -14,21 +14,15 @@ import {
 } from "framer-motion";
 import banner from "../assets/banner.jpg";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
+import mobileHeaderImg from "../assets/index-mobile-img.png";
 const Home = () => {
   const { scrollY } = useScroll();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [addTransitionClass, setAddTransitionClass] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [addTransitionClass, setAddTransitionClass] = useState(false);
+
   const imageOpacity = useTransform(scrollY, [0, 700], [1, 0]);
   const imageScale = useTransform(scrollY, [0, 700], [1, 3]);
 
@@ -47,17 +41,32 @@ const Home = () => {
   });
   return (
     <main>
-      <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-          }`}
-      >
-        <Navbar />
+      <Navbar />
+      <div className="xl:hidden h-screen flex items-center justify-center relative">
+        <div className="px-3">
+          <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center ">
+            Humanize Your Product
+          </h1>
+          <p className="text-2xl md:text-4xl font-medium mt-5 text-center">
+            with our in-depth{" "}
+            <span className="text-secondary-light2 underline underline-offset-8">
+              research oriented
+            </span>{" "}
+            design program
+          </p>
+          <div
+            className="flex justify-center
+          "
+          >
+            {/* <img src={mobileHeaderImg} alt="image" className="max-w-2xl" /> */}
+          </div>
+        </div>
       </div>
-
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
-          className={`fixed inset-0 flex items-center justify-center z-40 ${addTransitionClass ? "transition-all" : ""
-            }`}
+          className={`fixed inset-0 flex items-center justify-center z-40 ${
+            addTransitionClass ? "transition-all" : ""
+          }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
@@ -98,9 +107,9 @@ const Home = () => {
       </div>
 
       <div className="relative z-[100] questionsection">
-       <div className="hidden xl:block">
-       <UserAnimation />
-       </div>
+        <div className="hidden xl:block">
+          <UserAnimation />
+        </div>
         <section className="bg-gradient-fill2 py-4">
           <VelocityScroll
             point1="UI Design"
@@ -117,7 +126,7 @@ const Home = () => {
         <Rating />
         <Process />
         <CaseStudy />
-        <div className="my-[150px]">
+        <div className="xl:my-[150px] mt-10 sm:mt-20">
           <CaseStudyCarousel />
         </div>
         <Review />

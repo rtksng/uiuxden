@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .mask-card-schumacher {
   background-image: url(../src/assets/schumacher-cards-border.png);
   background-size: 100% 100%;
@@ -21,9 +22,8 @@ body {
 
 .casestudy {
   background-image: url(../src/assets/casestudybg.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 932px;
 }
 
 .itemcase {
@@ -102,9 +102,15 @@ body {
       linear-gradient(180deg, #9ff8be 0%, #f8edba 87.46%));
 }
 
-.center-item {
-  background-color: red;
+/* .active-slide {
+  height: 534px;
+  width: 840px;
 }
+
+.other-slide {
+  height: 472px;
+  width: 500px;
+} */
 
 .gradientHeroBg {
   background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
@@ -143,4 +149,38 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 0%;
+}
+
+@media screen and (max-width: 1536px) {
+  .reviewcardbg, .chart {
+    height: auto;
+    background-image: none;
+  }
+ 
+}
+
+@media screen and (max-width: 1280px) {
+  .casestudy {
+    background-image: none;
+  }
+
+  .carouselStudy .innerItem {
+    background-image: none;
+    height: auto;
+  }
+
+  .pHighLightBg {
+    background-image: none;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mask-card, .carouselStudy {
+    background-image: none;
+  }
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
 }
