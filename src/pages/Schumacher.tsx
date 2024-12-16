@@ -81,6 +81,7 @@ const Schumacher = () => {
                             Three-Decade Journey to Perfecting a Seamless Process
                         </h3>
                     </div>
+                    
                     <div className="sm:absolute bottom-5 left-2  2xl:left-9 text-center sm:text-start mt-3 sm:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img src={rightLongArrow} alt="arrow" width={50} className="hidden sm:block xl:mx-auto" />
