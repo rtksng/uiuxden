@@ -17,7 +17,7 @@ const caseStudies = [
     description: "Driving a user research to understand user behaviour of teens on Instagram",
   },
   {
-    link: "/volt-case-study",
+    link: "/voltjourney",
     imgSrc: Volt,
     altText: "Volt logo",
     description: "Driving a user research to understand user behaviour of teens on Instagram",

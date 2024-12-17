@@ -84,6 +84,19 @@ body {
   height: 100%;
 }
 
+.carrier-benefit-card {
+  background-image: url(../src/assets/carriers-cards-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.benefit-utilities-card {
+  background-image: url(../src/assets/benefits-utilities-cards-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 .projectItem {
   background: var(--Gradient-Light,
       linear-gradient(180deg, #9ff8be 0%, #f8edba 87.46%));
