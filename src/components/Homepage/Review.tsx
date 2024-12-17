@@ -1,12 +1,13 @@
 import React from "react";
 import horigreen from "../../assets/horigreen.png";
+import SVGAnimation from "../StrokeAnimation";
 import Button from "../Button";
 
 const Review = () => {
   return (
     <section className="lg:mt-[154px] mt-10">
       <h2 className="text-center lg:text-[60px] text-[24px] md:text-[32px] font-semibold">
-        Words from UIUX den Minds
+        Words from UIUX den <span className="animationStroke"><SVGAnimation height={110} width={252} /> Minds </span>
       </h2>
       <div className="grid grid-cols-3 lg:mt-[84px] mt-6">
         {Array.from({ length: 3 }).map((_, index) => (

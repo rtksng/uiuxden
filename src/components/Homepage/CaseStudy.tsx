@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import knowledger from "../../assets/knowledger.svg";
 import paulSchumacher from "../../assets/paulSchumacher.svg";
+import SVGAnimation from "../StrokeAnimation";
 import Volt from "../../assets/Volt.svg";
 
 const caseStudies = [
@@ -29,7 +30,7 @@ const CaseStudy = () => {
     <section className="casestudy xl:mt-[192px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
       <div className="xl:pt-[160px] xl:pb-[78px] py-10 sm:py-20">
         <h2 className="xl:text-[60px] text-[24px] sm:text-[48px] text-white text-center font-semibold">
-          We love to make things easy
+          We love to make <span className="animationStroke"><SVGAnimation height={120} width={222} />  things </span> easy
         </h2>
         <div className="grid grid-cols-12 xl:mt-[140px] mt-10 gap-5 sm:gap-[46px] xl:px-[100px] 2xl:px-[240px]">
           {caseStudies.map((study, index) => (

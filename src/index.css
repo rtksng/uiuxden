@@ -171,3 +171,58 @@ body {
   display: flex;
   align-items: center;
 }
+
+
+/* ------------------ Stroke Animation ---------------- */
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path-animation path {
+  stroke-dasharray: 1000; /* Path ke length se zyada */
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.path-animation.active path {
+  stroke-dashoffset: 0; /* Animation stroke ko draw karega */
+}
+
+.animationStroke{
+  position: relative;
+}
+
+.animationStroke .svg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.animationStroke .svg-container.stretched svg{
+  transform: scaleX(1.5);
+}
+
+.animationStroke .svg-container.knowledger{
+  background: transparent;
+}
+
+.animationStroke .svg-container.knowledger svg{
+  transform: scaleX(1.6);
+}
+
+.animationStroke .svg-container.knowledger2 svg{
+  transform: scaleX(1.2) scale(.8);
+}
+
+.animationStroke .svg-container.knowledger3 svg{
+  transform: scaleX(1.3) scaleY(0.9);
+}
+
+.animationStroke .svg-container.knowledger4 svg {
+  transform: scaleX(0.9) scaleY(0.8);
+}
+

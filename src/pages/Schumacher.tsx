@@ -33,6 +33,7 @@ import { useEffect, useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
 import Container from "../components/Container";
+import SVGAnimation from "../components/StrokeAnimation";
 import { Link } from "react-router-dom";
 
 const Schumacher = () => {
@@ -165,7 +166,7 @@ const Schumacher = () => {
 
             <section className="py-[100px] 2xl:py-[150px]">
                 <h3 className="text-center text-[50px] 2xl:text-[60px] font-semibold">
-                    Problem statements with Our Solutions
+                    Problem statements with Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container stretched" />Solutions</span>
                 </h3>
                 <Container>
                     <div className="grid grid-cols-2 gap-20 mt-[70px]">

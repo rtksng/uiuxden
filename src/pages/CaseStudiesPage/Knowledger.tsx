@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import klogin from "../../assets/klogin.png";
 import { useRef, useState } from "react";
+import SVGAnimation from "../../components/StrokeAnimation";
 import laptop from "../../assets/laptop.png";
 const highlights = [
   {
@@ -138,7 +139,7 @@ const Knowledger = () => {
 
       <section>
         <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
-          Project Highlights
+          Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Highlights</span>
         </h3>
         <Container>
           <div className="grid grid-cols-12 gap-6 xl:mt-[78px] md:mt-10 mt-5">
@@ -162,7 +163,7 @@ const Knowledger = () => {
       </section>
       <section className="md:mt-[70px] mt-8 sm:mt-16">
         <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
-          Technology Stack
+          Technology <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger2" />Stack</span>
         </h3>
         <Container>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] md:mt-[70px] mt-8 sm:mt-16">
@@ -226,7 +227,7 @@ const Knowledger = () => {
         <Container>
           <div className="mt-10 sm:mt-16 xl:mt-[140px]">
             <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
-              Project Overview
+              Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Overview</span>
             </h3>
             <p className="max-w-[1000px] mx-auto md:text-2xl text-center mt-4 md:mt-12">
               The project aims to provide a blockchain-based educational
@@ -256,7 +257,7 @@ const Knowledger = () => {
         </Container>
         <Container>
           <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold xl:mt-[192px]  mt-10 sm:mt-16 xl:mb-[133px]">
-            Key Features
+            Key <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger3" />Features</span>
           </h3>
           <div className="flex ">
             <div className="flex justify-end">
@@ -361,7 +362,7 @@ const Knowledger = () => {
         <section className="mt-40 relative">
           <div className="h-[328px] bg-primary-dark ">
             <h3 className="text-center text-[60px] font-semibold text-white pt-[72px]">
-              Our Work
+              Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger4" />Work</span>
             </h3>
           </div>
           {/* <div className="absolute inset-0 z-40 ">
@@ -386,7 +387,7 @@ const Knowledger = () => {
                 } else if (
                   index ===
                   (centerIndex - 1 + slidesContent.length) %
-                    slidesContent.length
+                  slidesContent.length
                 ) {
                   slideClass = "other-slide";
                 } else if (index === (centerIndex + 1) % slidesContent.length) {
@@ -404,7 +405,7 @@ const Knowledger = () => {
                   </SwiperSlide>
                 );
               })}
-            
+
             </Swiper>
           </div>
         </section>

@@ -64,9 +64,8 @@ const Home = () => {
       </div>
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
-          className={`fixed inset-0 flex items-center justify-center z-40 ${
-            addTransitionClass ? "transition-all" : ""
-          }`}
+          className={`fixed inset-0 flex items-center justify-center z-40 ${addTransitionClass ? "transition-all" : ""
+            }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
@@ -129,7 +128,9 @@ const Home = () => {
         <div className="xl:my-[150px] mt-10 sm:mt-20">
           <CaseStudyCarousel />
         </div>
+
         <Review />
+        
         <Footer />
       </div>
     </main>
