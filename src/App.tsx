@@ -5,6 +5,7 @@ import Schumacher from "./pages/Schumacher";
 import Knowledger from "./pages/CaseStudiesPage/Knowledger";
 import UXStrategy from "./pages/Features/UXStrategy";
 import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/schumacher" element={<Schumacher />} />
           <Route path="/ux-strategy" element={<UXStrategy />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>
