@@ -220,7 +220,7 @@ const UXStrategy = () => {
           </Container>
         </div>
       </section>
-      <div className="mt-24">
+      <div className="lg:mt-24 mt-10 md:mt-20">
         <CaseStudyCarousel />
       </div>
       <Footer />

@@ -6,6 +6,7 @@ import Voltjourney from "./pages/Voltjourney";
 import Knowledger from "./pages/CaseStudiesPage/Knowledger";
 import UXStrategy from "./pages/Features/UXStrategy";
 import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 const App = () => {
   return (
     <Router>
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/voltjourney" element={<Voltjourney />} />
           <Route path="/ux-strategy" element={<UXStrategy />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>
