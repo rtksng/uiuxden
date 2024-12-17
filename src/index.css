@@ -171,3 +171,9 @@ body {
   display: flex;
   align-items: center;
 }
+.aboutPage .commitment{
+  background-image: url(../src/assets/aboutbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}

@@ -69,10 +69,10 @@ const Portfolio: FC = () => {
           {projects.map(({ img, title, downloads }, idx) => (
             <div
               key={idx}
-              className="col-span-4 openModal"
+              className="md:col-span-4 col-span-12 sm:col-span-6 openModal"
               onClick={() => openModal({ img, title, downloads })}
             >
-              <img src={img} alt={title} className="w-full rounded-xl" />
+              <img src={img} alt={title} className=" rounded-xl" />
               <div className="mt-8 flex items-center gap-6">
                 <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
@@ -132,8 +132,8 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-screen gradientHeroBg relative">
-        <h1 className="text-center text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] py-24">
+      <section className="h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+        <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] py-24">
           Your business deserves a unique approach
         </h1>
         <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
@@ -142,12 +142,13 @@ const Portfolio: FC = () => {
       </section>
       <div className="tabs mt-40 tabbg h-24">
         <Container className="h-full">
-          <div className="flex justify-between items-center gap-4 h-full">
+          <div className="h-full overflow-x-auto overflow-y-hidden">
+          <div className="flex sm:justify-between items-center gap-10  h-full w-[1046px] lg:w-full mx-auto">
             {tabs.map(({ id, label }) => (
               <button
                 key={id}
                 onClick={() => setActiveTab(id)}
-                className={`text-[30px] font-semibold ${
+                className={` text-[24px] sm:text-[30px] font-semibold ${
                   activeTab === id ? "text-secondary-light2" : "text-gray-400"
                 }`}
               >
@@ -155,12 +156,13 @@ const Portfolio: FC = () => {
               </button>
             ))}
           </div>
+          </div>
         </Container>
       </div>
       <Container>
         <div className="mt-10">{renderContent(activeTab)}</div>
       </Container>
-      {selectedProject && (
+      {/* {selectedProject && (
         <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-8 rounded-xl shadow-lg relative">
             <button
@@ -182,10 +184,10 @@ const Portfolio: FC = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
       <Footer />
     </main>
-  );
+  );  
 };
 
 export default Portfolio;
