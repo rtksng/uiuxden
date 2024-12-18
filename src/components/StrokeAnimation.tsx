@@ -23,7 +23,6 @@ const SVGAnimation: React.FC<SVGAnimationProps> = ({ width = 194, height = 114, 
                 width={width}
                 height={height}
                 viewBox="0 0 194 114"
-                preserveAspectRatio="none" 
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className={`path-animation ${inView ? 'active' : ''}`}

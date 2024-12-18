@@ -28,6 +28,7 @@ export default {
           dark2: "#1a1a1a",
           dark3: "#222222",
           dark4: "#3ABF88",
+          dark5:'#212121',
         },
         secondary: {
           DEFAULT: "#64748B",

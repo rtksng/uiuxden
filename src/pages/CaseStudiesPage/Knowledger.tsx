@@ -100,7 +100,7 @@ const Knowledger = () => {
     setCenterIndex(calculatedCenterIndex);
   };
   return (
-    <main>
+    <main className="overflow-hidden">
       <Navbar />
       <section className="h-screen flex items-center justify-center xl:block knowledger ">
         <div className="flex flex-col items-center xl:pt-[115px] text-center px-3">
@@ -359,15 +359,15 @@ const Knowledger = () => {
             </div>
           </div>
         </Container>
-        <section className="mt-40 relative">
+        <section className="mt-40 relative ">
           <div className="h-[328px] bg-primary-dark ">
             <h3 className="text-center text-[60px] font-semibold text-white pt-[72px]">
               Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger4" />Work</span>
             </h3>
           </div>
-          {/* <div className="absolute inset-0 z-40 ">
-                <img src={laptop} alt="laptop" className="max-w-3xl" />
-              </div> */}
+          <div className="absolute custom-leptopimg inset-0 z-40 ">
+            <img src={laptop} alt="laptop" className="leptop-image" />
+          </div>
           <div>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -376,27 +376,32 @@ const Knowledger = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000 }}
               loop={true}
-              className="my-swiper -mt-24 relative z-50"
+              className="my-swiper custom-knowledger mt-24 relative z-50"
               onSlideChange={handleSlideChange}
               onSwiper={(swiper) => handleSlideChange(swiper)}
             >
               {slidesContent.map((content, index) => {
                 let slideClass = "";
+                let slideClassOutter = ""
                 if (index === centerIndex) {
                   slideClass = "active-slide";
+                  slideClassOutter = "active-slideoutter";
                 } else if (
                   index ===
                   (centerIndex - 1 + slidesContent.length) %
                   slidesContent.length
                 ) {
                   slideClass = "other-slide";
+                  slideClassOutter = "overflow-hidden";
                 } else if (index === (centerIndex + 1) % slidesContent.length) {
                   slideClass = "other-slide";
+                  slideClassOutter = "overflow-hidden";
+
                 }
 
                 return (
                   <SwiperSlide
-                    className="overflow-hidden flex items-center"
+                    className={`flex items-center ${slideClassOutter}`}
                     key={index}
                   >
                     <div className={`slide-content ${slideClass}`}>
