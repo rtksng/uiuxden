@@ -20,7 +20,16 @@ export default {
           "radial-gradient(44.94% 112.59% at 11.28% 39.72%, #DFDDCD 0%, #97DE9A 100%), radial-gradient(34.64% 157.63% at 80.39% 67.39%, #DFDDCD 0%, rgba(255, 255, 255, 0) 100%)",
         "gradient-fill3":
           "linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 43.16%, rgba(200, 214, 130, 0.40) 95.97%);",
-          "gradient-fill4": "linear-gradient(121deg, rgba(255, 255, 255, 0.00) 43.16%, rgba(200, 214, 130, 0.40) 95.97%);"
+
+        "gradient-fill4": "linear-gradient(121deg, rgba(255, 255, 255, 0.00) 43.16%, rgba(200, 214, 130, 0.40) 95.97%);"
+
+        , "grey-bottom-gradient": " linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);",
+
+        "grey-top-gradient": "linear-gradient(-360deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);",
+
+
+
+
       },
       colors: {
         primary: {
@@ -28,7 +37,7 @@ export default {
           dark2: "#1a1a1a",
           dark3: "#222222",
           dark4: "#3ABF88",
-          dark5:'#212121',
+          dark5: '#212121',
         },
         secondary: {
           DEFAULT: "#64748B",
@@ -36,7 +45,7 @@ export default {
           light2: "#3ABF88",
           light3: "#ABF9C4",
           dark: "#5A5A5A",
-          dark2:'#2D2D2D',
+          dark2: '#2D2D2D',
         },
         success: "#10B981",
         danger: "#EF4444",
