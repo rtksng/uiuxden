@@ -9,7 +9,7 @@ import aboutimg1 from "../assets/aboutimg1.png";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <main>
+    <main className="aboutPage">
       <Navbar />
       <Container>
         <section className="h-screen flex items-center justify-center">
@@ -58,11 +58,13 @@ const About = () => {
           </div>
         </div>
       </Container>
-        <div>
-          <Container>
-
-          </Container>
-        </div>
+      <div className="commitment h-[800px] max-w-[1792px] mx-auto mt-[200px] text-white">
+        <Container>
+          <div className="pt-[90px]">
+            <h4 className="xl:text-[60px] text-[24px] sm:text-[48px] text-white text-center font-semibold">Our Commitment to Excellence</h4>
+          </div>
+        </Container>
+      </div>
       <Process />
       <Rating />
       <div className="lg:mt-24 mt-10 md:mt-20">

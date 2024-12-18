@@ -65,20 +65,22 @@ const Portfolio: FC = () => {
         { img: web8, title: "Cerebrum", downloads: "5033K" },
       ];
       return (
-        <div className="grid grid-cols-12 gap-12">
+        <div className="grid grid-cols-12 sm:gap-12 space-y-8 sm:space-y-0">
           {projects.map(({ img, title, downloads }, idx) => (
             <div
               key={idx}
-              className="col-span-4 openModal"
+              className="md:col-span-4 col-span-12 sm:col-span-6 openModal"
               onClick={() => openModal({ img, title, downloads })}
             >
-              <img src={img} alt={title} className="w-full rounded-xl" />
-              <div className="mt-8 flex items-center gap-6">
-                <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
+              <img src={img} alt={title} className="sm:w-full rounded-xl" />
+              <div className="md:mt-8 mt-3 flex items-center flex-wrap gap-4 md:gap-6">
+                <div className="w-20 h-20 rounded-full border border-gray-300 flex  items-center justify-center">
                   <img src={logop} alt="logo" />
                 </div>
                 <div>
-                  <h6 className="text-[30px] font-semibold">{title}</h6>
+                  <h6 className=" text-[24px] sm:text-[30px] font-semibold">
+                    {title}
+                  </h6>
                   <small className="text-lg text-gray-800">
                     {downloads} Download IOS
                   </small>
@@ -102,20 +104,20 @@ const Portfolio: FC = () => {
         { img: mob8, title: "Doe", downloads: "550K" },
       ];
       return (
-        <div className="grid grid-cols-12 gap-12">
+        <div className="grid grid-cols-12 sm:gap-12 space-y-8 sm:space-y-0">
           {projects.map(({ img, title, downloads }, idx) => (
             <div
               key={idx}
-              className="col-span-4 openModal"
+             className="md:col-span-4 col-span-12 sm:col-span-6 openModal"
               onClick={() => openModal({ img, title, downloads })}
             >
-              <img src={img} alt={title} className="w-full rounded-xl" />
-              <div className="mt-8 flex items-center gap-6">
+              <img src={img} alt={title} className="sm:w-full rounded-xl" />
+              <div className="md:mt-8 mt-3 flex flex-wrap items-center gap-4 md:gap-6">
                 <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
                 </div>
                 <div>
-                  <h6 className="text-[30px] font-semibold">{title}</h6>
+                <h6 className=" text-[24px] sm:text-[30px] font-semibold">{title}</h6>
                   <small className="text-lg text-gray-800">
                     {downloads} Download IOS
                   </small>
@@ -132,28 +134,30 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-screen gradientHeroBg relative">
-        <h1 className="text-center text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] py-24">
+      <section className="h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+        <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px]">
           Your business deserves a unique approach
         </h1>
         <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
           <img src={herobg} alt="background" />
         </div>
       </section>
-      <div className="tabs mt-40 tabbg h-24">
+      <div className="tabs mt-10 sm:mt-20 md:mt-40 tabbg h-24">
         <Container className="h-full">
-          <div className="flex justify-between items-center gap-4 h-full">
-            {tabs.map(({ id, label }) => (
-              <button
-                key={id}
-                onClick={() => setActiveTab(id)}
-                className={`text-[30px] font-semibold ${
-                  activeTab === id ? "text-secondary-light2" : "text-gray-400"
-                }`}
-              >
-                {label}
-              </button>
-            ))}
+          <div className="h-full overflow-x-auto overflow-y-hidden">
+            <div className="flex sm:justify-between items-center gap-10  h-full w-[1046px] lg:w-full mx-auto">
+              {tabs.map(({ id, label }) => (
+                <button
+                  key={id}
+                  onClick={() => setActiveTab(id)}
+                  className={` text-[24px] sm:text-[30px] font-semibold ${
+                    activeTab === id ? "text-secondary-light2" : "text-gray-400"
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
           </div>
         </Container>
       </div>
