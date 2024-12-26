@@ -16,6 +16,7 @@ import divider from "../../assets/divider.svg";
 import { motion } from "framer-motion";
 import { LuArrowDown } from "react-icons/lu";
 const UXStrategy = () => {
+
   const items = [
     {
       title: "Vision or statement(s) of intent",
@@ -70,6 +71,8 @@ const UXStrategy = () => {
         "We help businesses pivot seamlessly to adapt to emerging trends and market shifts.",
     },
   ];
+
+
 
   return (
     <main>
@@ -133,9 +136,8 @@ const UXStrategy = () => {
               {capabilities.map((capability, index) => (
                 <div
                   key={index}
-                  className={`xl:space-y-8 space-y-2 ${
-                    index % 2 !== 0 ? "xl:self-end" : ""
-                  }`}
+                  className={`xl:space-y-8 space-y-2 ${index % 2 !== 0 ? "xl:self-end" : ""
+                    }`}
                 >
                   <img src={capability.icon} alt="icon" />
                   <h5 className="font-semibold text-[24px] sm:text-[30px] linearCapabilities">
@@ -146,75 +148,439 @@ const UXStrategy = () => {
               ))}
             </div>
             <div className="2xl:mt-44 mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
-              <div className="chart 2xl:p-10 ">
+              <div className="chart 2xl:p-10 !h-auto ">
                 <div className="text-center text-[30px] font-semibold">
                   After UIUXDen’s involvement
                 </div>
                 <div className="grid 2xl:grid-cols-2 md:mt-24 mt-10 gap-10">
-                  <div className=" py-3 md:px-4 xl:p-5 2xl:p-8 md:border-gray-500 md:border-[1px] rounded-3xl relative">
-                    <div className="absolute bg-secondary-light px-4 py-[6px] rounded-lg -top-5">
+                  <div
+                    className="py-3 min-h-[422px] md:px-4 xl:p-5 2xl:p-8 md:border-gray-500 md:border-[1px] rounded-3xl relative" >
+                    <div
+                      className="absolute bg-secondary-light px-4 py-[6px] rounded-lg -top-5">
                       Before
                     </div>
                     <div className="flex justify-between items-center mt-4 md:mt-0">
-                      <div className="text-[18px[ sm:text-[22px] font-semibold ">
+                      <div
+                        className="text-[18px[ sm:text-[22px] font-semibold ">
                         Limited Growth Potential
                       </div>
-                      <div className="allOverValue border p-2  rounded-lg font-semibold flex items-center gap-2">
+                      <div
+                        className="allOverValue border p-2  rounded-lg font-semibold flex items-center gap-2">
                         <LuArrowDown className="text-red-400" />
                         70%
                       </div>
                     </div>
                     <div className="mt-10">
                       <div className="grid grid-cols-5 items-end">
+                        {/* ----- bar 1 ---- */}
                         <div className="data ">
-                          <div className="value font-semibold text-center mb-2">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 0.8,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
                             70%
+                          </motion.div>
+                          <div className="flex items-end">
+                            <div className="h-[186px] w-1 sm:w-12 md:w-[1px] opacity-0 bar mb-4"></div>
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              whileInView={{ opacity: 1, height: 186 }}
+                              transition={{
+                                duration: 0.3,
+                                delay: 0.5,
+                                ease: "easeInOut"
+                              }}
+                              className="h-[186px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar md:mb-4">
+
+                            </motion.div>
                           </div>
-                          <div className="h-[186px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></div>
-                          <div className="label font-semibold text-center text-xs -rotate-45 md:text-base md:-rotate-0 h-10 mt-10 md:mt-0">
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 0,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
                             Disorganized Structure
-                          </div>
+                          </motion.div>
                         </div>
+                        {/* ----- bar 2 ---- */}
                         <div className="data ">
-                          <div className="value font-semibold text-center mb-2 ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 1.4,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2 ">
                             40%
-                          </div>
-                          <div className="h-[110px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></div>
-                          <div className="label font-semibold text-center text-xs -rotate-45 md:text-base md:-rotate-0 h-10 mt-10 md:mt-0">
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 110 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 1.2,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[110px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 1,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
                             Visual Design
-                          </div>
+                          </motion.div>
                         </div>
+                        {/* ----- bar 3 ---- */}
                         <div className="data ">
-                          <div className="value font-semibold text-center mb-2 ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 2,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2 ">
                             30%
-                          </div>
-                          <div className="h-[90px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></div>
-                          <div className="label font-semibold text-center text-xs -rotate-45 md:text-base md:-rotate-0 h-10 mt-10 md:mt-0">
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 90 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 1.8,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[90px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 1.6,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
                             Inclusive Design
-                          </div>
+                          </motion.div>
                         </div>
+                        {/* ----- bar 4 ---- */}
                         <div className="data ">
-                          <div className="value font-semibold text-center mb-2">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 2.6,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
                             65%
-                          </div>
-                          <div className="h-[165px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></div>
-                          <div className="label font-semibold text-center text-xs -rotate-45 md:text-base md:-rotate-0 h-10 mt-10 md:mt-0">
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 165 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 2.4,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[165px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 2.2,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
                             Bounce Rate
-                          </div>
+                          </motion.div>
                         </div>
+                        {/* ----- bar 5 ---- */}
                         <div className="data ">
-                          <div className="value font-semibold text-center mb-2">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 3.2,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
                             20%
-                          </div>
-                          <div className="h-[60px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></div>
-                          <div className="label font-semibold text-center text-xs -rotate-45 md:text-base md:-rotate-0 h-10 mt-10 md:mt-0">
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 60 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 3,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[60px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 2.8,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
                             Revenue
-                          </div>
+                          </motion.div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  {/* --------------------- 2 ------------------ */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: 3.4,
+                      ease: "easeInOut"
+                    }}
+                    className="py-3 min-h-[422px] md:px-4 xl:p-5 2xl:p-8 md:border-gray-500 md:border-[1px] rounded-3xl relative" >
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: 3.6,
+                        ease: "easeInOut"
+                      }}
+                      className="absolute bg-secondary-light px-4 py-[6px] rounded-lg -top-5">
+                      After
+                    </motion.div>
+                    <div className="flex justify-between items-center mt-4 md:mt-0">
+                      <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.3,
+                          delay: 3.8,
+                          ease: "easeInOut"
+                        }}
+                        className="text-[18px[ sm:text-[22px] font-semibold ">
+                        Transformative Results with UIUXDen
+                      </motion.div>
+                      <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.3,
+                          delay: 3.8,
+                          ease: "easeInOut"
+                        }}
+                        className="allOverValue border p-2  rounded-lg font-semibold flex items-center gap-2">
+                        <LuArrowDown className="text-green-400 rotate-180" />
+                        85%
+                      </motion.div>
+                    </div>
+                    <div className="mt-10">
+                      <div className="grid grid-cols-5 items-end">
+                        {/* ----- bar 1 ---- */}
+                        <div className="data ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 4.4,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
+                            20%
+                          </motion.div>
+
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 42 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 4.2,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[42px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4">
+
+                          </motion.div>
+
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 4,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
+                            Disorganized Structure
+                          </motion.div>
+                        </div>
+                        {/* ----- bar 2 ---- */}
+                        <div className="data ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 5,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2 ">
+                            90%
+                          </motion.div>
+                          <div className="flex items-end">
+                            <div className="h-[222px] w-1 sm:w-12 md:w-[1px] opacity-0 bar mb-4"></div>
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              whileInView={{ opacity: 1, height: 222 }}
+                              transition={{
+                                duration: 0.3,
+                                delay: 4.8,
+                                ease: "easeInOut"
+                              }}
+                              className="h-[222px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar md:mb-4"></motion.div>
+                          </div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 4.6,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
+                            Visual Design
+                          </motion.div>
+                        </div>
+                        {/* ----- bar 3 ---- */}
+                        <div className="data ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 5.6,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2 ">
+                            85%
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 204 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 5.4,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[204x] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 5.2,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
+                            Inclusive Design
+                          </motion.div>
+                        </div>
+                        {/* ----- bar 4 ---- */}
+                        <div className="data ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 6.2,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
+                            25%
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 56 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 6,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[56px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 5.8,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
+                            Bounce Rate
+                          </motion.div>
+                        </div>
+                        {/* ----- bar 5 ---- */}
+                        <div className="data ">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 6.8,
+                              ease: "easeInOut"
+                            }}
+                            className="value font-semibold text-center mb-2">
+                            70%
+                          </motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            whileInView={{ opacity: 1, height: 186 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 6.6,
+                              ease: "easeInOut"
+                            }}
+                            className="h-[186px] w-8 sm:w-12 md:w-[78px] mx-auto bg-secondary-light3 bar mb-4"></motion.div>
+                          <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                              duration: 0.3,
+                              delay: 6.4,
+                              ease: "easeInOut"
+                            }}
+                            className="label font-semibold text-center text-xs !-rotate-45 md:text-base md:!-rotate-0 h-10 mt-10 md:mt-0">
+                            Revenue
+                          </motion.div>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
+
               </div>
             </div>
           </Container>

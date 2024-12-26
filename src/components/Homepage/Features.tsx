@@ -10,6 +10,7 @@ import Sprints from "../../assets/Sprints.png";
 import ProductBranding from "../../assets/ProductBranding.png";
 import UIDesign from "../../assets/UIDesign.png";
 import SoftwareDevelopment from "../../assets/SoftwareDevelopment.png";
+import SVGAnimation from "../StrokeAnimation";
 import WebDevelopment from "../../assets/WebDevelopment.png";
 interface Feature {
   title: string;
@@ -106,7 +107,7 @@ const Features = () => {
     <Container>
       <section className="xl:mt-[250px] mt-10 sm:mt-16 px-3">
         <h2 className="lg:text-[60px] md:text-4xl text-2xl font-semibold max-w-6xl mx-auto text-center !leading-[128.5%]">
-          User Experiences that Inspire Customers to Stay Connected with Your
+        User Experiences that <span className="animationStroke"><SVGAnimation height={120} width={222} /> Inspire </span> Customers to Stay Connected with Your
           Brand
         </h2>
         <div className="grid grid-cols-12 xl:mt-[140px] mt-5 sm:mt-8 sm:gap-[50px] gap-4">

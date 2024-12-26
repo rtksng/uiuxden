@@ -28,6 +28,7 @@ import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
+import SVGAnimation from "../components/StrokeAnimation";
 
 const Voltjourney = () => {
 
@@ -112,7 +113,7 @@ const Voltjourney = () => {
 
                 <Container>
                     <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold">
-                        Benefits for Carriers
+                    <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger3" />Benefits </span> for Carriers
                     </h3>
                     <div className="grid grid-cols-12 gap-6 mt-5  sm:mt-[50px] 2xl:mt-[78px]">
 
@@ -164,7 +165,7 @@ const Voltjourney = () => {
 
             <section className="pt-[100px]">
                 <h3 className="text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold">
-                    Empowering Sustainable Freight Mobility
+                    Empowering <span className="animationStroke"><SVGAnimation nameOfClass="svg-container volt" />Sustainable </span>Freight Mobility
                 </h3>
 
                 <Container>
@@ -215,7 +216,7 @@ const Voltjourney = () => {
             <section className="problem2-section text-white py-[50px] lg:py-[100px]">
                 <Container>
                     <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold ">
-                        Benefits for Facility Managers
+                    <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger3" />Benefits</span> for Facility Managers
                     </h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10  items-start py-[50px] lg:py-[100px] 2xl:py-[130px]  ">
                         <div className="col-span-12 lg:col-span-4">
@@ -255,7 +256,7 @@ const Voltjourney = () => {
 
                 <Container>
                     <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold ">
-                        Benefits for Utilities
+                    <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger3" />Benefits</span> for Utilities
                     </h3>
                     <div className="grid grid-cols-12 gap-6 mt-[50px] 2xl:mt-[78px]">
 

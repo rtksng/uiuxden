@@ -8,6 +8,7 @@ import Knowledger from "./pages/CaseStudiesPage/Knowledger";
 import UXStrategy from "./pages/Features/UXStrategy";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
+import DesignSprint from "./pages/DesignSprint";
 const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/ux-strategy" element={<UXStrategy />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
+          <Route path="/design-sprint" element={<DesignSprint />} />
         </Routes>
       </div>
     </Router>
