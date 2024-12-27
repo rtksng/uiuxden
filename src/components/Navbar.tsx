@@ -7,7 +7,6 @@ import Container from "./Container";
 import Button from "./Button";
 import logo from "../assets/logo.svg";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { div } from "framer-motion/client";
 
 const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   isMobile,
@@ -27,7 +26,14 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
           className="hover:text-black hover:font-semibold transition-all  text-2xl xl:text-base"
           onClick={onClick}
         >
-          <Link to={idx === 1 ? "/portfolio" : ""}>{link}</Link>
+          <Link
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            to={idx === 1 ? "/portfolio" : ""}
+          >
+            {link}
+          </Link>
         </li>
       )
     )}
