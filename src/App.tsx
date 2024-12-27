@@ -10,7 +10,7 @@ import About from "./pages/About";
 import DesignSprint from "./pages/DesignSprint";
 const App = () => {
   return (
-    <Router>
+    <Router basename="/uiuxdenred">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

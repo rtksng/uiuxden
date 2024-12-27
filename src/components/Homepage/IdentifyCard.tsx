@@ -1,5 +1,4 @@
 import React from 'react'
-import icon from '../../assets/id-income-icon.svg';
 
 type IdData = {
     imagePath: string;

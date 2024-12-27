@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import DOMPurify from "dompurify"; // For sanitizing HTML
 
 type Tab = {
     id: number;
