@@ -257,6 +257,11 @@ body {
   transform: scaleX(1.4);
 }
 
+.animationStroke .svg-container.holistic svg{
+  transform: scaleX(1.2);
+}
+
+
 
 /* --------------------- */
 
@@ -286,7 +291,7 @@ body {
 
 
 .my-swiper.custom-knowledger {
-  overflow-y: unset !important;
+  overflow: unset !important;
 }
 
 .aboutPage .commitment{

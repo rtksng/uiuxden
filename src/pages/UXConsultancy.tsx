@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
 import Container from "../components/Container";
@@ -48,7 +47,7 @@ const UXConsultancy = () => {
                     </div>
 
                     <div className="flex justify-center flex-wrap items-center mt-5">
-                        <img src={BannerImg} alt="banner image" className='md:max-w-[70%] lg:max-w-full'/>
+                        <img src={BannerImg} alt="banner image" className='md:max-w-[70%] lg:max-w-full' />
                     </div>
 
 
@@ -59,7 +58,7 @@ const UXConsultancy = () => {
             <div className="py-8 lg:py-20">
                 <Container>
                     <div className="grid grid-cols-12">
-                        <div className="col-span-12 lg:col-span-7 xl:col-span-6 pr-20 mb-8 mlg:mb-0">
+                        <div className="col-span-12 lg:col-span-7 xl:col-span-6 md:pr-20 mb-8 mlg:mb-0">
                             <p className='text-[24px] text-center md:text-start md:text-[60px] font-semibold'>
                                 Reach your full potential
                                 with creative UIUXDen
@@ -105,11 +104,27 @@ const UXConsultancy = () => {
 
                         </div>
                         <div className="col-span-12 lg:col-span-5 xl:col-span-6">
-                            <img src={ReachUs} alt="Image" className='mx-auto max-w-[70%] lg:max-w-full' />
+                            <img src={ReachUs} alt="Image" className='mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full' />
                         </div>
                     </div>
                 </Container>
 
+            </div>
+
+            {/* ---------- holistic Section ---------- */}
+            <div className="bg-[#2D2D2D] py-12">
+                <Container>
+                    <div className="text-center flex flex-col items-center">
+                        <h1 className="text-[34px] md:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
+                            UIUXDen provide <span className="animationStroke w-fit h-fit inline-block"><SVGAnimation nameOfClass="svg-container pl-4 holistic" /> holistic </span> evaluation of your product, advise on product strategy and offer you best business solutions
+                        </h1>
+
+                    </div>
+
+                    
+
+
+                </Container>
             </div>
 
             <Footer />
