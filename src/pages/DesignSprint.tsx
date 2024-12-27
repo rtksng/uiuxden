@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
 import Container from "../components/Container";

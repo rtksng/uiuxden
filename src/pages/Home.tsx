@@ -17,7 +17,6 @@ import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 import { useState } from "react";
 import { VelocityScroll } from "../components/Velocity";
 import UserAnimation from "../components/Homepage/UserAnimation";
-import mobileHeaderImg from "../assets/index-mobile-img.png";
 const Home = () => {
   const { scrollY } = useScroll();
 
@@ -124,6 +123,7 @@ const Home = () => {
         <Features />
         <Rating />
         <Process />
+        
         <CaseStudy />
         <div className="xl:my-[150px] mt-10 sm:mt-20">
           <CaseStudyCarousel />

@@ -12,7 +12,7 @@ import ContactUS from "./pages/ContactUs";
 import UXConsultancy from "./pages/UXConsultancy";
 const App = () => {
   return (
-    <Router>
+    <Router basename="/uiuxdenred">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

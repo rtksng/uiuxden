@@ -1,4 +1,3 @@
-import React from "react";
 import horigreen from "../../assets/horigreen.png";
 import SVGAnimation from "../StrokeAnimation";
 import Button from "../Button";
