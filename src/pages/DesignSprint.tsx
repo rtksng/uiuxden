@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import SVGAnimation from "../components/StrokeAnimation";
 import BudgetImg from "../assets/budget-friendly-img.png"
 import ArrowSVG from "../assets/budget-arrow.svg"
+import Footer from "../components/Footer";
 const DesignSprint = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -209,7 +210,7 @@ const DesignSprint = () => {
             <div className="py-20">
                 <Container>
                     <div className="grid grid-cols-12">
-                        <div className="col-span-6">
+                        <div className="lg:col-span-7 xl:col-span-6">
                             <p className='text-[24px] md:text-[60px] font-semibold pr-20'>
                                 Our one intense week is enough to make a better product which <span className="animationStroke w-fit h-fit inline-block"><SVGAnimation nameOfClass="svg-container pl-4 aboutus" />stands out</span> in the market
                             </p>
@@ -250,7 +251,7 @@ const DesignSprint = () => {
                             </div>
 
                         </div>
-                        <div className="col-span-6">
+                        <div className="lg:col-span-5 xl:col-span-6">
                             <img src={BudgetImg} alt="Image" className='mx-auto' />
                         </div>
                     </div>
@@ -258,9 +259,10 @@ const DesignSprint = () => {
 
             </div>
 
-
-
+            <Footer />
         </main>
+
+
     )
 }
 
