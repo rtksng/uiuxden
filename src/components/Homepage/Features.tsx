@@ -26,7 +26,9 @@ const FeatureCard: React.FC<Feature> = ({
   link,
 }) => (
   <div className="col-span-12 sm:col-span-6 lg:col-span-4 border rounded-3xl md:border-0 md:rounded-none">
-    <Link to={link} >
+    <Link to={link} onClick={() => {
+        window.scrollTo(0, 0);
+      }}>
       <div className="md:p-7 p-4 mask-card">
         <div className="flex justify-between items-start md:w-calc-minus-80">
           <div>
@@ -75,7 +77,7 @@ const Features = () => {
       title: "Design Sprints",
       description: "The rapid focused process to Solve Complex Problems.",
       imgSrc: Sprints,
-      link: "/usability-testing",
+      link: "/design-sprint",
     },
     {
       title: "Product Branding",
