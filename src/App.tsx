@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import DesignSprint from "./pages/DesignSprint";
 import ContactUS from "./pages/ContactUs";
+import UXConsultancy from "./pages/UXConsultancy";
 const App = () => {
   return (
     <Router>
@@ -23,7 +24,8 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/design-sprint" element={<DesignSprint />} />
-          <Route path="/contact-us" element={<DesignSprint />} />
+          <Route path="/contact-us" element={<ContactUS />} />
+          <Route path="/ux-consultancy" element={<UXConsultancy />} />
         </Routes>
       </div>
     </Router>

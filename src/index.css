@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Urbanist", "sans-serif";
 }
@@ -247,7 +251,10 @@ body {
 
 .animationStroke .svg-container.aboutus svg{
   transform: scaleX(1.7);
-  width: ;
+}
+
+.animationStroke .svg-container.contact-us svg{
+  transform: scaleX(1.4);
 }
 
 
@@ -384,3 +391,40 @@ body {
 
 
 /* -------------------- Design Sprint Styling ------------------- */
+
+
+
+/* --------------- Conact Us Styling --------------- */
+.contactus-banner{
+  background: linear-gradient(176.97deg, #9FF8BE 2.87%, #EAFFE2 53.54%, #FFFFFF 99.62%);
+}
+
+.contactus-banner .contact-from{
+  background-image: url("../src/assets/contactus-bgimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+
+.contactus-checkboxes input:checked ~ span::before{
+  content: "\2714";
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.contactus-checkboxes input:checked ~ span{
+  background: #3ABF88;
+  border: none;
+}
+
+@media(max-width:1024px){
+  .contactus-banner .contact-from{
+    background-image:none;
+    background: #2D2D2D;
+    border-radius: 40px;
+  }
+}

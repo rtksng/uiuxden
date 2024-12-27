@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import SVGAnimation from "../components/StrokeAnimation";
 import BudgetImg from "../assets/budget-friendly-img.png"
 import ArrowSVG from "../assets/budget-arrow.svg"
+import Footer from "../components/Footer";
 const DesignSprint = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -258,7 +259,10 @@ const DesignSprint = () => {
 
             </div>
 
+            <Footer />
         </main>
+
+
     )
 }
 
