@@ -1,30 +1,40 @@
 import horigreen from "../../assets/horigreen.png";
 import SVGAnimation from "../StrokeAnimation";
 import Button from "../Button";
+import image1 from '../../assets/review_0.png';
+import image2 from '../../assets/review_1.png';
+import image3 from '../../assets/review_2.png';
+const images = [
+  image1,
+  image2,
+  image3,
+];
 
 const Review = () => {
   return (
     <section className="lg:mt-[154px] mt-10">
       <h2 className="text-center lg:text-[60px] text-[24px] md:text-[32px] font-semibold">
-        Words from UIUX den <span className="animationStroke"><SVGAnimation height={110} width={252} /> Minds </span>
+        Words from UIUX den{" "}
+        <span className="animationStroke">
+          <SVGAnimation height={110} width={252} /> Minds{" "}
+        </span>
       </h2>
       <div className="grid grid-cols-3 lg:mt-[84px] mt-6">
-        {Array.from({ length: 3 }).map((_, index) => (
+        {images.map((image, index) => (
           <div
             key={index}
             className="sm:col-span-1 col-span-12 group relative overflow-hidden rounded-lg"
           >
             <img
-              src={`src/assets/review_${index}.png`}
+              src={image}
               alt={`review_img_${index}`}
               className="w-full h-full object-cover"
             />
             <div
-              className=" reviewcardbg bg-secondary-light3 2xl:bg-transparent absolute inset-x-0 bottom-0 2xl:top-[20%] py-5 xL:py-10 top-0   2xl:pt-[110px] 2xl:pb-[82px] px-3 xl:px-10
-              translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"
+              className="reviewcardbg bg-secondary-light3 2xl:bg-transparent absolute inset-x-0 bottom-0 2xl:top-[20%] py-5 xL:py-10 top-0 2xl:pt-[110px] 2xl:pb-[82px] px-3 xl:px-10 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"
             >
               <div className="flex items-center gap-4">
-                <h6 className="text-lg font-semibold">UX Resesarch</h6>
+                <h6 className="text-lg font-semibold">UX Research</h6>
                 <img src={horigreen} alt="line" width={215} />
               </div>
               <h2 className="2x:text-[32px] text-2xl font-semibold mt-2">
@@ -49,7 +59,7 @@ const Review = () => {
                     by Surbhi Sood
                   </small>
                   <img
-                    src={`src/assets/review_${index}.png`}
+                    src={image}
                     alt="user"
                     className="rounded-full w-[60px] h-[60px] border-secondary-light border-[3px]"
                   />

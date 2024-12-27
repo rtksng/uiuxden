@@ -1,9 +1,7 @@
-import React from 'react'
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
-import SVGAnimation from "../components/StrokeAnimation";
 import ReachUs from "../assets/uxconsult-reachusimg.png"
 import ReachArrows from "../assets/reachus-arrows.svg"
 import BannerImg from "../assets/uxconsultancy-bannerimg.svg"
