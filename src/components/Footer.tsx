@@ -51,7 +51,14 @@ const Footer: React.FC = () => (
                 <ul className="space-y-8">
                   {getLinks(title).map((link, i) => (
                     <li key={i} className="text-primary-dark2">
-                      <Link to={generatePath(title, link)}>{link}</Link>
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={generatePath(title, link)}
+                      >
+                        {link}
+                      </Link>
                     </li>
                   ))}
                 </ul>
