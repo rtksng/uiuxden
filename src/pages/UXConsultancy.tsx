@@ -1,12 +1,26 @@
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
+import HolisticIcon1 from "../assets/holistic-icon-1.svg";
+import HolisticIcon2 from "../assets/holistic-icon-2.svg";
+import HolisticIcon3 from "../assets/holistic-icon-3.svg";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import ReachUs from "../assets/uxconsult-reachusimg.png"
 import ReachArrows from "../assets/reachus-arrows.svg"
 import BannerImg from "../assets/uxconsultancy-bannerimg.svg"
+import SVGAnimation from "../components/StrokeAnimation";
 import Footer from "../components/Footer";
+import Button from '../components/Button';
+
 const UXConsultancy = () => {
+
+    const consultData = {
+        heading: "Ready to Elevate Your",
+        subheading: "User",
+        boldsubheading: "Experience?",
+        buttonText: "Schedule a Consultation",
+
+    };
 
     const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
@@ -113,20 +127,76 @@ const UXConsultancy = () => {
             {/* ---------- holistic Section ---------- */}
             <div className="bg-[#2D2D2D] py-12">
                 <Container>
-                    <div className="text-center flex flex-col items-center">
-                        <h1 className="text-[34px] md:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
+                    <div className="text-center flex flex-col items-center mb-20">
+                        <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
                             UIUXDen provide <span className="animationStroke w-fit h-fit inline-block"><SVGAnimation nameOfClass="svg-container pl-4 holistic" /> holistic </span> evaluation of your product, advise on product strategy and offer you best business solutions
                         </h1>
-
                     </div>
 
-                    
+                    <div className="grid grid-cols-12 py-8 border border-white border-l-0 border-r-0 border-opacity-35">
+                        <div className="col-span-12 md:col-span-8">
+                            <div className="flex items-center gap-0 md:gap-[44px] mb-5 md:mb-0">
+                                <div className="icon-box">
+                                    <img src={HolisticIcon1} alt="SVG Icon" className="w-[70%] md:w-[100%]" />
+                                </div>
+                                <p className="text-2xl lg:text-3xl text-white font-semibold">
+                                    Decide Confidently
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-span-12 md:col-span-4 self-center">
+                            <p className="text-white text-[16px] lg:text-[18px] md:max-w-[360px]">
+                                Have an ally in strategy and design who can propose new ideas and back your decisions with data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-12 py-8 border border-white border-l-0 border-r-0 border-opacity-35 border-t-0">
+                        <div className="col-span-12 md:col-span-8">
+                            <div className="flex items-center gap-0 md:gap-[44px] mb-5 md:mb-0">
+                                <div className="icon-box">
+                                    <img src={HolisticIcon2} alt="SVG Icon" className="w-[70%] md:w-[100%]" />
+                                </div>
+                                <p className="text-2xl lg:text-3xl text-white font-semibold">
+                                    Validate Your Ideas
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-span-12 md:col-span-4 self-center">
+                            <p className="text-white text-[16px] lg:text-[18px] md:max-w-[360px]">
+                                Find your bottlenecks, deep dive into new ideas, and give your platform a fresher look while improving its usability.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-12 py-8 border border-white border-l-0 border-r-0 border-opacity-35 border-t-0">
+                        <div className="col-span-12 md:col-span-8">
+                            <div className="flex items-center gap-0 md:gap-[44px] mb-5 md:mb-0">
+                                <div className="icon-box">
+                                    <img src={HolisticIcon3} alt="SVG Icon" className="w-[70%] md:w-[100%]" />
+                                </div>
+                                <p className="text-2xl lg:text-3xl text-white font-semibold">
+                                    Understand Users
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-span-12 md:col-span-4 self-center">
+                            <p className="text-white text-[16px] lg:text-[18px] md:max-w-[360px]">
+                                Build a bridge between your users and business by uncovering user insights and creating products tailored to their real needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <Button variant='secondary' className="border-white text-white hover:text-black mt-10 !ring-0 mx-auto block py-5 font-medium">
+                        Consult Us Now
+                    </Button>
+
+
 
 
                 </Container>
             </div>
 
-            <Footer />
+            <Footer consultData={consultData} />
         </main>
 
 
