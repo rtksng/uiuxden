@@ -15,9 +15,14 @@ import Button from "./Button";
 import Consult from "./Consult";
 import Logowhite from "../assets/logo-white.svg";
 
-const Footer: React.FC = () => (
+const Footer: React.FC<{ consultData?: { heading: string; subheading: string; boldsubheading: string; buttonText: string; } }> = ({ consultData }) => (
   <>
-    <Consult />
+    <Consult
+      heading={consultData?.heading }
+      subheading={consultData?.subheading }
+      boldsubheading={consultData?.boldsubheading}
+      buttonText={consultData?.buttonText}
+    />
     <footer>
       <div className="bg-black">
         <Container>
