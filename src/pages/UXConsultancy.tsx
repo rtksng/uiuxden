@@ -6,6 +6,7 @@ import ReachUs from "../assets/uxconsult-reachusimg.png"
 import ReachArrows from "../assets/reachus-arrows.svg"
 import BannerImg from "../assets/uxconsultancy-bannerimg.svg"
 import Footer from "../components/Footer";
+import SVGAnimation from "../components/StrokeAnimation";
 const UXConsultancy = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
