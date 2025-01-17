@@ -4,7 +4,7 @@ import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import SVGAnimation from "../components/StrokeAnimation";
 import BudgetImg from "../assets/budget-friendly-img.png"
-import ArrowSVG from "../assets/budget-arrow.svg"
+import ArrowSVG from "../assets/budget-arrow2.svg"
 import Footer from "../components/Footer";
 const DesignSprint = () => {
 
@@ -29,7 +29,7 @@ const DesignSprint = () => {
             <div className="relative h-[auto] lg:h-[100vh] green-linear">
                 <Container>
                     <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
                             UIUXDen takes deep dive
                             into design sprints to get
                             better solutions
@@ -47,7 +47,7 @@ const DesignSprint = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center flex-wrap items-center mt-8 mt-lg-0 pt:5 lg:pt-20 xl:scale-[.9] 2xl:scale-[1]">
+                    <div className="flex justify-center flex-wrap items-center mt-8 mt-lg-0 pt:5 lg:pt-10 xl:scale-[.9] 2xl:scale-[1]">
                         {/* ------- Box 1 -------- */}
                         <div className="lg:w-[30%] mb-10 xl:mb-0 xl:w-[20%]">
                             <div className="datebox pl-[77px] relative">
@@ -72,9 +72,7 @@ const DesignSprint = () => {
                                     </div>
                                 </div>
                                 <p className='text-center text-xl font-semibold w-[178px] h-[178px] p-6 rounded-full flex items-center justify-center border-black border'>
-                                    Make a map
-                                    & choose a
-                                    target
+                                    Make a map & choose a target
                                 </p>
                             </div>
                         </div>
@@ -209,48 +207,48 @@ const DesignSprint = () => {
             <div className="py-20">
                 <Container>
                     <div className="grid grid-cols-12">
-                        <div className="lg:col-span-7 xl:col-span-6">
-                            <p className='text-[24px] md:text-[60px] font-semibold pr-20'>
-                                Our one intense week is enough to make a better product which <span className="animationStroke w-fit h-fit inline-block"><SVGAnimation nameOfClass="svg-container pl-4 aboutus" />stands out</span> in the market
+                        <div className="col-span-12 lg:col-span-7 xl:col-span-6">
+                            <p className='text-[24px] md:text-[42px] lg:text-[60px] font-semibold leading-snug pr-20'>
+                                Our one intense week is enough to make a better product which <span className="animationStroke w-fit h-fit inline-block"><SVGAnimation nameOfClass="svg-container pl-4 aboutus design-sprint" />stands out</span> in the market
                             </p>
 
-                            <div className="flex justify-between gap-5 mt-10 lg:mt-20">
+                            <div className="grid grid-cols-12 gap-5 mt-10 lg:mt-20">
                                 {/* --- Box 1 --- */}
-                                <div className="w-[30%] relative">
-                                    <img src={ArrowSVG} alt="arrow" className='w-full' />
-                                    <div className="absolute top-[50%] translate-y-[-54%] left-[50%] translate-x-[-50%] w-[100%] p-4  pl-11 flex items-center justify-center">
-                                        <span className='text-xl'>
+                                <div className="col-span-4 ">
+                                    <div className="standout-box relative">
+                                        <img src={ArrowSVG} alt="arrow" />
+                                        <p className='text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5'>
                                             Distraction-free
                                             environment
-                                        </span>
+                                        </p>
                                     </div>
                                 </div>
 
                                 {/* --- Box 2 --- */}
-                                <div className="w-[30%] relative">
-                                    <img src={ArrowSVG} alt="arrow" className='w-full' />
-                                    <div className="absolute top-[50%] translate-y-[-54%] left-[50%] translate-x-[-50%] w-[100%] p-4  pl-11 flex items-center justify-center">
-                                        <span className='text-xl'>
+                                <div className="col-span-4 ">
+                                    <div className="standout-box relative">
+                                        <img src={ArrowSVG} alt="arrow" />
+                                        <p className='text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5'>
                                             Collaborative
                                             Workshops
-                                        </span>
+                                        </p>
                                     </div>
                                 </div>
 
                                 {/* --- Box 3 --- */}
-                                <div className="w-[30%] relative">
-                                    <img src={ArrowSVG} alt="arrow" className='w-full' />
-                                    <div className="absolute top-[50%] translate-y-[-54%] left-[50%] translate-x-[-50%] w-[100%] p-4  pl-11 flex items-center justify-center">
-                                        <span className='text-xl'>
+                                <div className="col-span-4 ">
+                                    <div className="standout-box relative">
+                                        <img src={ArrowSVG} alt="arrow" />
+                                        <p className='text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5'>
                                             Align towards a
                                             common goal
-                                        </span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="lg:col-span-5 xl:col-span-6">
+                        <div className="col-span-12 lg:col-span-5 xl:col-span-6 mt-10 lg:mt-0">
                             <img src={BudgetImg} alt="Image" className='mx-auto' />
                         </div>
                     </div>

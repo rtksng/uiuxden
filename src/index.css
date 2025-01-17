@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -14,8 +14,12 @@ body {
   background-image: url(../src/assets/border.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  transition: all .3s ease;
 }
-
+.mask-card:hover{
+  background-image: url(../src/assets/mask.png);
+  transition: all .3s ease;
+}
 
 .mask-card-schumacher {
   background-image: url(../src/assets/schumacher-cards-border.png);
@@ -94,6 +98,7 @@ body {
   background-repeat: no-repeat;
   height: 100%;
 }
+
 .benefit-utilities-card {
   background-image: url(../src/assets/benefits-utilities-cards-bg.png);
   background-size: 100% 100%;
@@ -156,11 +161,13 @@ body {
 }
 
 @media screen and (max-width: 1536px) {
-  .reviewcardbg, .chart {
+
+  .reviewcardbg,
+  .chart {
     height: auto;
     background-image: none;
   }
- 
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -180,11 +187,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .mask-card, .carouselStudy {
+
+  .mask-card,
+  .carouselStudy {
     background-image: none;
   }
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
   display: flex;
   align-items: center;
 }
@@ -199,16 +209,18 @@ body {
 }
 
 .path-animation path {
-  stroke-dasharray: 1000; /* Path ke length se zyada */
+  stroke-dasharray: 1000;
+  /* Path ke length se zyada */
   stroke-dashoffset: 1000;
   transition: stroke-dashoffset 1s ease-in-out;
 }
 
 .path-animation.active path {
-  stroke-dashoffset: 0; /* Animation stroke ko draw karega */
+  stroke-dashoffset: 0;
+  /* Animation stroke ko draw karega */
 }
 
-.animationStroke{
+.animationStroke {
   position: relative;
 }
 
@@ -219,23 +231,23 @@ body {
   transform: translate(-50%, -45%);
 }
 
-.animationStroke .svg-container.stretched svg{
+.animationStroke .svg-container.stretched svg {
   transform: scaleX(1.5);
 }
 
-.animationStroke .svg-container.knowledger{
+.animationStroke .svg-container.knowledger {
   background: transparent;
 }
 
-.animationStroke .svg-container.knowledger svg{
+.animationStroke .svg-container.knowledger svg {
   transform: scaleX(1.6);
 }
 
-.animationStroke .svg-container.knowledger2 svg{
+.animationStroke .svg-container.knowledger2 svg {
   transform: scaleX(1.2) scale(.8);
 }
 
-.animationStroke .svg-container.knowledger3 svg{
+.animationStroke .svg-container.knowledger3 svg {
   transform: scaleX(1.3) scaleY(0.9);
 }
 
@@ -249,16 +261,22 @@ body {
 }
 
 
-.animationStroke .svg-container.aboutus svg{
+.animationStroke .svg-container.aboutus svg {
   transform: scaleX(1.7);
 }
 
-.animationStroke .svg-container.contact-us svg{
+.animationStroke .svg-container.contact-us svg {
   transform: scaleX(1.4);
 }
 
-.animationStroke .svg-container.holistic svg{
+.animationStroke .svg-container.holistic svg {
   transform: scaleX(1.2);
+}
+
+@media (max-width: 1024px) {
+  .animationStroke .svg-container.holistic svg {
+    transform: scaleX(1.4) scale(.6);
+  }
 }
 
 
@@ -276,7 +294,7 @@ body {
   overflow: hidden;
 } */
 
-.slide-content.active-slide{
+.slide-content.active-slide {
   transform: scale(1.09);
   transition: .2s linear;
 }
@@ -285,7 +303,7 @@ body {
   max-width: 830px;
 }
 
-.active-slideoutter{
+.active-slideoutter {
   height: 100% !important;
 }
 
@@ -294,14 +312,14 @@ body {
   overflow: unset !important;
 }
 
-.aboutPage .commitment{
+.aboutPage .commitment {
   background-image: url(../src/assets/aboutbg.png);
   background-size: 100% 100%;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 
-.navTabs{
+.navTabs {
   font-size: 40px;
   background: #fff;
   font-weight: 500;
@@ -312,7 +330,7 @@ body {
 }
 
 
-.navTabs.activeTabs{
+.navTabs.activeTabs {
   font-size: 40px;
   background: linear-gradient(0deg, #F9DE80 0.52%, #3ABF88 100.03%);
   font-weight: 500;
@@ -320,25 +338,25 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.table-customrow .table-customtd{
+.table-customrow .table-customtd {
   border-style: dashed;
 }
 
-.table-customrow .table-customtd:first-child{
+.table-customrow .table-customtd:first-child {
   border-left-style: solid;
 }
 
-.table-customrow .table-customtd:last-child{
+.table-customrow .table-customtd:last-child {
   border-right-style: solid;
 }
 
 
-.table-customrow:first-child .table-customtd{
+.table-customrow:first-child .table-customtd {
   border-top-style: solid;
 
 }
 
-.table-customrow:last-child .table-customtd{
+.table-customrow:last-child .table-customtd {
   border-bottom-style: solid;
 
 }
@@ -346,51 +364,61 @@ body {
 
 
 
-@media (max-width:1280px){
-  .animationStroke .svg-container.aboutus svg{
+@media (max-width:1280px) {
+  .animationStroke .svg-container.aboutus svg {
     transform: scaleX(1.3);
   }
-}
-@media (max-width: 991px){
-  .aboutPage .commitment{
-    background: #2D2D2D;
+
+  .animationStroke .svg-container.aboutus.design-sprint svg {
+    transform: scaleX(1.7);
   }
-  
 }
 
-@media (max-width: 767px){
-  .animationStroke .svg-container{
+@media (max-width: 1024px) {
+  .aboutPage .commitment {
+    background: #2D2D2D;
+  }
+}
+
+@media (max-width: 767px) {
+  .animationStroke .svg-container {
     display: none;
   }
 
-  .navTabs, .navTabs.activeTabs {
+  .navTabs,
+  .navTabs.activeTabs {
     font-size: 34px;
   }
 
-  .id-box{
+  .id-box {
     border-color: #ffffff28;
   }
 
-  .id-box:nth-child(2){
+  .id-box:nth-child(2) {
     border-right: none;
   }
-  .id-box:nth-child(3){
+
+  .id-box:nth-child(3) {
     border-bottom: none;
   }
 }
-@media (max-width: 640px){
-  .id-box{
+
+@media (max-width: 640px) {
+  .id-box {
     border: none;
     border-bottom: 2px solid dashed;
   }
 }
-@media (max-width: 576px){
-  .navTabs, .navTabs.activeTabs {
+
+@media (max-width: 576px) {
+
+  .navTabs,
+  .navTabs.activeTabs {
     font-size: 24px;
     text-align: center;
   }
 
-  
+
 }
 
 
@@ -400,11 +428,11 @@ body {
 
 
 /* --------------- Conact Us Styling --------------- */
-.contactus-banner{
+.contactus-banner {
   background: linear-gradient(176.97deg, #9FF8BE 2.87%, #EAFFE2 53.54%, #FFFFFF 99.62%);
 }
 
-.contactus-banner .contact-from{
+.contactus-banner .contact-from {
   background-image: url("../src/assets/contactus-bgimg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -412,7 +440,7 @@ body {
 }
 
 
-.contactus-checkboxes input:checked ~ span::before{
+.contactus-checkboxes input:checked~span::before {
   content: "\2714";
   color: #fff;
   left: 50%;
@@ -421,15 +449,27 @@ body {
   position: absolute;
 }
 
-.contactus-checkboxes input:checked ~ span{
+.contactus-checkboxes input:checked~span {
   background: #3ABF88;
   border: none;
 }
 
-@media(max-width:1024px){
-  .contactus-banner .contact-from{
-    background-image:none;
+@media(max-width:1024px) {
+  .contactus-banner .contact-from {
+    background-image: none;
     background: #2D2D2D;
     border-radius: 40px;
   }
+}
+
+
+.standout-box {
+
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background: linear-gradient(331.33deg, #000000 4.79%, #FFFFFF 147.72%);
+  -webkit-mask: linear-gradient(#ffffff00 0 0) padding-box, linear-gradient(#ffffff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }

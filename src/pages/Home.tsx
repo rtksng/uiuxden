@@ -63,8 +63,9 @@ const Home = () => {
       </div>
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
-          className={`fixed inset-0 flex items-center justify-center z-40 ${addTransitionClass ? "transition-all" : ""
-            }`}
+          className={`fixed inset-0 flex items-center justify-center z-40 ${
+            addTransitionClass ? "transition-all" : ""
+          }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
@@ -72,7 +73,7 @@ const Home = () => {
           }}
         >
           <div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-center leading-relaxed">
+            <h1 className="text-4xl sm:text-4xl 2xl:text-5xl font-bold text-center leading-relaxed">
               Humanize <br />
               <span className="font-normal">Your Product</span>
             </h1>
@@ -100,6 +101,7 @@ const Home = () => {
             src={banner}
             alt="Sample"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </motion.div>
       </div>
@@ -123,14 +125,14 @@ const Home = () => {
         <Features />
         <Rating />
         <Process />
-        
+
         <CaseStudy />
         <div className="xl:my-[150px] mt-10 sm:mt-20">
           <CaseStudyCarousel />
         </div>
 
         <Review />
-        
+
         <Footer />
       </div>
     </main>

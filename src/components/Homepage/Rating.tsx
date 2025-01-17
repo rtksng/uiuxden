@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "../Container";
 import user from "../../assets/user.png";
 import curve from "../../assets/curve.svg";
@@ -9,62 +10,79 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const Rating = () => {
+  const [activeIndex, setActiveIndex] = useState(0); 
+
   const reviews = [
     {
       name: "Gilbert Miles",
       rating: "4 out of 5.0",
+      stars: 4,
       text: "Procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some great pleasure.",
     },
     {
       name: "Gilbert Miles",
       rating: "4 out of 5.0",
+      stars: 4,
       text: "Procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some great pleasure.",
     },
     {
       name: "Gilbert Miles",
       rating: "4 out of 5.0",
+      stars: 4,
       text: "Procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some great pleasure.",
     },
     {
-      name: "Gilbert Miles",
-      rating: "4 out of 5.0",
-      text: "Procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some great pleasure.",
+      name: "John Doe",
+      rating: "5 out of 5.0",
+      stars: 5,
+      text: "Excellent service! I would highly recommend it to others.",
     },
     {
-      name: "Gilbert Miles",
-      rating: "4 out of 5.0",
-      text: "Procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some great pleasure.",
+      name: "Jane Smith",
+      rating: "3 out of 5.0",
+      stars: 3,
+      text: "Good, but there's room for improvement in some areas.",
     },
-    // Additional reviews can be added here
   ];
 
   return (
     <section className="lg:mt-[180px] mt-10 sm:mt-16">
       <div className="bg-primary-dark2 lg:py-[160px] py-10">
         <Container>
-          <div className="grid grid-cols-12 ">
+          <div className="grid grid-cols-12">
+            {/* User Images */}
             <div className="lg:col-span-6 col-span-12 self-center">
               <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
               </h2>
               <div className="flex items-center lg:mt-[100px] mt-10 gap-[18px]">
                 <div className="flex -sm:space-x-12 -space-x-8">
-                  {Array(5)
-                    .fill(0)
-                    .map((_, idx) => (
-                      <img
-                        key={idx}
-                        src={user}
-                        alt="user"
-                        className="rounded-full sm:w-[100px] w-20 sm:h-[100px] h-20 border-white border-[3px]"
-                      />
-                    ))}
+                  {reviews.map((_, idx) => (
+                    <img
+                      key={idx}
+                      src={user}
+                      alt="user"
+                      className={`rounded-full sm:w-[100px] w-20 sm:h-[100px] h-20 border-[3px] ${
+                        activeIndex === idx
+                          ? "border-primary-dark4 scale-110  -translate-y-5"
+                          : "border-white "
+                      } transition-all duration-300 ease-in-out`}
+                    />
+                  ))}
                 </div>
                 <img src={curve} alt="arrow" className="hidden xl:block" />
               </div>
             </div>
+
             <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0">
-              <Swiper   modules={[Autoplay]} loop autoplay={{ delay: 3000, disableOnInteraction: false }}>
+              <Swiper
+                modules={[Autoplay]}
+                loop
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                onActiveIndexChange={(swiper) =>
+                  setActiveIndex(swiper.realIndex)
+                }
+              >
                 {reviews.map((review, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="bg-primary-dark3 rounded-[20px] m-[4px]">
@@ -74,7 +92,7 @@ const Rating = () => {
                             REVIEW RATING
                           </h6>
                           <div className="flex mt-[18px] gap-[1px]">
-                            {Array(5)
+                            {Array(review.stars)
                               .fill(0)
                               .map((_, idx) => (
                                 <FaStar key={idx} color="#D9A95C" size={30} />
