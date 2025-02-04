@@ -15,37 +15,46 @@ import Button from "./Button";
 import Consult from "./Consult";
 import Logowhite from "../assets/logo-white.svg";
 
-const Footer: React.FC<{ consultData?: { heading: string; subheading: string; boldsubheading: string; buttonText: string; } }> = ({ consultData }) => (
+const Footer: React.FC<{
+  consultData?: {
+    heading: string;
+    subheading: string;
+    boldsubheading: string;
+    buttonText: string;
+  };
+}> = ({ consultData }) => (
   <>
     <Consult
-      heading={consultData?.heading }
-      subheading={consultData?.subheading }
+      heading={consultData?.heading}
+      subheading={consultData?.subheading}
       boldsubheading={consultData?.boldsubheading}
       buttonText={consultData?.buttonText}
     />
     <footer>
-      <div className="bg-black">
+      <div className="bg-neutral-900">
         <Container>
-          <div className="grid grid-cols-12 py-5">
-            <div className="col-span-12 xl:col-span-4 self-center">
+          <div className="grid grid-cols-12 py-10">
+            <div className="col-span-12 2xl:col-span-4 self-center flex justify-center">
               <img src={Logowhite} alt="Logo for White BG" />
             </div>
-            <div className="col-span-12 xl:col-span-8 xl:flex xl:justify-end items-center gap-6 flex-wrap mt-5 xl:mt-0">
-              <p className="text-white text-xl md:text-2xl font-semibold xl:text-end">
+            <div className="col-span-12 2xl:col-span-8 2xl:flex 2xk:justify-end items-center gap-6 flex-wrap my-5 2xl:my-0">
+              <p className="text-white text-center text-lg md:text-2xl font-semibold 2xl:text-end">
                 Book a strategy for your business with our UX experts directly.
               </p>
-              <Button
-                variant="secondary"
-                className="border border-white mt-5 xl:mt-0 !p-5 !ring-0 text-white hover:text-primary-dark2 rounded-full"
-              >
-                Get UX Expert Now
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  variant="secondary"
+                  className="border border-white mt-5 2xl:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                >
+                  Get UX Expert Now
+                </Button>
+              </div>
             </div>
           </div>
         </Container>
       </div>
 
-      <div className="bg-radial-gradient md:py-16 py-8 relative">
+      <div className="bg-radial-gradient md:pt-16 pt-8 relative">
         <Container>
           <div className="flex flex-wrap sm:justify-between gap-8">
             {["Services", "Links", "Special", "About"].map((title, idx) => (
