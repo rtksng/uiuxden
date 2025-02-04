@@ -12,12 +12,15 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   isMobile,
   onClick,
 }) => (
-  <ul
+  <motion.ul
     className={`${
       isMobile
         ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-full justify-center"
         : "hidden xl:flex items-center space-x-6 "
     } font-semibold xl:font-normal`}
+    initial={{ opacity: 1, x: 0 }}
+    animate={{ opacity: isMobile ? 1 : 1, x: isMobile ? 0 : 0 }}
+    exit={{ opacity: 0, x: -50 }}
   >
     {["UX Services +", "Portfolio +", "Blogs", "Contact", "Our Store"].map(
       (link, idx) => (
@@ -37,7 +40,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
         </li>
       )
     )}
-  </ul>
+  </motion.ul>
 );
 
 const Navbar: React.FC = () => {
@@ -45,6 +48,7 @@ const Navbar: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -53,6 +57,7 @@ const Navbar: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
@@ -68,23 +73,38 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="xl:hidden w-10 h-10  flex items-center border-0 justify-center rounded-full text-gray-900 hover:bg-gray-100"
+            className="xl:hidden w-10 h-10 flex items-center border-0 justify-center rounded-full text-gray-900 hover:bg-gray-100"
             onClick={toggleMenu}
           >
             <CgMenuRightAlt size={24} />
           </button>
 
           {/* Desktop Navigation */}
-          <NavLinks />
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: isSearchOpen ? 0.5 : 1 }}
+            transition={{ duration: 0.3 }}
+            className="hidden xl:block"
+          >
+            <NavLinks />
+          </motion.div>
+
+          {/* Search and Button */}
           <div className="hidden xl:flex items-center space-x-8">
             <div className="flex items-center gap-3">
-              {isSearchOpen && (
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="w-64 pe-3 ps-6 h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
-                />
-              )}
+              <AnimatePresence>
+                {isSearchOpen && (
+                  <motion.input
+                    type="text"
+                    placeholder="Search..."
+                    className="w-64 pe-3 ps-6 h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
+                    initial={{ width: 0, opacity: 0 }}
+                    animate={{ width: "16rem", opacity: 1 }}
+                    exit={{ width: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                )}
+              </AnimatePresence>
               <button
                 onClick={() => setIsSearchOpen((prev) => !prev)}
                 className="p-4 rounded-full text-gray-500 hover:bg-gray-100"

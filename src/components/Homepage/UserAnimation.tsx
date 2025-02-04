@@ -49,7 +49,7 @@ const UserAnimation = () => {
   return (
     <section>
       <Container>
-        <div className="flex justify-between items-end max-w-6xl mx-auto">
+        <div className="flex justify-between items-end max-w-4xl   2xl:max-w-6xl mx-auto">
           <div className="flex gap-3">
             <div className="relative ">
               <img
