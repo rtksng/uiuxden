@@ -12,10 +12,10 @@ const images = [
 
 const Review = () => {
   return (
-    <section className="lg:mt-[154px] mt-10">
-      <h2 className="text-center lg:text-[60px] text-[24px] md:text-[32px] font-semibold">
+    <section className="2xl:mt-[154px] xl:-mt-[74px] mt-10 review-sec">
+      <h2 className="text-center 2xl:text-[60px] xl:text-[50px] text-[24px] md:text-[32px] font-semibold">
         Words from UIUX den{" "}
-        <span className="animationStroke">
+        <span className="animationStroke review">
           <SVGAnimation height={110} width={252} /> Minds{" "}
         </span>
       </h2>

@@ -31,7 +31,7 @@ const Footer: React.FC<{ consultData?: { heading: string; subheading: string; bo
               <img src={Logowhite} alt="Logo for White BG" />
             </div>
             <div className="col-span-12 xl:col-span-8 xl:flex xl:justify-end items-center gap-6 flex-wrap mt-5 xl:mt-0">
-              <p className="text-white text-xl md:text-2xl font-semibold xl:text-end">
+              <p className="text-white text-xl 2xl:text-2xl font-semibold xl:text-end">
                 Book a strategy for your business with our UX experts directly.
               </p>
               <Button
@@ -45,8 +45,9 @@ const Footer: React.FC<{ consultData?: { heading: string; subheading: string; bo
         </Container>
       </div>
 
-      <div className="bg-radial-gradient md:py-16 py-8 relative">
+      <div className="bg-radial-gradient md:py-16 !pb-0 py-8 relative">
         <Container>
+          
           <div className="flex flex-wrap sm:justify-between gap-8">
             {["Services", "Links", "Special", "About"].map((title, idx) => (
               <div key={idx} className="inline-block mb-8">
@@ -71,7 +72,7 @@ const Footer: React.FC<{ consultData?: { heading: string; subheading: string; bo
             ))}
           </div>
         </Container>
-        <div className="py-5 border-t border-black w-full">
+        <div className="py-5  border-t border-black w-full">
           <Container>
             <div className="flex justify-between items-center flex-wrap gap-4">
               <p className="text-[14px] text-primary-dark2">

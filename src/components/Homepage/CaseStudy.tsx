@@ -30,16 +30,16 @@ const caseStudies = [
 
 const CaseStudy = () => {
   return (
-    <section className="casestudy xl:mt-[192px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
+    <section className="casestudy 2xl:mt-[192px] xl:mt-[142px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
       <div className="xl:pt-[160px] xl:pb-[78px] py-10 sm:py-20">
-        <h2 className="xl:text-[60px] text-[24px] sm:text-[48px] text-white text-center font-semibold">
+        <h2 className="2xl:text-[60px] xl:text-[50px] text-[24px] sm:text-[48px] text-white text-center font-semibold">
           We love to make{" "}
-          <span className="animationStroke">
+          <span className="animationStroke casestudy">
             <SVGAnimation height={120} width={222} /> things{" "}
           </span>{" "}
           easy
         </h2>
-        <div className="grid grid-cols-12 xl:mt-[140px] mt-10 gap-5 sm:gap-[46px] xl:px-[100px] 2xl:px-[240px]">
+        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[90px] mt-10 gap-5 sm:gap-[46px] xl:px-[100px] 2xl:px-[240px]">
           {caseStudies.map((study, index) => (
             <Link
               onClick={() => {
@@ -52,7 +52,7 @@ const CaseStudy = () => {
               <div className="itemcase flex flex-col items-center justify-center">
                 <div className="flex flex-col max-w-[330px] justify-center items-center">
                   <img src={study.imgSrc} alt={study.altText} width={250} />
-                  <p className="text-white text-center text-[22px] mt-[100px]">
+                  <p className="text-white text-center text-[22px] 2xl:mt-[100px] mt-[40px]">
                     {study.description}
                   </p>
                 </div>

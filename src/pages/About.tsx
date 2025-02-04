@@ -37,14 +37,14 @@ const About = () => {
       <section className="flex justify-center items-center h-screen pt-[100px]">
         <Container>
           <div className="grid grid-cols-12">
-            <div className="md:col-span-8 col-span-12">
-              <h1 className="font-semibold text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px]">
+            <div className="md:col-span-8 col-span-12 2xl:block flex items-center">
+              <h1 className="font-semibold text-[24px] sm:text-[38px] lg:text-[48px] xl:text-[70px] 2xl:text-[90px]">
                 Creating Exceptional Products, Shaping a Better Future
               </h1>
             </div>
             <div className="md:col-span-4 col-span-12 self-center mt-8">
               <img src={futureimg} alt="image" className="mx-auto" />
-            </div>
+            </div>  
           </div>
         </Container>
       </section>

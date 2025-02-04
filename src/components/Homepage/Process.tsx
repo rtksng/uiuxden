@@ -75,14 +75,14 @@ const StepCard = ({
   step: (typeof steps)[0];
   isLast: boolean;
 }) => (
-  <div className="2xl:w-[320px] sm:p-5 p-2 relative">
+  <div className="2xl:w-[320px] sm:px-5 px-2 py-10 relative">
     <div className="flex">
       <div className="md:text-[30px] font-semibold text-primary-dark2 pe-5">
         {step.number}
       </div>
       <div>
         <img src={step.icon} alt="Icon" />
-        <h2 className="mt-3 text-[20px] md:text-[30px] font-semibold md:leading-10">
+        <h2 className="mt-3 text-[20px] md:text-[24px] font-semibold md:leading-10">
           {step.title}
         </h2>
         <p className="text-neutral-600 md:mt-3">{step.description}</p>
@@ -99,13 +99,13 @@ const StepCard = ({
 );
 
 const Process = () => (
-  <section className="lg:mt-[200px] mt-10 md:mt-20">
+  <section className="2xl:mt-[200px] xl:mt-[120px] mt-10 md:mt-20">
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
         <div className="xl:max-w-[400px] sm:p-5 p-2 xl:relative xl:bottom-16">
-          <h5 className="lg:text-[60px] text-[24px] font-semibold leading-none">Our</h5>
-          <h2 className="2xl:text-[85px] sm:text-[48px] text-[30px] font-semibold">Process</h2>
-          <p className="text-neutral-600 md:text-[24px]">
+          <h5 className="lg:text-[40px] text-[24px] font-semibold leading-none">Our</h5>
+          <h2 className="2xl:text-[60px] sm:text-[48px] text-[30px] font-semibold">Process</h2>
+          <p className="text-neutral-600 md:text-[22px]">
             Our process ensures your vision becomes a seamless reality.
           </p>
         </div>

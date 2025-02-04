@@ -39,15 +39,15 @@ const Rating = () => {
   ];
 
   return (
-    <section className="lg:mt-[180px] mt-10 sm:mt-16">
-      <div className="bg-primary-dark2 lg:py-[160px] py-10">
+    <section className="2xl:mt-[180px] xl:mt-[80px] mt-10 sm:mt-16">
+      <div className="bg-primary-dark2 2xl:py-[160px] xl:py-[80px] py-10">
         <Container>
           <div className="grid grid-cols-12 ">
             <div className="lg:col-span-6 col-span-12 self-center">
               <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
               </h2>
-              <div className="flex items-center lg:mt-[100px] mt-10 gap-[18px]">
+              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] mt-10 gap-[18px]">
                 <div className="flex -sm:space-x-12 -space-x-8">
                   {Array(5)
                     .fill(0)
@@ -68,7 +68,7 @@ const Rating = () => {
                 {reviews.map((review, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="bg-primary-dark3 rounded-[20px] m-[4px]">
-                      <div className="flex flex-wrap items-center justify-between border-b-[1px] p-4 lg:p-[60px] border-primary-dark">
+                      <div className="flex flex-wrap items-center justify-between border-b-[1px] p-4 2xl:p-[60px] xl:p-[40px] border-primary-dark">
                         <div>
                           <h6 className="text-lg text-white font-semibold tracking-widest">
                             REVIEW RATING
@@ -86,7 +86,7 @@ const Rating = () => {
                           <img src={google} width={100} alt="google" />
                         </div>
                       </div>
-                      <div className="p-4 lg:p-[60px]">
+                      <div className="p-4 2xl:p-[60px] xl:p-[40px]">
                         <h6 className="text-[20px] text-primary-dark4 font-semibold">
                           {review.name}
                         </h6>
