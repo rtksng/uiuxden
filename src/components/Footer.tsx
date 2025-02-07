@@ -56,6 +56,7 @@ const Footer: React.FC<{
 
       <div className="bg-radial-gradient md:pt-16 pt-8 relative">
         <Container>
+          
           <div className="flex flex-wrap sm:justify-between gap-8">
             {["Services", "Links", "Special", "About"].map((title, idx) => (
               <div key={idx} className="inline-block mb-8">
@@ -80,7 +81,7 @@ const Footer: React.FC<{
             ))}
           </div>
         </Container>
-        <div className="py-5 border-t border-black w-full">
+        <div className="py-5  border-t border-black w-full">
           <Container>
             <div className="flex justify-between items-center flex-wrap gap-4">
               <p className="text-[14px] text-primary-dark2">

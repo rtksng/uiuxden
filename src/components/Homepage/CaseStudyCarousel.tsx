@@ -30,7 +30,7 @@ const CaseStudyCarousel = () => {
             <SwiperSlide key={index}>
               <div>
                 <div className="flex lg:items-center items-start flex-col lg:flex-row lg:justify-between gap-5">
-                  <h2 className="xl:text-[60px] text-[24px] sm:text-[42px] font-semibold max-w-[800px]">
+                  <h2 className="2xl:text-[60px] xl:text-[50px] text-[24px] sm:text-[42px] font-semibold max-w-[800px]">
                     {slide.title}
                   </h2>
                   <img src={slide.logo} alt="logo" className=" max-w-[200px] md:max-w-full " />
@@ -43,7 +43,7 @@ const CaseStudyCarousel = () => {
                     <p className="xl:max-w-[500px] text-2xl font-semibold mt-4 xl:mt-8">
                       {slide.description}
                     </p>
-                    <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[114px] xl:py-[50px] text-xl p-5 xl:text-[32px] font-semibold rounded-[38px]">
+                    <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 2xl:px-[114px] xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px]">
                       {slide.buttonLabel}
                     </button>
                   </div>

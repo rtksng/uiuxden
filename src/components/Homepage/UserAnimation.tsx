@@ -47,11 +47,11 @@ const UserAnimation = () => {
   }, []);
 
   return (
-    <section>
+    <section className="homepagehero-animation">
       <Container>
-        <div className="flex justify-between items-end max-w-4xl   2xl:max-w-6xl mx-auto">
+        <div className="flex justify-between items-end max-w-4xl 2xl:max-w-6xl mx-auto">
           <div className="flex gap-3">
-            <div className="relative ">
+            <div className="relative">
               <img
                 src={boy}
                 alt="boy"
@@ -141,7 +141,7 @@ const UserAnimation = () => {
             </div>
           </div>
 
-          <div className="relative ">
+          <div className="relative scale-90">
             <img
               src={teacher}
               alt="teacher"

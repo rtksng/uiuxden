@@ -26,22 +26,31 @@ const FeatureCard: React.FC<Feature> = ({
   link,
 }) => (
   <div className="col-span-12 sm:col-span-6 lg:col-span-4 border rounded-3xl md:border-0 md:rounded-none">
-    <Link to={link} onClick={() => {
+    <Link
+      to={link}
+      onClick={() => {
         window.scrollTo(0, 0);
-      }}>
-      <div className="md:p-7 p-4 mask-card">
-        <div className="flex justify-between items-start md:w-calc-minus-80">
-          <div>
-            <h4 className="text-[22px] leading-none mb-2 font-semibold text-primary-dark2">
-              {title}
-            </h4>
-            <h6 className="text-primary-dark2 text-base md:max-w-[215px]">
-              {description}
-            </h6>
+      }}
+    >
+      <div className="mask-card">
+        <div className="md:p-7 p-4 inner-content">
+          <div className="flex justify-between items-start md:w-calc-minus-80">
+            <div>
+              <h4 className="text-[22px] leading-none mb-2 font-semibold text-primary-dark2">
+                {title}
+              </h4>
+              <h6 className="text-primary-dark2 text-base md:max-w-[215px]">
+                {description}
+              </h6>
+            </div>
+            <img src={tiltarrow} alt="arrow" />
           </div>
-          <img src={tiltarrow} alt="arrow"/>
+          <img
+            src={imgSrc}
+            alt={title}
+            className="mt-5 rounded-[20px] w-full"
+          />
         </div>
-        <img src={imgSrc} alt={title} className="mt-5 rounded-[20px] w-full" />
       </div>
     </Link>
   </div>
@@ -107,12 +116,15 @@ const Features = () => {
 
   return (
     <Container>
-      <section className="xl:mt-[250px] mt-10 sm:mt-16 px-3">
-        <h2 className="lg:text-[60px] md:text-4xl text-2xl font-semibold max-w-6xl mx-auto text-center !leading-[128.5%]">
-        User Experiences that <span className="animationStroke"><SVGAnimation height={120} width={222} /> Inspire </span> Customers to Stay Connected with Your
-          Brand
+      <section className="2xl:mt-[100px] xl:mt-[60px] mt-10 sm:mt-16 px-3">
+        <h2 className="2xl:text-[60px] xl:text-[50px] md:text-4xl text-2xl font-semibold max-w-6xl mx-auto text-center !leading-[128.5%]">
+          User Experiences that{" "}
+          <span className="animationStroke feature">
+            <SVGAnimation height={120} width={222} /> Inspire{" "}
+          </span>{" "}
+          Customers to Stay Connected with Your Brand
         </h2>
-        <div className="grid grid-cols-12 xl:mt-[140px] mt-5 sm:mt-8 sm:gap-[50px] gap-4">
+        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] sm:mt-8 sm:gap-[50px] gap-4">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
