@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
+      className={`custom-navbar fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
         isScrolled ? "bg-white shadow-sm" : "bg-transparent"
       }`}
     >
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
                   <motion.input
                     type="text"
                     placeholder="Search..."
-                    className="w-64 pe-3 ps-6 h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
+                    className="w-64 pe-3 ps-6 h-12 2xl:h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
                     initial={{ width: 0, opacity: 0 }}
                     animate={{ width: "16rem", opacity: 1 }}
                     exit={{ width: 0, opacity: 0 }}
@@ -107,12 +107,12 @@ const Navbar: React.FC = () => {
               </AnimatePresence>
               <button
                 onClick={() => setIsSearchOpen((prev) => !prev)}
-                className="p-4 rounded-full text-gray-500 hover:bg-gray-100"
+                className="2xl:p-4 p-2 rounded-full text-gray-500 hover:bg-gray-100"
               >
                 <CiSearch size={32} />
               </button>
             </div>
-            <Button variant="primary">Let’s talk</Button>
+            <Button className="nav-button" variant="primary">Let’s talk</Button>
           </div>
 
           {/* Mobile Menu */}
