@@ -12,6 +12,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   isMobile,
   onClick,
 }) => (
+  
   <motion.ul
     className={`${
       isMobile
