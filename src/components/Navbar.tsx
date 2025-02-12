@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -16,17 +17,18 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
     className={`${
       isMobile
         ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-full justify-center"
-        : "hidden xl:flex items-center space-x-6 "
+        : "hidden xl:flex items-center space-x-6"
     } font-semibold xl:font-normal`}
-    initial={{ opacity: 1, x: 0 }}
-    animate={{ opacity: isMobile ? 1 : 1, x: isMobile ? 0 : 0 }}
-    exit={{ opacity: 0, x: -50 }}
+    initial={{ opacity: 0, x: isMobile ? -100 : 0 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: isMobile ? -100 : 0 }}
+    transition={{ duration: 0.3 }}
   >
     {["UX Services +", "Portfolio +", "Blogs", "Contact", "Our Store"].map(
       (link, idx) => (
         <li
           key={idx}
-          className="hover:text-black hover:font-semibold transition-all  text-2xl xl:text-base"
+          className="hover:text-black hover:font-semibold transition-all text-2xl xl:text-base whitespace-nowrap"
           onClick={onClick}
         >
           <Link
@@ -47,7 +49,15 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +65,10 @@ const Navbar: React.FC = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = 'unset';
+    };
   }, []);
 
   return (
@@ -65,18 +78,23 @@ const Navbar: React.FC = () => {
       }`}
     >
       <Container>
-        <nav className="flex items-center justify-between py-5 xl:py-2 relative z-50">
+        <nav className="flex items-center justify-between py-3 xl:py-2 relative z-50">
           {/* Logo */}
-          <Link to="/">
-            <img src={logo} alt="UIUXden Logo" className="max-w-[150px]" />
+          <Link to="/" className="z-50">
+            <img 
+              src={logo} 
+              alt="UIUXden Logo" 
+              className="max-w-[120px] sm:max-w-[150px]" 
+            />
           </Link>
 
           {/* Mobile Menu Toggle */}
           <button
-            className="xl:hidden w-10 h-10 flex items-center border-0 justify-center rounded-full text-gray-900 hover:bg-gray-100"
+            className="xl:hidden w-10 h-10 flex items-center justify-center rounded-full text-gray-900 hover:bg-gray-100 z-50 transition-colors"
             onClick={toggleMenu}
+            aria-label="Toggle menu"
           >
-            <CgMenuRightAlt size={24} />
+            {isMenuOpen ? <IoClose size={24} /> : <CgMenuRightAlt size={24} />}
           </button>
 
           {/* Desktop Navigation */}
@@ -108,30 +126,38 @@ const Navbar: React.FC = () => {
               <button
                 onClick={() => setIsSearchOpen((prev) => !prev)}
                 className="2xl:p-4 p-2 rounded-full text-gray-500 hover:bg-gray-100"
+                aria-label="Search"
               >
                 <CiSearch size={32} />
               </button>
             </div>
-            <Button className="nav-button" variant="primary">Let’s talk</Button>
+            <Button className="nav-button hidden sm:block" variant="primary">
+              Let's talk
+            </Button>
           </div>
 
           {/* Mobile Menu */}
           <AnimatePresence>
             {isMenuOpen && (
               <motion.div
-                className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-40"
-                initial={{ y: "-100%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: "-100%", opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                className="fixed inset-0 bg-secondary-light2 z-40"
+                initial={{ opacity: 0, y: "-100%" }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: "-100%" }}
+                transition={{ duration: 0.3 }}
               >
-                <button
-                  className="absolute top-4 right-4 text-white"
-                  onClick={toggleMenu}
-                >
-                  <IoClose color="#fff" size={32} />
-                </button>
-                <NavLinks isMobile onClick={toggleMenu} />
+                <div className="h-full flex flex-col pt-20">
+                  <NavLinks isMobile onClick={toggleMenu} />
+                  <div className="px-8 mt-8">
+                    <Button 
+                      className="w-full" 
+                      variant="primary"
+                      onClick={toggleMenu}
+                    >
+                      Let's talk
+                    </Button>
+                  </div>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
