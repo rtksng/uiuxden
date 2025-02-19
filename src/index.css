@@ -26,30 +26,30 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 
 
 
-.mask-card  .inner-content{
+.mask-card .inner-content {
   /* clip-path: polygon(0 0, 0% 43%, 0 100%, 50% 100%, 86% 100%, 100% 100%, 100% 69%, 100% 45%, 100% 21%, 87% 21%, 87% 0); */
   clip-path: path("M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.098 6.99935 381.098 15.6962V61.2979C381.098 70.3625 385.913 77.7617 394.381 77.7617H428.224C432.171 77.7617 435.342 80.0234 437.543 83.4218C439.746 86.824 440.951 91.3321 440.951 95.7092V110.427V148.839V381.86C440.951 386.196 439.326 389.545 436.719 391.815C434.105 394.09 430.476 395.305 426.436 395.305H233.528H14.5151C6.52567 395.305 0 388.305 0 379.608Z");
   position: relative;
   overflow: hidden;
 }
 
-.mask-card  .inner-content::before{
+.mask-card .inner-content::before {
   content: "";
   position: absolute;
   width: 1022px;
   height: 1022px;
   left: -640px;
   top: -730px;
-  background: url('data:image/svg+xml;utf8,<svg width="942" height="992" viewBox="0 0 942 992" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M454.061 0L941.684 339.419C941.684 339.419 870.067 358.06 846.005 391.376C821.075 425.894 854.013 468.648 828.169 502.5C804.472 533.538 760.155 519.247 735.759 549.759C707.849 584.668 741.878 630.154 714.654 665.58C689.963 697.709 644.084 683.687 619.908 716.195C594.143 750.842 627.712 794.612 601.139 828.661C577.289 859.22 533.626 845.132 509.196 875.249C480.847 910.198 487.623 991.741 487.623 991.741L0 652.322L454.061 0Z" fill="url(%23paint0_linear_10_67)"/><defs><linearGradient id="paint0_linear_10_67" x1="732.486" y1="193.803" x2="335.346" y2="764.35" gradientUnits="userSpaceOnUse"><stop stop-color="%239FF8BE"/><stop offset="1" stop-color="%23F8EDBA"/></linearGradient></defs></svg>') no-repeat ;
+  background: url('data:image/svg+xml;utf8,<svg width="942" height="992" viewBox="0 0 942 992" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M454.061 0L941.684 339.419C941.684 339.419 870.067 358.06 846.005 391.376C821.075 425.894 854.013 468.648 828.169 502.5C804.472 533.538 760.155 519.247 735.759 549.759C707.849 584.668 741.878 630.154 714.654 665.58C689.963 697.709 644.084 683.687 619.908 716.195C594.143 750.842 627.712 794.612 601.139 828.661C577.289 859.22 533.626 845.132 509.196 875.249C480.847 910.198 487.623 991.741 487.623 991.741L0 652.322L454.061 0Z" fill="url(%23paint0_linear_10_67)"/><defs><linearGradient id="paint0_linear_10_67" x1="732.486" y1="193.803" x2="335.346" y2="764.35" gradientUnits="userSpaceOnUse"><stop stop-color="%239FF8BE"/><stop offset="1" stop-color="%23F8EDBA"/></linearGradient></defs></svg>') no-repeat;
   transition: .5s linear;
   z-index: -1;
 }
 
-.mask-card:hover{
+.mask-card:hover {
   background-image: none;
 }
 
-.mask-card:hover  .inner-content::before {
+.mask-card:hover .inner-content::before {
   left: -260px;
   top: -270px;
 }
@@ -207,6 +207,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 @media screen and (max-width: 1280px) {
   .casestudy {
     background-image: none;
+    background-color: #212121 !important;
   }
 
   .carouselStudy .innerItem {
@@ -350,7 +351,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   background-image: url(../src/assets/aboutbg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -515,31 +516,107 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     height: 395px;
   }
 
-  .animationStroke.casestudy .svg-container svg, .animationStroke.feature .svg-container svg, .animationStroke.review .svg-container svg{
+  .animationStroke.casestudy .svg-container svg,
+  .animationStroke.feature .svg-container svg,
+  .animationStroke.review .svg-container svg {
     transform: scaleX(0.9);
   }
 }
-  
 
-.process-sec .top-cards .card-box{
+
+.process-sec .top-cards .card-box {
   padding-left: 20px !important;
 }
+
 /* 
 .custom-br{
   display: none;
 } */
 
+
+
+
+/* ------------------------- Responsive Styling -----------------------------*/
+
 @media (max-width: 1536px) {
-  .custom-navbar .nav-button{
+  .custom-navbar .nav-button {
     padding: 10px 26px;
     height: auto;
     margin-left: 10px !important;
   }
-  .custom-br{
+
+  .custom-br {
     display: block;
   }
 
-  .homepagehero-animation{
-
+  .homepagehero-animation .answers {
+    top: -90px;
+    font-size: 16px;
   }
+
+  .homepagehero-animation .answers::before {
+    position: absolute;
+    content: "";
+    border: 10px solid #3ABF88;
+    bottom: -20px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  .homepagehero-animation .teacherbox {
+    scale: .9;
+    transform: translateY(20px);
+  }
+
+
+  .animationStroke.feature .svg-container svg,
+  .uxres-sec .animationStroke .svg-container svg,
+  .casestudy .animationStroke.casestudy .svg-container svg {
+    transform: scaleX(0.7) scaleY(0.7);
+  }
+
+
+  .mask-card .inner-content {
+
+    clip-path: path("M0 339.608V15.6962C0 6.99935 6.52567 0 14.5151 0H292.583C300.572 0 307.098 6.99935 307.098 15.6962V51.2979C307.098 60.3625 311.913 67.7617 320.381 67.7617H342.224C346.171 67.7617 349.342 70.0234 351.543 73.4218C353.746 76.824 354.951 81.3321 354.951 85.7092V341.86C354.951 346.196 353.326 349.545 350.719 351.815C348.105 354.09 344.476 355.305 340.436 355.305H14.5151C6.52567 355.305 0 348.305 0 339.608Z");
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .process-sec .top-barbox .card-box {
+    padding-bottom: 20px;
+  }
+
+  .process-sec .top-barbox .cards-bars {
+    bottom: 0;
+    top: unset;
+  }
+
+  .casestudy .itemcase {
+    height: 315px;
+    padding: 20px;
+  }
+
+  .carouselStudy .innerItem.custom-box {
+    background-image: url("/uiuxdenred/src/assets/SchumacherBg-2.png");
+    background-color: #EBFDDD;
+    height: auto;
+    border-radius: 35px;
+    padding: 30px;
+  }
+
+  .carouselStudy .innerItem.custom-box button{
+    position: unset;
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+
+  .carouselStudy .innerItem.custom-box .innertext{
+    /* max-width: 100%; */
+    margin-bottom: 50px;
+  }
+
 }

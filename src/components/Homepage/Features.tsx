@@ -28,11 +28,12 @@ const FeatureCard: React.FC<Feature> = ({
   <div className="col-span-12 sm:col-span-6 lg:col-span-4 border rounded-3xl md:border-0 md:rounded-none">
     <Link
       to={link}
+      target="_blank"
       onClick={() => {
         window.scrollTo(0, 0);
       }}
     >
-      <div className="mask-card">
+      <div className="mask-card min-h-[340px]">
         <div className="md:p-7 p-4 inner-content">
           <div className="flex justify-between items-start md:w-calc-minus-80">
             <div>
@@ -117,11 +118,11 @@ const Features = () => {
   return (
     <Container>
       <section className="2xl:mt-[100px] xl:mt-[60px] mt-10 sm:mt-16 px-3">
-        <h2 className="2xl:text-[60px] xl:text-[50px] md:text-4xl text-2xl font-semibold max-w-6xl mx-auto text-center !leading-[128.5%]">
+        <h2 className="2xl:text-[60px] xl:text-[40px] md:text-3xl text-2xl font-semibold max-w-4xl 2xl:max-w-6xl mx-auto text-center !leading-[128.5%]">
           User Experiences that{" "}
           <span className="animationStroke feature">
             <SVGAnimation height={120} width={222} /> Inspire{" "}
-          </span>{" "}
+          </span>{" "}  
           Customers to Stay Connected with Your Brand
         </h2>
         <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] sm:mt-8 sm:gap-[50px] gap-4">
