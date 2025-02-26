@@ -118,19 +118,19 @@ export function VelocityScroll({
         <div className="relative w-full">
             <ParallaxText baseVelocity={default_velocity} className={className}>
                 <div className="flex min-w-[1920px] justify-between">
-                    <span className="inline-flex items-center gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
                         {point1}
                     </span>
-                    <span className="inline-flex items-center gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
                         {point2}
                     </span>
-                    <span className="inline-flex items-center gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
                         {point3}
                     </span>
-                    <span className="inline-flex items-center gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
                         {point4}
                     </span>
-                    <span className="inline-flex items-center gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
                         {point5}
                     </span>
 

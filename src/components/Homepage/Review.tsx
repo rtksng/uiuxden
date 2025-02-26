@@ -10,23 +10,23 @@ const images = [image1, image2, image3];
 const Review = () => {
   return (
     <Container>
-      <section className="lg:mt-[154px] mt-10">
-        <h2 className="text-center lg:text-[60px] text-[24px] md:text-[32px] font-semibold">
+      <section className="2xl:mt-[154px] mt-10 uxres-sec">
+        <h2 className="text-center 2xl:text-[60px] text-[28px] md:text-[36px] xl:text-[40px] font-semibold">
           Words from UIUX den{" "}
-          <span className="animationStroke">
+          <span className="animationStroke ">
             <SVGAnimation height={110} width={252} /> Minds{" "}
           </span>
         </h2>
-        <div className="grid grid-cols-3 gap-2 lg:mt-[84px] mt-6">
+        <div className="grid grid-cols-12 md:grid-cols-3 gap-2 2xl:mt-[84px] xl:mt-[50px] mt-6">
           {images.map((image, index) => (
             <div
               key={index}
-              className="sm:col-span-1 col-span-12    rounded-xl overflow-hidden"
+              className="sm:col-span-6 md:col-span-1 col-span-12  place-content-center rounded-xl overflow-hidden"
             >
               <img
                 src={image}
                 alt={`review_img_${index}`}
-                className="w-full h-[300px] object-cover"
+                className="w-full h-[240px] 2xl:h-[300px] object-cover"
               />
               <div className=" bg-secondary-light3   py-5  px-3 xl:px-5 ">
                 <div className="flex items-center gap-4">
@@ -55,7 +55,7 @@ const Review = () => {
                 <div className="flex items-center flex-wrap justify-between mt-6 2xl:mt-12">
                   <Button
                     variant="primary"
-                    className="!hover:bg-transparent px-[30px]"
+                    className="!hover:bg-transparent py-[10px] 2xl:py-4 px-[20px] 2xl:px-[30px]"
                   >
                     Read More
                   </Button>

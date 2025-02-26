@@ -75,23 +75,25 @@ const StepCard = ({
   step: (typeof steps)[0];
   isLast: boolean;
 }) => (
-  <div className="card-box 2xl:w-[320px] sm:px-5 px-2 !pl-12 py-10 relative">
+  <div className="card-box 2xl:w-[320px] sm:px-5 px-2 2xl:!pl-12 py-10 relative">
     <div className="flex">
       <div className="md:text-[30px] font-semibold text-primary-dark2 pe-5">
         {step.number}
       </div>
       <div>
-        <img src={step.icon} alt="Icon" />
-        <h2 className="mt-3 text-[20px] md:text-[24px] font-semibold md:leading-10">
+        <img src={step.icon} alt="Icon" className="w-[50px] 2xl:w-auto" />
+        <h2 className="mt-3 text-[20px] 2xl:text-[24px] font-semibold 2xl:leading-10">
           {step.title}
         </h2>
-        <p className="text-neutral-600 md:mt-3">{step.description}</p>
+        <p className="text-neutral-600 text-sm 2xl:text-base md:mt-3">
+          {step.description}
+        </p>
       </div>
     </div>
     {!isLast && (
       <img
         src={rightBar}
-        className="h-[290px] absolute right-0 bottom-0 top-0 hidden xl:block"
+        className="2xl:h-[290px] h-[250px] cards-bars absolute right-0  top-0 hidden xl:block"
         alt="bar"
       />
     )}
@@ -99,17 +101,21 @@ const StepCard = ({
 );
 
 const Process = () => (
-  <section className="2xl:mt-[200px] xl:mt-[120px] mt-10 md:mt-20 process-sec">
+  <section className="2xl:mt-[200px] mt-[20px] xl:mt-[70px] process-sec">
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
         <div className="xl:max-w-[400px] sm:p-5 p-2 xl:relative xl:bottom-16">
-          <h5 className="lg:text-[40px] text-[24px] font-semibold leading-none">Our</h5>
-          <h2 className="2xl:text-[60px] sm:text-[48px] text-[30px] font-semibold">Process</h2>
-          <p className="text-neutral-600 md:text-[22px]">
+          <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none">
+            Our
+          </h5>
+          <h2 className="2xl:text-[60px] sm:text-[40px] text-[20px] font-semibold">
+            Process
+          </h2>
+          <p className="text-neutral-600 2xl:text-[22px]">
             Our process ensures your vision becomes a seamless reality.
           </p>
         </div>
-        <div className="xl:grid xl:grid-cols-3 xl:me-24 top-cards">
+        <div className="grid grid-cols-2 md:grid-cols-3 top-barbox xl:me-24 top-cards">
           {steps.slice(0, 3).map((step, index) => (
             <StepCard
               key={step.number}
@@ -117,9 +123,16 @@ const Process = () => (
               isLast={index === steps.slice(0, 3).length - 1}
             />
           ))}
+          {steps.slice(3).map((step, index) => (
+            <StepCard
+              key={step.number}
+              step={step}
+              isLast={index === steps.slice(3).length - 1}
+            />
+          ))}
         </div>
       </div>
-      <div className="xl:grid xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
         {steps.slice(3).map((step, index) => (
           <StepCard
             key={step.number}

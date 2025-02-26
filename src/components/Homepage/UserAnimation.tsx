@@ -46,6 +46,8 @@ const UserAnimation = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+
+
   return (
     <section className="homepagehero-animation">
       <Container>
@@ -72,7 +74,7 @@ const UserAnimation = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
-                    className="w-80 answerTwo absolute -top-20 right-24 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                    className="w-80 answers answerTwo absolute -top-20 -right-20 2xl:right-24 rounded-xl 2xl:rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
                   >
                     Limit the number of lines displayed and reveal more on
                     hover.
@@ -101,7 +103,7 @@ const UserAnimation = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
-                    className="w-80 answerOne absolute -top-20 right-28 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                    className="w-80 answers answerOne absolute -top-20 -right-20 2xl:right-28 rounded-xl 2xl:rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
                   >
                     Show an ellipsis with a “Read more” button to expand.
                   </motion.div>
@@ -131,7 +133,7 @@ const UserAnimation = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
-                    className="w-80 answerThree absolute -top-20 right-24 rounded-xl rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                    className="w-80 answers answerThree absolute -top-20 -right-20 2xl:right-24 rounded-xl 2xl:rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
                   >
                     Use a fade effect at the end of the text, with no explicit
                     button.
@@ -141,7 +143,7 @@ const UserAnimation = () => {
             </div>
           </div>
 
-          <div className="relative scale-90">
+          <div className="relative teacherbox">
             <img
               src={teacher}
               alt="teacher"

@@ -33,20 +33,19 @@ const Footer: React.FC<{
     <footer>
       <div className="bg-neutral-900">
         <Container>
-          <div className="grid grid-cols-12 py-10">
-            <div className="col-span-12 2xl:col-span-4 self-center flex justify-center">
+          <div className="md:grid grid-cols-12 py-5 gap-5 2xl:py-10 hidden">
+            <div className="col-span-12 2xl:col-span-4 md:col-span-2 self-center flex justify-center">
               <img src={Logowhite} alt="Logo for White BG" />
             </div>
-            <div className="col-span-12 2xl:col-span-8 2xl:flex 2xk:justify-end items-center gap-6 flex-wrap my-5 2xl:my-0">
-              <p className="text-white text-center text-lg md:text-2xl font-semibold 2xl:text-end">
+            <div className="col-span-12 2xl:col-span-8 md:col-span-10 md:flex md:justify-end items-center gap-6 lg:flex-wrap my-5 2xl:my-0">
+              <p className="text-white text-center md:text-end text-xl 2xl:text-2xl font-semibold 2xl:text-end">
                 Book a strategy for your business with our UX experts directly.
               </p>
               <div className="flex justify-center">
                 <Button
                   variant="secondary"
-                  className="border border-white mt-5 2xl:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
-                >
-                  Get UX Expert Now
+                  className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full">
+                    Get UX Expert Now
                 </Button>
               </div>
             </div>
