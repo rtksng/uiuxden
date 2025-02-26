@@ -500,7 +500,6 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 
 
 .standout-box {
-
   position: relative;
   border: 2px solid transparent;
   border-radius: 15px;
@@ -608,15 +607,49 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     padding: 30px;
   }
 
-  .carouselStudy .innerItem.custom-box button{
+  .carouselStudy .innerItem.custom-box button {
     position: unset;
     font-size: 20px;
     padding: 20px 30px;
   }
 
-  .carouselStudy .innerItem.custom-box .innertext{
-    /* max-width: 100%; */
-    margin-bottom: 50px;
+  .carouselStudy .innerItem.custom-box .innertext {
+    margin-bottom: 80px;
   }
 
+}
+
+@media (max-width: 1280px) {
+
+  .animationStroke.feature .svg-container svg,
+  .uxres-sec .animationStroke .svg-container svg,
+  .casestudy .animationStroke.casestudy .svg-container svg {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .mask-card .inner-content {
+    clip-path: unset;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mask-card:hover {
+    background-image: url("/uiuxdenred/src/assets/border.png");
+  }
+
+  .mask-card .inner-content::before {
+    content: none;
+  }
+
+  .animationStroke.feature .svg-container svg,
+  .uxres-sec .animationStroke .svg-container svg,
+  .casestudy .animationStroke.casestudy .svg-container svg {
+    transform: scaleX(0.6) scaleY(0.5);
+  }
 }

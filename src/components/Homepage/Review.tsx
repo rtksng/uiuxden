@@ -11,17 +11,17 @@ const Review = () => {
   return (
     <Container>
       <section className="2xl:mt-[154px] mt-10 uxres-sec">
-        <h2 className="text-center 2xl:text-[60px] text-[24px] xl:text-[40px] font-semibold">
+        <h2 className="text-center 2xl:text-[60px] text-[28px] md:text-[36px] xl:text-[40px] font-semibold">
           Words from UIUX den{" "}
           <span className="animationStroke ">
             <SVGAnimation height={110} width={252} /> Minds{" "}
           </span>
         </h2>
-        <div className="grid grid-cols-3 gap-2 2xl:mt-[84px] xl:mt-[50px] mt-6">
+        <div className="grid grid-cols-12 md:grid-cols-3 gap-2 2xl:mt-[84px] xl:mt-[50px] mt-6">
           {images.map((image, index) => (
             <div
               key={index}
-              className="sm:col-span-1 col-span-12  rounded-xl overflow-hidden"
+              className="sm:col-span-6 md:col-span-1 col-span-12  place-content-center rounded-xl overflow-hidden"
             >
               <img
                 src={image}

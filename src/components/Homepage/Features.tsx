@@ -118,14 +118,14 @@ const Features = () => {
   return (
     <Container>
       <section className="2xl:mt-[100px] xl:mt-[60px] mt-10 sm:mt-16 px-3">
-        <h2 className="2xl:text-[60px] xl:text-[40px] md:text-3xl text-2xl font-semibold max-w-4xl 2xl:max-w-6xl mx-auto text-center !leading-[128.5%]">
+        <h2 className="2xl:text-[60px] xl:text-[40px] md:text-4xl text-2xl mb-10 lg:mb-0 font-semibold  2xl:max-w-6xl mx-auto text-center !leading-[128.5%]">
           User Experiences that{" "}
           <span className="animationStroke feature">
             <SVGAnimation height={120} width={222} /> Inspire{" "}
           </span>{" "}  
           Customers to Stay Connected with Your Brand
         </h2>
-        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] sm:mt-8 sm:gap-[50px] gap-4">
+        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] lg:mt-[50px] sm:gap-[50px] gap-4">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}

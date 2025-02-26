@@ -29,11 +29,11 @@ const CaseStudyCarousel = () => {
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div>
-                <div className="flex lg:items-center items-start flex-col lg:flex-row lg:justify-between gap-5">
-                  <h2 className="2xl:text-[60px] xl:text-[40px] text-[24px] sm:text-[42px] font-semibold 2xl:max-w-[800px] max-w-[600px]">
+                <div className="flex md:items-center items-start flex-col md:flex-row md:justify-between gap-5">
+                  <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] font-semibold 2xl:max-w-[800px] max-w-[600px]">
                     {slide.title}
                   </h2>
-                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" />
+                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]"/>
                 </div>
                 <div className="grid grid-cols-12 xl:mt-12 mt-6 gap-6">
                   <div className="xl:col-span-8 col-span-12 custom-box innerItem relative p-2 sm:p-8 xl:px-[52px] xl:py-[54px] bg-[#EBFDDD] xl:bg-transparent">
@@ -43,7 +43,7 @@ const CaseStudyCarousel = () => {
                     <p className="xl:max-w-[500px] innertext text-2xl font-semibold mt-4 xl:mt-8">
                       {slide.description}
                     </p>
-                    <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 2xl:px-[114px] xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px]">
+                    <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px]">
                       {slide.buttonLabel}
                     </button>
                   </div>

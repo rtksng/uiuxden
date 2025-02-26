@@ -153,7 +153,7 @@ const Home = () => {
         <Process />
         <CaseStudy />
 
-        <div className="2xl:my-[150px] xl:my-[80px] mt-10 sm:mt-20">
+        <div className="2xl:my-[150px] xl:my-[80px] mt-10 lg:mt-20">
           <CaseStudyCarousel />
         </div>
 

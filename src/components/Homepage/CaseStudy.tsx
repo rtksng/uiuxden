@@ -30,16 +30,16 @@ const caseStudies = [
 
 const CaseStudy = () => {
   return (
-    <section className="casestudy 2xl:mt-[192px] xl:mt-[0] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
-      <div className="xl:pt-[60px] 2xl:pt-[160px] xl:pb-[60px] py-10 sm:py-20">
-        <h2 className="2xl:text-[60px] xl:text-[40px] text-[24px] sm:text-[48px] text-white text-center font-semibold">
+    <section className="casestudy 2xl:mt-[192px] lg:mt-[0] xl:mt-[50px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
+      <div className="xl:pt-[100px] 2xl:pt-[160px] lg:pt-[60px] xl:pb-[60px] py-10 lg:py-20">
+        <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] text-white text-center font-semibold">
           We love to make{" "}
           <span className="animationStroke casestudy">
             <SVGAnimation height={120} width={222} /> things{" "}
           </span>{" "}
           easy
         </h2>
-        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[50px] mt-10 gap-5 sm:gap-[46px] xl:px-[100px] 2xl:px-[240px]">
+        <div className="grid grid-cols-12 2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 gap-5 sm:gap-[46px] xl:px-[100px] 2xl:px-[240px]">
           {caseStudies.map((study, index) => (
             <Link
               onClick={() => {

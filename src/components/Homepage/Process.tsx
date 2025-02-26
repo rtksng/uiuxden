@@ -81,11 +81,13 @@ const StepCard = ({
         {step.number}
       </div>
       <div>
-        <img src={step.icon} alt="Icon" className="w-[50px] 2xl:w-auto"/>
+        <img src={step.icon} alt="Icon" className="w-[50px] 2xl:w-auto" />
         <h2 className="mt-3 text-[20px] 2xl:text-[24px] font-semibold 2xl:leading-10">
           {step.title}
         </h2>
-        <p className="text-neutral-600 text-sm 2xl:text-base md:mt-3">{step.description}</p>
+        <p className="text-neutral-600 text-sm 2xl:text-base md:mt-3">
+          {step.description}
+        </p>
       </div>
     </div>
     {!isLast && (
@@ -99,17 +101,21 @@ const StepCard = ({
 );
 
 const Process = () => (
-  <section className="2xl:mt-[200px] mt-[70px] process-sec">
+  <section className="2xl:mt-[200px] mt-[20px] xl:mt-[70px] process-sec">
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
         <div className="xl:max-w-[400px] sm:p-5 p-2 xl:relative xl:bottom-16">
-          <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none">Our</h5>
-          <h2 className="2xl:text-[60px] sm:text-[40px] text-[20px] font-semibold">Process</h2>
+          <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none">
+            Our
+          </h5>
+          <h2 className="2xl:text-[60px] sm:text-[40px] text-[20px] font-semibold">
+            Process
+          </h2>
           <p className="text-neutral-600 2xl:text-[22px]">
             Our process ensures your vision becomes a seamless reality.
           </p>
         </div>
-        <div className="xl:grid xl:grid-cols-3 top-barbox xl:me-24 top-cards">
+        <div className="grid grid-cols-2 md:grid-cols-3 top-barbox xl:me-24 top-cards">
           {steps.slice(0, 3).map((step, index) => (
             <StepCard
               key={step.number}
@@ -117,9 +123,16 @@ const Process = () => (
               isLast={index === steps.slice(0, 3).length - 1}
             />
           ))}
+          {steps.slice(3).map((step, index) => (
+            <StepCard
+              key={step.number}
+              step={step}
+              isLast={index === steps.slice(3).length - 1}
+            />
+          ))}
         </div>
       </div>
-      <div className="xl:grid xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
         {steps.slice(3).map((step, index) => (
           <StepCard
             key={step.number}

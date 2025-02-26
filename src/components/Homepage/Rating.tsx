@@ -47,11 +47,11 @@ const Rating = () => {
 
   return (
     <section className="2xl:mt-[180px] xl:mt-[50px] mt-10 sm:mt-16">
-      <div className="bg-primary-dark2 2xl:py-[160px] xl:py-[50px] py-10">
+      <div className="bg-primary-dark2 2xl:py-[160px] xl:py-[50px] py-5 lg:py-10">
         <Container>
           <div className="grid grid-cols-12">
             {/* User Images */}
-            <div className="lg:col-span-6 col-span-12 self-center">
+            <div className="md:col-span-6 col-span-12 self-center">
               <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
               </h2>
@@ -74,7 +74,7 @@ const Rating = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0">
+            <div className="md:col-span-6 col-span-12 mt-10 lg:mt-0">
               <Swiper
                 modules={[Autoplay]}
                 loop
