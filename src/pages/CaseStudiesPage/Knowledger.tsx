@@ -101,7 +101,7 @@ const Knowledger = () => {
   return (
     <main className="overflow-hidden">
       <Navbar />
-      <section className="h-screen flex items-center justify-center xl:block knowledger ">
+      <section className="h-[50vh] xl:h-screen flex items-center justify-center xl:block knowledger ">
         <div className="flex flex-col items-center xl:pt-[115px] text-center px-3">
           <img
             src={knowledgerblack}
@@ -123,9 +123,9 @@ const Knowledger = () => {
         <img
           src={kd}
           alt="KD Graphic"
-          className="lg:absolute -top-[150px] inset-0 xl:top-[-300px] xl:max-w-[1034px] md:max-w-3xl mx-auto"
+          className="sm:absolute -top-[70px] inset-0 xl:top-[-72px] 2xl:top-[-281px] xl:max-w-[702px] 2xl:max-w-[1034px] w-[600px] mx-auto"
         />
-        <p className="xl:text-2xl text-base text-start font-semibold md:text-center mx-auto xl:max-w-[1350px] lg:pt-[400px] 2xl:pt-[426px] pb-5 sm:pb-10  xl:pb-[84px]">
+        <p className="xl:text-2xl text-base text-start font-semibold md:text-center mx-auto xl:max-w-[1350px] sm:pt-[360px] 2xl:pt-[426px] pb-5 sm:pb-10  xl:pb-[84px]">
           The development of a blockchain-based Learning Management System (LMS)
           aims to create a secure, scalable, and cost-effective educational
           platform. By leveraging blockchain technology, the system ensures data
@@ -165,7 +165,7 @@ const Knowledger = () => {
           Technology <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger2" />Stack</span>
         </h3>
         <Container>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] md:mt-[70px] mt-8 sm:mt-16">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] mt-8 lg:mt-16">
             <div className="xl:col-span-1 self-center">
               {techStack.map((item) => (
                 <div
@@ -196,10 +196,10 @@ const Knowledger = () => {
             </div>
           </div>
           <div className="lg:mt-[128px] mt-8 md:mt-16 max-w-[1248px] mx-auto ">
-            <div className="grid md:grid-cols-2 gap-10 md:gap-[76px]">
+            <div className="grid md:grid-cols-2 gap-6 xl:gap-[76px]">
               {executionData.map((section, index) => (
                 <div key={index} className="col-span-1">
-                  <h5 className="text-[24px] md:first-line:text-[40px] font-semibold">
+                  <h5 className="text-[24px] xl:first-line:text-[40px] font-semibold">
                     {section.title}
                   </h5>
                   <div className="md:py-[50px] md:px-[40px] p-4 rounded-2xl bg-primary-dark lg:h-[487px] mt-4 md:mt-8">
@@ -249,7 +249,7 @@ const Knowledger = () => {
               <FeatureCard
                 title="Cost Efficiency:"
                 description="Reducing operational costs through smart contracts and decentralized applications."
-                className="top-14 -right-14"
+                className="top-14 -right-5 2xl:-right-14"
               />
             </div>
           </div>
@@ -359,7 +359,9 @@ const Knowledger = () => {
           </div>
         </Container>
         <section className="mt-40 relative ">
-          <div className="h-[328px] bg-primary-dark ">
+          <div className="absolute top-0 left-0 right-0 h-[80%] inset-0  bg-primary-dark ">
+          </div>
+          <div className="h-[300px] bg-primary-dark ">
             <h3 className="text-center text-[60px] font-semibold text-white pt-[72px]">
               Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger4" />Work</span>
             </h3>

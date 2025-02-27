@@ -321,7 +321,45 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 .custom-leptopimg {
   left: 50%;
   transform: translateX(-44%) translateY(-2%);
-  top: 50%;
+  top: 48%;
+}
+
+.leptop-image {
+  max-width: 841px;
+}
+
+
+
+@media (max-width: 1600px) {
+  .custom-leptopimg {
+    left: 50.8%;
+    transform: translateX(-44%) translateY(-2%);
+    top: 53%;
+  }
+
+  .leptop-image {
+    max-width: 673px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .custom-leptopimg {
+    top: 56%;
+  }
+
+  .leptop-image {
+    max-width: 593px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .custom-leptopimg {
+    top: 57%;
+  }
+
+  .leptop-image {
+    max-width: 572px;
+  }
 }
 
 /* .slide-content.other-slide{
@@ -332,10 +370,6 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 .slide-content.active-slide {
   transform: scale(1.09);
   transition: .2s linear;
-}
-
-.leptop-image {
-  max-width: 830px;
 }
 
 .active-slideoutter {
@@ -629,6 +663,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   .casestudy .itemcase {
     height: 250px;
   }
+
   .carouselStudy .innerItem.custom-box {
     background-color: #EBFDDD;
     background-image: none;
