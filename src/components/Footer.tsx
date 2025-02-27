@@ -45,7 +45,7 @@ const Footer: React.FC<{
                 <Button
                   variant="secondary"
                   className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full">
-                    Get UX Expert Now
+                  Get UX Expert Now
                 </Button>
               </div>
             </div>
@@ -55,14 +55,13 @@ const Footer: React.FC<{
 
       <div className="bg-radial-gradient md:pt-16 pt-8 relative">
         <Container>
-          
-          <div className="flex flex-wrap sm:justify-between gap-8">
+          <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between sm:gap-8">
             {["Services", "Links", "Special", "About"].map((title, idx) => (
               <div key={idx} className="inline-block mb-8">
-                <p className="text-primary-dark2 font-semibold text-[26px] mb-4">
+                <p className="text-primary-dark2 font-semibold text-[26px] mb-3 sm:mb-4">
                   {title}
                 </p>
-                <ul className="space-y-8">
+                <ul className=" space-y-2 sm:space-y-8">
                   {getLinks(title).map((link, i) => (
                     <li key={i} className="text-primary-dark2">
                       <Link

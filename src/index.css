@@ -527,6 +527,12 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   padding-left: 20px !important;
 }
 
+@media (max-width: 576px) {
+  .process-sec .top-cards .card-box {
+    padding-left: 0px !important;
+  }
+}
+
 /* 
 .custom-br{
   display: none;
@@ -617,6 +623,16 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     margin-bottom: 80px;
   }
 
+}
+
+@media (max-width: 576px) {
+  .casestudy .itemcase {
+    height: 250px;
+  }
+  .carouselStudy .innerItem.custom-box {
+    background-color: #EBFDDD;
+    background-image: none;
+  }
 }
 
 @media (max-width: 1280px) {

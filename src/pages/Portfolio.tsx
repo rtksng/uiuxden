@@ -65,11 +65,11 @@ const Portfolio: FC = () => {
         { img: web8, title: "Cerebrum", downloads: "5033K" },
       ];
       return (
-        <div className="grid grid-cols-12 sm:gap-12 space-y-8 sm:space-y-0">
+        <div className="grid grid-cols-12 gap-6 sm:gap-12 space-y-8 sm:space-y-0">
           {projects.map(({ img, title, downloads }, idx) => (
             <div
               key={idx}
-              className="md:col-span-4 col-span-12 sm:col-span-6 openModal"
+              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal"
               onClick={() => openModal({ img, title, downloads })}
             >
               <img src={img} alt={title} className="sm:w-full rounded-xl" />
@@ -104,11 +104,11 @@ const Portfolio: FC = () => {
         { img: mob8, title: "Doe", downloads: "550K" },
       ];
       return (
-        <div className="grid grid-cols-12 sm:gap-12 space-y-8 sm:space-y-0">
+        <div className="grid grid-cols-12 gap-6 sm:gap-12 space-y-8 sm:space-y-0">
           {projects.map(({ img, title, downloads }, idx) => (
             <div
               key={idx}
-             className="md:col-span-4 col-span-12 sm:col-span-6 openModal"
+              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal"
               onClick={() => openModal({ img, title, downloads })}
             >
               <img src={img} alt={title} className="sm:w-full rounded-xl" />
@@ -117,7 +117,7 @@ const Portfolio: FC = () => {
                   <img src={logop} alt="logo" />
                 </div>
                 <div>
-                <h6 className=" text-[24px] sm:text-[30px] font-semibold">{title}</h6>
+                  <h6 className=" text-[24px] sm:text-[30px] font-semibold">{title}</h6>
                   <small className="text-lg text-gray-800">
                     {downloads} Download IOS
                   </small>
@@ -134,25 +134,24 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
         <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px]">
           Your business deserves a unique approach
         </h1>
         <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
-          <img src={herobg} alt="background" />
+          <img src={herobg} alt="background" className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" />
         </div>
       </section>
-      <div className="tabs mt-10 sm:mt-20 md:mt-40 tabbg h-24">
+      <div className="tabs  2xl:mt-10 sm:mt-20 tabbg h-20 sm:h-24">
         <Container className="h-full">
           <div className="h-full overflow-x-auto overflow-y-hidden">
-            <div className="flex sm:justify-between items-center gap-10  h-full w-[1046px] lg:w-full mx-auto">
+            <div className="flex sm:justify-between items-center gap-10  h-full w-[1046px] xl:w-full mx-auto">
               {tabs.map(({ id, label }) => (
                 <button
                   key={id}
                   onClick={() => setActiveTab(id)}
-                  className={` text-[24px] sm:text-[30px] font-semibold ${
-                    activeTab === id ? "text-secondary-light2" : "text-gray-400"
-                  }`}
+                  className={` text-[24px] sm:text-[30px] font-semibold ${activeTab === id ? "text-secondary-light2" : "text-gray-400"
+                    }`}
                 >
                   {label}
                 </button>

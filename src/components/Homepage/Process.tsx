@@ -75,7 +75,7 @@ const StepCard = ({
   step: (typeof steps)[0];
   isLast: boolean;
 }) => (
-  <div className="card-box 2xl:w-[320px] sm:px-5 px-2 2xl:!pl-12 py-10 relative">
+  <div className="card-box 2xl:w-[320px] sm:px-5  2xl:!pl-12 py-10 relative">
     <div className="flex">
       <div className="md:text-[30px] font-semibold text-primary-dark2 pe-5">
         {step.number}
@@ -101,10 +101,10 @@ const StepCard = ({
 );
 
 const Process = () => (
-  <section className="2xl:mt-[200px] mt-[20px] xl:mt-[70px] process-sec">
+  <section className="2xl:mt-[200px] mt-[40px] xl:mt-[70px] process-sec">
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
-        <div className="xl:max-w-[400px] sm:p-5 p-2 xl:relative xl:bottom-16">
+        <div className="xl:max-w-[400px] sm:p-5  xl:relative xl:bottom-16">
           <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none">
             Our
           </h5>
@@ -115,7 +115,7 @@ const Process = () => (
             Our process ensures your vision becomes a seamless reality.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 top-barbox xl:me-24 top-cards">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 top-barbox xl:me-24 top-cards">
           {steps.slice(0, 3).map((step, index) => (
             <StepCard
               key={step.number}
@@ -132,7 +132,7 @@ const Process = () => (
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
         {steps.slice(3).map((step, index) => (
           <StepCard
             key={step.number}
