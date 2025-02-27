@@ -76,13 +76,13 @@ const UXStrategy = () => {
   return (
     <main>
       <Navbar />
-      <section className="gradientHeroBg h-screen flex items-center justify-center px-3">
+      <section className="gradientHeroBg h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen flex items-center justify-center px-3">
         <div>
           <h1 className="text-center text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px]  max-w-[1380px] mx-auto font-semibold leading-[128.5%] 2xl:py-[90px]">
             UIUX den creates product strategy in creative way.
           </h1>
           <div className="flex justify-center mt-5 sm:mt-10 lg:mt-20">
-            <img src={uxsheader} alt="header_image" />
+            <img src={uxsheader} alt="header_image"className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" />
           </div>
         </div>
       </section>
