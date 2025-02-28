@@ -123,7 +123,7 @@ const Knowledger = () => {
         <img
           src={kd}
           alt="KD Graphic"
-          className="sm:absolute -top-[70px] inset-0 xl:top-[-72px] 2xl:top-[-281px] xl:max-w-[702px] 2xl:max-w-[1034px] w-[600px] mx-auto"
+          className="sm:absolute -top-[70px] inset-0 xl:top-[-72px] 2xl:top-[-281px] xl:max-w-[630px] 2xl:max-w-[1034px] w-[600px] lg:w-auto mx-auto"
         />
         <p className="xl:text-2xl text-base text-start font-semibold md:text-center mx-auto xl:max-w-[1350px] sm:pt-[360px] 2xl:pt-[426px] pb-5 sm:pb-10  xl:pb-[84px]">
           The development of a blockchain-based Learning Management System (LMS)
@@ -165,24 +165,24 @@ const Knowledger = () => {
           Technology <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger2" />Stack</span>
         </h3>
         <Container>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] mt-8 lg:mt-16">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] mt-3 sm:mt-8 lg:mt-16">
             <div className="xl:col-span-1 self-center">
               {techStack.map((item) => (
                 <div
                   key={item.id}
-                  className="flex space-y-4 xl:space-y-0 flex-wrap xl:gap-5 gap-2 items-center"
+                  className="flex mt-3 sm:mt-0 sm:space-y-4 xl:space-y-0 flex-wrap xl:gap-5 gap-2 items-center"
                 >
-                  <div className="md:p-5 p-2 text-[24px] md:text-[28px] text-neutral-500 font-semibold">
+                  <div className="md:p-5 p-2 text-[22px]sm:text-[24px] md:text-[28px] text-neutral-500 font-semibold">
                     {item.id}
                   </div>
-                  <div className="md:text-[32px] text-[24px] font-semibold">
+                  <div className="md:text-[32px] text-[20px] font-semibold">
                     {item.title}:
                   </div>
                   <div className="flex flex-wrap gap-3">
                     {item.tools.map((tool, index) => (
                       <div
                         key={index}
-                        className="text-secondary-light2 px-5 py-2.5 rounded-full border-[1px] font-bold border-neutral-200"
+                        className="text-secondary-light2 px-5 py-1 sm:py-2.5 rounded-full border-[1px] font-bold border-neutral-200"
                       >
                         {tool}
                       </div>
@@ -202,7 +202,7 @@ const Knowledger = () => {
                   <h5 className="text-[24px] xl:first-line:text-[40px] font-semibold">
                     {section.title}
                   </h5>
-                  <div className="md:py-[50px] md:px-[40px] p-4 rounded-2xl bg-primary-dark lg:h-[487px] mt-4 md:mt-8">
+                  <div className="md:py-[50px] md:px-[40px] p-4 rounded-2xl bg-primary-dark lg:h-[487px] mt-4 md:mt-8 sm:h-full">
                     <div className="text-[24px] md:text-[32px] font-semibold text-secondary-light2">
                       {section.methodology}
                     </div>
@@ -224,7 +224,7 @@ const Knowledger = () => {
           </div>
         </Container>
         <Container>
-          <div className="mt-10 sm:mt-16 xl:mt-[140px]">
+          <div className="mt-10 sm:mt-16 sm:pt-20 lg:pt-0 xl:mt-[140px]">
             <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
               Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Overview</span>
             </h3>
@@ -261,7 +261,7 @@ const Knowledger = () => {
           <div className="flex ">
             <div className="flex justify-end">
               <div className="grid grid-cols-12 ">
-                <div className="  col-span-12 sm:col-span-6 xl:col-span-5 md:px-10 md:py-8 p-3 relative ">
+                <div className="  col-span-12 sm:col-span-6 xl:col-span-5 md:px-10 md:py-8 sm:p-3 relative ">
                   <div className="flex">
                     <div className="text-primary-dark2">
                       <h2 className="mt-3  text-[24px] md:text-[30px] font-semibold md:leading-10">
@@ -283,7 +283,7 @@ const Knowledger = () => {
                     />
                   </div>
                 </div>
-                <div className="  col-span-12 sm:col-span-6 xl:col-span-4 md:px-10 md:py-8 p-3 relative ">
+                <div className="  col-span-12 sm:col-span-6 xl:col-span-4 md:px-10 md:py-8 sm:p-3 relative ">
                   <div className="flex  ">
                     <div className="text-primary-dark2">
                       <h2 className="mt-3  text-[24px] md:text-[30px] font-semibold md:leading-10">
@@ -320,7 +320,7 @@ const Knowledger = () => {
               </div>
             </div>
 
-            <div className=" col-span-12 sm:col-span-6 xl:col-span-4 md:px-10 md:py-8 p-3 relative h-full">
+            <div className=" col-span-12 sm:col-span-6 xl:col-span-4 md:px-10 md:py-8 sm:p-3 relative h-full">
               <div className="flex  ">
                 <div className="text-primary-dark2">
                   <h2 className="mt-3  text-[24px] md:text-[30px] font-semibold md:leading-10">
@@ -342,7 +342,7 @@ const Knowledger = () => {
                 />
               </div>
             </div>
-            <div className=" col-span-12 sm:col-span-6 xl:col-span-5 md:px-10 md:py-8 p-3 relative h-full">
+            <div className=" col-span-12 sm:col-span-6 xl:col-span-5 md:px-10 md:py-8 sm:p-3 relative h-full">
               <div className="flex">
                 <div className="text-primary-dark2">
                   <h2 className="mt-3  text-[24px] md:text-[30px] font-semibold md:leading-10">
@@ -358,11 +358,11 @@ const Knowledger = () => {
             </div>
           </div>
         </Container>
-        <section className="mt-40 relative ">
-          <div className="absolute top-0 left-0 right-0 h-[80%] inset-0  bg-primary-dark ">
+        <section className=" mt-10 sm:mt-20 lg:mt-40 relative ">
+          <div className="absolute top-0 left-0 right-0 h-[85%] lg:h-[80%] inset-0  bg-primary-dark -z-[1] ">
           </div>
-          <div className="h-[300px] bg-primary-dark ">
-            <h3 className="text-center text-[60px] font-semibold text-white pt-[72px]">
+          <div className="h-[100px] sm:h-[200px] 2xl:h-[300px] bg-primary-dark ">
+            <h3 className="text-center text-[32px] lg:text-[60px] font-semibold text-white pt-[30px] sm:pt-[72px]">
               Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger4" />Work</span>
             </h3>
           </div>
@@ -377,9 +377,13 @@ const Knowledger = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000 }}
               loop={true}
-              className="my-swiper custom-knowledger mt-24 relative z-50"
+              className="my-swiper custom-knowledger mt-4 sm:mt-24 relative z-50"
               onSlideChange={handleSlideChange}
               onSwiper={(swiper) => handleSlideChange(swiper)}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 20 },  // Small screens
+                576: { slidesPerView: 3, spaceBetween: 60 }  // Desktops
+              }}
             >
               {slidesContent.map((content, index) => {
                 let slideClass = "";
