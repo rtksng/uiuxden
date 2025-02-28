@@ -321,21 +321,73 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 .custom-leptopimg {
   left: 50%;
   transform: translateX(-44%) translateY(-2%);
-  top: 50%;
+  top: 48%;
 }
 
-/* .slide-content.other-slide{
-  width: 533px;
-  overflow: hidden;
-} */
+.leptop-image {
+  max-width: 841px;
+}
+
+
+
+@media (max-width: 1600px) {
+  .custom-leptopimg {
+    left: 50.8%;
+    transform: translateX(-44%) translateY(-2%);
+    top: 53%;
+  }
+
+  .leptop-image {
+    max-width: 673px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .custom-leptopimg {
+    top: 56%;
+  }
+
+  .leptop-image {
+    max-width: 593px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .custom-leptopimg {
+    left: 50.4%;
+    top: 50%;
+  }
+
+  .leptop-image {
+    max-width: 572px;
+  }
+}
+
+@media (max-width:992px) {
+  .custom-leptopimg {
+    top: 65%;
+    left: 51.2%;
+  }
+
+  .leptop-image {
+    max-width: 325px;
+  }
+}
+
+@media (max-width:576px) {
+  .custom-leptopimg {
+    display: none;
+  }
+
+  .leptop-image {
+    max-width: 124px;
+  }
+}
+
 
 .slide-content.active-slide {
   transform: scale(1.09);
   transition: .2s linear;
-}
-
-.leptop-image {
-  max-width: 830px;
 }
 
 .active-slideoutter {
@@ -527,6 +579,12 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   padding-left: 20px !important;
 }
 
+@media (max-width: 576px) {
+  .process-sec .top-cards .card-box {
+    padding-left: 0px !important;
+  }
+}
+
 /* 
 .custom-br{
   display: none;
@@ -617,6 +675,17 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     margin-bottom: 80px;
   }
 
+}
+
+@media (max-width: 576px) {
+  .casestudy .itemcase {
+    height: 250px;
+  }
+
+  .carouselStudy .innerItem.custom-box {
+    background-color: #EBFDDD;
+    background-image: none;
+  }
 }
 
 @media (max-width: 1280px) {

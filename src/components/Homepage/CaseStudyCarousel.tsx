@@ -33,7 +33,7 @@ const CaseStudyCarousel = () => {
                   <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] font-semibold 2xl:max-w-[800px] max-w-[600px]">
                     {slide.title}
                   </h2>
-                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]"/>
+                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" />
                 </div>
                 <div className="grid grid-cols-12 xl:mt-12 mt-6 gap-6">
                   <div className="xl:col-span-8 col-span-12 custom-box innerItem relative p-2 sm:p-8 xl:px-[52px] xl:py-[54px] bg-[#EBFDDD] xl:bg-transparent">
@@ -63,5 +63,4 @@ const CaseStudyCarousel = () => {
     </Container>
   );
 };
-
 export default CaseStudyCarousel;

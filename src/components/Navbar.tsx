@@ -16,7 +16,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   <motion.ul
     className={`${
       isMobile
-        ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-full justify-center"
+        ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-[60%] sm:h-full justify-center"
         : "hidden xl:flex items-center space-x-6"
     } font-semibold xl:font-normal`}
     initial={{ opacity: 0, x: isMobile ? -100 : 0 }}
