@@ -438,19 +438,19 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   border-right-style: solid;
 }
 
-
 .table-customrow:first-child .table-customtd {
   border-top-style: solid;
-
 }
 
 .table-customrow:last-child .table-customtd {
   border-bottom-style: solid;
-
 }
 
-
-
+.words-mind-card-wrapper .content-overlay {
+  background-image: url(../src/assets/words-cards-hover-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 @media (max-width:1280px) {
   .animationStroke .svg-container.aboutus svg {
@@ -594,7 +594,6 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 
 
 /* ------------------------- Responsive Styling -----------------------------*/
-
 @media (max-width: 1536px) {
   .custom-navbar .nav-button {
     padding: 10px 26px;
@@ -626,16 +625,13 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     transform: translateY(20px);
   }
 
-
   .animationStroke.feature .svg-container svg,
   .uxres-sec .animationStroke .svg-container svg,
   .casestudy .animationStroke.casestudy .svg-container svg {
     transform: scaleX(0.7) scaleY(0.7);
   }
 
-
   .mask-card .inner-content {
-
     clip-path: path("M0 339.608V15.6962C0 6.99935 6.52567 0 14.5151 0H292.583C300.572 0 307.098 6.99935 307.098 15.6962V51.2979C307.098 60.3625 311.913 67.7617 320.381 67.7617H342.224C346.171 67.7617 349.342 70.0234 351.543 73.4218C353.746 76.824 354.951 81.3321 354.951 85.7092V341.86C354.951 346.196 353.326 349.545 350.719 351.815C348.105 354.09 344.476 355.305 340.436 355.305H14.5151C6.52567 355.305 0 348.305 0 339.608Z");
     min-height: 340px;
     display: flex;
@@ -695,9 +691,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   .casestudy .animationStroke.casestudy .svg-container svg {
     transform: scaleX(0.5) scaleY(0.5);
   }
-
 }
-
 
 @media (max-width: 1024px) {
   .mask-card .inner-content {
