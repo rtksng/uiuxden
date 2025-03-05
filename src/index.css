@@ -290,6 +290,14 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   transform: scaleX(0.9) scaleY(0.8);
 }
 
+.animationStroke .svg-container.opportunities svg {
+  transform: scaleX(2.4) scaleY(1);
+}
+
+.animationStroke .svg-container.opportunities {
+  left: 58%;
+}
+
 
 .animationStroke .svg-container.volt svg {
   transform: scaleX(1.9);

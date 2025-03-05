@@ -94,10 +94,10 @@ const About = () => {
       <Process />
       <Rating />
       <div className="mt-10 md:mt-20 lg:mt-24">
-     <Container>
-        <h4 className="font-semibold text-[32px] sm:text-center text-black sm:text-[48px] xl:text-[60px] mb-5 sm:mb-9 lg:mb-36">
-          We love to make <span className="animationStroke"><SVGAnimation nameOfClass="svg-container" />things</span> easy
-        </h4>
+        <Container>
+          <h4 className="font-semibold text-[32px] sm:text-center text-black sm:text-[48px] xl:text-[60px] mb-5 sm:mb-9 lg:mb-36">
+            We love to make <span className="animationStroke"><SVGAnimation nameOfClass="svg-container" />things</span> easy
+          </h4>
         </Container>
         <CaseStudyCarousel />
       </div>

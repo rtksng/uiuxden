@@ -237,6 +237,7 @@ const Voltjourney = () => {
                 allows them to optimize their pricing and maximize occupancy
                 rates.
               </p>
+              
             </div>
             <div className="col-span-12 lg:col-span-4">
               <img

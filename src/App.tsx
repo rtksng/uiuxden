@@ -10,6 +10,7 @@ import About from "./pages/About";
 import DesignSprint from "./pages/DesignSprint";
 import ContactUS from "./pages/ContactUs";
 import UXConsultancy from "./pages/UXConsultancy";
+import UIBranding from "./pages/UIBranding";
 const App = () => {
   return (
     <Router basename="/uiuxdenred">
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/design-sprint" element={<DesignSprint />} />
           <Route path="/contact-us" element={<ContactUS />} />
           <Route path="/ux-consultancy" element={<UXConsultancy />} />
+          <Route path="/ui-branding" element={<UIBranding />} />
         </Routes>
       </div>
     </Router>
