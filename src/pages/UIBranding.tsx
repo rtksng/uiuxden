@@ -26,7 +26,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
-const UIBranding = () => {
+const UXAudit = () => {
     const consultData = {
         heading: "Ready to Elevate Your",
         subheading: "User",
@@ -52,7 +52,6 @@ const UIBranding = () => {
             ></div>
             <Navbar />
 
-            {/* ---------- Banner Section ---------- */}
             <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
@@ -125,7 +124,6 @@ const UIBranding = () => {
 
                         </div>
                     </div>
-
                 </Container>
             </div>
 
@@ -169,8 +167,8 @@ const UIBranding = () => {
                     </div>
 
                     <div className="grid grid-cols-12 gap-[40px]">
-                        <div className="col-span-12 md:col-span-3">
-                            <div className="mt-[70px]">
+                        <div className="col-span-12 sm:col-span-6 lg:col-span-3">
+                            <div className="lg:mt-[70px]">
                                 <img
                                     src={CreatingIcon}
                                     className="w-[50px] sm:w-auto"
@@ -185,7 +183,7 @@ const UIBranding = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 sm:col-span-6 lg:col-span-3">
                             <img
                                 src={EnhancingIcon}
                                 className="w-[50px] sm:w-auto"
@@ -199,8 +197,8 @@ const UIBranding = () => {
                                 Our user-focused designs simplify journeys and eliminate friction, creating seamless experiences. We craft captivating interfaces that engage users and drive conversions for your digital platforms.
                             </p>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
-                            <div className="mt-[70px]">
+                        <div className="col-span-12 sm:col-span-6 lg:col-span-3">
+                            <div className="lg:mt-[70px]">
                                 <img
                                     src={InnovatingIcon}
                                     className="w-[50px] sm:w-auto"
@@ -216,7 +214,7 @@ const UIBranding = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 sm:col-span-6 lg:col-span-3">
                             <img
                                 src={AlignmentIcon}
                                 className="w-[50px] sm:w-auto"
@@ -275,12 +273,12 @@ const UIBranding = () => {
                                                 <img
                                                     src={TurningBanner}
                                                     alt="Image"
-                                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                                    className="mx-auto max-w-[80%] lg:max-w-[60%] lg:max-w-full"
                                                 />
 
                                             </div>
                                         </div>
-                                        <div className="absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
+                                        <div className="lg:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
                                             <p className="text-white text-[26px] font-normal w-[73%] mb-4">
                                                 We help businesses solve problems and achieve their goals with smart, creative solutions that fit their brand
                                             </p>
@@ -369,4 +367,4 @@ const UIBranding = () => {
     );
 };
 
-export default UIBranding;
+export default UXAudit;
