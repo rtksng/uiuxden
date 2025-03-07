@@ -324,6 +324,9 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   .animationStroke .svg-container.holistic svg {
     transform: scaleX(1.4) scale(.6);
   }
+  .animationStroke .svg-container.opportunities svg {
+    transform: scaleX(1.6) scaleY(1);
+  }
 }
 
 

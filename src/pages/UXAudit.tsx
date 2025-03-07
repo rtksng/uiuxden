@@ -60,31 +60,31 @@ const UIBranding = () => {
                             UIUXDen is capable of understanding how users behave with your existing product.
                         </h1>
                     </div>
-                    <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] xl:mt-[40px] 2xl:mt-[50px] ">
+                    <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] lg:mt-[80px] xl:mt-[40px] 2xl:mt-[50px] ">
 
                         <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center relative p-3">
-                            <p className="text-primary-dark2 text-[16px] xl:text-[20px] font-semibold ">
+                            <p className="text-primary-dark2 text-[14px] sm:text-[16px] xl:text-[20px] font-semibold ">
                                 Define Goals &
                                 Gather Data
                             </p>
                             <img src={LeftArrowHalf} alt="arrow" className="hidden xl:block xl:absolute top-[45%] right-[100%]" />
                         </div>
 
-                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center p-3">
+                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center relative p-3">
                             <p className="text-primary-dark2 text-[16px] xl:text-[20px] font-semibold ">
                                 Evaluate Usability
                                 & Accessibility
                             </p>
                         </div>
 
-                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center p-3">
+                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center relative p-3">
                             <p className="text-primary-dark2 text-[16px] xl:text-[20px] font-semibold ">
                                 Benchmark Against
                                 Competitors
                             </p>
                         </div>
 
-                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center p-3">
+                        <div className="border border-primary-dark2 rounded-full w-[160px] h-[160px] xl:w-[200px] xl:h-[200px] flex justify-center items-center text-center relative p-3">
                             <p className="text-primary-dark2 text-[16px] xl:text-[20px] font-semibold ">
                                 Identify Issues &
                                 Prioritize Fixes
@@ -101,7 +101,7 @@ const UIBranding = () => {
 
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
+                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}
@@ -152,13 +152,13 @@ const UIBranding = () => {
 
             <div className="bg-[#2D2D2D] py-12 2xl:pt-[80px] 2xl:pb-[150px]">
                 <Container>
-                    <div className="text-center flex flex-col items-center mb-20 text-white">
+                    <div className="sm:text-center flex flex-col items-center mb-7 sm:mb-20 text-white">
                         <h1 className="text-[34px] md:text-[42px] xl:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
                             Get a complete picture of how users are interacting with your product from every angle.
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-12 gap-[40px] ">
+                    <div className="grid grid-cols-12 sm:gap-[40px] ">
 
                         <div className="col-span-12 sm:col-span-7 xl:col-span-6 xl:pr-[100px] ">
                             <div className="border-b border-white pb-5 mb-7">
@@ -210,6 +210,7 @@ const UIBranding = () => {
                                 />
                             </div>
                         </div>
+
                     </div>
                 </Container>
             </div>
@@ -217,24 +218,24 @@ const UIBranding = () => {
             <section className="py-10 xl:py-[100px]">
                 <Container>
                     <div className="grid grid-cols-12 xl:grid-cols-12 mb-4 xl:mb-[80px]">
-                        <div className="col-span-1">
+                        <div className="hidden xl:block col-span-1">
                         </div>
-                        <div className="col-span-4">
-                            <h2 className="sm:text-[30px] xl:text-[40px] 2xl:text-[60px] font-semibold text-primary-dark2">
+                        <div className=" col-span-12 sm:col-span-4 xl:col-span-4">
+                            <h2 className=" text-[24px] sm:text-[30px] xl:text-[40px] 2xl:text-[60px] font-semibold text-primary-dark2">
                                 Importance of
                             </h2>
-                            <h2 className="sm:text-[47px] xl:text-[65px] 2xl:text-[84px] font-semibold text-primary-dark2">
+                            <h2 className=" text-[32px] sm:text-[47px] xl:text-[65px] 2xl:text-[84px] font-semibold text-primary-dark2">
                                 UI/UX Audit
                             </h2>
                         </div>
-                        <div className="col-span-6">
-                            <div className="h-full flex justify-center items-center ml-[50px]">
+                        <div className=" col-span-12 sm:col-span-6">
+                            <div className="h-full flex justify-center items-center sm:ml-[50px]">
                                 <p className="sm:text-[18px] xl:text-[24px] font-medium text-primary-dark2">
                                     UX audit is a data-driven approach that allows you to define actual customers' needs, improve products’ quality, and achieve your desired business goals.
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-1">
+                        <div className=" hidden xl:block col-span-1">
                         </div>
                     </div>
 

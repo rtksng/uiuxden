@@ -52,7 +52,7 @@ const UXAudit = () => {
             ></div>
             <Navbar />
 
-            <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
+            <div className="relative h-[auto] sm:h-[50vh] lg:h-[50vh] xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
@@ -61,54 +61,52 @@ const UXAudit = () => {
                         </h1>
 
                     </div>
-                    <div className="grid grid-cols-12 w-full mt-4 xl:mt-[40px] 2xl:mt-[90px]">
-                        <div className="col-span-12 md:col-span-3">
+                    <div className="grid grid-cols-12 w-full mt-4 sm:mt-20 xl:mt-[40px] 2xl:mt-[90px]">
+                        <div className="col-span-3">
                             <img
                                 src={Sketch}
                                 alt="arrow"
                                 width={50}
                                 className="mx-auto w-[50%]"
                             />
-                            <p className="text-[20px] text-primary-dark2 font-semibold text-center mt-4">
+                            <p className="text-[14px] sm:text-[20px] text-primary-dark2 font-semibold text-center mt-4">
                                 Sketch
                             </p>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-3">
                             <img
                                 src={design}
                                 alt="arrow"
                                 width={50}
                                 className="mx-auto w-[50%]"
                             />
-                            <p className="text-[20px] text-primary-dark2 font-semibold text-center mt-4">
+                            <p className="text-[14px] sm:text-[20px] text-primary-dark2 font-semibold text-center mt-4">
                                 Design
                             </p>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-3">
                             <img
                                 src={present}
                                 alt="arrow"
                                 width={50}
                                 className="mx-auto w-[50%]"
                             />
-                            <p className="text-[20px] text-primary-dark2 font-semibold text-center mt-4">
+                            <p className="text-[14px] sm:text-[20px] text-primary-dark2 font-semibold text-center mt-4">
                                 Present
                             </p>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
-                            <div className="h-full flex justify-content-center items-center">
+                        <div className="col-span-3">
+                            <div className="h-full flex justify-content-center sm:items-center p-5 pb-10 pt-0 sm:p-0">
                                 <img
                                     src={final}
                                     alt="arrow"
-                                    width={50}
-                                    className="mx-auto w-[60%]"
+                                    className="mx-auto sm:w-[60%]"
                                 />
                             </div>
-
                         </div>
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
+                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-20  xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}
@@ -130,15 +128,18 @@ const UXAudit = () => {
             <div className="py-8 lg:py-20">
                 <Container>
                     <div className="grid grid-cols-12">
-                        <div className="col-span-12 lg:col-span-7 xl:col-span-6 md:pr-20 mb-8 mlg:mb-0">
-                            <p className="text-[24px] text-center md:text-start md:text-[60px] font-semibold">
+                        <div className="col-span-12 lg:col-span-7 xl:col-span-6 xl:pr-20 mb-8 mlg:mb-0">
+                            <p className="text-[24px] text-center lg:text-start sm:text-[42px] xl:text-[60px]  font-semibold">
                                 UIUXDen, carries the spirit, purpose, values, and the pride of your brand in everything we do.
                             </p>
-                            <Button
-                                variant="secondary"
-                                className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 lg:mt-[70px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
-                                Consult Us Now
-                            </Button>
+                            <div className="flex justify-center lg:justify-start">
+                                <Button
+                                    variant="secondary"
+                                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 lg:mt-[70px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
+                                    Consult Us Now
+                                </Button>
+                            </div>
+
                         </div>
 
                         <div className="col-span-12 lg:col-span-5 xl:col-span-6">
@@ -155,7 +156,7 @@ const UXAudit = () => {
             {/* ---------- holistic Section ---------- */}
             <div className="bg-[#2D2D2D] py-12 2xl:pt-[80px] 2xl:pb-[150px]">
                 <Container>
-                    <div className="text-center flex flex-col items-center mb-20 text-white">
+                    <div className="sm:text-center flex flex-col items-center mb-7 sm:mb-20 text-white">
                         <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
                             The UIUXDen is {"  "}
                             <span className="animationStroke w-fit h-fit inline-block mx-1">
@@ -166,7 +167,7 @@ const UXAudit = () => {
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-12 gap-[40px]">
+                    <div className="grid grid-cols-12 gap-y-6 sm:gap-[40px]">
                         <div className="col-span-12 sm:col-span-6 lg:col-span-3">
                             <div className="lg:mt-[70px]">
                                 <img
@@ -233,9 +234,9 @@ const UXAudit = () => {
                     </div>
                 </Container>
             </div>
-            <div className="py-8 lg:py-20">
+            <div className="py-8 sm:py-16 xl:py-20">
                 <Container>
-                    <div className="text-center flex flex-col items-center mb-20 text-primary-dark2">
+                    <div className="sm:text-center flex flex-col items-center mb-5 sm:mb-20 text-primary-dark2">
                         <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  font-semibold mb-base">
                             Turning Obstacles into  {"  "}
                             <span className="animationStroke w-fit h-fit inline-block">
@@ -257,8 +258,8 @@ const UXAudit = () => {
                                     <div className="relative">
                                         <div className="grid grid-cols-12 gap-[30px] 2xl:gap-0">
                                             <div className="col-span-12 lg:col-span-5">
-                                                <div className="border border-[#1a1a1a] rounded-[32px] p-[30px] 2xl:p-10 ">
-                                                    <h3 className="text-primary-dark2 text-[60px] font-semibold ">
+                                                <div className="border border-[#1a1a1a] rounded-[32px] p-5 sm:p-[30px] 2xl:p-10 ">
+                                                    <h3 className="text-primary-dark2 text-[40px] sm:text-[60px] font-semibold ">
                                                         250+
                                                     </h3>
                                                     <h6 className="text-primary-dark2 text-[28px] font-semibold mt-2 mb-7">
@@ -273,13 +274,13 @@ const UXAudit = () => {
                                                 <img
                                                     src={TurningBanner}
                                                     alt="Image"
-                                                    className="mx-auto max-w-[80%] lg:max-w-[60%] lg:max-w-full"
+                                                    className="mx-auto max-w-[80%] lg:max-w-[60%] lg:max-w-full pr-3"
                                                 />
 
                                             </div>
                                         </div>
-                                        <div className="lg:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
-                                            <p className="text-white text-[26px] font-normal w-[73%] mb-4">
+                                        <div className="xl:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
+                                            <p className="text-white text-[26px] font-normal sm:w-[73%] mb-4">
                                                 We help businesses solve problems and achieve their goals with smart, creative solutions that fit their brand
                                             </p>
                                             <FaArrowRightLong size={20} className="text-white" />
@@ -292,8 +293,8 @@ const UXAudit = () => {
                                     <div className="relative">
                                         <div className="grid grid-cols-12 gap-[30px] 2xl:gap-0">
                                             <div className="col-span-12 lg:col-span-5">
-                                                <div className="border border-[#1a1a1a] rounded-[32px] p-[30px] 2xl:p-10 ">
-                                                    <h3 className="text-primary-dark2 text-[60px] font-semibold ">
+                                                <div className="border border-[#1a1a1a] rounded-[32px] p-5 sm:p-[30px] 2xl:p-10 ">
+                                                    <h3 className="text-primary-dark2 text-[40px] sm:text-[60px] font-semibold ">
                                                         250+
                                                     </h3>
                                                     <h6 className="text-primary-dark2 text-[28px] font-semibold mt-2 mb-7">
@@ -308,13 +309,13 @@ const UXAudit = () => {
                                                 <img
                                                     src={TurningBanner}
                                                     alt="Image"
-                                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                                    className="mx-auto max-w-[80%] lg:max-w-[60%] lg:max-w-full pr-3"
                                                 />
 
                                             </div>
                                         </div>
-                                        <div className="absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
-                                            <p className="text-white text-[26px] font-normal w-[73%] mb-4">
+                                        <div className="xl:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
+                                            <p className="text-white text-[26px] font-normal sm:w-[73%] mb-4">
                                                 We help businesses solve problems and achieve their goals with smart, creative solutions that fit their brand
                                             </p>
                                             <FaArrowRightLong size={20} className="text-white" />
@@ -327,8 +328,8 @@ const UXAudit = () => {
                                     <div className="relative">
                                         <div className="grid grid-cols-12 gap-[30px] 2xl:gap-0">
                                             <div className="col-span-12 lg:col-span-5">
-                                                <div className="border border-[#1a1a1a] rounded-[32px] p-[30px] 2xl:p-10 ">
-                                                    <h3 className="text-primary-dark2 text-[60px] font-semibold ">
+                                                <div className="border border-[#1a1a1a] rounded-[32px] p-5 sm:p-[30px] 2xl:p-10 ">
+                                                    <h3 className="text-primary-dark2 text-[40px] sm:text-[60px] font-semibold ">
                                                         250+
                                                     </h3>
                                                     <h6 className="text-primary-dark2 text-[28px] font-semibold mt-2 mb-7">
@@ -343,13 +344,13 @@ const UXAudit = () => {
                                                 <img
                                                     src={TurningBanner}
                                                     alt="Image"
-                                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                                    className="mx-auto max-w-[80%] lg:max-w-[60%] lg:max-w-full pr-3"
                                                 />
 
                                             </div>
                                         </div>
-                                        <div className="absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
-                                            <p className="text-white text-[26px] font-normal w-[73%] mb-4">
+                                        <div className="xl:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
+                                            <p className="text-white text-[26px] font-normal sm:w-[73%] mb-4">
                                                 We help businesses solve problems and achieve their goals with smart, creative solutions that fit their brand
                                             </p>
                                             <FaArrowRightLong size={20} className="text-white" />
