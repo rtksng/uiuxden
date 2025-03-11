@@ -14,11 +14,10 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   onClick,
 }) => (
   <motion.ul
-    className={`${
-      isMobile
-        ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-[60%] sm:h-full justify-center"
-        : "hidden xl:flex items-center space-x-6"
-    } font-semibold xl:font-normal`}
+    className={`${isMobile
+      ? "flex flex-col items-start px-8 py-2 space-y-10 bg-secondary-light2 text-white h-[60%] sm:h-full justify-center"
+      : "hidden xl:flex items-center space-x-6"
+      } font-semibold xl:font-normal`}
     initial={{ opacity: 0, x: isMobile ? -100 : 0 }}
     animate={{ opacity: 1, x: 0 }}
     exit={{ opacity: 0, x: isMobile ? -100 : 0 }}
@@ -28,7 +27,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
       (link, idx) => (
         <li
           key={idx}
-          className="hover:text-black hover:font-semibold transition-all text-2xl xl:text-base whitespace-nowrap"
+          className="hover:text-black text-primary-dark hover:font-semibold font-medium transition-all text-2xl xl:text-base whitespace-nowrap"
           onClick={onClick}
         >
           <Link
@@ -49,7 +48,7 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
     if (!isMenuOpen) {
@@ -73,18 +72,17 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`custom-navbar fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-      }`}
+      className={`custom-navbar fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+        }`}
     >
       <Container>
         <nav className="flex items-center justify-between py-3 xl:py-2 relative z-50">
           {/* Logo */}
           <Link to="/" className="z-50">
-            <img 
-              src={logo} 
-              alt="UIUXden Logo" 
-              className="max-w-[120px] sm:max-w-[150px]" 
+            <img
+              src={logo}
+              alt="UIUXden Logo"
+              className="max-w-[120px] sm:max-w-[150px]"
             />
           </Link>
 
@@ -149,8 +147,8 @@ const Navbar: React.FC = () => {
                 <div className="h-full flex flex-col pt-20">
                   <NavLinks isMobile onClick={toggleMenu} />
                   <div className="px-8 mt-8">
-                    <Button 
-                      className="w-full" 
+                    <Button
+                      className="w-full"
                       variant="primary"
                       onClick={toggleMenu}
                     >

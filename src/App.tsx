@@ -10,6 +10,8 @@ import About from "./pages/About";
 import DesignSprint from "./pages/DesignSprint";
 import ContactUS from "./pages/ContactUs";
 import UXConsultancy from "./pages/UXConsultancy";
+import UIBranding from "./pages/UIBranding";
+import UXAudit from "./pages/UXAudit";
 const App = () => {
   return (
     <Router basename="/uiuxdenred">
@@ -26,6 +28,9 @@ const App = () => {
           <Route path="/design-sprint" element={<DesignSprint />} />
           <Route path="/contact-us" element={<ContactUS />} />
           <Route path="/ux-consultancy" element={<UXConsultancy />} />
+          <Route path="/ui-branding" element={<UIBranding />} />
+          <Route path="/ux-audit" element={<UXAudit />} />
+
         </Routes>
       </div>
     </Router>

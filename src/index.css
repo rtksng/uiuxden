@@ -290,6 +290,14 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   transform: scaleX(0.9) scaleY(0.8);
 }
 
+.animationStroke .svg-container.opportunities svg {
+  transform: scaleX(2.4) scaleY(1);
+}
+
+.animationStroke .svg-container.opportunities {
+  left: 58%;
+}
+
 
 .animationStroke .svg-container.volt svg {
   transform: scaleX(1.9);
@@ -308,9 +316,16 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   transform: scaleX(1.2);
 }
 
+.animationStroke .svg-container.resource svg {
+  transform: scaleX(1.5);
+}
+
 @media (max-width: 1024px) {
   .animationStroke .svg-container.holistic svg {
     transform: scaleX(1.4) scale(.6);
+  }
+  .animationStroke .svg-container.opportunities svg {
+    transform: scaleX(1.6) scaleY(1);
   }
 }
 
@@ -438,21 +453,71 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   border-right-style: solid;
 }
 
-
 .table-customrow:first-child .table-customtd {
   border-top-style: solid;
-
 }
 
 .table-customrow:last-child .table-customtd {
   border-bottom-style: solid;
+}
+
+.words-mind-card-wrapper .content-overlay {
+  background-image: url(../src/assets/words-cards-hover-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.ux-audit-insights-slider-wrapper .swiper {
+  padding-top: 70px;
+  padding-bottom: 0 !important;
+}
+
+.ux-audit-insights-slider-wrapper .swiper .swiper-wrapper {
+  padding-top: 70px;
 
 }
 
+.ux-audit-insights-slider-wrapper .swiper-pagination {
+  top: 0px !important;
+}
 
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 1)) padding-box,
+    linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  opacity: unset;
+}
 
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
+  color: #000;
+}
+
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  display: none;
+}
 
 @media (max-width:1280px) {
+  .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ux-audit-insights-slider-wrapper .swiper {
+    padding-top: 40px;
+  }
+
   .animationStroke .svg-container.aboutus svg {
     transform: scaleX(1.3);
   }
@@ -594,7 +659,6 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 
 
 /* ------------------------- Responsive Styling -----------------------------*/
-
 @media (max-width: 1536px) {
   .custom-navbar .nav-button {
     padding: 10px 26px;
@@ -626,16 +690,13 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
     transform: translateY(20px);
   }
 
-
   .animationStroke.feature .svg-container svg,
   .uxres-sec .animationStroke .svg-container svg,
   .casestudy .animationStroke.casestudy .svg-container svg {
     transform: scaleX(0.7) scaleY(0.7);
   }
 
-
   .mask-card .inner-content {
-
     clip-path: path("M0 339.608V15.6962C0 6.99935 6.52567 0 14.5151 0H292.583C300.572 0 307.098 6.99935 307.098 15.6962V51.2979C307.098 60.3625 311.913 67.7617 320.381 67.7617H342.224C346.171 67.7617 349.342 70.0234 351.543 73.4218C353.746 76.824 354.951 81.3321 354.951 85.7092V341.86C354.951 346.196 353.326 349.545 350.719 351.815C348.105 354.09 344.476 355.305 340.436 355.305H14.5151C6.52567 355.305 0 348.305 0 339.608Z");
     min-height: 340px;
     display: flex;
@@ -695,9 +756,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
   .casestudy .animationStroke.casestudy .svg-container svg {
     transform: scaleX(0.5) scaleY(0.5);
   }
-
 }
-
 
 @media (max-width: 1024px) {
   .mask-card .inner-content {
