@@ -12,6 +12,7 @@ import ContactUS from "./pages/ContactUs";
 import UXConsultancy from "./pages/UXConsultancy";
 import UIBranding from "./pages/UIBranding";
 import UXAudit from "./pages/UXAudit";
+import BlogList from "./pages/BlogList";
 const App = () => {
   return (
     <Router basename="/uiuxdenred">
@@ -30,6 +31,8 @@ const App = () => {
           <Route path="/ux-consultancy" element={<UXConsultancy />} />
           <Route path="/ui-branding" element={<UIBranding />} />
           <Route path="/ux-audit" element={<UXAudit />} />
+          <Route path="/blog-list" element={<BlogList />} />
+          
 
         </Routes>
       </div>

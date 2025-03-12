@@ -121,7 +121,7 @@ const UIBranding = () => {
                 </Container>
             </div>
 
-            <div className="py-8 lg:py-20">
+            <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px]">
                 <Container>
                     <div className="grid grid-cols-12">
 
