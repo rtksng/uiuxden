@@ -28,6 +28,14 @@ body {
 
 }
 
+.blog-detail-related-card-bg {
+  background: url(../src/assets/blog-detail-related-blod-card-border.png);
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 .top-blog .other-card-bg {
   background: url(../src/assets/blog-other-card-border.png);
   background-size: 100% 100%;
@@ -36,7 +44,6 @@ body {
   overflow: hidden;
 
 }
-
 
 .image-container {
   width: 100%;
@@ -185,11 +192,16 @@ body {
   height: 534px;
   width: 840px;
 }
-
 .other-slide {
   height: 472px;
   width: 500px;
 } */
+
+.blog-detail-header {
+  background: url(../src/assets/blog-header-vectors.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 .gradientHeroBg {
   background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
@@ -249,7 +261,6 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-
   .top-blog .other-card-img-clip {
     clip-path: path("M260.907 0.902344H14.0612C6.88154 0.902344 1.06127 6.72255 1.06119 13.9022L1.05873 245.442C1.05866 252.592 6.83262 258.4 13.9825 258.442L347.314 260.397C354.524 260.44 360.391 254.607 360.391 247.398V61.2465C360.391 54.0668 354.57 48.2465 347.391 48.2465H286.907C279.728 48.2465 273.907 42.4262 273.907 35.2465V13.9023C273.907 6.72264 268.087 0.902344 260.907 0.902344Z");
   }
