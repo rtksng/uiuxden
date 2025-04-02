@@ -237,7 +237,7 @@ const Voltjourney = () => {
                 allows them to optimize their pricing and maximize occupancy
                 rates.
               </p>
-              
+
             </div>
             <div className="col-span-12 lg:col-span-4">
               <img
@@ -286,7 +286,7 @@ const Voltjourney = () => {
             for Utilities
           </h3>
           <div className="grid grid-cols-12 gap-6 mt-[50px] 2xl:mt-[78px]">
-            <div className="col-span-12 sm:col-span-6">
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4">
               <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
                 <h5 className="text-[30px] font-semibold text-primary-dark2 mr-8">
                   Increased Demand for Electricity
@@ -300,7 +300,7 @@ const Voltjourney = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 sm:col-span-6 ">
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 ">
               <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
                 <h5 className="text-[30px] font-semibold text-primary-dark2">
                   Improved Grid Management
@@ -314,7 +314,7 @@ const Voltjourney = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 sm:col-span-6 ">
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 ">
               <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
                 <h5 className="text-[30px] font-semibold text-primary-dark2">
                   Reduced Emissions
