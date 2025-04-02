@@ -16,9 +16,9 @@ const Voltjourney = () => {
     <main>
       <Navbar />
 
-      <div className="relative h-[70vh] sm:h-[45vh] lg:h-[100vh] green-linear">
+      <div className="relative h-[60vh] sm:h-[55vh] lg:h-[55vh] xl:h-[100vh] green-linear">
         <Container>
-          <div className="text-center pt-[80px] sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
+          <div className="text-center pt-[120px] sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
             <img
               src={VoltLogo}
               alt="logo"
@@ -30,7 +30,7 @@ const Voltjourney = () => {
             </h1>
           </div>
 
-          <div className="sm:absolute bottom-5 left-2  2xl:left-9 text-center sm:text-start mt-3 sm:mt-0 ">
+          <div className="sm:absolute bottom-5 left-2 sm:bottom-140 lg:bottom-20 2xl:left-9 text-center sm:text-start mt-3 sm:mt-0 ">
             <div className="xl:flex xl:items-center">
               <img
                 src={rightLongArrow}
@@ -59,9 +59,9 @@ const Voltjourney = () => {
         <img
           src={VoltMainBanner}
           alt="KD Graphic"
-          className="absolute inset-0 -top-[70px] sm:-top-[160px] lg:-top-[220px] 2xl:-top-[280px] max-w-[300px] sm:max-w-[500px] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto"
+          className="absolute inset-0 -top-[160px] sm:-top-[160px] lg:-top-[220px] 2xl:-top-[280px] max-w-[400px] sm:max-w-[78%] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto"
         />
-        <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-center mx-auto max-w-[1350px] pt-[130px] sm:pt-[200px] lg:pt-[426px] pb-[30px] lg:pb-[84px]">
+        <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-center mx-auto max-w-[1350px] pt-[130px] sm:pt-[250px] lg:pt-[426px] pb-[30px] lg:pb-[84px] px-[30px]">
           Volt Journey is a software product that facilitates the management of
           electric freights. It allows carriers to optimize the booking of
           charging slots, reducing wait time at charging stations and delivery
@@ -75,7 +75,7 @@ const Voltjourney = () => {
 
       <section className="mt-4 lg:mt-0">
         <Container>
-          <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold">
+          <h3 className="sm:text-center text-[30px] sm:text-[34px] lg:text-[35px] xl:text-[50px] 2xl:text-[60px] font-semibold">
             <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container knowledger3" />
               Benefits{" "}
@@ -84,8 +84,8 @@ const Voltjourney = () => {
           </h3>
           <div className="grid grid-cols-12 gap-6 mt-5  sm:mt-[50px] 2xl:mt-[78px]">
             <div className="col-span-12 sm:col-span-6 2xl:col-span-3">
-              <div className="carrier-benefit-card  p-8 sm:py-[60px] sm:px-[30px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[90%] text-primary-dark2">
+              <div className="carrier-benefit-card py-8 px-5 sm:py-[80px] sm:px-[30px] h-full">
+                <h5 className="text-[20px] sm:text-[24px] font-semibold max-w-[90%] text-primary-dark2">
                   Optimize Charging Slot Booking
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -98,8 +98,8 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 2xl:col-span-3">
-              <div className="kcbg  p-8 sm:py-[60px] sm:px-[30px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[80%] text-primary-dark2 ">
+              <div className="kcbg py-8 px-5 sm:py-[80px] sm:px-[30px] h-full">
+                <h5 className="text-[20px] sm:text-[24px] font-semibold max-w-[80%] text-primary-dark2 ">
                   Reduced Emissions
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2 ">
@@ -111,8 +111,8 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 2xl:col-span-3">
-              <div className="kcbg  p-8 sm:py-[60px] sm:px-[30px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[90%] text-primary-dark2">
+              <div className="kcbg py-8 px-5 sm:py-[80px] sm:px-[30px] h-full">
+                <h5 className="text-[20px] sm:text-[24px] font-semibold max-w-[90%] text-primary-dark2">
                   Improved Compliance
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -124,8 +124,8 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 2xl:col-span-3">
-              <div className="kcbg  p-8 sm:py-[60px] sm:px-[30px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[90%]  text-primary-dark2">
+              <div className="kcbg  py-8 px-5 sm:py-[80px] sm:px-[30px] h-full">
+                <h5 className="text-[20px] sm:text-[24px] font-semibold max-w-[90%]  text-primary-dark2">
                   DAI Based Lane Recommendations
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -140,8 +140,8 @@ const Voltjourney = () => {
         </Container>
       </section>
 
-      <section className="pt-[100px]">
-        <h3 className="text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold">
+      <section className="pt-[50px] lg:pt-[100px]">
+        <h3 className="text-center text-[30px] sm:text-[34px] lg:text-[35px] xl:text-[50px] 2xl:text-[60px] font-semibold">
           Empowering{" "}
           <span className="animationStroke">
             <SVGAnimation nameOfClass="svg-container volt" />
@@ -151,11 +151,11 @@ const Voltjourney = () => {
         </h3>
 
         <Container>
-          <div className="w-[95%] sm:w-[85%] lg:w-[65%] mx-auto">
+          <div className="w-[100%] sm:w-[85%] lg:w-[90%] lg:w-[65%] mx-auto">
             <img
               src={EmpoweringBanner}
               alt="KD Graphic"
-              className="max-w-[300px] sm:max-w-[500px] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto mt-[30px] 2xl:mt-[90px]"
+              className="max-w-[100%] sm:max-w-[95%] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto mt-[30px] 2xl:mt-[90px]"
             />
             <div className="border-[1px] mt-9  border-solid border-primary-dark3 rounded-2xl p-5 sm:py-[22px] sm:px-[48px]">
               <p className="text-lg font-semibold text-center mx-auto text-primary-dark5 ">
@@ -171,15 +171,15 @@ const Voltjourney = () => {
         </Container>
       </section>
 
-      <section className="py-[50px] sm:py-[100px] 2xl:py-[150px]">
+      <section className="py-[50px] sm:py-[40px] 2xl:py-[150px]">
         <Container>
-          <div className="grid grid-cols-2 gap-20 mt-[70px]">
+          <div className="grid grid-cols-2 gap-3 lg:gap-20 mt-[30px]">
             <div className="col-span-2 lg:col-span-1 self-center">
               <div>
                 <div className="text-[16px] sm:text-[18px] font-semibold text-secondary-light2">
                   FEATURE RECOMMENDATION
                 </div>
-                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8 ">
+                <div className="text-[32px] 2xl:text-[40px] font-semibold mt-1 2xl:mt-4 mb-1 2xl:mb-8 ">
                   AI Chatbot
                 </div>
                 <p className="text-lg 2xl:text-xl font-medium text-primary-dark2 sm:w-[90%] mb-4">
@@ -212,9 +212,9 @@ const Voltjourney = () => {
 
       <section className="problem2-section text-white py-[50px] lg:py-[100px]">
         <Container>
-          <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold ">
+          <h3 className="sm:text-center text-[30px] sm:text-[35px] lg:text-[35px] xl:text-[50px] 2xl:text-[60px] font-semibold ">
             <span className="animationStroke">
-              <SVGAnimation nameOfClass="svg-container knowledger3" />
+              <SVGAnimation nameOfClass="svg-container knowledger3 manager" />
               Benefits
             </span>{" "}
             for Facility Managers
@@ -237,7 +237,6 @@ const Voltjourney = () => {
                 allows them to optimize their pricing and maximize occupancy
                 rates.
               </p>
-
             </div>
             <div className="col-span-12 lg:col-span-4">
               <img
@@ -276,19 +275,19 @@ const Voltjourney = () => {
         </Container>
       </section>
 
-      <section className="py-[50px] sm:py-[100px]">
+      <section className="py-[50px] sm:py-[40px]">
         <Container>
-          <h3 className="sm:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold ">
+          <h3 className="sm:text-center text-[30px] sm:text-[35px] lg:text-[35px] xl:text-[50px] 2xl:text-[60px] font-semibold ">
             <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container knowledger3" />
               Benefits
             </span>{" "}
             for Utilities
           </h3>
-          <div className="grid grid-cols-12 gap-6 mt-[50px] 2xl:mt-[78px]">
+          <div className="grid grid-cols-12 gap-6 mt-[20px] 2xl:mt-[78px]">
             <div className="col-span-12 sm:col-span-6 lg:col-span-4">
-              <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
-                <h5 className="text-[30px] font-semibold text-primary-dark2 mr-8">
+              <div className="benefit-utilities-card px-5 py-[40px] sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
+                <h5 className="text-[20px] font-semibold text-primary-dark2 mr-8">
                   Increased Demand for Electricity
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -301,8 +300,8 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 lg:col-span-4 ">
-              <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
-                <h5 className="text-[30px] font-semibold text-primary-dark2">
+              <div className="benefit-utilities-card px-5 py-[40px] sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
+                <h5 className="text-[20px] font-semibold text-primary-dark2">
                   Improved Grid Management
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -314,9 +313,9 @@ const Voltjourney = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 sm:col-span-6 lg:col-span-4 ">
-              <div className="benefit-utilities-card p-8 sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
-                <h5 className="text-[30px] font-semibold text-primary-dark2">
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4">
+              <div className="benefit-utilities-card px-5 py-[40px] sm:py-[60px] sm:ps-[40px] sm:pe-[85px] h-full">
+                <h5 className="text-[20px] font-semibold text-primary-dark2">
                   Reduced Emissions
                 </h5>
                 <p className="text-[16px] sm:text-[22px] text-primary-dark2">
@@ -331,7 +330,7 @@ const Voltjourney = () => {
         </Container>
       </section>
 
-      <section className="py-[50px] sm:py-[100px] 2xl:py-[100px]">
+      <section className="pt-0 pb-[20px] sm:py-[30px] 2xl:py-[100px]">
         <Container>
           <div className="grid grid-cols-2 gap-6 sm:gap-20">
             <div className="col-span-2 lg:col-span-1 self-center">
@@ -339,7 +338,7 @@ const Voltjourney = () => {
                 <div className="text-[16px] sm:text-[18px] font-semibold text-secondary-light2">
                   Volt Journey
                 </div>
-                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8 ">
+                <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-0 2xl:mb-8 ">
                   Conclusion
                 </div>
                 <p className="text-lg 2xl:text-xl font-medium text-primary-dark2 sm:w-[90%] mb-4">
