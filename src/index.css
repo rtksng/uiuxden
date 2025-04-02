@@ -131,6 +131,24 @@ body {
   height: 476px;
 }
 
+.carouselStudy .swiper-slide.slide-two .innerItem {
+  background-image: url(../src/assets/knowledgerBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.carouselStudy .swiper-slide.slide-three .innerItem {
+  background-image: url(../src/assets/volt-journeyBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.carouselStudy .swiper-slide.slide-four .innerItem {
+  background-image: url(../src/assets/elymentsBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .checked-lines {
   background-image: url(../src/assets/checked-lines-bg.png);
   background-size: 100% 100%;
@@ -721,6 +739,19 @@ body {
   }
 }
 
+.process-sec .top-cards .homepage-process-cards {
+  &:nth-child(3) {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
+  }
+}
+
+.process-sec .bottom-cards .homepage-process-cards {
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    background-image: linear-gradient(-360deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
+  }
+}
 
 .process-sec .top-cards .card-box {
   padding-left: 20px !important;
