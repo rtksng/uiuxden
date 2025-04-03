@@ -7,7 +7,7 @@ import locofy from "../../assets/locofy.svg";
 import stark from "../../assets/stark.svg";
 const DrivenDesign = () => {
   return (
-    <section className="2xl:mt-[100px] xl:mt-5 overflow-hidden mt-10 max-w-full">
+    <section className="2xl:mt-[100px] xl:mt-5 overflow-hidden mt-10 max-w-full text-primary-dark2">
       <Container>
         <div className="grid grid-cols-12 relative gap-3">
           <div className="lg:col-span-6 xl:col-span-5  col-span-12 self-center">
@@ -17,7 +17,7 @@ const DrivenDesign = () => {
             <h2 className="2xl:text-[60px] md:mt-0 lg:mt-3 xl:text-[40px] text-4xl text-center lg:text-start mb-3 xl:mb-0 font-semibold lg:leading-[1.2]">
               Accelerators{" "}
             </h2>
-            <p className="2xl:text-[22px] text-center lg:text-start xl:text-lg text-secondary-dark 2xl:mt-8 xl:mt-4 lg:leading-[1.2]">
+            <p className="2xl:text-[22px] text-center lg:text-start xl:text-lg text-primary-dark2 2xl:mt-8 xl:mt-4 lg:leading-[1.2]">
               Our design team uses the power of cutting-edge AI tools to deliver
               smarter, faster, and frictionless UX solutions. AI tools enhance
               our creative process, ensuring every design is optimized for

@@ -26,12 +26,9 @@ export default {
         , "grey-bottom-gradient": " linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);",
 
         "grey-top-gradient": "linear-gradient(-360deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);",
-        
+
         "contactus-gradient": "linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%);",
-
-
-
-
+        "linear-button": "linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%)",
       },
       colors: {
         primary: {

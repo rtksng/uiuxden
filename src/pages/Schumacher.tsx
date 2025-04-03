@@ -86,45 +86,42 @@ const Schumacher = () => {
           <div className="grid grid-cols-12 gap-6 mt-[30px] lg:mt-[78px] justify-content-center">
             <div className="col-span-12 sm:col-span-6 lg:col-span-4">
               <div className="mask-card-schumacher p-[32px] sm:py-[60px] sm:px-[40px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[150px]">
+                <h5 className="text-[20px] sm:text-[30px] font-semibold max-w-[150px]">
                   PLATFORM
                 </h5>
-                <p className="text-[22px] ">Mobile first approach</p>
+                <p className="text-[18px] sm:text-[22px] ">Mobile first approach</p>
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 lg:col-span-4">
               <div className="mask-card-schumacher p-[32px] sm:py-[60px] sm:px-[40px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[150px]">
+                <h5 className="text-[20px] sm:text-[30px] font-semibold max-w-[150px]">
                   DELIVERABLE
                 </h5>
-                <p className="text-[22px] ">
+                <p className="text-[18px] sm:text-[22px] ">
                   UX research, competitor analysis, Wireframes and UI on Figma.
                 </p>
               </div>
             </div>
             <div className="col-span-12 sm:col-span-6 lg:col-span-4">
               <div className="mask-card-schumacher p-[32px] sm:py-[60px] sm:px-[40px] h-full">
-                <h5 className="text-[26px] sm:text-[30px] font-semibold max-w-[150px]">
+                <h5 className="text-[20px] sm:text-[30px] font-semibold max-w-[150px]">
                   CLIENT
                 </h5>
-                <p className="text-[22px] ">schumacherhomes.com</p>
+                <p className="text-[18px] sm:text-[22px] ">schumacherhomes.com</p>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="py-[100px] 2xl:py-[150px]">
-        <h3 className="text-center text-[50px] 2xl:text-[60px] font-semibold">
-          Problem statements with Our{" "}
-          <span className="animationStroke">
-            <SVGAnimation nameOfClass="svg-container stretched" />
-            Solutions
-          </span>
-        </h3>
+      <section className="py-[50px] lg:py-[100px] 2xl:py-[150px]">
         <Container>
-          <h3 className="lg:text-center text-[30px] sm:text-[42px] lg:text-[50px] 2xl:text-[60px] font-semibold">
-            Problem statements with Our Solutions
+          <h3 className="lg:text-center text-[28px] 2xl:text-[60px] font-semibold">
+            Problem statements with Our{" "}
+            <span className="animationStroke">
+              <SVGAnimation nameOfClass="svg-container stretched" />
+              Solutions
+            </span>
           </h3>
           <div className="grid grid-cols-2 gap-10 lg:gap-20 mt-[30px] lg:mt-[70px]">
             <div className="col-span-2 lg:col-span-1 self-center">
@@ -175,7 +172,7 @@ const Schumacher = () => {
                       homepage’s UI/UX Our analysis revealed that competitor
                       websites featured intuitive and comprehensive navigation
                       menus, making it easy for users to find key information
-                      quickly. .
+                      quickly.
                     </p>
                   </div>
                   <div className="col-span-12 sm:col-span-5 2xl:col-span-6">
@@ -197,7 +194,7 @@ const Schumacher = () => {
                 <img
                   src={SolutionTwo}
                   alt="image"
-                  className="absolute top-[80%]  2xl:top-[80%] right-[40px] sm:right-[10px]  lg:right-[50%] 2xl:right-[87%]"
+                  className="absolute top-[80%]  2xl:top-[90%] right-[40px] sm:right-[10px]  lg:right-[50%] 2xl:right-[74%]"
                 />
               </div>
             </div>
@@ -209,7 +206,7 @@ const Schumacher = () => {
                 <img
                   src={Newschumacher}
                   alt="image"
-                  className="w-[60%] sm:w-auto "
+                  className="w-[60%] sm:w-auto md:w-full lg:w-auto"
                 />
               </div>
             </div>
@@ -219,7 +216,7 @@ const Schumacher = () => {
               </div>
             </div>
             <div className="col-span-12 sm:col-span-7 lg:col-span-6 ">
-              <div className="bg-secondary-dark2 rounded-3xl text-base lg:text-lg 2xl:text-xl font-medium  mx-auto">
+              <div className="bg-secondary-dark2 rounded-3xl text-base lg:text-lg 2xl:text-xl font-medium  mx-auto text-white">
                 <div className="grid grid-cols-4 items-start gap-4 p-[25px] lg:p-[50px]">
                   <div className="col-span-4 lg:col-span-2">
                     <p className="mb-4">
