@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
 import Design_Logo from "../assets/design_ logo.png";
-// import { VelocityScroll } from "../components/DesginVelocity";
+import { VelocityScroll } from "../components/DesignVelocity";
 import VisionImg from "../assets/visionimg.png";
 import BarGraph from "../assets/bargraph.png";
 import MobileCarousel from "../assets/mobile-carouselimg.png";
@@ -46,18 +46,18 @@ const UIDesign = () => {
 
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[50vh] md:h-[60vh] lg:h-[100vh] dark:bg-[#000] green-linear">
+      <div className="relative h-[55vh] md:h-[60vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
         <Container>
           <div className="text-center pt-[140px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
               Where Creativity Meets Functionality
             </h1>
-            <div className="mt-[20px] lg:mt-[80px]">
-              <img src={Design_Logo} alt={"UIDesign"} className="" />
+            <div className="mt-[20px] lg:mt-[80px] xl:mt-[20px]">
+              <img src={Design_Logo} alt={"UIDesign"} className="max-w-[80%] md:max-w-[80%] lg:max-w-[80%] xl:max-w-[100%] mx-auto" />
             </div>
           </div>
 
-          <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
+          <div className="lg:absolute bottom-5 left-2 2xl:left-9 text-center lg:text-start mt-[30px] md:mt-[80px] sm:mt-[40px] ">
             <div className="xl:flex xl:items-center">
               <img
                 src={rightLongArrow}
@@ -76,7 +76,7 @@ const UIDesign = () => {
       </div>
 
       <section className="bg-gradient-fill2 py-4">
-        {/* <VelocityScroll
+        <VelocityScroll
           point1="Aesthetics"
           point2="Intuitiveness"
           point3="Consistency"
@@ -84,7 +84,7 @@ const UIDesign = () => {
           point5="Usability"
           default_velocity={2}
           className="font-display text-center flex gap-[126px] !text-2xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
-        /> */}
+        />
       </section>
 
       <section>
@@ -117,7 +117,7 @@ const UIDesign = () => {
       <section className="transformation-bg mt-[40px] lg:mt-[0] pt-[80px] lg:pt-[100px] relative">
         <img src={ClunkyBg} alt="image" className="transformation-img absolute" />
         <Container>
-          <h6 className=" text-[24px] 2xl:text-[60px] leading-[40px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative">
+          <h6 className="text-[24px] md:text-[47px] 2xl:text-[60px] leading-[40px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading">
             From <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container clunky" />
               Clunky to Clean:
@@ -165,28 +165,28 @@ const UIDesign = () => {
 
 
       <Container>
-      <section className="path-sec lg:pt-[80px] mt-[80px] hidden lg-[block]">        
+        <section className="path-sec lg:pt-[80px] mt-[80px] hidden lg-[block]">
           <div className="grid grid-cols-12 gap-6">
-              <div className="col-span-12 sm:col-span-4 lg:col-span-4 ps-5">
-                <h2 className="text-white lg:text-[44px] leading-[56px] font-semibold w-[47%]">For Every problem there is a Solution</h2>
-                <Button variant='secondary' className="mt-[25px] py-[14px] px-[14px] text-white border-white">
+            <div className="col-span-12 sm:col-span-4 lg:col-span-4 ps-5">
+              <h2 className="text-white lg:text-[44px] leading-[56px] font-semibold w-[47%]">For Every problem there is a Solution</h2>
+              <Button variant='secondary' className="mt-[25px] py-[14px] px-[14px] text-white border-white">
                 Get UX Expert Now
-                </Button>
-              </div>
-              <div className="col-span-12 sm:col-span-8 lg:col-span-8 ps-3">
+              </Button>
+            </div>
+            <div className="col-span-12 sm:col-span-8 lg:col-span-8 ps-3">
               <h2 className="text-white lg:text-[44px] leading-[56px] font-semibold mb-3">The Path To Wining Ui<br></br> Experience</h2>
-              </div>
+            </div>
 
-          </div>        
-      </section>
+          </div>
+        </section>
       </Container>
 
       <div className="2xl:mt-[150px] 2xl:mt-[50px] xl:mb-[50px] xl:mt-[80px] mt-10 lg:mt-20">
         <CaseStudyCarousel />
       </div>
-      
+
       <div className="hide-sec">
-          <Footer />
+        <Footer />
       </div>
 
     </main>

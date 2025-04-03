@@ -69,16 +69,16 @@ const Accessibility = () => {
               UIUXDen removes all barriers and provides the benefit of technology for everyone.
             </h1>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-[80px]">
-              <div><img src={CheckMarkbtn} alt="image" className="lg:w-[96%] w-[180px]" /></div>
-              <div><img src={SeeButton} alt="image" className="lg:w-[96%] w-[180px]" /></div>
-              <div><img src={HeerButton} alt="image" className="lg:w-[96%] w-[180px]" /></div>
-              <div><img src={SpeakButton} alt="image" className="lg:w-[96%] w-[180px]" /></div>
+              <div><img src={CheckMarkbtn} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
+              <div><img src={SeeButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
+              <div><img src={HeerButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
+              <div><img src={SpeakButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
             </div>
           </div>
 
 
 
-          <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
+          <div className="lg:absolute bottom-5 left-2 2xl:left-9 text-center lg:text-start mt-[30px] md:mt-[80px] sm:mt-[60px]">
             <div className="xl:flex xl:items-center">
               <img
                 src={rightLongArrow}
@@ -110,7 +110,7 @@ const Accessibility = () => {
                 </div>
 
                 <p className="text-[20px] font-normal mb-5 lg:w-[75%] lg:mt-[20px] mt-[10px]">A well-designed product should be intuitive, easy to navigate, and efficient for all users. By focusing on usability, we ensure a seamless experience that enhances engagement and satisfaction.</p>
-                <div className="max-w-md me-auto mt-10">
+                <div className="w-[100%] sm:w-[100%] lg:w-[340px] me-auto mt-10">
                   {accordionItems.map((item, index) => (
                     <div key={index} className="mb-2 border-y-2 border-black py-4 px-0">
                       {/* Accordion Header */}
@@ -157,7 +157,7 @@ const Accessibility = () => {
 
       <section className="bg-[#2D2D2D] lg:pt-[100px] pt-[80px] relative">
         <Container>
-          <h6 className=" text-[30px] 2xl:text-[56px] lg:leading-[90px] leading-[40px] font-semibold 2xl:mb-6 text-center text-white relative">
+          <h6 className=" text-[30px] 2xl:text-[56px] lg:leading-[90px] leading-[40px] font-semibold 2xl:mb-6 text-left lg:text-center text-white relative">
             Why Accessibility is <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container clunky" />
               Non-Negotiable?
@@ -166,7 +166,7 @@ const Accessibility = () => {
 
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-[30px] pb-[140px]">
-            <div className="flex flex-col items-start justify-center px-6 lg:mt-[150px]">
+            <div className="flex flex-col items-start justify-center lg:px-6 px-0 lg:mt-[150px]">
               <div className="mb-6 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
@@ -179,7 +179,7 @@ const Accessibility = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center px-6 mt-[60px] mt:lg-[0]">
+            <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] mt:lg-[0]">
               <div className="mb-6 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
@@ -189,7 +189,7 @@ const Accessibility = () => {
                 <p className="text-[18px] text-white">Regulations like <b>WCAG (Web Content Accessibility Guidelines), ADA, and Section 508</b> require businesses to meet accessibility standards. Avoid legal risks by ensuring compliance.</p>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center px-6 mt-[60px] lg:mt-[140px]">
+            <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] lg:mt-[140px]">
               <div className="mb-6 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
@@ -199,7 +199,7 @@ const Accessibility = () => {
                 <p className="text-[18px] text-white">An accessible product benefits not only users with disabilities but all users—improving readability, navigation, and ease of use.</p>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center px-6 mt-[60px] mt:lg-[0]">
+            <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] mt:lg-[0]">
               <div className="mb-6 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
@@ -223,10 +223,10 @@ const Accessibility = () => {
           <h6 className=" text-[24px] 2xl:text-[60px] leading-[50px] font-bold 2xl:mb-6 text-left">
             Crafting an Inclusive Experience
           </h6>
-          <div className="grid xl:grid grid-cols-12 xl:grid-cols-8 mt-[100px]">
+          <div className="grid xl:grid grid-cols-12 xl:grid-cols-8 mt-[20px] lg:mt-[100px] none-bg-grey-graident">
             <div className=" col-span-12 sm:col-span-6 xl:col-span-2 md:p-5 p-3  relative h-full bg-grey-top-gradient">
               <div className="flex">
-                <div className="text-primary-dark2 flex-column p-[40px]">
+                <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
                     <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
                       Accessibility Audit & Compliance Check
@@ -246,7 +246,7 @@ const Accessibility = () => {
             </div>
             <div className=" col-span-12 sm:col-span-6 xl:col-span-2 md:p-5 p-3  relative h-full">
               <div className="flex">
-                <div className="text-primary-dark2 flex-column p-[40px]">
+                <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
                     <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
                       Strategic Enhancements & Fixes
@@ -267,7 +267,7 @@ const Accessibility = () => {
             </div>
             <div className=" col-span-12 sm:col-span-6 xl:col-span-2 md:p-5 p-3  relative h-full bg-grey-top-gradient">
               <div className="flex">
-                <div className="text-primary-dark2 flex-column p-[40px]">
+                <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
                     <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
                       Real-User Testing & Validation
@@ -288,7 +288,7 @@ const Accessibility = () => {
 
             <div className=" col-span-12 sm:col-span-6 xl:col-span-2 md:p-5 p-3  relative h-full">
               <div className="flex">
-                <div className="text-primary-dark2 flex-column p-[40px]">
+                <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
                     <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
                       Ongoing Support & Future-Proofing
@@ -312,16 +312,14 @@ const Accessibility = () => {
 
       <section className="bg-[#2D2D2D] lg:pt-[100px] pt-[100px] relative">
         <Container>
-          <h6 className=" text-[24px] 2xl:text-[56px] lg:leading-[90px] lg:leading-[40px] font-semibold 2xl:mb-6 text-center text-white relative">
+          <h6 className=" text-[24px] 2xl:text-[56px] lg:leading-[90px] lg:leading-[40px] font-semibold 2xl:mb-6 text-left lg:text-center text-white relative">
             Reimagining Digital Products for <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container everyuser" />
               Every User
             </span>
           </h6>
 
-
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 pt-[60px] pb-[100px] lg:mt-[100px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 pt-[60px] pb-[100px] mt-[40px] lg:mt-[100px]">
               <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] relative">
                 <img src={UpArrow} alt="image" className="absolute top-[-42px] left-[120px] hidden lg:block" />
                 <img src={audit} alt="image" className="w-12 mt-[40px]" />
