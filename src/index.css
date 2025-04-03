@@ -445,59 +445,7 @@ body {
 
 
 
-@media (max-width: 1600px) {
-  .custom-leptopimg {
-    left: 50.8%;
-    transform: translateX(-44%) translateY(-2%);
-    top: 53%;
-  }
 
-  .leptop-image {
-    max-width: 673px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .custom-leptopimg {
-    top: 56%;
-  }
-
-  .leptop-image {
-    max-width: 593px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .custom-leptopimg {
-    left: 50.4%;
-    top: 50%;
-  }
-
-  .leptop-image {
-    max-width: 572px;
-  }
-}
-
-@media (max-width:992px) {
-  .custom-leptopimg {
-    top: 65%;
-    left: 51.2%;
-  }
-
-  .leptop-image {
-    max-width: 325px;
-  }
-}
-
-@media (max-width:576px) {
-  .custom-leptopimg {
-    display: none;
-  }
-
-  .leptop-image {
-    max-width: 124px;
-  }
-}
 
 
 .slide-content.active-slide {
@@ -608,6 +556,25 @@ body {
   display: none;
 }
 
+.process-sec .top-cards .homepage-process-cards {
+  &:nth-child(3) {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
+  }
+}
+
+.process-sec .bottom-cards .homepage-process-cards {
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    background-image: linear-gradient(-360deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
+  }
+}
+
+.process-sec .top-cards .card-box {
+  padding-left: 20px !important;
+}
+
+
 @media (max-width:1280px) {
   .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
     width: 40px;
@@ -674,7 +641,75 @@ body {
 
 }
 
+@media (max-width: 1600px) {
+  .custom-leptopimg {
+    left: 50.8%;
+    transform: translateX(-44%) translateY(-2%);
+    top: 53%;
+  }
 
+  .leptop-image {
+    max-width: 673px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .custom-leptopimg {
+    top: 56%;
+  }
+
+  .leptop-image {
+    max-width: 593px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .custom-leptopimg {
+    left: 50.4%;
+    top: 50%;
+  }
+
+  .leptop-image {
+    max-width: 572px;
+  }
+
+  .process-sec .top-cards .homepage-process-cards {
+    &:nth-child(3) {
+      background-image: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 40%) 100%);
+    }
+  }
+
+  .process-sec .bottom-cards .homepage-process-cards {
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      background-image: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 40%) 100%);
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .custom-leptopimg {
+    top: 65%;
+    left: 51.2%;
+  }
+
+  .leptop-image {
+    max-width: 325px;
+  }
+
+
+}
+
+@media (max-width:576px) {
+  .custom-leptopimg {
+    display: none;
+  }
+
+  .leptop-image {
+    max-width: 124px;
+  }
+}
 
 /* -------------------- Design Sprint Styling ------------------- */
 
@@ -739,23 +774,6 @@ body {
   }
 }
 
-.process-sec .top-cards .homepage-process-cards {
-  &:nth-child(3) {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
-  }
-}
-
-.process-sec .bottom-cards .homepage-process-cards {
-
-  &:nth-child(1),
-  &:nth-child(3) {
-    background-image: linear-gradient(-360deg, rgba(255, 255, 255, 0.00) 0%, rgba(200, 214, 130, 0.40) 100%);
-  }
-}
-
-.process-sec .top-cards .card-box {
-  padding-left: 20px !important;
-}
 
 @media (max-width: 576px) {
   .process-sec .top-cards .card-box {
@@ -833,7 +851,7 @@ body {
 
   .carouselStudy .innerItem.custom-box {
     background-image: url("/uiuxdenred/src/assets/SchumacherBg-2.png");
-    background-color: #EBFDDD;
+    background-color: #fff;
     height: auto;
     border-radius: 35px;
     padding: 30px;
@@ -856,9 +874,16 @@ body {
     height: 250px;
   }
 
-  .carouselStudy .innerItem.custom-box {
+  .carouselStudy .innerItem.custom-box,
+  .carouselStudy .swiper-slide.slide-two .innerItem,
+  .carouselStudy .swiper-slide.slide-three .innerItem,
+  .carouselStudy .swiper-slide.slide-four .innerItem {
     background-color: #EBFDDD;
     background-image: none;
+  }
+
+  .carouselStudy .innerItem.custom-box .innertext {
+    margin-bottom: 40px;
   }
 }
 

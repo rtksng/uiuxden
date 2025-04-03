@@ -5,9 +5,11 @@ import SVGAnimation from "../StrokeAnimation";
 import Volt from "../../assets/Volt.svg";
 import Elements from "../../assets/elyments.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import Container from '../Container';
 import * as motion from "motion/react-client";
+import 'swiper/css';
+
 
 const caseStudies = [
   {
@@ -41,6 +43,7 @@ const caseStudies = [
 ];
 
 const CaseStudy = () => {
+
   return (
     <section className="casestudy 2xl:mt-[192px] lg:mt-[0] xl:mt-[50px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
       <Container>
@@ -55,11 +58,20 @@ const CaseStudy = () => {
 
           <div className=" 2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 ">
             <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              freeMode={true}
-
-              modules={[FreeMode, Pagination]}
+              slidesPerView={2}
+              spaceBetween={20}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
+              breakpoints={{
+               576: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination, Autoplay]}
               className="mySwiper"
             >
               {caseStudies.map((study, index) => (
