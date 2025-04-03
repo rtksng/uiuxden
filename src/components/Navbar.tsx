@@ -34,7 +34,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
             onClick={() => {
               window.scrollTo(0, 0);
             }}
-            to={idx === 1 ? "/portfolio" : ""}
+            to={idx === 1 ? "/portfolio" : idx === 2 ? "/blog-list" : idx === 3 ? "/contact-us" : ""}
           >
             {link}
           </Link>

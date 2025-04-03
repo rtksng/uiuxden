@@ -132,16 +132,16 @@ const Footer: React.FC<{
 const getLinks = (section: string): string[] => {
   const links: { [key: string]: string[] } = {
     Services: [
-      "Product UX Audit",
-      "Design Sprints",
-      "UX Consultancy",
-      "Accessibility",
-      "UX Strategy",
-      "UI Branding",
+      "ux-audit",
+      "design-sprint",
+      "ux-consultancy",
+      "accessiblity",
+      "ux-strategy",
+      "ui-branding",
     ],
     Links: [
-      "About Agency",
-      "Latest News & Blog",
+      "about",
+      "blog-list",
       "Meet The Team",
       "Popular Services",
       "Testimonials",
@@ -155,7 +155,7 @@ const getLinks = (section: string): string[] => {
       "Website Theme",
       "App Theme",
     ],
-    About: ["About", "Leadership", "Blogs", "Contact us", "Help", "Privacy"],
+    About: ["about", "Leadership", "blog-list", "contact-us", "Help", "Privacy"],
   };
   return links[section] || [];
 };
