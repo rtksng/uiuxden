@@ -44,8 +44,9 @@ const Footer: React.FC<{
               <div className="flex justify-center">
                 <Button
                   variant="secondary"
-                  className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full">
-                    Get UX Expert Now
+                  className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                >
+                  Get UX Expert Now
                 </Button>
               </div>
             </div>
@@ -55,7 +56,6 @@ const Footer: React.FC<{
 
       <div className="bg-radial-gradient md:pt-16 pt-8 relative">
         <Container>
-          
           <div className="flex flex-wrap sm:justify-between gap-8">
             {["Services", "Links", "Special", "About"].map((title, idx) => (
               <div key={idx} className="inline-block mb-8">
@@ -66,6 +66,7 @@ const Footer: React.FC<{
                   {getLinks(title).map((link, i) => (
                     <li key={i} className="text-primary-dark2">
                       <Link
+                      target="_blank"
                         onClick={() => {
                           window.scrollTo(0, 0);
                         }}
@@ -132,6 +133,7 @@ const getLinks = (section: string): string[] => {
       "Website Theme",
       "App Theme",
     ],
+    
     About: ["About", "Leadership", "Blogs", "Contact us", "Help", "Privacy"],
   };
   return links[section] || [];
@@ -150,7 +152,7 @@ const generatePath = (title: string, link: string) => {
     return `/${cleanedLink}`;
   }
 
-  return `/${cleanedTitle}/${cleanedLink}`;
+  return `/${cleanedTitle}/${cleanedLink}` ;
 };
 
 const getSocialLinks = () => [

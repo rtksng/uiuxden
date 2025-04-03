@@ -123,13 +123,7 @@ const Process = () => (
               isLast={index === steps.slice(0, 3).length - 1}
             />
           ))}
-          {steps.slice(3).map((step, index) => (
-            <StepCard
-              key={step.number}
-              step={step}
-              isLast={index === steps.slice(3).length - 1}
-            />
-          ))}
+
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
