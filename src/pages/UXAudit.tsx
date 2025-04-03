@@ -228,7 +228,7 @@ const UIBranding = () => {
                                 UI/UX Audit
                             </h2>
                         </div>
-                        <div className=" col-span-12 sm:col-span-6">
+                        <div className=" col-span-12 sm:col-span-8 xl:col-span-6">
                             <div className="h-full flex justify-center items-center sm:ml-[50px]">
                                 <p className="sm:text-[18px] xl:text-[24px] font-medium text-primary-dark2">
                                     UX audit is a data-driven approach that allows you to define actual customers' needs, improve products’ quality, and achieve your desired business goals.

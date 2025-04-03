@@ -364,6 +364,7 @@ height: 150px;
     background-image: none;
     height: auto;
   }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -412,7 +413,7 @@ height: 150px;
 }
 
 .animationStroke .svg-container.stretched svg {
-  transform: scaleX(1.5);
+  transform: scaleX(1.4);
 }
 
 .animationStroke .svg-container.clunky svg {
@@ -449,7 +450,7 @@ height: 150px;
 }
 
 .animationStroke .svg-container.opportunities svg {
-  transform: scaleX(2.4) scaleY(1);
+  transform: scaleX(1.7) scaleY(1);
 }
 
 .animationStroke .svg-container.opportunities {
@@ -554,6 +555,8 @@ height: 150px;
     .animationStroke .svg-container.clunky svg {
       transform: scaleX(2);
     }
+
+   
   }
 
   .hide-sec .unlock-sec {
@@ -825,6 +828,9 @@ height: 150px;
     &:nth-child(3) {
       background-image: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 40%) 100%);
     }
+  }
+  .animationStroke .svg-container.stretched svg {
+    transform: scaleX(0.7) scaleY(0.6);
   }
 }
 
