@@ -4,6 +4,8 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import ElymentsUnderstand from "../../assets/elyments-understand-banner.png";
 import rightBar from "../../assets/rightbar.png";
+import elymenetsLogo from "../../assets/elymenetslogo.png";
+import roundArrow from "../../assets/roundarrow.png";
 
 import ElymentsMainBanner from "../../assets/elyments-main-banner.png";
 import rightLongArrow from "../../assets/right-long-arrow.svg";
@@ -34,6 +36,7 @@ import WalletIcon from "../../assets/id-income-icon.svg";
 import AgeIcon from "../../assets/id-age-icon.svg";
 
 import TableCompo from "../../components/TableCompo";
+import SVGAnimation from "../../components/StrokeAnimation";
 
 const Elyments = () => {
     // Identify Card Data
@@ -136,12 +139,12 @@ const Elyments = () => {
     return (
         <main>
             <Navbar />
-            <div className="relative h-[70vh] sm:h-[45vh] lg:h-[100vh] green-linear">
+            <div className="relative h-[45vh] sm:h-[45vh] lg:h-[73vh] xl:h-[100vh] green-linear">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
-                        {/* <img src={VoltLogo} alt="logo" width={250} className="mx-auto w-[100px] sm:w-[250px]" /> */}
-                        <h1 className="text-[34px] sm:text-[48px] lg:text-[66px]  2xl:text-[90px] text-black  font-semibold mb-base">
-                            Private. Indian. Simple. Call and Chat with elymentsTM
+                        <img src={elymenetsLogo} alt="logo" width={315} className="mx-auto w-[100px] sm:w-[250px]" />
+                        <h1 className="text-[34px] sm:text-[48px] lg:text-[66px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[40px] lg:leading-[108px]">
+                            Private. Indian. Simple.<br></br> Call and Chat with elymentsTM
                         </h1>
                     </div>
 
@@ -174,9 +177,9 @@ const Elyments = () => {
                 <img
                     src={ElymentsMainBanner}
                     alt="KD Graphic"
-                    className="lg:absolute inset-0 -top-[70px] sm:-top-[160px] lg:-top-[50%] 2xl:-top-[50%] max-w-[100%] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto"
+                    className="lg:absolute inset-0 -top-[70px] sm:-top-[160px] lg:-top-[50%] 2xl:-top-[39%] max-w-[100%] lg:max-w-[900px] 2xl:max-w-[1034px] mx-auto"
                 />
-                <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-center mx-auto max-w-[1350px] pt-[30px] lg:pt-[426px] pb-[30px] lg:pb-[84px]">
+                <p className="text-lg sm:text-xl lg:text-3xl font-semibold px-[20px] lg:px-[30px] xl:px-[0px] text-center mx-auto max-w-[1350px] pt-[30px] lg:pt-[226px] xl:pt-[426px] pb-[30px] lg:pb-[384px]">
                     Developed in India, elyments is a message and voice over application.
                     The communication platform allows users to make calls and chat with
                     their contacts while addressing the current privacy concerns of the
@@ -186,9 +189,9 @@ const Elyments = () => {
                 </p>
             </section>
 
-            <section className="py-[50px] sm:py-[100px] 2xl:py-[150px] !pt-0 lg:!pt-[100px]">
+            <section className="py-[50px] sm:py-[100px] 2xl:py-[150px] !pt-0 lg:!pt-[0px] lg:-mt-[260px]">
                 <Container>
-                    <div className="grid grid-cols-2 gap-20 mt-[70px]">
+                    <div className="grid grid-cols-2 gap-0 lg-gap-20 mt-[0px] lg:mt-[70px]">
                         <div className="col-span-2 lg:col-span-1 self-center">
                             <div>
                                 <div className="text-[16px] sm:text-[18px] font-semibold text-secondary-light2">
@@ -197,11 +200,11 @@ const Elyments = () => {
                                 <div className="text-[32px] 2xl:text-[40px] font-semibold  mt-1 2xl:mt-4 mb-5 2xl:mb-8 ">
                                     Understanding the pain points
                                 </div>
-                                <h6>
+                                <h6 className="font-bold text-[20px] mb-5">
                                     Let’s take a glance at the major pain points of users while
                                     using Whatsapp!
                                 </h6>
-                                <ul>
+                                <ul className="list-disc pl-5">
                                     <li>
                                         <p className="text-lg 2xl:text-xl font-medium text-primary-dark2 sm:w-[90%] mb-4">
                                             WhatsApp is battling trust issues amongst users soon after
@@ -244,7 +247,7 @@ const Elyments = () => {
             <section className="problem2-section py-20">
                 <Container>
                     <div>
-                        <div className="lg:px-[100px]">
+                        <div className="lg:px-[00px] xl:px-[100px]">
                             <h6 className="text-[18px] text-center sm:text-start text-white mb-3">
                                 PART 1
                             </h6>
@@ -260,7 +263,7 @@ const Elyments = () => {
 
                         <div className="border-2 border-dashed border-white border-b-0 border-l-0 border-r-0 border-opacity-25 my-20 "></div>
 
-                        <div className="lg:px-[100px]">
+                        <div className="lg:px-[10px] xl:px-[100px]">
                             <h6 className="text-[18px] text-center sm:text-start text-white mb-3">
                                 PART 2
                             </h6>
@@ -269,12 +272,13 @@ const Elyments = () => {
                                 from different age groups.
                             </div>
                             <TableCompo headings={headings} data={data} />
+                            <p className="text-[14px] text-start text-white lg:mt-5">Regardless of the numbers, we believe that each and every age group is important while we curate the features and implement them, as our motive is to make Elyments accessible for all sorts of users and make their data secure at all times!</p> 
                         </div>
                     </div>
                 </Container>
             </section>
 
-            <section className="py-20 pb-10">
+            <section className="py-10 lg:py-20 pb-10">
                 <Container>
                     <div className="flex ">
                         <div className="flex justify-end">
@@ -634,7 +638,7 @@ const Elyments = () => {
 
             <section className="pb-[50px] sm:pb-[100px] 2xl:pb-[150px]">
                 <Container>
-                    <div className="grid grid-cols-2 gap-20 mt-[70px]">
+                    <div className="grid grid-cols-2 gap-20 mt-[0px] xl:mt-[70px]">
                         <div className="col-span-2 lg:col-span-1 self-center">
                             <div>
                                 <div className="text-[16px] sm:text-[18px] font-normal text-secondary-light2">
@@ -665,13 +669,16 @@ const Elyments = () => {
                             </div>
                         </div>
                         <div className="col-span-2 lg:col-span-1">
+                            <div className="relative">
                             <img src={ElymentsSolution} alt="image" className="mx-auto" />
+                            <img src={roundArrow} alt="image" className="absolute top-[-86px] lg:top-[20px] -left-[0px] lg:-left-[200px]" />
+                            </div>
                         </div>
                     </div>
                 </Container>
             </section>
 
-            <section className="pt-[50px] sm:pt-[100px] 2xl:pt-[150px] text-center bg-grey-top-gradient overflow-hidden">
+            <section className="pt-[00px] xl:pt-[100px] 2xl:pt-[00px] text-center bg-casestudy-gradient overflow-hidden">
                 <Container>
                     <h3 className="text-center text-black text-[32px] sm:text-[48px] xl:text-[84px] font-semibold ">
                         Expand Your Network
@@ -746,7 +753,7 @@ const Elyments = () => {
 
             <section className="py-[50px] sm:py-[80px] 2xl:py-[110px]">
                 <Container>
-                    <div className="px-[130px]">
+                    <div className="px-[0px] lg:px-[10px] xl:px-[130px]">
                         <div className="grid grid-cols-2 gap-10">
                             <div className="col-span-2 lg:col-span-1">
                                 <img src={GoodbyeBanner} alt="image" />
@@ -774,9 +781,13 @@ const Elyments = () => {
 
             <section>
                 <Container>
-                    <div className="px-[130px]">
+                    <div className="px-[0px] lg:px-[10px] xl:px-[130px]">
                         <h2 className="text-center text-black text-[28px] sm:text-[40px] xl:text-[60px] font-semibold mb-6 2xl:mb-9">
-                            Envisioning the future scope!
+                        <span className="animationStroke">
+                            <SVGAnimation nameOfClass="svg-container volt" />
+                            Envisioning{" "}
+                            </span>
+                             the future scope!
                         </h2>
                         <p className="text-center text-lg 2xl:text-xl font-medium text-primary-dark2 mb-7  2xl:mb-[150px]">
                             Elyments has a long way to go in the times to come- ensuring
@@ -784,7 +795,7 @@ const Elyments = () => {
                             simply love! Here’s what the users can expect from elyments in the
                             future!
                         </p>
-                        <div className="grid grid-cols-12 gap-0  items-center lg:py-[100px] ">
+                        <div className="grid grid-cols-12 gap-0  items-center py-[100px] lg:py-[40px] xl:py-[100px] ">
                             <div className="col-span-12 lg:col-span-4 lg:order-first">
                                 <div className="flex items-center justify-center sm:justify-start relative">
                                     <img
@@ -824,7 +835,7 @@ const Elyments = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-12 gap-0  items-center lg:py-[100px] ">
+                        <div className="grid grid-cols-12 gap-0  items-center py-[100px] lg:py-[40px] xl:py-[100px] ">
                             <div className="col-span-12 lg:col-span-6 order-last mb-5 lg:mb-0 lg:order-first ">
                                 <div className="bg-secondary-dark2 rounded-3xl text-base lg:text-lg 2xl:text-xl font-medium text-primary-dark2 text-white mx-auto">
                                     <div className="grid grid-cols-4 items-start gap-4 p-[25px] lg:p-[50px]">
@@ -867,7 +878,7 @@ const Elyments = () => {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-12 gap-0  items-center lg:py-[100px] ">
+                        <div className="grid grid-cols-12 gap-0  items-center lgpy-[100px] lg:py-[40px] xl:py-[100px] ">
                             <div className="col-span-12 lg:col-span-4 order-last md:order-first">
                                 <div className="flex items-center justify-center sm:justify-start relative">
                                     <img
@@ -911,7 +922,7 @@ const Elyments = () => {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-12 gap-0  items-center lg:py-[100px] ">
+                        <div className="grid grid-cols-12 gap-0  items-center py-[100px] lg:py-[40px] xl:py-[100px] mb-5 lg:mb-0 ">
                             <div className="col-span-12 lg:col-span-6 order-last lg:order-first">
                                 <div className="bg-secondary-dark2 rounded-3xl text-base lg:text-lg 2xl:text-xl font-medium text-primary-dark2 text-white mx-auto">
                                     <div className="grid grid-cols-4 items-start gap-4 p-[25px] lg:p-[50px]">
@@ -960,7 +971,9 @@ const Elyments = () => {
                 </Container>
             </section>
             
-            <Footer />
+            <div className="hide-sec">
+                <Footer />
+            </div>
         </main>
     );
 };

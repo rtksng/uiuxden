@@ -12,7 +12,7 @@ import {
 } from "framer-motion";
 
 import { cn } from "../lib/utils";
-import AbstractImg from '../assets/abstract.svg'
+import ZigZag from '../assets/zigzag.svg'
 
 interface VelocityScrollProps {
     point1: string;
@@ -20,8 +20,6 @@ interface VelocityScrollProps {
     point3: string;
     point4: string;
     point5: string;
-    point6: string;
-    point7: string;
     default_velocity?: number;
     className?: string;
 }
@@ -43,9 +41,7 @@ export function VelocityScroll({
     point3,
     point4,
     point5,
-    point6,
-    point7,
-    default_velocity = 7,
+    default_velocity = 5,
     className,
 }: VelocityScrollProps) {
     function ParallaxText({
@@ -121,31 +117,25 @@ export function VelocityScroll({
     return (
         <div className="relative w-full">
             <ParallaxText baseVelocity={default_velocity} className={className}>
-                <div className="flex min-w-[2400px] justify-between">
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                <div className="flex min-w-[1920px] justify-between">
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={ZigZag} alt="Start Img" />
                         {point1}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={ZigZag} alt="Start Img" />
                         {point2}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={ZigZag} alt="Start Img" />
                         {point3}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={ZigZag} alt="Start Img" />
                         {point4}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={ZigZag} alt="Start Img" />
                         {point5}
-                    </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
-                        {point6}
-                    </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[126px] font-normal"><img src={AbstractImg} alt="Start Img" />
-                        {point7}
                     </span>
 
                 </div>
-
+         
             </ParallaxText>
         </div>
     );

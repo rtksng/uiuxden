@@ -75,7 +75,7 @@ const StepCard = ({
   step: (typeof steps)[0];
   isLast: boolean;
 }) => (
-  <div className="card-box 2xl:w-[320px] sm:px-5  2xl:!pl-12 py-10 relative">
+  <div className="card-box  sm:px-5  2xl:!pl-12 py-10 relative homepage-process-cards">
     <div className="flex">
       <div className="md:text-[30px] font-semibold text-primary-dark2 pe-5">
         {step.number}
@@ -126,7 +126,7 @@ const Process = () => (
 
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 ">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 xl:border-t-[1px] xl:border-t-primary-dark2 bottom-cards ">
         {steps.slice(3).map((step, index) => (
           <StepCard
             key={step.number}
