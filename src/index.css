@@ -1068,3 +1068,130 @@ height: 150px;
   color: #000 !important;
   border: 1px solid #000 !important;
 }
+
+
+
+/* --------- Contact us -------- */
+.updated-contactus {
+  background: transparent;
+}
+
+.updated-contactus .contact-from {
+  background-image: none;
+}
+
+.updated-contactus .contact-rightsec {
+  background: url("./assets/contactus-bgimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+@media (max-width: 1199px) {
+  .updated-contactus .contactus-checkboxes {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contactus-banner.updated-contactus .contact-from {
+    background: transparent;
+  }
+
+  .updated-contactus .contact-rightsec {
+    background: #2D2D2D;
+  }
+}
+
+@media (max-width: 576px) {
+  .updated-contactus .contactus-checkboxes {
+    width: 100%;
+  }
+}
+
+
+/* -------- Design Sprint ----------- */
+.buget-section .standout-box {
+  border: none;
+  background: url('./assets/budget-arrow.svg') no-repeat;
+  background-size: 100% 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 45px;
+}
+
+.animationStroke.critical .svg-container svg {
+  transform: scaleX(1.1) scaleY(0.8);
+}
+
+.critical-section {
+  background-image: url('./assets/critical-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  overflow: hidden;
+}
+
+.animationStroke.critical .svg-container svg {
+  transform: scaleX(0.6) scaleY(0.5);
+}
+
+
+
+
+
+@media (max-width: 1536px) {
+  .buget-section .animationStroke.design-sprint .svg-container svg {
+    transform: scaleX(1.4) scaleY(0.7);
+  }
+}
+
+@media (max-width: 1280px) {
+  .buget-section .animationStroke.design-sprint .svg-container svg {
+    transform: scaleX(1.2) scaleY(0.6);
+  }
+
+  .animationStroke.critical .svg-container svg {
+    transform: scaleX(0.9) scaleY(0.7);
+  }
+}
+
+@media (max-width: 1199px) {
+  .buget-section .standout-box {
+    padding: 0;
+    padding-left: 24px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .buget-section .standout-box {
+    padding: 35px;
+    padding-left: 65px;
+    min-height: 140px;
+    align-items: start;
+  }
+
+  .animationStroke.critical .svg-container svg {
+    transform: scaleX(0.7) scaleY(0.6);
+  }
+}
+
+@media (max-width: 767px) {
+  .buget-section .standout-box {
+    background: none;
+    border: 2px solid #363636;
+    padding: 20px;
+    min-height: 100%;
+
+  }
+}
+
+@media (max-width:576px) {
+  .buget-section .upperbox-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
