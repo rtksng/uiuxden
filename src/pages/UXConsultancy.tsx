@@ -33,9 +33,8 @@ const UXConsultancy = () => {
     <main>
       <Navbar />
       <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+          }`}
       ></div>
       <Navbar />
 

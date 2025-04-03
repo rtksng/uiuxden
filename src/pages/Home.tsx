@@ -68,14 +68,14 @@ const Home = () => {
   return (
     <main>
       <Navbar />
-      
+
       {/* Mobile Header Section */}
-      <div className="xl:hidden h-screen flex items-center justify-center relative">
+      <div className="xl:hidden h-[50vh] sm:h-[70vh] lg:h-screen flex items-center justify-center relative">
         <div className="px-3">
-          <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center">
+          <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center text-primary-dark2">
             Humanize Your Product
           </h1>
-          <p className="text-2xl md:text-4xl font-medium mt-5 text-center">
+          <p className="text-2xl md:text-4xl font-medium mt-5 text-center text-primary-dark2">
             with our in-depth{" "}
             <span className="text-secondary-light2 underline underline-offset-8">
               research oriented
@@ -88,9 +88,8 @@ const Home = () => {
       {/* Desktop Hero Section */}
       <div className="relative h-[150vh] hidden xl:block">
         <motion.div
-          className={`fixed inset-0 flex items-center justify-center z-40 ${
-            addTransitionClass ? "transition-all" : ""
-          }`}
+          className={`fixed inset-0 flex items-center justify-center z-40 ${addTransitionClass ? "transition-all" : ""
+            }`}
           style={{
             translateY: textTranslateY,
             scale: textScale,
@@ -98,12 +97,12 @@ const Home = () => {
           }}
         >
           <div>
-            <h1 className="text-4xl mb-2 2xl:mb-6 sm:text-4xl 2xl:text-5xl font-bold text-center leading-relaxed">
+            <h1 className="text-4xl mb-2 2xl:mb-6 sm:text-4xl 2xl:text-5xl font-bold text-center leading-relaxed text-primary-dark2">
               Humanize <br />
               <span className="font-normal">Your Product</span>
             </h1>
             <motion.p
-              className="text-xl font-medium mt-5 text-center leading-8"
+              className="text-xl font-medium mt-5 text-center leading-8 text-primary-dark2"
               style={{
                 scale: paragraphScale,
                 opacity: paragraphOpacity,
@@ -143,6 +142,8 @@ const Home = () => {
             point3="UX Strategy"
             point4="UX Audit"
             point5="Content Strategy"
+            point6="Humanization"
+            point7="Sustainable Web & App Design/Development"
             default_velocity={2}
             className="font-display text-center flex gap-[126px] !text-2xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
           />

@@ -10,6 +10,12 @@ import About from "./pages/About";
 import DesignSprint from "./pages/DesignSprint";
 import ContactUS from "./pages/ContactUs";
 import UXConsultancy from "./pages/UXConsultancy";
+import UIBranding from "./pages/UIBranding";
+import UXAudit from "./pages/UXAudit";
+import BlogList from "./pages/BlogList";
+import BlogDetail from "./pages/BlogDetail";
+import UIDesign from "./pages/UIDesign";
+import Accessibility from "./pages/Accessibility";
 const App = () => {
   return (
     <Router basename="/uiuxdenred">
@@ -26,6 +32,13 @@ const App = () => {
           <Route path="/design-sprint" element={<DesignSprint />} />
           <Route path="/contact-us" element={<ContactUS />} />
           <Route path="/ux-consultancy" element={<UXConsultancy />} />
+          <Route path="/ui-branding" element={<UIBranding />} />
+          <Route path="/ux-audit" element={<UXAudit />} />
+          <Route path="/blog-list" element={<BlogList />} />
+          <Route path="/blog-detail" element={<BlogDetail />} />
+          <Route path="/ui-design" element={<UIDesign />} />
+          <Route path="/accessiblity" element={<Accessibility />} />
+
         </Routes>
       </div>
     </Router>
