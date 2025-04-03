@@ -41,10 +41,12 @@ const Footer: React.FC<{
                 Unlock Your Product’s Potential with a Free Audit
               </p>
               <div className="flex justify-center">
-                <button
-                  className="text-[#1A1A1A] !px-5 2xl:!px-[60px] !py-3 2xl:!py-[24px] text-sm 2xl:text-[22px] mt-5 md:mt-0 !ring-0 rounded-full bg-contactus-gradient font-medium">
-                  Consult Us Now
-                </button>
+                <Button
+                  variant="secondary"
+                  className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                >
+                  Get UX Expert Now
+                </Button>
               </div>
             </div>
           </div>
@@ -173,7 +175,7 @@ const generatePath = (title: string, link: string) => {
     return `/${cleanedLink}`;
   }
 
-  return `/${cleanedTitle}/${cleanedLink}`;
+  return `/${cleanedTitle}/${cleanedLink}` ;
 };
 
 const getSocialLinks = () => [

@@ -4,7 +4,8 @@ import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import SVGAnimation from "../components/StrokeAnimation";
 import BudgetImg from "../assets/budget-friendly-img.png";
-import ArrowSVG from "../assets/budget-arrow2.svg";
+import CriticalIMG from "../assets/critical-img.png";
+// import CircularProcessCarousel from "../components/CircularProcessCarousel";
 import Footer from "../components/Footer";
 const DesignSprint = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,8 +30,8 @@ const DesignSprint = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
-            <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
+          <div className="text-center pt-[80px]  sm:pt-[120px]  2xl:pt-[170px] flex flex-col items-center">
+            <h1 className="text-[34px] lg:text-[48px] max-w-[1100px] xl:text-[56px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
               UIUXDen takes deep dive into design sprints to get better
               solutions
             </h1>
@@ -44,7 +45,7 @@ const DesignSprint = () => {
                 width={50}
                 className="hidden lg:block xl:mx-auto"
               />
-              <div className="ml-3">
+              <div className="lg:ml-3 pt-4 lg:pt-0 mb-5">
                 <h6 className="text-[14px] sm:text-[16px] xl:text-[18px] text-black font-normal">
                   Home | Design Sprint
                 </h6>
@@ -312,25 +313,24 @@ const DesignSprint = () => {
       </div>
 
       {/* --------- Budget Friendly Section --------- */}
-      <div className="py-20">
+      <div className="py-20 buget-section">
         <Container>
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-7 xl:col-span-6">
-              <p className="text-[24px] md:text-[42px] lg:text-[60px] font-semibold leading-snug pr-20">
+              <p className="text-[34px] text-center lg:text-start md:text-[42px] xl:text-[50px] 2xl:text-[60px] font-semibold leading-snug ">
                 Our one intense week is enough to make a better product which{" "}
-                <span className="animationStroke w-fit h-fit inline-block">
-                  <SVGAnimation nameOfClass="svg-container pl-4 aboutus design-sprint" />
+                <span className="animationStroke design-sprint w-fit h-fit inline-block">
+                  <SVGAnimation nameOfClass="svg-container pl-4 aboutus" />
                   stands out
                 </span>{" "}
                 in the market
               </p>
 
-              <div className="grid grid-cols-12 gap-5 mt-10 lg:mt-20">
+              <div className="grid upperbox-sec grid-cols-12 gap-5 mt-10 lg:mt-20">
                 {/* --- Box 1 --- */}
                 <div className="col-span-4 ">
                   <div className="standout-box relative">
-                    <img src={ArrowSVG} alt="arrow" />
-                    <p className="text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5">
+                    <p className="text-lg lg:text-xl ">
                       Distraction-free environment
                     </p>
                   </div>
@@ -339,8 +339,7 @@ const DesignSprint = () => {
                 {/* --- Box 2 --- */}
                 <div className="col-span-4 ">
                   <div className="standout-box relative">
-                    <img src={ArrowSVG} alt="arrow" />
-                    <p className="text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5">
+                    <p className="text-lg lg:text-xl">
                       Collaborative Workshops
                     </p>
                   </div>
@@ -349,8 +348,7 @@ const DesignSprint = () => {
                 {/* --- Box 3 --- */}
                 <div className="col-span-4 ">
                   <div className="standout-box relative">
-                    <img src={ArrowSVG} alt="arrow" />
-                    <p className="text-lg lg:text-xl pl-10 2xl:pl-14 h-[100px] p-5">
+                    <p className="text-lg lg:text-xl">
                       Align towards a common goal
                     </p>
                   </div>
@@ -364,6 +362,29 @@ const DesignSprint = () => {
         </Container>
       </div>
 
+      {/* ---------- Critical Section ------------- */}
+
+      <div className="py-20 bg-[#2D2D2D] critical-section">
+        <Container>
+          <h2 className="text-[34px] lg:text-[48px] mx-auto max-w-[1100px] xl:text-[56px] 2xl:text-[60px] text-white leading-tight font-semibold text-center">
+            UIUXDen, follow one by one process for answering{" "}
+            <span className="animationStroke critical w-fit h-fit inline-block">
+              <SVGAnimation nameOfClass="svg-container pl-4 aboutus" />
+              critical
+            </span>{" "}
+            business solutions
+          </h2>
+          <p className="text-center text-white py-4 text-2xl font-semibold ">
+            Creating product from scratch, or already digital existence
+          </p>
+
+          {/* <CircularProcessCarousel /> */}
+
+          <div className="flex justify-center mt-10">
+            <img src={CriticalIMG} alt="Image"/>
+          </div>
+        </Container>
+      </div>
       <Footer />
     </main>
   );
