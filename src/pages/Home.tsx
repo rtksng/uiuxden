@@ -142,6 +142,8 @@ const Home = () => {
             point3="UX Strategy"
             point4="UX Audit"
             point5="Content Strategy"
+            point6="Humanization"
+            point7="Sustainable Web & App Design/Development"
             default_velocity={2}
             className="font-display text-center flex gap-[126px] !text-2xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
           />
