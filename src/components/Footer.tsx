@@ -175,7 +175,7 @@ const generatePath = (title: string, link: string) => {
     return `/${cleanedLink}`;
   }
 
-  return `/${cleanedTitle}/${cleanedLink}` ;
+  return `/${cleanedTitle}/${cleanedLink}`;
 };
 
 const getSocialLinks = () => [

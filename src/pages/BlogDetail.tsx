@@ -232,7 +232,7 @@ const BlogDetail = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 lg:col-span-5 xl:col-span-4">
-                                <div>
+                                <div className="xl:pt-16">
                                     <div className="flex  items-center gap-4 mb-8">
                                         <h3 className="text-[30px] font-semibold text-primary-dark2">
                                             Related Blog
