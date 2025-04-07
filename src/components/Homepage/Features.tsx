@@ -28,7 +28,7 @@ const FeatureCard: React.FC<Feature> = ({
   <div className="col-span-12 sm:col-span-6 lg:col-span-4 border rounded-3xl md:border-0 md:rounded-none">
     <Link
       to={link}
-      target="_blank"
+
       onClick={() => {
         window.scrollTo(0, 0);
       }}
