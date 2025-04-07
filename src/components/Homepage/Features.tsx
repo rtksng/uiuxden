@@ -63,13 +63,13 @@ const Features = () => {
       title: "Humanization",
       description: "Crafting Experiences That Connect",
       imgSrc: Humanization,
-      link: "/content-strategy",
+      link: "/Humanization",
     },
     {
       title: "Sustainable UI/UX",
       description: "Building a Greener Digital Future.",
       imgSrc: Sustainable,
-      link: "/visual-design",
+      link: "/sustainable",
     },
     {
       title: "UX Strategy",
