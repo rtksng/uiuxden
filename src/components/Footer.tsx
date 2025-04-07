@@ -63,7 +63,7 @@ const Footer: React.FC<{
       <div className="bg-radial-gradient md:pt-16 pt-8 relative">
         <Container>
           <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between">
-            <div className="inline-block mb-5 sm:mb-8 sm:w-[30%] lg:w-[40%] sm:pr-8 lg:pr-[90px]">
+            <div className="inline-block mb-5 sm:mb-8 sm:w-[30%] lg:w-[35%] sm:pr-8 lg:pr-[90px]">
               <div className="">
                 <Link to="/" className="z-50">
                   <img
@@ -74,7 +74,7 @@ const Footer: React.FC<{
                 </Link>
               </div>
               <div>
-                <p className="text-[#1A1A1A] text-xl 2xl:text-2xl font-semibold my-4 sm:mt-[50px] sm:mb-[30px] ">
+                <p className="text-[#1A1A1A] text-[18px] font-semibold my-4 sm:mt-[50px] sm:mb-[30px] ">
                   Book a strategy for your business with our UX experts directly.
                 </p>
                 <div className="flex justify-start">
@@ -93,7 +93,195 @@ const Footer: React.FC<{
                 </div>
               </div>
             </div>
-            <div className=" sm:mb-8 sm:w-[70%] lg:w-[60%] flex flex-col sm:flex-row flex-wrap sm:justify-between lg:gap-8">
+
+            <div className=" sm:mb-8 sm:w-[70%] lg:w-[65%] flex flex-wrap sm:justify-between ">
+
+              <div className="inline-block mb-8 w-[100%] sm:w-[50%] sm:border-r border-[#A2C5A3] border-solid">
+                <p className="text-primary-dark2 font-semibold text-[26px] mb-3 sm:mb-4">
+                  Services
+                </p>
+                <div className="w-[100%] flex">
+                  <ul className=" space-y-2 sm:space-y-4 w-[50%] ">
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/humanization'}
+                      >
+                        Humanization
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/ui-design'}
+                      >
+                        UI Design
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/ux-strategy'}
+                      >
+                        UX Strategy
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/ui-branding'}
+                      >
+                        Product Branding
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul className=" space-y-2 sm:space-y-4 w-[50%]">
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/sustainable'}
+                      >
+                        Sustainable UI/UX
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/design-sprint'}
+                      >
+                        Design Sprints
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/ux-audit'}
+                      >
+                        Product UX Audit
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/ux-consultancy'}
+                      >
+                        UX Consultancy
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="inline-block mb-8 w-[100%] sm:w-[50%] sm:ps-20">
+                <p className="text-primary-dark2 font-semibold text-[26px] mb-3 sm:mb-4">
+                  More Links
+                </p>
+                <div className="w-[100%] flex">
+                  <ul className=" space-y-2 sm:space-y-4 w-[50%] ">
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/about'}
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/blog-list'}
+                      >
+                        Blogs
+                      </Link>
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={''}
+                      >
+                        Case Studies
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul className=" space-y-2 sm:space-y-4 w-[50%] ">
+                    <li className="text-primary-dark2 text-[14px]">
+
+                      <a
+                        href="https://www.uiuxden.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-inherit"
+                      >
+                        Store
+                      </a>
+
+
+                    </li>
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={'/contact-us'}
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+
+                    <li className="text-primary-dark2 text-[14px]">
+                      <Link
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        to={''}
+                      >
+                        Privacy Policy
+                      </Link>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <div className=" sm:mb-8 sm:w-[70%] lg:w-[65%] flex flex-col sm:flex-row flex-wrap sm:justify-between lg:gap-8">
               {["Services", "Links", "Special", "About"].map((title, idx) => (
                 <div key={idx} className="inline-block mb-8">
                   <p className="text-primary-dark2 font-semibold text-[26px] mb-3 sm:mb-4">
@@ -115,7 +303,10 @@ const Footer: React.FC<{
                   </ul>
                 </div>
               ))}
-            </div>
+            </div> */}
+
+
+
           </div>
         </Container>
         <div className="py-5  border-t border-black w-full">
@@ -141,7 +332,7 @@ const Footer: React.FC<{
           </Container>
         </div>
       </div>
-    </footer>
+    </footer >
   </>
 );
 
