@@ -17,6 +17,8 @@ import BlogDetail from "./pages/BlogDetail";
 import UIDesign from "./pages/UIDesign";
 import Accessibility from "./pages/Accessibility";
 import Humanization from "./pages/Humanization";
+import Sustainable from "./pages/Sustainable";
+
 const App = () => {
   return (
     <Router basename="/uiuxdenred">
@@ -40,6 +42,7 @@ const App = () => {
           <Route path="/ui-design" element={<UIDesign />} />
           <Route path="/accessiblity" element={<Accessibility />} />
           <Route path="/Humanization" element={ <Humanization/> } />
+          <Route path="/sustainable" element={ <Sustainable/> } />
 
         </Routes>
       </div>

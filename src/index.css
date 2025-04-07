@@ -1257,3 +1257,33 @@ height: 150px;
     justify-content: center;
   }
 }
+
+
+
+/* ---------------------------------- Sustainable Style ----------------------------- */
+
+.custom-sutainable .animationStroke .svg-container.human-centered svg {
+  transform: scaleX(1.9) scaleY(1.1);
+}
+
+@media (max-width: 1536px) {
+  .custom-sutainable .animationStroke .svg-container.human-centered svg {
+    transform: scaleX(1.3) scaleY(0.9);
+  }
+}
+
+.custom-sutainable .sus-wd-boxes {
+  background: url("./assets/sustainability/sus-wd-bg.png") no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.custom-sutainable .dcf-custom-box {
+  background: url("./assets/sustainability/dcf-border.png") no-repeat;
+  background-size: 100% 100%;
+  width: calc(100% / 4 - 20px);
+}
+
+.custom-sutainable .custom-dynsec .animationStroke .svg-container.human-centered svg {
+  transform: scaleX(1.2) scaleY(1.1);
+}

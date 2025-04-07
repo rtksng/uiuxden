@@ -97,7 +97,7 @@ const Humanization = () => {
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 xl:col-span-7 ">
-                            <h5 className="text-[24px] text-center xl:text-start sm:text-[42px] 22xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
+                            <h5 className="text-[24px] text-center xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
                                 HumanizeUX Believes in the Power of{""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
                                     <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />{" "}
