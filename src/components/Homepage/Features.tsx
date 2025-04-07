@@ -69,19 +69,19 @@ const Features = () => {
       title: "UX Consultancy",
       description: "Guidance to Elevate Your Product",
       imgSrc: Consultancy,
-      link: "/design-thinking",
+      link: "/ux-consultancy",
     },
     {
       title: "Accessibility",
       description: "Weaving Inclusive Designs for Everyone",
       imgSrc: Accessibility,
-      link: "/user-research",
+      link: "/accessiblity",
     },
     {
       title: "Product UX Audit",
       description: "Evaluating and Enhancing User Journeys",
       imgSrc: UXAudit,
-      link: "/prototyping",
+      link: "/ux-audit",
     },
     {
       title: "Design Sprints",
@@ -93,13 +93,13 @@ const Features = () => {
       title: "Product Branding",
       description: "Building Brands that Resonate with Users",
       imgSrc: ProductBranding,
-      link: "/information-architecture",
+      link: "/ui-branding",
     },
     {
       title: "UI Design",
       description: "WIntuitive Interface for Seamless Experiences",
       imgSrc: UIDesign,
-      link: "/interaction-design",
+      link: "/ui-design",
     },
     {
       title: "Software Development",
@@ -122,7 +122,7 @@ const Features = () => {
           User Experiences that{" "}
           <span className="animationStroke feature">
             <SVGAnimation height={120} width={222} /> Inspire{" "}
-          </span>{" "}  
+          </span>{" "}
           Customers to Stay Connected with Your Brand
         </h2>
         <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] lg:mt-[50px] sm:gap-[50px] gap-4">

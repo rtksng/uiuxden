@@ -34,7 +34,7 @@ const caseStudies = [
       "Driving a user research to understand user behaviour of teens on Instagram",
   },
   {
-    link: "/voltjourney",
+    link: "/elyments-case-study",
     imgSrc: Elements,
     altText: "elyments logo",
     description:
@@ -62,7 +62,7 @@ const CaseStudy = () => {
               spaceBetween={20}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               breakpoints={{
-               576: {
+                576: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },

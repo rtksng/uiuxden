@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const slidesData = [
   {
@@ -23,6 +24,7 @@ const slidesData = [
       "For over 30 years, Schumacher Homes has perfected a clear and exciting process for building homes.",
     buttonLabel: "View Case Study",
     bgImage: schumacherBg2,
+    casestudylink: 'schumacher',
   },
   {
     title:
@@ -33,6 +35,7 @@ const slidesData = [
       "Building a blockchain-powered LMS for secure, scalable, and cost-effective education.",
     buttonLabel: "View Case Study",
     bgImage: knowledgerBg2,
+    casestudylink: 'knowledger-case-study',
   },
   {
     title:
@@ -43,6 +46,7 @@ const slidesData = [
       "Volt Journey streamlines electric freight management, optimizing charging slots to reduce wait times and speed up deliveries.",
     buttonLabel: "View Case Study",
     bgImage: voltjourneyBg2,
+    casestudylink: 'voltjourney',
   },
   {
     title:
@@ -53,6 +57,7 @@ const slidesData = [
       "Developed in India, Elyments offers private messaging and calls, blending security with accessibility to meet the digital needs of Indian users.",
     buttonLabel: "View Case Study",
     bgImage: elymentsBg2,
+    casestudylink: 'elyments-case-study',
   },
 
 ];
@@ -85,9 +90,21 @@ const CaseStudyCarousel = () => {
                     <p className=" sm:max-w-[440px] xl:max-w-[500px] innertext text-2xl font-semibold mt-4 xl:mt-8 text-primary-dark2">
                       {slide.description}
                     </p>
-                    <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px] text-primary-dark2">
-                      {slide.buttonLabel}
-                    </button>
+
+                    <Link
+
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                      to={slide.casestudylink}
+
+                    >
+                      <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px] text-primary-dark2">
+
+                        {slide.buttonLabel}
+                      </button>
+                    </Link>
+
                   </div>
                   <div className="xl:col-span-4 col-span-12 hidden xl:block">
                     <img

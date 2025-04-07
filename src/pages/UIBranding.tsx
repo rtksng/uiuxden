@@ -52,7 +52,7 @@ const UXAudit = () => {
             ></div>
             <Navbar />
 
-            <div className="relative h-[auto] sm:h-[50vh] lg:h-[50vh] xl:h-[100vh] green-linear py-12">
+            <div className="relative h-[auto] sm:h-[50vh] lg:h-[70vh] xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
@@ -106,7 +106,7 @@ const UXAudit = () => {
                         </div>
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-20  xl:mt-0 ">
+                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-[60px]  xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}

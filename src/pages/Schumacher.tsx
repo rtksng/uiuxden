@@ -278,7 +278,7 @@ const Schumacher = () => {
                 <img
                   src={Problemtwobannerabsolute}
                   alt="image"
-                  className="absolute top-[60%]  lg:top-[77%] right-[10px] lg:right-[87%]"
+                  className="absolute top-[60%]  lg:top-[77%] right-[10px] lg:right-[20%] xl:right-[87%]"
                 />
               </div>
             </div>
@@ -315,7 +315,7 @@ const Schumacher = () => {
         </Container>
       </section>
 
-      <section className=" pt-[50px] lg:pt-[140px]">
+      <section className="  pb-5 sm:pb-0 pt-[50px] lg:pt-[140px]">
         <Container>
           <div className="grid grid-cols-2 gap-10 lg:gap-20  items-end pb-[140px]">
             <div className="col-span-2 lg:col-span-1 self-start">
@@ -343,7 +343,7 @@ const Schumacher = () => {
                 <img
                   src={ProblemthreeBannerAbsolute}
                   alt="image"
-                  className="absolute top-[60%] right-[10px] lg:right-[40%]"
+                  className="absolute top-[60%] right-[10px] lg:right-[20%] xl:right-[40%]"
                 />
               </div>
             </div>
