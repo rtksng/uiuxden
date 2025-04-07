@@ -445,6 +445,10 @@ height: 150px;
   transform: scaleX(1.3) scaleY(0.9);
 }
 
+.animationStroke .svg-container.benefit svg {
+  transform: scaleX(1.3) scaleY(0.8);
+}
+
 .animationStroke .svg-container.knowledger4 svg {
   transform: scaleX(0.9) scaleY(0.8);
 }
@@ -460,6 +464,10 @@ height: 150px;
 
 .animationStroke .svg-container.volt svg {
   transform: scaleX(1.9);
+}
+
+.animationStroke .svg-container.sustainable svg {
+  transform: scaleX(1.8) scaleY(1);
 }
 
 
@@ -489,175 +497,172 @@ height: 150px;
 
 .animationStroke .svg-container.resource svg {
   transform: scaleX(1.5);
+}
 
-  .ux-audit-insights-slider-wrapper .swiper {
-    padding-top: 70px;
-    padding-bottom: 0 !important;
-  }
+.ux-audit-insights-slider-wrapper .swiper {
+  padding-top: 70px;
+  padding-bottom: 0 !important;
+}
 
-  .ux-audit-insights-slider-wrapper .swiper .swiper-wrapper {
-    padding-top: 70px;
-
-  }
-
-  .ux-audit-insights-slider-wrapper .swiper-pagination {
-    top: 0px !important;
-  }
-
-  .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 1)) padding-box,
-      linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
-    border-radius: 50em;
-    border: 1px solid transparent;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    opacity: unset;
-  }
-
-  .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
-    color: #000;
-  }
-
-  .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
-    display: none;
-  }
-
-
-
-  @media (max-width: 1024px) {
-    .animationStroke .svg-container.holistic svg {
-      transform: scaleX(1.4) scale(.6);
-    }
-
-    .animationStroke .svg-container.opportunities svg {
-      transform: scaleX(1.6) scaleY(1);
-    }
-
-    .animationStroke .svg-container.knowledger3 svg {
-      transform: scaleX(0.74) scaleY(0.65);
-    }
-
-    .animationStroke .svg-container.volt svg {
-      transform: scaleX(1.1) scaleY(0.7);
-    }
-
-    .animationStroke .svg-container.clunky svg {
-      transform: scaleX(1.4);
-    }
-
-    .animationStroke .svg-container.everyuser svg {
-      transform: scaleY(0.6) scaleX(0.7);
-    }
-
-    .animationStroke .svg-container.clunky svg {
-      transform: scaleX(2);
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .animationStroke .svg-container.clunky svg {
-      transform: scaleX(2);
-    }
-
-
-  }
-
-  .hide-sec .unlock-sec {
-    display: none;
-  }
-
-
-  /* --------------------- */
-
-  .custom-leptopimg {
-    left: 50%;
-    transform: translateX(-44%) translateY(-2%);
-    top: 48%;
-  }
-
-  .leptop-image {
-    max-width: 841px;
-  }
-
-
-
-
-
-
-  .slide-content.active-slide {
-    transform: scale(1.09);
-    transition: .2s linear;
-  }
-
-  .active-slideoutter {
-    height: 100% !important;
-  }
-
-
-  .my-swiper.custom-knowledger {
-    overflow: unset !important;
-  }
-
-  .aboutPage .commitment {
-    background-image: url(../src/assets/aboutbg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-  }
-
-
-  .navTabs {
-    font-size: 40px;
-    background: #fff;
-    font-weight: 500;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
-    text-align: right;
-  }
-
-
-  .navTabs.activeTabs {
-    font-size: 40px;
-    background: linear-gradient(0deg, #F9DE80 0.52%, #3ABF88 100.03%);
-    font-weight: 500;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .table-customrow .table-customtd {
-    border-style: dashed;
-  }
-
-  .table-customrow .table-customtd:first-child {
-    border-left-style: solid;
-  }
-
-  .table-customrow .table-customtd:last-child {
-    border-right-style: solid;
-  }
-
-
-  .table-customrow:first-child .table-customtd {
-    border-top-style: solid;
-
-  }
-
-  .table-customrow:last-child .table-customtd {
-    border-bottom-style: solid;
-
-  }
+.ux-audit-insights-slider-wrapper .swiper .swiper-wrapper {
+  padding-top: 70px;
 
 }
+
+.ux-audit-insights-slider-wrapper .swiper-pagination {
+  top: 0px !important;
+}
+
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 1)) padding-box,
+    linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  opacity: unset;
+}
+
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
+  color: #000;
+}
+
+.ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  display: none;
+}
+
+
+
+@media (max-width: 1024px) {
+  .animationStroke .svg-container.holistic svg {
+    transform: scaleX(1.4) scale(.6);
+  }
+
+  .animationStroke .svg-container.opportunities svg {
+    transform: scaleX(1.6) scaleY(1);
+  }
+
+  .animationStroke .svg-container.knowledger3 svg {
+    transform: scaleX(0.74) scaleY(0.65);
+  }
+
+
+
+  .animationStroke .svg-container.volt svg {
+    transform: scaleX(1.1) scaleY(0.7);
+  }
+
+
+
+  .animationStroke .svg-container.clunky svg {
+    transform: scaleX(1.4);
+  }
+
+  .animationStroke .svg-container.everyuser svg {
+    transform: scaleY(0.6) scaleX(0.7);
+  }
+
+  .animationStroke .svg-container.clunky svg {
+    transform: scaleX(2);
+  }
+}
+
+@media (max-width: 1200px) {
+  .animationStroke .svg-container.clunky svg {
+    transform: scaleX(2);
+  }
+
+
+}
+
+.hide-sec .unlock-sec {
+  display: none;
+}
+
+
+.custom-leptopimg {
+  left: 50%;
+  transform: translateX(-44%) translateY(-2%);
+  top: 48%;
+}
+
+.leptop-image {
+  max-width: 841px;
+}
+
+.slide-content.active-slide {
+  transform: scale(1.09);
+  transition: .2s linear;
+}
+
+.active-slideoutter {
+  height: 100% !important;
+}
+
+
+.my-swiper.custom-knowledger {
+  overflow: unset !important;
+}
+
+.aboutPage .commitment {
+  background-image: url(../src/assets/aboutbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+.navTabs {
+  font-size: 40px;
+  background: #fff;
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  text-align: right;
+}
+
+
+.navTabs.activeTabs {
+  font-size: 40px;
+  background: linear-gradient(0deg, #F9DE80 0.52%, #3ABF88 100.03%);
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.table-customrow .table-customtd {
+  border-style: dashed;
+}
+
+.table-customrow .table-customtd:first-child {
+  border-left-style: solid;
+}
+
+.table-customrow .table-customtd:last-child {
+  border-right-style: solid;
+}
+
+
+.table-customrow:first-child .table-customtd {
+  border-top-style: solid;
+
+}
+
+.table-customrow:last-child .table-customtd {
+  border-bottom-style: solid;
+
+}
+
 
 .words-mind-card-wrapper .content-overlay {
   background-image: url(../src/assets/words-cards-hover-bg.png);
@@ -743,12 +748,21 @@ height: 150px;
   .animationStroke .svg-container.aboutus.design-sprint svg {
     transform: scaleX(1.7);
   }
+
+  .animationStroke .svg-container.benefit svg {
+    transform: scaleX(0.8) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.sustainable svg {
+    transform: scaleX(1.1) scaleY(0.7);
+  }
 }
 
 @media (max-width: 1024px) {
   .aboutPage .commitment {
     background: #2D2D2D;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -810,7 +824,7 @@ height: 150px;
 
 @media (max-width: 1500px) {
   .custom-leptopimg {
-    top: 56%;
+    top: 49%;
   }
 
   .leptop-image {
@@ -846,6 +860,19 @@ height: 150px;
     transform: scaleX(0.7) scaleY(0.6);
   }
 }
+
+
+
+@media (max-width:1200px) {
+  .custom-leptopimg {
+    top: 55%;
+  }
+
+  .leptop-image {
+    max-width: 485px;
+  }
+}
+
 
 @media (max-width:992px) {
   .custom-leptopimg {
@@ -1172,6 +1199,7 @@ height: 150px;
   .animationStroke .svg-container.experiences svg {
     transform: scaleX(1.4) scaleY(1);
   }
+
   .buget-section .animationStroke.design-sprint .svg-container svg {
     transform: scaleX(1.4) scaleY(0.7);
   }
@@ -1199,6 +1227,7 @@ height: 150px;
   .animationStroke .svg-container.experiences svg {
     transform: scaleX(1.4) scaleY(0.7);
   }
+
   .buget-section .standout-box {
     padding: 35px;
     padding-left: 65px;
