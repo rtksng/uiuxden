@@ -30,14 +30,33 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
           className="hover:text-black text-primary-dark hover:font-semibold font-medium transition-all text-2xl xl:text-base whitespace-nowrap"
           onClick={onClick}
         >
-          <Link
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-            to={idx === 1 ? "/portfolio" : idx === 2 ? "/blog-list" : idx === 3 ? "/contact-us" : ""}
-          >
-            {link}
-          </Link>
+          {idx === 4 ? (
+            <a
+              href="https://www.uiuxden.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-inherit"
+            >
+              {link}
+            </a>
+          ) : (
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to={
+                idx === 1
+                  ? "/portfolio"
+                  : idx === 2
+                    ? "/blog-list"
+                    : idx === 3
+                      ? "/contact-us"
+                      : "/"
+              }
+            >
+              {link}
+            </Link>
+          )}
         </li>
       )
     )}
@@ -129,9 +148,17 @@ const Navbar: React.FC = () => {
                 <CiSearch size={32} />
               </button>
             </div>
-            <Button className="nav-button hidden sm:block" variant="primary">
-              Let's talk
-            </Button>
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to={"/contact-us"}
+            >
+              <Button className="nav-button hidden sm:block" variant="primary">
+                Let's talk
+              </Button>
+            </Link>
+
           </div>
 
           {/* Mobile Menu */}
@@ -147,13 +174,20 @@ const Navbar: React.FC = () => {
                 <div className="h-full flex flex-col pt-20">
                   <NavLinks isMobile onClick={toggleMenu} />
                   <div className="px-8 mt-8">
-                    <Button
-                      className="w-full"
-                      variant="primary"
-                      onClick={toggleMenu}
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                      to={"/contact-us"}
                     >
-                      Let's talk
-                    </Button>
+                      <Button
+                        className="w-full"
+                        variant="primary"
+                        onClick={toggleMenu}
+                      >
+                        Let's talk
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>

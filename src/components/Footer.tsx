@@ -41,12 +41,19 @@ const Footer: React.FC<{
                 Unlock Your Product’s Potential with a Free Audit
               </p>
               <div className="flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[40px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to={"/contact-us"}
                 >
-                  Get UX Expert Now
-                </Button>
+                  <Button
+                    variant="secondary"
+                    className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[20px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                  >
+                    Consult Us Now
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -71,11 +78,18 @@ const Footer: React.FC<{
                   Book a strategy for your business with our UX experts directly.
                 </p>
                 <div className="flex justify-start">
-                  <Button
-                    variant="secondary"
-                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 md:mt-0  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
-                    Get UX Expert Now
-                  </Button>
+                  <Link
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                    to={"/contact-us"}
+                  >
+                    <Button
+                      variant="secondary"
+                      className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 md:mt-0  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full" >
+                      Get UX Expert Now
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -92,7 +106,7 @@ const Footer: React.FC<{
                           onClick={() => {
                             window.scrollTo(0, 0);
                           }}
-                          to={generatePath(title, link)}
+                          to={link}
                         >
                           {link}
                         </Link>
