@@ -35,7 +35,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
   return (
     <motion.ul
       className={`${isMobile
-        ? "flex flex-col items-start px-8 py-6 xl:py-2 space-y-10 bg-white text-white h-auto xl:h-full justify-center"
+        ? "flex flex-col items-start px-8 py-7 xl:py-2 space-y-7 xl:space-y-10 bg-white text-white h-auto xl:h-full justify-center border border-top"
         : "hidden xl:flex items-center space-x-6"
         } font-semibold xl:font-normal`}
       initial={{ opacity: 0, x: isMobile ? -100 : 0 }}
@@ -48,7 +48,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
           <li
             key={idx}
             ref={idx === 0 ? dropdownRef : null}
-            className={`hover:text-black text-primary-dark font-medium transition-all text-2xl xl:text-base whitespace-nowrap services-link 
+            className={` w-full xl:w-auto hover:text-black text-primary-dark font-medium transition-all text-base xl:text-base whitespace-nowrap services-link 
               ${idx === 0
                 ? firstLinkActive
                   ? "relative minus pe-5"
@@ -66,25 +66,25 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
             {idx === 0 ? (
               <button
                 type="button"
-                className="relative"
+                className="relative inline-block text-left"
               >
                 {link}
                 <div
-                  className={` bg-[#f9f9ff] xl:bg-[#fff] rounded-[10px] left-0 sm:left-[150px] xl:sm:left-[50px] top-[30px] sm:top-[0px] xl:top-[60px] w-[300px] sm:w-[475px] xl:w-[750px] 2xl:w-[1000px] shadow-2xl  transition-transform duration-500 ease-in-out transform absolute ${idx === 0 && firstLinkActive ? " p-4 sm:p-9 translate-y-0 border border-[1px] border-[#EDEDED] " : "h-[0] -translate-y-10 overflow-hidden p-0 border-0"
+                  className={`px-4 xl:px-7 xl:bg-[#fff]  xl:border-[transparent]  xl:rounded-[10px]  xl:sm:left-[50px] xl:top-[60px] w-[100%] xl:w-[750px] 2xl:w-[1000px] xl:shadow-2xl transition-height  xl:transition-transform transform duration-300 xl:duration-500 ease-in-out transform xl:absolute ${idx === 0 && firstLinkActive ? " mt-5 xl:mt-0 py-0  xl:p-9 translate-y-0 xl:border xl:border-[1px] border-[#EDEDED] " : "h-[0] xl:-translate-y-10 overflow-hidden p-0 border-0"
                     }`}
                 >
                   <div className="grid grid-cols-12 gap-4 sm:gap-6">
 
-                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-4 sm:gap-[36px]">
+                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-6 xl:gap-[36px]">
                       <Link to="/humanization" className="flex gap-[10px] group">
                         <span>
                           <Icon
                             name="humani"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Humanization
                         </p>
                       </Link>
@@ -93,10 +93,10 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="uidesign"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           UI Design
                         </p>
                       </Link>
@@ -105,25 +105,25 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="uistrategy"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           UX Strategy
                         </p>
                       </Link>
                     </div>
 
-                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-4 sm:gap-[36px]">
+                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-6 xl:gap-[36px]">
                       <Link to="/ui-branding" className="flex gap-[10px] group">
                         <span>
                           <Icon
                             name="productbranding"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Product Branding
                         </p>
                       </Link>
@@ -132,10 +132,10 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="sustainable"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Sustainable UI/UX
                         </p>
                       </Link>
@@ -144,25 +144,25 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="designsprint"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Design Sprints
                         </p>
                       </Link>
                     </div>
 
-                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-4 sm:gap-[36px]">
+                    <div className=" sm:col-span-6 xl:col-span-4 col-span-12 flex flex-col gap-6 xl:gap-[36px]">
                       <Link to="/ux-audit" className="flex gap-[10px] group">
                         <span>
                           <Icon
                             name="uxaudit"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Product UX Audit
                         </p>
                       </Link>
@@ -171,10 +171,10 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="uxconsult"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           UX Consultancy
                         </p>
                       </Link>
@@ -183,10 +183,10 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
                           <Icon
                             name="accessiblity"
                             color="#393939"
-                            className="group-hover:text-[#3ABF88] transition-colors duration-300"
+                            className="group-hover:text-[#3ABF88] transition-colors duration-300 w-[20px] xl:w-auto h-[20px] xl:h-auto"
                           />
                         </span>
-                        <p className="text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
+                        <p className="text-[14px] sm:text-[16px] color-primary-dark font-normal group-hover:text-[#3ABF88] transition-colors duration-300">
                           Accessibility
                         </p>
                       </Link>
@@ -321,9 +321,9 @@ const Navbar: React.FC = () => {
                 exit={{ opacity: 0, y: "-100%" }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="h-full flex flex-col pt-20">
+                <div className="h-full flex flex-col mt-16 xl:mt-20 border-top border-[red]">
                   <NavLinks isMobile onClick={toggleMenu} />
-                  <div className="px-8 mt-8">
+                  <div className="px-8 mt-4 xl:mt-8">
                     <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)}>
                       <Button className="w-full" variant="primary" onClick={toggleMenu}>
                         Let's talk
