@@ -9,13 +9,10 @@ import Footer from "../components/Footer";
 import Button from "../components/Button";
 import EveryAngleBanner from "../assets/every-angle-banner.svg";
 import LeftArrowHalf from "../assets/arrow-down-side.png";
-import final from "../assets/ui-branding-main-banner-final.png";
-import present from "../assets/ui-branding-main-banner-present.png";
-import design from "../assets/ui-branding-main-banner-design.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import SVGAnimation from "../components/StrokeAnimation";
 
 const UIBranding = () => {

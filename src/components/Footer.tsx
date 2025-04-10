@@ -10,12 +10,9 @@ import {
   FaMedium,
 } from "react-icons/fa6";
 import { PiDribbbleLogoFill } from "react-icons/pi";
-// import { LuDribbble } from "react-icons/lu";
 import { SiBehance } from "react-icons/si";
 import Container from "./Container";
 import Button from "./Button";
-import Consult from "./Consult";
-import Logowhite from "../assets/logo-white.svg";
 
 const Footer: React.FC<{
   consultData?: {
@@ -24,7 +21,7 @@ const Footer: React.FC<{
     boldsubheading: string;
     buttonText: string;
   };
-}> = ({ consultData }) => (
+}> = () => (
   <>
     {/* <Consult
       heading={consultData?.heading}
@@ -335,53 +332,6 @@ const Footer: React.FC<{
     </footer >
   </>
 );
-
-const getLinks = (section: string): string[] => {
-  const links: { [key: string]: string[] } = {
-    Services: [
-      "ux-audit",
-      "design-sprint",
-      "ux-consultancy",
-      "accessiblity",
-      "ux-strategy",
-      "ui-branding",
-    ],
-    Links: [
-      "about",
-      "blog-list",
-      "Meet The Team",
-      "Popular Services",
-      "Testimonials",
-      "Need a Career?",
-    ],
-    Special: [
-      "Market Place",
-      "Brands",
-      "NFT Design",
-      "Admin Theme",
-      "Website Theme",
-      "App Theme",
-    ],
-    About: ["about", "Leadership", "blog-list", "contact-us", "Help", "Privacy"],
-  };
-  return links[section] || [];
-};
-
-const generatePath = (title: string, link: string) => {
-  const cleanedTitle = title
-    .trim()
-    .toLowerCase()
-    .replace(/^\/|\/$/g, "");
-  const cleanedLink = link
-    .trim()
-    .toLowerCase()
-    .replace(/^\/|\/$/g, "");
-  if (cleanedTitle === cleanedLink) {
-    return `/${cleanedLink}`;
-  }
-
-  return `/${cleanedTitle}/${cleanedLink}`;
-};
 
 const getSocialLinks = () => [
   { Icon: FaTwitter, url: "https://twitter.com", color: "#1EA1F2" },

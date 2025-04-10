@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
-import BarGraph from "../assets/bargraph.png";
 import CheckMarkbtn from "../assets/checkmarkbtn.png";
 import SeeButton from "../assets/seebutton.png";
 import HeerButton from "../assets/hearbtn.png";
@@ -46,12 +45,7 @@ const Accessibility = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const pagination = {
-    clickable: true,
-    renderBullet: (index: number, className: string) => {
-      return `<span class="${className}">${index + 1}</span>`;
-    },
-  };
+
   return (
     <main>
       <Navbar />

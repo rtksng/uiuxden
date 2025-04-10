@@ -14,7 +14,7 @@ import Button from '../components/Button';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import SVGAnimation from "../components/StrokeAnimation";
 
 

@@ -5,26 +5,15 @@ import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import HumanCentered from "../assets/sustainability/webdesign-img.png";
 import DYKImg from "../assets/sustainability/DYK-img.png";
-import InsightSliderImg from "../assets/insights-slider-img.png";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
-import EveryAngleBanner from "../assets/every-angle-banner.svg";
-import LeftArrowHalf from "../assets/arrow-down-side.png";
-import final from "../assets/ui-branding-main-banner-final.png";
-import present from "../assets/ui-branding-main-banner-present.png";
-import design from "../assets/ui-branding-main-banner-design.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import SVGAnimation from "../components/StrokeAnimation";
 import ClunkyBg from "../assets/clunkybg.png";
 import TransformingSliderFirst from "../assets/humanization/human-cetered-first-slide.png";
 import Heroimage from "../assets/sustainability/hero-secimg.png";
-import Empathy from "../assets/humanization/empathy-icon.svg";
-import Emothional from "../assets/humanization/emothional-icon.svg";
-import Engaging from "../assets/humanization/engaging-icon.svg";
-import Adaptability from "../assets/humanization/adaptability-icon.svg";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 
 const Sustainable = () => {

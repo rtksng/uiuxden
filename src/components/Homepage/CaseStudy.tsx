@@ -5,7 +5,7 @@ import SVGAnimation from "../StrokeAnimation";
 import Volt from "../../assets/Volt.svg";
 import Elements from "../../assets/elyments.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import Container from '../Container';
 import * as motion from "motion/react-client";
 import 'swiper/css';
