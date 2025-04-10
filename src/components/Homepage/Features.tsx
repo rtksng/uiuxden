@@ -9,9 +9,9 @@ import UXAudit from "../../assets/UXAudit.png";
 import Sprints from "../../assets/Sprints.png";
 import ProductBranding from "../../assets/ProductBranding.png";
 import UIDesign from "../../assets/UIDesign.png";
-import SoftwareDevelopment from "../../assets/SoftwareDevelopment.png";
+import Humanization from "../../assets/humanization-homepage-card.png";
 import SVGAnimation from "../StrokeAnimation";
-import WebDevelopment from "../../assets/WebDevelopment.png";
+import Sustainable from "../../assets/sustainable-homepage-card.png";
 interface Feature {
   title: string;
   description: string;
@@ -60,6 +60,18 @@ const FeatureCard: React.FC<Feature> = ({
 const Features = () => {
   const features = [
     {
+      title: "Humanization",
+      description: "Crafting Experiences That Connect",
+      imgSrc: Humanization,
+      link: "/Humanization",
+    },
+    {
+      title: "Sustainable UI/UX",
+      description: "Building a Greener Digital Future.",
+      imgSrc: Sustainable,
+      link: "/sustainable",
+    },
+    {
       title: "UX Strategy",
       description: "Crafting a Vision for User-Centered Success",
       imgSrc: uxstrategy,
@@ -101,18 +113,7 @@ const Features = () => {
       imgSrc: UIDesign,
       link: "/ui-design",
     },
-    {
-      title: "Software Development",
-      description: "Transforming Ideas into Reliable Solutions.",
-      imgSrc: SoftwareDevelopment,
-      link: "/content-strategy",
-    },
-    {
-      title: "Web Development",
-      description: "Creating Engaging and Functional Solutions.",
-      imgSrc: WebDevelopment,
-      link: "/visual-design",
-    },
+
   ];
 
   return (
