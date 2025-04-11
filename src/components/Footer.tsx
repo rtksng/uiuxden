@@ -46,7 +46,7 @@ const Footer: React.FC<{
                 >
                   <Button
                     variant="secondary"
-                    className="border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[20px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
+                    className=" gradient-btn border !px-5 2xl:!px-[46px] !py-3 2xl:!py-[20px] text-sm 2xl:text-base border-white mt-5 md:mt-0  !ring-0 text-white hover:text-primary-dark2 rounded-full"
                   >
                     Consult Us Now
                   </Button>
