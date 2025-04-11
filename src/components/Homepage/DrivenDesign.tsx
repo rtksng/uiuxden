@@ -17,14 +17,14 @@ const DrivenDesign = () => {
             <h2 className="2xl:text-[60px] md:mt-0 lg:mt-3 xl:text-[40px] text-4xl text-center lg:text-start mb-3 xl:mb-0 font-semibold lg:leading-[1.2]">
               Accelerators{" "}
             </h2>
-            <p className="2xl:text-[22px] text-center lg:text-start xl:text-lg text-primary-dark2 2xl:mt-8 xl:mt-4 lg:leading-[1.2]">
+            <p className="2xl:text-[22px] text-center lg:text-start xl:text-lg text-primary-dark2 2xl:mt-8 xl:mt-4 lg:leading-[1.2] xl:w-[65%]">
               Our design team uses the power of cutting-edge AI tools to deliver
               smarter, faster, and frictionless UX solutions. AI tools enhance
               our creative process, ensuring every design is optimized for
               usability and user satisfaction.
             </p>
           </div>
-          <div className="absolute left-[32%] scale-[.7] 2xl:scale-0 top-[10px] z-10 2xl:top-[13%] hidden xl:block">
+          <div className="absolute left-[32%] xl:left-[25%] scale-[.7] 2xl:scale-[.9] top-[10px] z-10 2xl:top-[13%] hidden xl:block">
             <img src={wave1} alt="wave" />
           </div>
           <div className="lg:col-span-6 xl:col-span-7 col-span-12">

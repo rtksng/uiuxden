@@ -126,7 +126,7 @@ const Features = () => {
           </span>{" "}
           Customers to Stay Connected with Your Brand
         </h2>
-        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] lg:mt-[50px] sm:gap-[50px] gap-4">
+        <div className="grid grid-cols-12 2xl:mt-[140px] xl:mt-[70px] lg:mt-[50px] sm:gap-[12px] 2xl:gap-[50px] gap-4">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
