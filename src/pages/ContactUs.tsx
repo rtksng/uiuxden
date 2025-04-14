@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
-import SVGAnimation from "../components/StrokeAnimation";
 import Footer from "../components/Footer";
 const ContactUS = () => {
   const [isScrolled, setIsScrolled] = useState(false);

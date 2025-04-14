@@ -41,8 +41,8 @@ const App = () => {
           <Route path="/blog-detail" element={<BlogDetail />} />
           <Route path="/ui-design" element={<UIDesign />} />
           <Route path="/accessiblity" element={<Accessibility />} />
-          <Route path="/Humanization" element={ <Humanization/> } />
-          <Route path="/sustainable" element={ <Sustainable/> } />
+          <Route path="/Humanization" element={<Humanization />} />
+          <Route path="/sustainable" element={<Sustainable />} />
 
         </Routes>
       </div>

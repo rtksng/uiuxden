@@ -5,7 +5,7 @@ import SVGAnimation from "../StrokeAnimation";
 import Volt from "../../assets/Volt.svg";
 import Elements from "../../assets/elyments.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import Container from '../Container';
 import * as motion from "motion/react-client";
 import 'swiper/css';
@@ -56,7 +56,7 @@ const CaseStudy = () => {
             easy
           </h2>
 
-          <div className=" 2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 ">
+          <div className=" 2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto ">
             <Swiper
               slidesPerView={2}
               spaceBetween={20}

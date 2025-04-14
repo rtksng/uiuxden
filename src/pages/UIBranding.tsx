@@ -1,13 +1,8 @@
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
-import HolisticIcon1 from "../assets/holistic-icon-1.svg";
-import HolisticIcon2 from "../assets/holistic-icon-2.svg";
-import HolisticIcon3 from "../assets/holistic-icon-3.svg";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import BrandCarries from "../assets/ui-brand-carries-banner.png";
-import ReachArrows from "../assets/reachus-arrows.svg";
-import BannerImg from "../assets/uxconsultancy-bannerimg.svg";
 import SVGAnimation from "../components/StrokeAnimation";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
