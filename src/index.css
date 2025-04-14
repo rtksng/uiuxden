@@ -1287,3 +1287,58 @@ height: 150px;
 .custom-sutainable .custom-dynsec .animationStroke .svg-container.human-centered svg {
   transform: scaleX(1.2) scaleY(1.1);
 }
+
+
+.sus-optimization {
+  background-image: url(../src/assets/aboutbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+.custom-sutainable .sus-optimization .animationStroke .svg-container.human-centered svg {
+  transform: scaleX(2.1) scaleY(1.1);
+}
+
+@media (max-width: 1279px) {
+  .custom-sutainable .sus-optimization .animationStroke .svg-container.human-centered svg {
+    transform: scaleX(1.7) scaleY(1.1);
+  }
+
+
+  .footprint-boxes {
+    flex-wrap: wrap;
+  }
+
+  .custom-sutainable .footprint-boxes .dcf-custom-box {
+    background: url("/uiuxdenred/src/assets/sustainability/dcf-border.png") no-repeat;
+    background-size: 100% 100%;
+    width: calc(100% / 2 - 20px);
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .sus-optimization {
+    background-image: none;
+    background: #2D2D2D;
+    background-repeat: no-repeat;
+
+  }
+
+  .custom-sutainable .sus-optimization .animationStroke .svg-container.human-centered svg {
+    transform: scaleX(1.6) scaleY(1.1);
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-sutainable .footprint-boxes .dcf-custom-box {
+    background: url("/uiuxdenred/src/assets/sustainability/dcf-border.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+}

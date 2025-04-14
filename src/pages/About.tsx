@@ -85,7 +85,11 @@ const About = () => {
         <Container>
           <div className="pt-[60px] lg:pt-[90px]">
             <h4 className="font-semibold text-[24px] text-center text-white sm:text-[48px] xl:text-[60px]">
-              Our Commitment to <span className="animationStroke"><SVGAnimation nameOfClass="svg-container aboutus" />Excellence</span>
+              Our Commitment to
+              <span className="animationStroke">
+              <SVGAnimation nameOfClass="svg-container aboutus" />
+                Excellence
+              </span>
             </h4>
             <Tabs tabs={tabData} autoSwitchInterval={5000} />
           </div>
