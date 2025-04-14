@@ -29,6 +29,8 @@ export default {
 
         "contactus-gradient": "linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%);",
         "linear-button": "linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%)",
+        "elyments-network-sec-gradient": "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(200, 214, 130, 0.4) 100%)",
+
       },
       colors: {
         primary: {

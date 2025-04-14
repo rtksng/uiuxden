@@ -272,13 +272,13 @@ const Elyments = () => {
                                 from different age groups.
                             </div>
                             <TableCompo headings={headings} data={data} />
-                            <p className="text-[14px] text-start text-white lg:mt-5">Regardless of the numbers, we believe that each and every age group is important while we curate the features and implement them, as our motive is to make Elyments accessible for all sorts of users and make their data secure at all times!</p> 
+                            <p className="text-[14px] text-start text-white lg:mt-5">Regardless of the numbers, we believe that each and every age group is important while we curate the features and implement them, as our motive is to make Elyments accessible for all sorts of users and make their data secure at all times!</p>
                         </div>
                     </div>
                 </Container>
             </section>
 
-            <section className="py-10 lg:py-20 pb-10">
+            <section className="py-10 lg:py-20 lg:py-20 pb-10">
                 <Container>
                     <div className="flex ">
                         <div className="flex justify-end">
@@ -670,15 +670,15 @@ const Elyments = () => {
                         </div>
                         <div className="col-span-2 lg:col-span-1">
                             <div className="relative">
-                            <img src={ElymentsSolution} alt="image" className="mx-auto" />
-                            <img src={roundArrow} alt="image" className="absolute top-[-86px] lg:top-[20px] -left-[0px] lg:-left-[200px]" />
+                                <img src={ElymentsSolution} alt="image" className="mx-auto" />
+                                <img src={roundArrow} alt="image" className="absolute top-[-86px] lg:top-[20px] -left-[0px] lg:-left-[200px]" />
                             </div>
                         </div>
                     </div>
                 </Container>
             </section>
 
-            <section className="pt-[00px] xl:pt-[100px] 2xl:pt-[00px] text-center bg-casestudy-gradient overflow-hidden">
+            <section className="pt-[00px] xl:pt-[100px] 2xl:pt-[00px] text-center bg-elyments-network-sec-gradient overflow-hidden">
                 <Container>
                     <h3 className="text-center text-black text-[32px] sm:text-[48px] xl:text-[84px] font-semibold ">
                         Expand Your Network
@@ -783,11 +783,11 @@ const Elyments = () => {
                 <Container>
                     <div className="px-[0px] lg:px-[10px] xl:px-[130px]">
                         <h2 className="text-center text-black text-[28px] sm:text-[40px] xl:text-[60px] font-semibold mb-6 2xl:mb-9">
-                        <span className="animationStroke">
-                            <SVGAnimation nameOfClass="svg-container volt" />
-                            Envisioning{" "}
+                            <span className="animationStroke">
+                                <SVGAnimation nameOfClass="svg-container volt" />
+                                Envisioning{" "}
                             </span>
-                             the future scope!
+                            the future scope!
                         </h2>
                         <p className="text-center text-lg 2xl:text-xl font-medium text-primary-dark2 mb-7  2xl:mb-[150px]">
                             Elyments has a long way to go in the times to come- ensuring
@@ -970,7 +970,7 @@ const Elyments = () => {
                     </div>
                 </Container>
             </section>
-            
+
             <div className="hide-sec">
                 <Footer />
             </div>
