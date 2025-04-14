@@ -19,6 +19,7 @@ import Emothional from "../assets/humanization/emothional-icon.svg";
 import Engaging from "../assets/humanization/engaging-icon.svg";
 import Adaptability from "../assets/humanization/adaptability-icon.svg";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
+import { Link } from "react-router-dom";
 
 const Humanization = () => {
     const consultData = {
@@ -65,7 +66,7 @@ const Humanization = () => {
                     <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] lg:mt-[80px] xl:mt-[40px] 2xl:mt-[50px] ">
                         <img
                             src={Heroimage}
-                            className=" max-w-[90%] sm:max-w-[46%] h-auto"
+                            className=" max-w-[90%] sm:max-w-[46%] xl:max-w-[43%] h-auto"
                         />
                     </div>
 
@@ -157,6 +158,7 @@ const Humanization = () => {
 
 
                     </div>
+
                     <div className="border-b border-t border-white py-4 xl:py-9 ">
                         <div className="grid grid-cols-12  gap-4 lg:gap-[40px] items-center ">
                             <div className="col-span-12 lg:col-span-7  xl:col-span-8 ">
@@ -170,9 +172,7 @@ const Humanization = () => {
                                         Emotional & Inclusive Design
                                     </h5>
                                 </div>
-
                             </div>
-
                             <div className="col-span-12 lg:col-span-5  xl:col-span-4 2xl:col-span-3 ">
                                 <p className="text-[18px] text-white font-normal">
                                     Ensuring accessibility, diversity, and an emotional connection in every interaction.
@@ -230,6 +230,21 @@ const Humanization = () => {
                             </div>
                         </div>
 
+
+                    </div>
+                    <div className="flex justify-center mt-4 sm:mt-9 2xl:mt-[72px]">
+                        <Link
+                            onClick={() => {
+                                window.scrollTo(0, 0);
+                            }}
+                            to={"/contact-us"}
+                        >
+                            <Button
+                                variant="secondary"
+                                className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-white sm:mt-5 md:mt-0  !ring-0 white hover:text-primary-dark2 rounded-full text-white" >
+                                Consult Us Now
+                            </Button>
+                        </Link>
 
                     </div>
 
@@ -369,7 +384,7 @@ const Humanization = () => {
             <section className="transformation-bg mt-[40px] lg:mt-[0] pt-[80px] lg:pt-[100px] relative">
                 <img src={ClunkyBg} alt="image" className="transformation-img absolute" />
                 <Container>
-                    <h6 className="text-[24px] md:text-[42px] xl:text-[60px] leading-[40px] sm:leading-[65px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading">
+                    <h6 className="text-[24px] md:text-[42px] xl:text-[60px] leading-[40px] sm:leading-[65px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading 2xl:w-[80%] mx-auto">
                         Transforming{"  "}
                         <span className="animationStroke w-fit h-fit inline-block mx-1">
                             <SVGAnimation nameOfClass="svg-container pl-4 experiences" />{" "}
