@@ -484,7 +484,7 @@ height: 150px;
 }
 
 .animationStroke .svg-container.human-centered svg {
-  transform: scaleX(2) scaleY(0.8);
+  transform: scaleX(2.7) scaleY(1.2);
 }
 
 .animationStroke .svg-container.potential-human svg {
@@ -1244,7 +1244,7 @@ height: 150px;
   }
 
   .animationStroke .svg-container.experiences svg {
-    transform: scaleX(1.4) scaleY(1);
+    transform: scaleX(1.3) scaleY(1);
   }
 
   .buget-section .animationStroke.design-sprint .svg-container svg {

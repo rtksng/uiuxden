@@ -92,7 +92,7 @@ const Humanization = () => {
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 xl:col-span-7 ">
-                            <h5 className="text-[24px] text-center xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
+                            <h5 className=" text-center xl:text-start text-[24px] sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
                                 HumanizeUX Believes in the Power of{""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
                                     <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />{" "}
@@ -125,7 +125,7 @@ const Humanization = () => {
             <div className="bg-[#2D2D2D] py-12 2xl:pt-[80px] 2xl:pb-[150px]">
                 <Container>
                     <div className="sm:text-center flex flex-col items-center mb-7 sm:mb-20 text-white">
-                        <h1 className="text-[34px] md:text-[42px] 2xl:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
+                        <h1 className="text-[24px] sm:text-[42px] 2xl:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
                             UIUXDen Unlocks the Full Potential of{""} <br />
                             <span className="animationStroke w-fit h-fit inline-block mx-1">
                                 <SVGAnimation nameOfClass="svg-container pl-4 potential-human" />{" "}
@@ -142,7 +142,7 @@ const Humanization = () => {
                                         className="w-[60px] 2xl:w-[89px] h-auto mb-2 lg:mb-0 "
                                         alt="bar"
                                     />
-                                    <h5 className="text-[24px] 2xl:text-[30px] text-white font-semibold">
+                                    <h5 className="text-[20px] sm:text-[24px] 2xl:text-[30px] text-white font-semibold">
                                         Designing with Empathy
                                     </h5>
                                 </div>
@@ -168,7 +168,7 @@ const Humanization = () => {
                                         className="w-[60px] 2xl:w-[89px] h-auto mb-2 lg:mb-0 "
                                         alt="bar"
                                     />
-                                    <h5 className="text-[24px] 2xl:text-[30px] text-white font-semibold">
+                                    <h5 className="text-[20px] sm:text-[24px] 2xl:text-[30px] text-white font-semibold">
                                         Emotional & Inclusive Design
                                     </h5>
                                 </div>
@@ -191,7 +191,7 @@ const Humanization = () => {
                                         className="w-[60px] 2xl:w-[89px] h-auto mb-2 lg:mb-0 "
                                         alt="bar"
                                     />
-                                    <h5 className="text-[24px] 2xl:text-[30px] text-white font-semibold">
+                                    <h5 className="text-[20px] sm:text-[24px] 2xl:text-[30px] text-white font-semibold">
                                         Engaging Micro-Interactions
                                     </h5>
                                 </div>
@@ -216,7 +216,7 @@ const Humanization = () => {
                                         className="w-[60px] 2xl:w-[89px] h-auto mb-2 lg:mb-0 "
                                         alt="bar"
                                     />
-                                    <h5 className="text-[24px] 2xl:text-[30px] text-white font-semibold">
+                                    <h5 className="text-[20px] sm:text-[24px] 2xl:text-[30px] text-white font-semibold">
                                         Personalization & Adaptability
                                     </h5>
                                 </div>
@@ -256,7 +256,7 @@ const Humanization = () => {
                 <Container>
                     <div className="grid grid-cols-12 xl:grid-cols-12 mb-4 lg:mb-8 2xl:mb-[70px]">
                         <div className=" col-span-12 sm:col-span-10 xl:col-span-10">
-                            <h2 className=" text-[32px] sm:text-[47px] xl:text-[42px] 2xl:text-[84px] font-semibold text-primary-dark2">
+                            <h2 className=" text-[24px] sm:text-[42px] 2xl:text-[84px] font-semibold text-primary-dark2">
                                 Why Humanization Matters?
                             </h2>
                         </div>
@@ -384,7 +384,7 @@ const Humanization = () => {
             <section className="transformation-bg mt-[40px] lg:mt-[0] pt-[80px] lg:pt-[100px] relative">
                 <img src={ClunkyBg} alt="image" className="transformation-img absolute" />
                 <Container>
-                    <h6 className="text-[24px] md:text-[42px] xl:text-[60px] leading-[40px] sm:leading-[65px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading 2xl:w-[80%] mx-auto">
+                    <h6 className="text-[24px] sm:text-[42px] 2xl:text-[60px] leading-[40px] sm:leading-[65px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading 2xl:w-[80%] mx-auto">
                         Transforming{"  "}
                         <span className="animationStroke w-fit h-fit inline-block mx-1">
                             <SVGAnimation nameOfClass="svg-container pl-4 experiences" />{" "}
