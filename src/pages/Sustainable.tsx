@@ -5,6 +5,8 @@ import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import HumanCentered from "../assets/sustainability/webdesign-img.png";
 import DYKImg from "../assets/sustainability/DYK-img.png";
+import CalculateSusImg from "../assets/sustainability/calculate-image.png";
+import InsightSliderImg from "../assets/insights-slider-img.png";
 import Footer from "../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,8 +17,69 @@ import ClunkyBg from "../assets/clunkybg.png";
 import TransformingSliderFirst from "../assets/humanization/human-cetered-first-slide.png";
 import Heroimage from "../assets/sustainability/hero-secimg.png";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
+import Tabs from "../components/Tabs2";
+import ReachArrows from "../assets/reachus-arrows.svg";
+
 
 const Sustainable = () => {
+    const tabData = [
+        {
+            id: 1,
+            label: "HTTP Requests",
+            sublabel: "",
+            heading: `Minimize HTTP Requests`,
+            subheading: `Each HTTP request requires a round trip to the server, consuming energy.`,
+            boxHeading: `Best Practices`,
+            listItems: ["Combine multiple CSS files into one", "Use CSS sprites for multiple small images", "Implement lazy loading for non-critical resources"],
+            box2Heading: `Impacts`,
+            listItems2: ["Reducing HTTP requests by 50% can lower page load energy consumption by up to 30%."],
+
+            
+        },
+
+        {
+            id: 2,
+            label: "Images & Media",
+            sublabel: "",
+            heading: `Minimize Images & Media`,
+            subheading: `Each Images & Media requires a round trip to the server, consuming energy.`,
+            boxHeading: `Best Practices`,
+            listItems: ["Combine multiple CSS files into one", "Use CSS sprites for multiple small images", "Implement lazy loading for non-critical resources"],
+            box2Heading: `Impacts`,
+            listItems2: ["Reducing Images & Medias by 50% can lower page load energy consumption by up to 30%."],
+
+            
+        },
+
+        {
+            id: 3,
+            label: "CSS &JavaScript",
+            sublabel: "",
+            heading: `Minimize CSS &JavaScript`,
+            subheading: `Each CSS &JavaScript requires a round trip to the server, consuming energy.`,
+            boxHeading: `Best Practices`,
+            listItems: ["Combine multiple CSS files into one", "Use CSS sprites for multiple small images", "Implement lazy loading for non-critical resources"],
+            box2Heading: `Impacts`,
+            listItems2: ["Reducing CSS &JavaScripts by 50% can lower page load energy consumption by up to 30%."],
+
+            
+        },
+        {
+            id: 4,
+            label: "Architecture",
+            sublabel: "",
+            heading: `Minimize Architecture`,
+            subheading: `Each Architecture requires a round trip to the server, consuming energy.`,
+            boxHeading: `Best Practices`,
+            listItems: ["Combine multiple CSS files into one", "Use CSS sprites for multiple small images", "Implement lazy loading for non-critical resources"],
+            box2Heading: `Impacts`,
+            listItems2: ["Reducing Architectures by 50% can lower page load energy consumption by up to 30%."],
+
+            
+        },
+       
+    ];
+
     const consultData = {
         heading: "Ready to Elevate Your",
         subheading: "User",
@@ -33,13 +96,6 @@ const Sustainable = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    const pagination = {
-        clickable: true,
-        renderBullet: (index: number, className: string) => {
-            return `<span class="${className}">${index + 1}</span>`;
-        },
-    };
 
     return (
         <main className="custom-sutainable">
@@ -154,7 +210,7 @@ const Sustainable = () => {
                             carbon emissions.
                         </p>
                     </div>
-                    <div className="flex gap-[30px] items-start">
+                    <div className="flex footprint-boxes gap-[30px] items-start">
                         {/* --- Box 1 --- */}
                         <div className="dcf-custom-box max-w-[376px] min-h-[460px] max-h-[460px]  p-[20px]">
                             <div className="svg-box border border-opacity-100 mx-[20px] mt-[30px] mb-[24px] border-white  w-[40px] h-[40px] flex items-center justify-center">
@@ -250,49 +306,66 @@ const Sustainable = () => {
                 </Container>
             </div>
 
+
+            {/* ------- Do You know ------- */}
+
             <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px] custom-dynsec">
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 ">
-                            <h5 className="text-[24px] xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold text-primary-dark2">
+                            <h5 className="text-[24px] xl:text-start text-center md:text-start sm:text-[42px] 2xl:text-[60px] font-semibold text-primary-dark2">
                                 Do you {""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
                                     <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />
                                     Know?
                                 </span>{" "}
                             </h5>
-                            <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 pe-5 me-5">
-                                Sustainable web design focuses on optimizing resources, reducing energy consumption, and lowering the environmental impact of digital products. By adopting eco-friendly practices, designers can create efficient, high-performing websites with a minimal carbon footprint.
-                            </p>
-                            <div className="flex justify-center xl:justify-start gap-[50px] mb-6 xl:mb-0 mt-[50px]">
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
-                                    <p className="text-xl text-[#1A1A1A] mb-[10px]">
-                                        Reduced Energy
-                                        Use
-                                    </p>
-                                    <p className="text-[#1A1A1A]">
-                                        Leaner code and optimized design lower server demands, reducing the energy needed to serve your website.
-                                    </p>
-                                </div>
+                            <div className="flex justify-center md:justify-start mb-[30px] md:mb-0 gap-5 mt-4 lg:mt-8">
+                                <div className="img-box hidden md:block">
+                                    <img src={ReachArrows} alt="Arrows" className="hidden" />
+                                    <svg width="36" height="420" viewBox="0 0 36 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.217773L1 8.46777L1 19.1481C1 25.8078 5.53706 31.611 12 33.2178V33.2178V33.2178C5.38571 35.6844 1 42.0007 1 49.06L1 57.9678V115.093V128.333C1 135.521 5.34681 141.996 12 144.718V144.718V144.718C5.50551 146.489 1 152.388 1 159.12V198.218V238.115C1 245.304 5.34681 251.778 12 254.5V254.5V254.5C5.34681 257.222 1 263.697 1 270.885L1 289.332L1 307.555L1 324" stroke="#1A1A1A" />
+                                        <path d="M1 316.875V350.115C1 357.304 5.34681 363.778 12 366.5V366.5V366.5C5.50551 368.271 1 374.17 1 380.902V420" stroke="#1A1A1A" />
+                                        <path d="M35.3868 33.2178L32.5 30.331L29.6132 33.2178L32.5 36.1045L35.3868 33.2178ZM12 33.7178H32.5V32.7178H12V33.7178Z" fill="#1A1A1A" />
+                                        <path d="M35.3868 144.718L32.5 141.831L29.6132 144.718L32.5 147.605L35.3868 144.718ZM12 145.218H32.5V144.218H12V145.218Z" fill="#1A1A1A" />
+                                        <path d="M35.3868 254.503L32.5 251.616L29.6132 254.503L32.5 257.39L35.3868 254.503ZM12 255.003H32.5V254.003H12V255.003Z" fill="#1A1A1A" />
+                                        <path d="M35.3868 366L32.5 363.113L29.6132 366L32.5 368.887L35.3868 366ZM12 366.5H32.5V365.5H12V366.5Z" fill="#1A1A1A" />
+                                    </svg>
 
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
-                                    <p className="text-xl text-[#1A1A1A] mb-[10px]">
-                                        Improved User
-                                        Experience
-                                    </p>
-                                    <p className="text-[#1A1A1A]">
-                                        Faster load times and streamlined performance create a better experience for your visitors.
-                                    </p>
                                 </div>
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
-                                    <p className="text-xl text-[#1A1A1A] mb-[10px]">
-                                        Positive
-                                        Environmental
-                                        Impact
-                                    </p>
-                                    <p className="text-[#1A1A1A]">
-                                        Lower carbon emissions and a smaller digital footprint contribute to a healthier planet.
-                                    </p>
+                                <div className="list-box mt-5">
+                                    <div className="2xl:max-w-[70%] mb-5">
+                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                            Streaming's Environmental Impact
+                                        </p>
+                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                            Streaming video accounts for over 60% of all internet traffic and related emissions.
+                                        </p>
+                                    </div>
+                                    <div className="2xl:max-w-[70%] mb-5">
+                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                            Data Centers' Growing Energy Consumption
+                                        </p>
+                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                            Data centers use 1% of global electricity, projected to rise to 3-8% by 2030.
+                                        </p>
+                                    </div>
+                                    <div className="2xl:max-w-[70%] mb-5">
+                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                            Website CO₂ Emissions
+                                        </p>
+                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                            A website with 10,000 monthly views generates about 211 kg of CO₂ yearly.
+                                        </p>
+                                    </div>
+                                    <div className="2xl:max-w-[70%]">
+                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                            Growing Web Page Size
+                                        </p>
+                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                            The average web page size has grown from 500KB in 2010 to over 2MB in 2023.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -303,186 +376,61 @@ const Sustainable = () => {
                                 className="xl:pl-8 max-w-[80%] md:max-w-[60%] lg:max-w-full mx-auto xl:mx-0"
                             />
                         </div>
-
                     </div>
                 </Container>
             </div>
 
-
-            <section className="py-10 lg:py-20 2xl:py-[100px]">
+            <div className="mx-auto mt-9 sm:mt-[100px] lg:mt-[200px] max-w-[1792px] h-auto lg:h-[970px] text-white sus-optimization">
                 <Container>
-                    <div className="grid grid-cols-12 xl:grid-cols-12 mb-4 lg:mb-8 2xl:mb-[70px]">
-                        <div className=" col-span-12 sm:col-span-10 xl:col-span-10">
-                            <h2 className=" text-[32px] sm:text-[47px] xl:text-[42px] 2xl:text-[84px] font-semibold text-primary-dark2">
-                                Do you {""}
-                                <span className="animationStroke w-fit h-fit inline-block mx-1">
-                                    <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />
-                                    Know?
-                                </span>{" "}
-                            </h2>
-                        </div>
-                        <div className=" hidden xl:block col-span-1">
-                        </div>
-                    </div>
-
-                    <div className="grid xl:hidden grid-cols-12 xl:grid-cols-10">
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    User Engagement
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal">
-                                    Personalizing interactions fosters deeper connections, making users feel valued and understood, ultimately increasing engagement and retention.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    Retention & Loyalty
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal">
-                                    Human-centered experiences create authenticity, strengthening relationships and encouraging long-term trust between brands and their audience.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    Improves Decision-Making
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal">
-                                    Understanding human emotions and behaviors allows businesses to design solutions that truly resonate with their users, leading to more effective decision-making.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    Drives Meaningful Innovation
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal">
-                                    Humanization fuels innovation by focusing on real needs, ensuring that products and services deliver genuine value and impact in people’s lives.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="hidden xl:grid grid-cols-12 ">
-                        <div className=" block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    User Engagement
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal mt-2 xl:mt-4">
-                                    Personalizing interactions fosters deeper connections, making users feel valued and understood, ultimately increasing engagement and retention.
-                                </p>
-                            </div>
-                            <div>
-                                <img
-                                    src={rightBar}
-                                    className="h-full  absolute right-0 bottom-0 hidden xl:block "
-                                    alt="bar"
-                                />
-                            </div>
-                        </div>
-                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    Retention & Loyalty
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal mt-2 xl:mt-4">
-                                    Human-centered experiences create authenticity, strengthening relationships and encouraging long-term trust between brands and their audience.
-                                </p>
-                            </div>
-                            <div>
-                                <img
-                                    src={rightBar}
-                                    className="h-full  absolute right-0 bottom-0 hidden xl:block"
-                                    alt="bar"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative block bg-grey-top-gradient ">
-                            <div className="flex  ">
-                                <div className="text-primary-dark2 ">
-                                    <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                        Improves Decision-Making
-                                    </h5>
-                                    <p className="text-primary-dark2 text-base md:text-[16px] font-normal mt-2 xl:mt-4">
-                                        Understanding human emotions and behaviors allows businesses to design solutions that truly resonate with their users, leading to more effective decision-making.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img
-                                        src={rightBar}
-                                        className="h-full absolute right-0 top-0 hidden xl:block"
-                                        alt="bar"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative ">
-                            <div className="text-primary-dark2 ">
-                                <h5 className="text-[20px] font-bold text-primary-dark2 ">
-                                    Drives Meaningful Innovation
-                                </h5>
-                                <p className="text-primary-dark2 text-base md:text-[16px] font-normal mt-2 xl:mt-4">
-                                    Humanization fuels innovation by focusing on real needs, ensuring that products and services deliver genuine value and impact in people’s lives.
-                                </p>
-                            </div>
-                            <div>
-                                <img
-                                    src={rightBar}
-                                    className="h-full  absolute right-0 bottom-0 hidden xl:block "
-                                    alt="bar"
-                                />
-                            </div>
-                        </div>
+                    <div className="pt-[60px] lg:pt-[90px]">
+                        <h4 className="font-semibold text-[24px] text-center text-white sm:text-[48px] xl:text-[60px] mb-[30px]">
+                            Why Code  {" "}
+                            <span className="animationStroke">
+                                <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />
+                                Optimization
+                            </span>
+                            {" "}
+                            Matters
+                        </h4>
+                        <p className="max-w-[770px] mx-auto text-center text-lg">
+                            Optimized code isn't just about faster websites—it's a critical step in reducing energy consumption. Every line of unnecessary code translates into wasted processing power and increased emissions.
+                        </p>
+                        <Tabs tabs={tabData} autoSwitchInterval={5000} />
                     </div>
                 </Container>
-            </section>
-
-
-            <section className="transformation-bg mt-[40px] lg:mt-[0] pt-[80px] lg:pt-[100px] relative">
-                <img src={ClunkyBg} alt="image" className="transformation-img absolute" />
-                <Container>
-                    <h6 className="text-[24px] md:text-[42px] xl:text-[60px] leading-[40px] sm:leading-[65px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading">
-                        Transforming{"  "}
-                        <span className="animationStroke w-fit h-fit inline-block mx-1">
-                            <SVGAnimation nameOfClass="svg-container pl-4 experiences" />{" "}
-                            Experiences{" "}
-                        </span>{" "}  The Impact of Human-Centered Design
-                    </h6>
-                    <div className="ux-audit-insights-slider-wrapper">
-                        <Swiper
-                            pagination={pagination}
-                            modules={[Pagination]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
-                                <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-                </Container>
-            </section>
-
-            <div className=" my-9 2xl:my-[100px] xl:my-[80px]">
-                <CaseStudyCarousel />
             </div>
+
+            <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px] custom-dynsec">
+                <Container>
+                    <div className="grid grid-cols-12">
+                        <div className="col-span-12 xl:col-span-8 ">
+                            <h5 className="text-[24px] mb-[24px] xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold text-primary-dark2">
+                                How Sustainable Is Your Website?
+                            </h5>
+
+                            <div className="max-w-[100%] mb-[30px] md:mb-0 md:max-w-[320px]">
+                                <p className="border-t border-[#1A1A1A] py-[30px] relative before:border-[8px] before:border-[#1A1A1A] before:border-r-transparent before:border-t-transparent before:border-b-transparent  before:absolute before:-top-[7px] font-semibold">
+                                    Is Your Website Energy Efficient?
+                                </p>
+                                <p className="border-t border-[#1A1A1A] py-[30px] relative before:border-[8px] before:border-[#1A1A1A] before:border-r-transparent before:border-t-transparent before:border-b-transparent  before:absolute before:-top-[7px] font-semibold">
+                                    What Is Your Website's Carbon Footprint?
+                                </p>
+                                <p className="border-t border-[#1A1A1A] py-[30px] relative before:border-[8px] before:border-[#1A1A1A] before:border-r-transparent before:border-t-transparent before:border-b-transparent  before:absolute before:-top-[7px] font-semibold">
+                                    Is Your Hosting Powered by Renewables?
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-span-12 xl:col-span-4">
+                            <img
+                                src={CalculateSusImg}
+                                alt="Image"
+                                className="xl:pl-8 max-w-[80%] md:max-w-[60%] lg:max-w-full mx-auto xl:mx-0"
+                            />
+                        </div>
+                    </div>
+                </Container>
+            </div>
+
             <Footer consultData={consultData} />
         </main>
     );
