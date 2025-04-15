@@ -18,6 +18,7 @@ import TransformingSliderFirst from "../assets/humanization/human-cetered-first-
 import Heroimage from "../assets/sustainability/hero-secimg.png";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 import Tabs from "../components/Tabs2";
+import ArrowAnimation from "../components/ArrowAnimation";
 import ReachArrows from "../assets/reachus-arrows.svg";
 
 
@@ -114,6 +115,8 @@ const Sustainable = () => {
                         </h1>
                     </div>
 
+
+
                     <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] lg:mt-[80px] xl:mt-[40px] 2xl:mt-[50px] ">
                         <img
                             src={Heroimage}
@@ -150,11 +153,12 @@ const Sustainable = () => {
                                     Sustainable
                                 </span>{" "}
                                 Web Design?
+                                <ArrowAnimation nameOfClass="svg-container pl-4" />
                             </h5>
-                            <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 pe-5 me-5">
+                            <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 xl:pe-5 xl:me-5">
                                 Sustainable web design focuses on optimizing resources, reducing energy consumption, and lowering the environmental impact of digital products. By adopting eco-friendly practices, designers can create efficient, high-performing websites with a minimal carbon footprint.
                             </p>
-                            <div className="flex justify-center xl:justify-start gap-[50px] mb-6 xl:mb-0 mt-[50px]">
+                            <div className="flex flex-wrap md:flex-nowrap justify-center xl:justify-start gap-[50px] mb-12 xl:mb-0 mt-[50px]">
                                 <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
                                     <p className="text-xl text-[#1A1A1A] mb-[10px]">
                                         Reduced Energy
