@@ -102,7 +102,7 @@ const Knowledger = () => {
   return (
     <main className="overflow-hidden">
       <Navbar />
-      <section className="h-[50vh] lg:h-[75vh] xl:h-screen flex items-center justify-center xl:block knowledger relative ">
+      <section className="h-[60vh] lg:h-[75vh] xl:h-screen flex items-center justify-center xl:block knowledger relative  flex flex-col items-center">
         <div className="flex flex-col items-center xl:pt-[115px] text-center px-3">
           <img
             src={knowledgerblack}
@@ -112,7 +112,7 @@ const Knowledger = () => {
           <h1 className="text-[34px] sm:text-[48px] lg:text-[66px]  2xl:text-[90px] font-semibold -md:mt-5">
             Learning Management System
           </h1>
-          <p className="max-w-[70%] 2xl:max-w-[75%] md:text-[24px] 2xl:text-[32px] font-medium lg:mt-9 mt-4">
+          <p className="sm:max-w-[80%] 2xl:max-w-[75%] sm:text-[20px] 2xl:text-[32px] font-medium lg:mt-9 mt-4">
             A Blockchain-based Learning Management System providing a secure,
             scalable, and cost-effective educational platform leveraging
             blockchain technology.
@@ -142,9 +142,9 @@ const Knowledger = () => {
         <img
           src={kd}
           alt="KD Graphic"
-          className="sm:absolute -top-[70px] lg:-top-[100px] inset-0 xl:top-[-72px] 2xl:top-[-281px]  xl:max-w-[630px] 2xl:max-w-[1034px] w-[530px] lg:w-[600px]  mx-auto"
+          className="absolute inset-0 -top-[70px] sm:-top-[160px] lg:-top-[140px] 2xl:-top-[280px] max-w-[300px] sm:max-w-[500px] lg:max-w-[800px] 2xl:max-w-[1034px] mx-auto"
         />
-        <p className="xl:text-2xl text-base text-start font-semibold md:text-center mx-auto lg:max-w-[90%] 2xl:max-w-[1350px] sm:pt-[312px] 2xl:pt-[426px] pb-5 sm:pb-10  xl:pb-[84px]">
+        <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-center mx-auto max-w-[1350px] pt-[130px] sm:pt-[200px] lg:pt-[426px] pb-[30px] lg:pb-[84px]">
           The development of a blockchain-based Learning Management System (LMS)
           aims to create a secure, scalable, and cost-effective educational
           platform. By leveraging blockchain technology, the system ensures data
@@ -156,10 +156,11 @@ const Knowledger = () => {
       </section>
 
       <section>
-        <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
-          Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Highlights</span>
-        </h3>
+
         <Container>
+          <h3 className="sm:text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
+            Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Highlights</span>
+          </h3>
           <div className="grid grid-cols-12 gap-6 xl:mt-[78px] md:mt-10 mt-5">
             {highlights.map((item, index) => (
               <div
@@ -180,10 +181,11 @@ const Knowledger = () => {
         </Container>
       </section>
       <section className="md:mt-[70px] mt-8 sm:mt-16">
-        <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
-          Technology <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger2" />Stack</span>
-        </h3>
+
         <Container>
+          <h3 className="sm:text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
+            Technology <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger2" />Stack</span>
+          </h3>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-[68px] mt-3 sm:mt-8 lg:mt-12">
             <div className="xl:col-span-1 self-center">
               {techStack.map((item) => (
@@ -221,7 +223,7 @@ const Knowledger = () => {
                   <h5 className="text-[24px] xl:first-line:text-[40px] font-semibold">
                     {section.title}
                   </h5>
-                  <div className="md:py-[50px] md:px-[40px] p-4 rounded-2xl bg-primary-dark lg:h-[487px] mt-4 md:mt-8 sm:h-full">
+                  <div className="sm:py-[32px] lg:py-[50px] sm:px-[20px] lg:px-[40px] p-4 rounded-2xl bg-primary-dark lg:h-[487px] mt-4 md:mt-8 sm:h-full">
                     <div className="text-[24px] md:text-[32px] font-semibold text-secondary-light2">
                       {section.methodology}
                     </div>
@@ -244,10 +246,10 @@ const Knowledger = () => {
         </Container>
         <Container>
           <div className="mt-10 sm:mt-20 sm:pt-20 lg:pt-0 2xl:mt-[140px]">
-            <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
+            <h3 className="sm:text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
               Project <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger" />Overview</span>
             </h3>
-            <p className="max-w-[1000px] mx-auto md:text-2xl text-center mt-4 md:mt-12">
+            <p className="max-w-[1000px] mx-auto md:text-2xl sm:text-center mt-4 md:mt-12">
               The project aims to provide a blockchain-based educational
               platform addressing key issues in the education sector:
             </p>
@@ -274,7 +276,7 @@ const Knowledger = () => {
           </div>
         </Container>
         <Container>
-          <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold 2xl:mt-[192px] mt-10 sm:mt-20 xl:mb-0 2xl:mb-[120px]">
+          <h3 className="sm:text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold 2xl:mt-[192px] mt-10 sm:mt-20 xl:mb-0 2xl:mb-[80px]">
             Key <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger3" />Features</span>
           </h3>
           <div className="flex ">
@@ -381,7 +383,7 @@ const Knowledger = () => {
           <div className="absolute top-0 left-0 right-0 h-[85%] lg:h-[80%] inset-0  bg-primary-dark -z-[1] ">
           </div>
           <div className="h-[100px] sm:h-[200px] 2xl:h-[300px] bg-primary-dark ">
-            <h3 className="text-center text-[32px] lg:text-[60px] font-semibold text-white pt-[30px] sm:pt-[72px]">
+            <h3 className="text-center xl:text-[60px] text-[32px] sm:text-[48px] font-semibold text-white pt-[30px] sm:pt-[72px]">
               Our <span className="animationStroke"><SVGAnimation nameOfClass="svg-container knowledger4" />Work</span>
             </h3>
           </div>
