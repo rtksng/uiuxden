@@ -4,7 +4,16 @@ import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import herobg from "../assets/portfoliobg.png";
 import rysonate from "../assets/rysonate.png";
-import rysonateSlider from "../assets/portfolio/Rysonate-sidebar-full.png";
+
+import rysonateSlider from "../assets/portfolio/Rysonate-sidebar-full.jpg";
+import webEightSlider from "../assets/portfolio/web-eight-slider.jpg";
+import webFourSlider from "../assets/portfolio/web-four-slider.jpg";
+import webOneSlider from "../assets/portfolio/web-one-slider.jpg";
+import mobFiveSlider from "../assets/portfolio/mob-five-slider.jpg";
+import webSevenSlider from "../assets/portfolio/web-seven-slider.jpg";
+import kpSlider from "../assets/portfolio/kp-slider.jpg";
+import webFiveSlider from "../assets/portfolio/web-five-slider.jpg";
+
 import logop from "../assets/logop.png";
 import kp from "../assets/kp.png";
 import web1 from "../assets/web1.jpg";
@@ -67,15 +76,15 @@ const Portfolio: FC = () => {
     if (activeTab === "web") {
       const projects: Project[] = [
         { img: rysonate, title: "Rysonate", downloads: "50K", sliderimg: rysonateSlider },
-        { img: kp, title: "Knowledger", downloads: "510K", sliderimg: rysonateSlider },
-        { img: web1, title: "Aymakan", downloads: "50K", sliderimg: rysonateSlider },
+        { img: kp, title: "Knowledger", downloads: "510K", sliderimg: kpSlider },
+        { img: web1, title: "Aymakan", downloads: "50K", sliderimg: webOneSlider },
         { img: web2, title: "Leads AI", downloads: "520K", sliderimg: rysonateSlider },
         { img: web3, title: "E-Commerce", downloads: "550K", sliderimg: rysonateSlider },
-        { img: web4, title: "The Point Resort", downloads: "507K", sliderimg: rysonateSlider },
-        { img: web5, title: "SN Group", downloads: "520K", sliderimg: rysonateSlider },
+        { img: web4, title: "The Point Resort", downloads: "507K", sliderimg: webFourSlider },
+        { img: web5, title: "SN Group", downloads: "520K", sliderimg: webFiveSlider },
         { img: web6, title: "Fan Bucs", downloads: "530K", sliderimg: rysonateSlider },
-        { img: web7, title: "Ateliers London", downloads: "550K", sliderimg: rysonateSlider },
-        { img: web8, title: "Cerebrum", downloads: "5033K", sliderimg: rysonateSlider },
+        { img: web7, title: "Ateliers London", downloads: "550K", sliderimg: webSevenSlider },
+        { img: web8, title: "Cerebrum", downloads: "5033K", sliderimg: webEightSlider },
       ];
       return (
         <div className="grid grid-cols-12 gap-6 sm:gap-12 space-y-8 sm:space-y-0">
@@ -111,7 +120,7 @@ const Portfolio: FC = () => {
         { img: mob2, title: "Bylocl", downloads: "50K", sliderimg: rysonateSlider },
         { img: mob3, title: "Beauty Home Service", downloads: "520K", sliderimg: rysonateSlider },
         { img: mob4, title: "Cere Rides", downloads: "550K", sliderimg: rysonateSlider },
-        { img: mob5, title: "Metaland", downloads: "507K", sliderimg: rysonateSlider },
+        { img: mob5, title: "Metaland", downloads: "507K", sliderimg: mobFiveSlider },
         { img: mob6, title: "Venevibe", downloads: "520K", sliderimg: rysonateSlider },
         { img: mob7, title: "Traveljinni", downloads: "530K", sliderimg: rysonateSlider },
         { img: mob8, title: "Doe", downloads: "550K", sliderimg: rysonateSlider },
@@ -193,33 +202,39 @@ const Portfolio: FC = () => {
       </div>
 
       <Container>
-        <div className="mt-10">{renderContent(activeTab)}</div>
+        <div className="my-10">{renderContent(activeTab)}</div>
       </Container>
 
       <div
-        className={`fixed inset-0 z-[999] flex items-center justify-end bg-black bg-opacity-50 transition-all duration-300  ${modalActive ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 z-[999]  bg-black bg-opacity-50 transition-all duration-300  ${modalActive ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
       >
-        <div className={`bg-white p-8 rounded-xl shadow-lg relative w-[80%] transition-all duration-300 h-[100vh] overflow-auto ${modalActive ? " translate-x-0 visible" : " translate-x-full invisible"
+        <div className={` relative  h-[100vh]  flex items-start justify-end  ${modalActive ? " translate-x-0 visible" : " translate-x-full invisible "
           }`}>
+
           <button
-            className=" sticky top-0 left-0 text-gray-600 bg-[green] p-2"
+            className="text-white bg-primary-dark2 py-1 px-3 rounded-[5px] absolute top-6 left-[30px] sm:left-[280px] text-2xl"
             onClick={closeModal}
           >
             X
           </button>
 
-          {selectedProject && (
-            <>
-              <img
-                src={selectedProject.sliderimg}
-                alt={selectedProject.title}
-                className="w-full rounded-xl w-[700px] mx-auto"
-              />
-              <h2 className="text-2xl font-semibold mt-4">{selectedProject.title}</h2>
-              <p className="text-lg text-gray-700">{selectedProject.downloads} Downloads</p>
-            </>
-          )}
+          <div className={`transition-all duration-500 bg-white p-5 sm:p-11 rounded-xl shadow-lg overflow-auto h-full ${modalActive ? 'w-[calc(100%-50px)] sm:w-[calc(100%-300px)]' : 'w-0'}`}>
+            {selectedProject && (
+              <>
+                <h2 className="text-2xl font-semibold mt-4">{selectedProject.title}</h2>
+                <p className="text-lg text-gray-700">{selectedProject.downloads} Downloads</p>
+                <img
+                  src={selectedProject.sliderimg}
+                  alt={selectedProject.title}
+                  className="w-full rounded-xl w-[100%]"
+                />
+
+              </>
+            )}
+          </div>
+
+
         </div>
       </div>
 
