@@ -13,6 +13,13 @@ import mobFiveSlider from "../assets/portfolio/mob-five-slider.jpg";
 import webSevenSlider from "../assets/portfolio/web-seven-slider.jpg";
 import kpSlider from "../assets/portfolio/kp-slider.jpg";
 import webFiveSlider from "../assets/portfolio/web-five-slider.jpg";
+import websixSlider from "../assets/portfolio/web-six-slider.jpg";
+import webthreeSlider from "../assets/portfolio/web-three-slider.jpg";
+import webtwoSlider from "../assets/portfolio/web-two-slider.jpg";
+import mobsevenSlider from "../assets/portfolio/mob-seven-slider.jpg";
+import mobthreeSlider from "../assets/portfolio/mob-three-slider.jpg";
+import moboneSlider from "../assets/portfolio/mob-one-slider.jpg";
+
 
 import logop from "../assets/logop.png";
 import kp from "../assets/kp.png";
@@ -78,11 +85,11 @@ const Portfolio: FC = () => {
         { img: rysonate, title: "Rysonate", downloads: "50K", sliderimg: rysonateSlider },
         { img: kp, title: "Knowledger", downloads: "510K", sliderimg: kpSlider },
         { img: web1, title: "Aymakan", downloads: "50K", sliderimg: webOneSlider },
-        { img: web2, title: "Leads AI", downloads: "520K", sliderimg: rysonateSlider },
-        { img: web3, title: "E-Commerce", downloads: "550K", sliderimg: rysonateSlider },
+        { img: web2, title: "Leads AI", downloads: "520K", sliderimg: webtwoSlider },
+        { img: web3, title: "E-Commerce", downloads: "550K", sliderimg: webthreeSlider },
         { img: web4, title: "The Point Resort", downloads: "507K", sliderimg: webFourSlider },
         { img: web5, title: "SN Group", downloads: "520K", sliderimg: webFiveSlider },
-        { img: web6, title: "Fan Bucs", downloads: "530K", sliderimg: rysonateSlider },
+        { img: web6, title: "Fan Bucs", downloads: "530K", sliderimg: websixSlider },
         { img: web7, title: "Ateliers London", downloads: "550K", sliderimg: webSevenSlider },
         { img: web8, title: "Cerebrum", downloads: "5033K", sliderimg: webEightSlider },
       ];
@@ -116,13 +123,13 @@ const Portfolio: FC = () => {
     if (activeTab === "mobile") {
       const projects: Project[] = [
         { img: rysonate, title: "Rysonate", downloads: "50K", sliderimg: rysonateSlider },
-        { img: mob1, title: "Elements", downloads: "510K", sliderimg: rysonateSlider },
+        { img: mob1, title: "Elements", downloads: "510K", sliderimg: moboneSlider },
         { img: mob2, title: "Bylocl", downloads: "50K", sliderimg: rysonateSlider },
-        { img: mob3, title: "Beauty Home Service", downloads: "520K", sliderimg: rysonateSlider },
+        { img: mob3, title: "Beauty Home Service", downloads: "520K", sliderimg: mobthreeSlider },
         { img: mob4, title: "Cere Rides", downloads: "550K", sliderimg: rysonateSlider },
         { img: mob5, title: "Metaland", downloads: "507K", sliderimg: mobFiveSlider },
         { img: mob6, title: "Venevibe", downloads: "520K", sliderimg: rysonateSlider },
-        { img: mob7, title: "Traveljinni", downloads: "530K", sliderimg: rysonateSlider },
+        { img: mob7, title: "Traveljinni", downloads: "530K", sliderimg: mobsevenSlider },
         { img: mob8, title: "Doe", downloads: "550K", sliderimg: rysonateSlider },
       ];
       return (
