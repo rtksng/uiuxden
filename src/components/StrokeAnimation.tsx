@@ -17,7 +17,7 @@ const SVGAnimation: React.FC<SVGAnimationProps> = ({ width = 194, height = 114, 
     });
 
     return (
-        <div className={nameOfClass}>
+        <div className={nameOfClass} >
             <svg
                 ref={ref}
                 width={width}

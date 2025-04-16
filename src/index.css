@@ -1397,9 +1397,21 @@ height: 150px;
     max-width: 100%;
     margin-top: 0;
   }
-}
-Button.gradient-btn{
-background: linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%);
-color: #1A1A1A;
 
+  .custom-sutainable .sus-wd-boxes{
+    max-width: 40%;
+  }
 }
+
+@media (max-width: 576px) {
+
+  .custom-sutainable .sus-wd-boxes{
+    max-width: 80%;
+  }
+}
+
+Button.gradient-btn {
+  background: linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%);
+  color: #1A1A1A;
+}
+
