@@ -77,7 +77,7 @@ const CaseStudyCarousel = () => {
             <SwiperSlide key={index} className={`slide ${classNames[index]}`}>
               <div>
                 <div className="flex md:items-center items-start flex-col md:flex-row md:justify-between gap-5">
-                  <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] font-semibold 2xl:max-w-[800px] max-w-[600px] text-primary-dark2">
+                  <h2 className="2xl:text-[60px] xl:text-[40px] text-[24px] sm:text-[36px] font-semibold 2xl:max-w-[800px] max-w-[600px] text-primary-dark2">
                     {slide.title}
                   </h2>
                   <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" />
