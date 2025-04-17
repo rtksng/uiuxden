@@ -145,7 +145,7 @@ const Sustainable = () => {
                                     Sustainable
                                 </span>{" "}
                                 Web Design?
-                        \
+                        
                             </h5>
                             <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 xl:pe-5 xl:me-5">
                                 Sustainable web design focuses on optimizing resources, reducing energy consumption, and lowering the environmental impact of digital products. By adopting eco-friendly practices, designers can create efficient, high-performing websites with a minimal carbon footprint.
