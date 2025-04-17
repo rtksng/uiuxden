@@ -19,6 +19,9 @@ import webtwoSlider from "../assets/portfolio/web-two-slider.jpg";
 import mobsevenSlider from "../assets/portfolio/mob-seven-slider.jpg";
 import mobthreeSlider from "../assets/portfolio/mob-three-slider.jpg";
 import moboneSlider from "../assets/portfolio/mob-one-slider.jpg";
+import mobtwoSlider from "../assets/portfolio/mob-two-slider.jpg";
+import mobfourSlider from "../assets/portfolio/mob-four-slider.jpg";
+import mobsixSlider from "../assets/portfolio/mob-six-slider.jpg";
 
 
 import logop from "../assets/logop.png";
@@ -124,11 +127,11 @@ const Portfolio: FC = () => {
       const projects: Project[] = [
         { img: rysonate, title: "Rysonate", downloads: "50K", sliderimg: rysonateSlider },
         { img: mob1, title: "Elements", downloads: "510K", sliderimg: moboneSlider },
-        { img: mob2, title: "Bylocl", downloads: "50K", sliderimg: rysonateSlider },
+        { img: mob2, title: "Bylocl", downloads: "50K", sliderimg: mobtwoSlider },
         { img: mob3, title: "Beauty Home Service", downloads: "520K", sliderimg: mobthreeSlider },
-        { img: mob4, title: "Cere Rides", downloads: "550K", sliderimg: rysonateSlider },
+        { img: mob4, title: "Cere Rides", downloads: "550K", sliderimg: mobfourSlider },
         { img: mob5, title: "Metaland", downloads: "507K", sliderimg: mobFiveSlider },
-        { img: mob6, title: "Venevibe", downloads: "520K", sliderimg: rysonateSlider },
+        { img: mob6, title: "Venevibe", downloads: "520K", sliderimg: mobsixSlider },
         { img: mob7, title: "Traveljinni", downloads: "530K", sliderimg: mobsevenSlider },
         { img: mob8, title: "Doe", downloads: "550K", sliderimg: rysonateSlider },
       ];
