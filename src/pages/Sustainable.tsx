@@ -306,7 +306,7 @@ const Sustainable = () => {
 
             {/* ------- Do You know ------- */}
 
-            <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px] custom-dynsec">
+            <div className="py-8 lg:py-20 xl:pt-[120px] 2xl:pb-[140px] custom-dynsec">
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 ">
@@ -377,7 +377,7 @@ const Sustainable = () => {
                 </Container>
             </div>
 
-            <div className="mx-auto mt-9 sm:mt-[100px] lg:mt-[200px] max-w-[1792px] h-auto lg:h-[970px] text-white sus-optimization">
+            <div className="mx-auto mt-9 sm:mt-[100px] lg:mt-[50px] 2xl:mt-[200px] max-w-[1792px] h-auto lg:h-[970px] text-white sus-optimization">
                 <Container>
                     <div className="pt-[60px] lg:pt-[90px]">
                         <h4 className="font-semibold text-[24px] text-center text-white sm:text-[48px] xl:text-[60px] mb-[30px]">
