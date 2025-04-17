@@ -1337,7 +1337,7 @@ height: 150px;
 }
 
 .custom-sutainable .custom-dynsec .animationStroke .svg-container.human-centered svg {
-  transform: scaleX(1.2) scaleY(1.1);
+  transform: scaleX(0.8) scaleY(0.8);
 }
 
 
@@ -1394,14 +1394,14 @@ height: 150px;
     margin-top: 0;
   }
 
-  .custom-sutainable .sus-wd-boxes{
+  .custom-sutainable .sus-wd-boxes {
     max-width: 40%;
   }
 }
 
 @media (max-width: 576px) {
 
-  .custom-sutainable .sus-wd-boxes{
+  .custom-sutainable .sus-wd-boxes {
     max-width: 80%;
   }
 }
@@ -1411,3 +1411,28 @@ Button.gradient-btn {
   color: #1A1A1A;
 }
 
+/* .arrowanimation path{
+  fill: transparent;
+  transition: 1s linear;
+}
+
+.arrowanimation.active path{
+  fill: #3abf88;
+  transition-delay: 1s;
+
+} */
+.arrowanimation path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #3ABF88;
+  fill: transparent;
+  transition: stroke-dashoffset 1.5s ease-in-out, fill .2s ease-in-out .9s;
+  /*                 
+  ↑ stroke animation       ↑ fill delay & transition */
+}
+
+.arrowanimation.active path {
+  stroke-dashoffset: 0;
+  fill: #3ABF88;
+  /* ya jo bhi color tu chahe */
+}
