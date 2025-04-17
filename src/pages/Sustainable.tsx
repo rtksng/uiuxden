@@ -11,7 +11,6 @@ import "swiper/css/pagination";
 import SVGAnimation from "../components/StrokeAnimation";
 import Heroimage from "../assets/sustainability/hero-secimg.png";
 import Tabs from "../components/Tabs2";
-import ArrowAnimation from "../components/ArrowAnimation";
 import ReachArrows from "../assets/reachus-arrows.svg";
 
 
@@ -28,7 +27,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing HTTP requests by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
 
         {
@@ -42,7 +41,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing Images & Medias by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
 
         {
@@ -56,7 +55,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing CSS &JavaScripts by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
         {
             id: 4,
@@ -69,9 +68,9 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing Architectures by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
-       
+
     ];
 
     const consultData = {
@@ -146,7 +145,7 @@ const Sustainable = () => {
                                     Sustainable
                                 </span>{" "}
                                 Web Design?
-                                <ArrowAnimation nameOfClass="svg-container pl-4" />
+                        
                             </h5>
                             <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 xl:pe-5 xl:me-5">
                                 Sustainable web design focuses on optimizing resources, reducing energy consumption, and lowering the environmental impact of digital products. By adopting eco-friendly practices, designers can create efficient, high-performing websites with a minimal carbon footprint.
