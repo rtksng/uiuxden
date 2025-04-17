@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import ElymentsUnderstand from "../../assets/elyments-understand-banner.png";
 import rightBar from "../../assets/rightbar.png";
 import elymenetsLogo from "../../assets/elymenetslogo.png";
-import roundArrow from "../../assets/roundarrow.png";
 
 import ElymentsMainBanner from "../../assets/elyments-main-banner.png";
 import rightLongArrow from "../../assets/right-long-arrow.svg";
@@ -37,6 +36,7 @@ import AgeIcon from "../../assets/id-age-icon.svg";
 
 import TableCompo from "../../components/TableCompo";
 import SVGAnimation from "../../components/StrokeAnimation";
+import ArrowAnimation from "../../components/ArrowAnimation";
 
 const Elyments = () => {
     // Identify Card Data
@@ -670,8 +670,10 @@ const Elyments = () => {
                         </div>
                         <div className="col-span-2 lg:col-span-1">
                             <div className="relative">
+                                <ArrowAnimation nameOfClass=" absolute -left-[170px] top-0 w-[130px] lg:flex hidden " />
                                 <img src={ElymentsSolution} alt="image" className="mx-auto" />
-                                <img src={roundArrow} alt="image" className="absolute top-[-86px] lg:top-[20px] -left-[0px] lg:-left-[200px]" />
+
+
                             </div>
                         </div>
                     </div>

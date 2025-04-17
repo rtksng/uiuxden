@@ -28,7 +28,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing HTTP requests by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
 
         {
@@ -42,7 +42,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing Images & Medias by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
 
         {
@@ -56,7 +56,7 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing CSS &JavaScripts by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
         {
             id: 4,
@@ -69,9 +69,9 @@ const Sustainable = () => {
             box2Heading: `Impacts`,
             listItems2: ["Reducing Architectures by 50% can lower page load energy consumption by up to 30%."],
 
-            
+
         },
-       
+
     ];
 
     const consultData = {
