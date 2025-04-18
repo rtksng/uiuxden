@@ -416,6 +416,8 @@ height: 150px;
   transform: scaleX(1.4);
 }
 
+
+
 .animationStroke .svg-container.clunky svg {
   transform: scaleX(2.6);
 }
@@ -589,6 +591,7 @@ height: 150px;
   .animationStroke .svg-container.knowledger3 svg {
     transform: scaleX(1.1) scaleY(1);
   }
+
   .animationStroke .svg-container.knowledger4 svg {
     transform: scaleX(0.7) scaleY(0.8);
   }
@@ -647,6 +650,16 @@ height: 150px;
   font-weight: 500;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.navTabs.activeTabs:after {
+  content: url('./assets/about/active-arrow.svg');
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+
 }
 
 .table-customrow .table-customtd {
@@ -734,6 +747,11 @@ height: 150px;
   padding-left: 20px !important;
 }
 
+.animationStroke .svg-container.excellence svg {
+  transform: scaleX(1.5)scaleY(0.9);
+}
+
+@media (max-width:1400px) {}
 
 @media (max-width:1280px) {
   .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
@@ -811,6 +829,11 @@ height: 150px;
     text-align: center;
   }
 
+  .navTabs.activeTabs:after {
+    bottom: -25px;
+    right: -20px;
+
+  }
 
 }
 
@@ -827,6 +850,14 @@ height: 150px;
 }
 
 @media (max-width: 1500px) {
+  .animationStroke .svg-container.excellence svg {
+    transform: scaleX(1.1)scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.things svg {
+    transform: scaleX(0.6)scaleY(0.8);
+  }
+
   .custom-leptopimg {
     top: 49%;
   }
@@ -863,6 +894,14 @@ height: 150px;
   .animationStroke .svg-container.stretched svg {
     transform: scaleX(0.7) scaleY(0.6);
   }
+
+  .navTabs {
+    font-size: 32px;
+  }
+
+  .navTabs.activeTabs {
+    font-size: 32px;
+  }
 }
 
 
@@ -888,6 +927,13 @@ height: 150px;
     max-width: 325px;
   }
 
+  .navTabs {
+    font-size: 24px;
+  }
+
+  .navTabs.activeTabs {
+    font-size: 24px;
+  }
 
 }
 
