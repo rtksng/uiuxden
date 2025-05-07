@@ -33,6 +33,7 @@ const Accessibility = () => {
   };
 
   const accordionItems = [
+    { title: "Create usable product", content: "A well-designed product should be intuitive, easy to navigate, and efficient for all users. By focusing on usability, we ensure a seamless experience that enhances engagement and satisfaction." },
     { title: "More accessible product?", content: "Tailwind CSS is a utility-first CSS framework for creating custom designs quickly." },
   ];
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,10 +64,10 @@ const Accessibility = () => {
               UIUXDen removes all barriers and provides the benefit of technology for everyone.
             </h1>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-[80px]">
-              <div><img src={CheckMarkbtn} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
-              <div><img src={SeeButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
-              <div><img src={HeerButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
-              <div><img src={SpeakButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]"/></div>
+              <div><img src={CheckMarkbtn} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
+              <div><img src={SeeButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
+              <div><img src={HeerButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
+              <div><img src={SpeakButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
             </div>
           </div>
 
@@ -99,14 +100,10 @@ const Accessibility = () => {
                 <div className=" text-[30px] 2xl:text-[60px] lg:leading-[72px] leading-[45px] font-semibold 2xl:mb-6 mb-[40px]">
                   Accessibility is primary focus while creating a design for people.
                 </div>
-                <div className="text-[28px] font-semibold text-black lg:mt-[50px]">
-                  Create usable product
-                </div>
 
-                <p className="text-[20px] font-normal mb-5 lg:w-[75%] lg:mt-[20px] mt-[10px]">A well-designed product should be intuitive, easy to navigate, and efficient for all users. By focusing on usability, we ensure a seamless experience that enhances engagement and satisfaction.</p>
                 <div className="w-[100%] sm:w-[100%] lg:w-[340px] me-auto mt-10">
                   {accordionItems.map((item, index) => (
-                    <div key={index} className="mb-2 border-y-2 border-black py-4 px-0">
+                    <div key={index} className="mb-2 border-b-2 border-black py-4 px-0">
                       {/* Accordion Header */}
                       <button
                         className="w-full flex justify-between items-center py-4 bg-white-100 hover:bg-white focus:outline-none"
@@ -214,7 +211,7 @@ const Accessibility = () => {
           <h6 className=" text-[24px] 2xl:text-[60px] leading-[50px] 2xl:mb-6 text-left">
             Our Approach:
           </h6>
-          <h6 className=" text-[24px] 2xl:text-[60px] leading-[50px] font-bold 2xl:mb-6 text-left">
+          <h6 className=" text-[24px] 2xl:text-[84px] leading-[50px] font-bold 2xl:mb-6 text-left">
             Crafting an Inclusive Experience
           </h6>
           <div className="grid xl:grid grid-cols-12 xl:grid-cols-8 mt-[20px] lg:mt-[100px] none-bg-grey-graident">
@@ -222,7 +219,7 @@ const Accessibility = () => {
               <div className="flex">
                 <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
-                    <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
+                    <h2 className="text-[24px]  md:text-[20px] font-bold md:leading-[30px]">
                       Accessibility Audit & Compliance Check
                     </h2>
                   </div>
@@ -242,7 +239,7 @@ const Accessibility = () => {
               <div className="flex">
                 <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
-                    <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
+                    <h2 className="text-[24px]  md:text-[20px] font-bold md:leading-[30px]">
                       Strategic Enhancements & Fixes
                     </h2>
                   </div>
@@ -263,7 +260,7 @@ const Accessibility = () => {
               <div className="flex">
                 <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
-                    <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
+                    <h2 className="text-[24px]  md:text-[20px] font-bold md:leading-[30px]">
                       Real-User Testing & Validation
                     </h2>
                   </div>
@@ -284,7 +281,7 @@ const Accessibility = () => {
               <div className="flex">
                 <div className="text-primary-dark2 flex-column p-[20px] lg:p-[40px]">
                   <div className="min-w-[34px]">
-                    <h2 className="text-[24px]  md:text-[20px] font-semibold md:leading-[30px]">
+                    <h2 className="text-[24px]  md:text-[20px] font-bold md:leading-[30px]">
                       Ongoing Support & Future-Proofing
                     </h2>
                   </div>
@@ -314,35 +311,35 @@ const Accessibility = () => {
           </h6>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 pt-[60px] pb-[100px] mt-[40px] lg:mt-[100px]">
-              <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] relative">
-                <img src={UpArrow} alt="image" className="absolute top-[-42px] left-[120px] hidden lg:block" />
-                <img src={audit} alt="image" className="w-12 mt-[40px]" />
-                <h6 className="text-white mt-4 lg:text-[20px]">Accessibility Audit</h6>
-                <p className="text-white">We check your product to make it more accessible to everyone</p>
-              </div>
-              <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[82px] mt-[30px] relative">
-              <img src={DownArrow} alt="image" className="absolute bottom-[-42px] left-[120px] hidden lg:block" />
-                <img src={InclusiveDesign} alt="image" className="w-12 mt-[40px]" />
-                <h6 className="text-white mt-4 lg:text-[20px]">Inclusive Design</h6>
-                <p className="text-white">We design products that are easy for all users to use.</p>
-              </div>
-              <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[18px] border border-[1px] [border-image-source:linear-gradient(360deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[00px] mt-[30px] relative">
+            <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] relative">
               <img src={UpArrow} alt="image" className="absolute top-[-42px] left-[120px] hidden lg:block" />
-                <img src={AssissitiveTechnology} alt="image" className="w-12 mt-[40px]" />
-                <h6 className="text-white mt-4 lg:text-[20px]">Assistive Technology</h6>
-                <p className="text-white">We add technology to help people with disabilities use products.</p>
-              </div>
-              <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[82px] mt-[30px] relative">
+              <img src={audit} alt="image" className="w-12 mt-[40px]" />
+              <h6 className="text-white mt-4 lg:text-[20px]">Accessibility Audit</h6>
+              <p className="text-white">We check your product to make it more accessible to everyone</p>
+            </div>
+            <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[82px] mt-[30px] relative">
               <img src={DownArrow} alt="image" className="absolute bottom-[-42px] left-[120px] hidden lg:block" />
-                <img src={ColorContrast} alt="image" className="w-12 mt-[40px]" />
-                <h6 className="text-white mt-4 lg:text-[20px]">Color Contrast</h6>
-                <p className="text-white">We make sure colors are easy to see and read.</p>
-              </div>
-              <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[18px] border border-[1px] [border-image-source:linear-gradient(360deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1]">
-                <img src={UserTesting} alt="image" className="w-12 mt-[40px]" />
-                <h6 className="text-white mt-4 lg:text-[20px]">User Testing</h6>
-                <p className="text-white">We check your product to make it more accessible to everyone.</p>
-              </div>
+              <img src={InclusiveDesign} alt="image" className="w-12 mt-[40px]" />
+              <h6 className="text-white mt-4 lg:text-[20px]">Inclusive Design</h6>
+              <p className="text-white">We design products that are easy for all users to use.</p>
+            </div>
+            <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[18px] border border-[1px] [border-image-source:linear-gradient(360deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[00px] mt-[30px] relative">
+              <img src={UpArrow} alt="image" className="absolute top-[-42px] left-[120px] hidden lg:block" />
+              <img src={AssissitiveTechnology} alt="image" className="w-12 mt-[40px]" />
+              <h6 className="text-white mt-4 lg:text-[20px]">Assistive Technology</h6>
+              <p className="text-white">We add technology to help people with disabilities use products.</p>
+            </div>
+            <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[40px] border border-[1px] [border-image-source:linear-gradient(180deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1] lg:mt-[82px] mt-[30px] relative">
+              <img src={DownArrow} alt="image" className="absolute bottom-[-42px] left-[120px] hidden lg:block" />
+              <img src={ColorContrast} alt="image" className="w-12 mt-[40px]" />
+              <h6 className="text-white mt-4 lg:text-[20px]">Color Contrast</h6>
+              <p className="text-white">We make sure colors are easy to see and read.</p>
+            </div>
+            <div className="py-5 px-5 flex-column audit-box w-[96%] h-[250px] rounded-[18px] border border-[1px] [border-image-source:linear-gradient(360deg,#FFFFFF_0%,#393939_100%)] [border-image-slice:1]">
+              <img src={UserTesting} alt="image" className="w-12 mt-[40px]" />
+              <h6 className="text-white mt-4 lg:text-[20px]">User Testing</h6>
+              <p className="text-white">We check your product to make it more accessible to everyone.</p>
+            </div>
           </div>
 
         </Container>

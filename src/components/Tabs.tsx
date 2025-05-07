@@ -24,8 +24,8 @@ const Tabs: React.FC<TabsProps> = ({ tabs, autoSwitchInterval = 3000 }) => {
     }, [tabs.length, autoSwitchInterval]);
 
     return (
-        <div className="flex flex-col md:flex-row justify-center py-5 sm:py-[60px] lg:py-[140px]">
-            <div className="relative min-w-[50%] sm:gap-[40px] flex flex-col md:items-end items-center before:w-[100%] md:before:w-[1px] before:bg-white md:before:h-[100%] before:h-[1px] before:absolute md:before:right-0 before:bottom-0 pb-12 md:pb-0 md:pe-[70px]">
+        <div className="flex flex-col md:flex-row justify-center py-5 sm:py-[60px] lg:py-[80px] 2xl:py-[140px]">
+            <div className="relative min-w-[50%] gap-5  sm:gap-8 lg:gap-[40px] flex flex-col md:items-end items-center before:w-[100%] md:before:w-[1px] before:bg-white md:before:h-[100%] before:h-[1px] before:absolute md:before:right-0 before:bottom-0 pb-12 md:pb-0 md:pe-[70px]">
                 {tabs.map((tab, index) => (
                     <button
                         className={
@@ -35,7 +35,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, autoSwitchInterval = 3000 }) => {
                         onClick={() => setActiveTab(index)}
                     >
                         {tab.label}
-                        <span className="md:text-[32px] text-[24px] font-normal ms-2 ">
+                        <span className="lg:text-[32px] text-[24px] font-normal ms-2 ">
                             {tab.sublabel}
                         </span>
                     </button>
@@ -43,7 +43,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, autoSwitchInterval = 3000 }) => {
             </div>
             <div className="md:p-4 p-10 md:ps-12">
                 <p
-                    className="text-center md-text-start md:text-[40px] sm:text-[30px] text-[20px] font-thin"
+                    className="text-center md-text-start 2xl:text-[40px] sm:text-[24px] text-[18px] font-thin"
                     dangerouslySetInnerHTML={{
                         __html: tabs[activeTab].content,
                     }}

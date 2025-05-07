@@ -30,7 +30,8 @@ const ContactUS = () => {
               Get in touch with us for collaborations, inquiries, or support!
             </p>
           </div>
-          <div className="contact-from grid grid-cols-12 gap-8 2xl:gap-14 lg:h-[812px] p-0">
+          <div className="contact-from grid grid-cols-12 gap-8 2xl:gap-14 xl:h-[812px] p-0 h-auto mb-9 mb-xl-0
+          ">
             <div className="col-span-12 lg:col-span-8">
               <form
                 action="#"

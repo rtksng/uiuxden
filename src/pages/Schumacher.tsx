@@ -13,7 +13,7 @@ import AddressedIssue from "../assets/addressedissue-banner.png";
 import ProblemthreeBanner from "../assets/problem3-banner.png";
 import ProblemthreeBannerAbsolute from "../assets/problem3-absolute.png";
 import SolutionthreeBanner from "../assets/solution3-banner.png";
-
+import ArrowAnimation from "../components/ArrowAnimation";
 import Footer from "../components/Footer";
 
 import Container from "../components/Container";
@@ -123,7 +123,7 @@ const Schumacher = () => {
               Solutions
             </span>
           </h3>
-          <div className="grid grid-cols-2 gap-10 lg:gap-20 mt-[30px] lg:mt-[70px]">
+          <div className="grid grid-cols-2 gap-10 lg:gap-20 mt-[30px] lg:mt-[90px]">
             <div className="col-span-2 lg:col-span-1 self-center">
               <div>
                 <div className="text-[16px] sm:text-[18px] font-semibold text-secondary-light2">
@@ -145,7 +145,11 @@ const Schumacher = () => {
               </div>
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <img src={problemOne} alt="image" />
+              <div className="relative">
+                <ArrowAnimation nameOfClass=" absolute -left-[170px] -top-20 w-[130px] lg:flex hidden " />
+                <img src={problemOne} alt="image" />
+              </div>
+
             </div>
           </div>
           <div className=" mt-[50px] sm:mt-[100px]">
