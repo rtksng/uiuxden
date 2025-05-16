@@ -92,15 +92,13 @@ const CaseStudyCarousel = () => {
                     </p>
 
                     <Link
-
                       onClick={() => {
                         window.scrollTo(0, 0);
                       }}
                       to={slide.casestudylink}
 
                     >
-                      <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[38px] text-primary-dark2">
-
+                      <button className="bg-secondary-light3 xl:absolute mt-5 xl:mt-0 left-0 bottom-0 xl:px-[90px]  2xl:py-[50px] xl:py-[30px] text-xl p-5 xl:text-[26px] 2xl:text-[32px] font-semibold rounded-[14px] 2xl:rounded-[38px] text-primary-dark2">
                         {slide.buttonLabel}
                       </button>
                     </Link>

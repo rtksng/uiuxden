@@ -751,7 +751,10 @@ height: 150px;
   transform: scaleX(1.5)scaleY(0.9);
 }
 
-@media (max-width:1400px) {}
+.border-gradient-green {
+  padding: 3px;
+  background: linear-gradient(181.53deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
+}
 
 @media (max-width:1280px) {
   .ux-audit-insights-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
