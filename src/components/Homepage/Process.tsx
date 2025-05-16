@@ -105,10 +105,10 @@ const Process = () => (
     <Container>
       <div className="flex flex-col xl:flex-row justify-center xl:items-end xl:justify-between">
         <div className="xl:max-w-[400px] sm:p-5  xl:relative xl:bottom-16 text-primary-dark2">
-          <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none">
+          <h5 className="2xl:text-[40px] text-[32px] font-semibold leading-none inline-block xl:block">
             Our
           </h5>
-          <h2 className="2xl:text-[60px] sm:text-[40px] text-[20px] font-semibold">
+          <h2 className="2xl:text-[60px] sm:text-[40px] text-[32px] font-semibold inline-block xl:block ml-1 ml-lg-0">
             Process
           </h2>
           <p className="text-primary-dark2 2xl:text-[22px]">

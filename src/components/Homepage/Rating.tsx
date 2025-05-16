@@ -62,10 +62,10 @@ const Rating = () => {
                       key={idx}
                       src={user}
                       alt="user"
-                      className={`rounded-full 2xl:w-[100px] w-20 2xl:h-[100px] h-20 border-[3px] ${
+                      className={`rounded-full 2xl:w-[100px] w-20 2xl:h-[100px] h-20 ${
                         activeIndex === idx
-                          ? "border-primary-dark4 scale-110  -translate-y-5"
-                          : "border-white "
+                          ? "border-gradient-green scale-110 -translate-y-5"
+                          : "border-white  border-[3px]"
                       } transition-all duration-300 ease-in-out`}
                     />
                   ))}
