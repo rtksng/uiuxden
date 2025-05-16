@@ -4,9 +4,23 @@ import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import SVGAnimation from "../components/StrokeAnimation";
 import BudgetImg from "../assets/budget-friendly-img.png";
-import CriticalIMG from "../assets/critical-img.png";
-// import CircularProcessCarousel from "../components/CircularProcessCarousel";
+// import CriticalIMG from "../assets/critical-img.png";
+import humanThinkImg1 from "../assets/design-sprint/human-think-img-1.png";
+import humanThinkImg2 from "../assets/design-sprint/human-think-img-2.png";
+import humanThinkImg3 from "../assets/design-sprint/human-think-img-3.png";
+import humanThinkImg4 from "../assets/design-sprint/human-think-img-4.png";
+import humanThinkImg5 from "../assets/design-sprint/human-think-img-5.png";
+import humanThinkImg6 from "../assets/design-sprint/human-think-img-6.png";
+
+import Carousal from "../components/Carousal";
 import Footer from "../components/Footer";
+
+const consultData = {
+  heading: "Ready to Elevate Your",
+  subheading: "User",
+  boldsubheading: "Experience?",
+  buttonText: "Schedule a Consultation",
+};
 const DesignSprint = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -20,11 +34,11 @@ const DesignSprint = () => {
   return (
     <main>
       <Navbar />
-      <div
-        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+      <div className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
         }`}
-      ></div>
+      >
+
+      </div>
       <Navbar />
 
       {/* ---------- Banner Section ---------- */}
@@ -378,14 +392,100 @@ const DesignSprint = () => {
             Creating product from scratch, or already digital existence
           </p>
 
-          {/* <CircularProcessCarousel /> */}
 
           <div className="flex justify-center mt-10">
-            <img src={CriticalIMG} alt="Image"/>
+            <Carousal />
+            {/* <img src={CriticalIMG} alt="Image" /> */}
           </div>
         </Container>
       </div>
-      <Footer />
+
+      {/* ---------- Specialists Section ------------- */}
+      <div className="custom-specialistsec relative overflow-hidden py-[50px] md:py-[100px] lg:py-[150px]">
+        <div className="bg-circle"></div>
+        <Container>
+          <div className="grid grid-cols-12">
+            <div className="col-span-12 lg:col-span-6 xl:col-span-7 pr-0 mb-10 lg:mb-0 lg:pr-10 ">
+              <h2 className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold">
+                UIUXDen’s, one intense week is enough to make a better product to outstand in the market
+              </h2>
+            </div>
+
+            <div className="col-span-12 lg:col-span-6 xl:col-span-5 specialistsec-wrapper relative">
+
+              <div className="specialistsec-boxoutter">
+                <div className="specialistsec-box flex gap-[25px]">
+                  <div className="star-boxoutter flex flex-col justify-center items-center">
+                    <div className="star-box flex items-center justify-center">
+                      <svg width="164" height="86" viewBox="0 0 164 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 62L14.6803 70.3109L23.4127 70.2918L16.3368 75.4091L19.0534 83.7082L12 78.56L4.94658 83.7082L7.66318 75.4091L0.587322 70.2918L9.3197 70.3109L12 62Z" fill="black" />
+                        <path d="M26.8564 24L35.4919 31.8097L45.5625 25.9661L40.8035 36.5923L49.4731 44.3642L37.8964 43.1218L33.184 53.7688L30.7881 42.3747L19.206 41.183L29.3021 35.3834L26.8564 24Z" fill="black" />
+                        <path d="M82 0L86.4672 13.8515L101.021 13.8197L89.228 22.3485L93.7557 36.1803L82 27.6L70.2443 36.1803L74.772 22.3485L62.9789 13.8197L77.5328 13.8515L82 0Z" fill="black" />
+                        <path d="M152 62L149.32 70.3109L140.587 70.2918L147.663 75.4091L144.947 83.7082L152 78.56L159.053 83.7082L156.337 75.4091L163.413 70.2918L154.68 70.3109L152 62Z" fill="black" />
+                        <path d="M137.144 24L128.508 31.8097L118.438 25.9661L123.196 36.5923L114.527 44.3642L126.104 43.1218L130.816 53.7688L133.212 42.3747L144.794 41.183L134.698 35.3834L137.144 24Z" fill="black" />
+                      </svg>
+                    </div>
+                    <p className="text-[60px] font-semibold text-center">
+                      40+
+                    </p>
+                    <p className="font-semibold text-center uppercase">
+                      Specialists
+                    </p>
+                  </div>
+                  <div className="content-box">
+                    <p className="text-[25px] font-semibold text-[#1A1A1A]">
+                      What happens after a
+                      Design Sprint?
+                    </p>
+                    <p className="py-[35px] font-semibold border-b-[3px] border-black relative before:border-[8px] before:border-black before:absolute before:border-t-transparent before:border-l-transparent before:border-b-transparent before:right-0 before:bottom-[-8px]">
+                      Running an iteration sprint
+                    </p>
+                    <p className="py-[35px] font-semibold border-b-[3px] border-black relative before:border-[8px] before:border-black before:absolute before:border-t-transparent before:border-l-transparent before:border-b-transparent before:right-0 before:bottom-[-8px]">
+                      Running an iteration sprint
+                    </p>
+                    <p className="py-[35px] font-semibold">
+                      Running an iteration sprint
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+
+        <div className="human-thinksec pt-[50px] md:pt-[100px] lg:pt-[150px]">
+          <Container>
+            <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[100px]">
+              UIUXDen, facilitating ideation sessions
+              involves an understanding of human thinking and mental model
+            </p>
+          </Container>
+          <div className="humanthinkimage-sec flex">
+            <div className="image-box">
+              <img src={humanThinkImg1} alt="Image" />
+            </div>
+
+            <div className="image-box md:mt-[10%]">
+              <img src={humanThinkImg2} alt="Image" />
+            </div>
+            <div className="image-box">
+              <img src={humanThinkImg3} alt="Image" />
+            </div>
+            <div className="image-box md:mt-[10%]">
+              <img src={humanThinkImg4} alt="Image" />
+            </div>
+            <div className="image-box">
+              <img src={humanThinkImg5} alt="Image" />
+            </div>
+            <div className="image-box md:mt-[10%]">
+              <img src={humanThinkImg6} alt="Image" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <Footer consultData={consultData} />
     </main>
   );
 };
