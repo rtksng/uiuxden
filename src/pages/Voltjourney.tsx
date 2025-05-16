@@ -11,6 +11,7 @@ import EmpoweringBanner from "../assets/empowering-banner-img.png";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
 import SVGAnimation from "../components/StrokeAnimation";
+import ArrowAnimation from "../components/ArrowAnimation";
 const Voltjourney = () => {
   return (
     <main>
@@ -204,7 +205,10 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-2 lg:col-span-1">
+            <div className="relative">
+            <ArrowAnimation nameOfClass=" absolute -left-[170px] -top-20 w-[130px] lg:flex hidden " />
               <img src={AiChatbotBanner} alt="image" />
+              </div>
             </div>
           </div>
         </Container>

@@ -3,6 +3,7 @@ import knowledger from "../../assets/knowledger.svg";
 import paulSchumacher from "../../assets/paulSchumacher.svg";
 import SVGAnimation from "../StrokeAnimation";
 import Volt from "../../assets/Volt.svg";
+import arrow from "../../assets/right-tillted-icon.svg";
 import Elements from "../../assets/elyments.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -83,9 +84,9 @@ const CaseStudy = () => {
                   key={index}
                   className="lg:col-span-4 sm:col-span-6 col-span-12"
                 >
-                  <div className="itemcase flex flex-col items-center justify-center">
+                  <div className="itemcase flex flex-col items-center justify-center relative">
                     <div className="flex flex-col max-w-[330px] justify-center items-center">
-
+                      <img src={arrow} alt="icon" className="absolute top-[20px] right-[20px]" />
 
                       <motion.img src={study.imgSrc}
                         initial={{ opacity: 0, scale: 0.5 }}
