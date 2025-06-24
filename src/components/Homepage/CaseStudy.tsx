@@ -97,8 +97,8 @@ const CaseStudy = () => {
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
                         viewport={{ once: true, amount: 0.2 }}
-                        alt={study.altText} className="w-[180px] 2xl:w-[250px]" />
-
+                        alt={study.altText} className="w-[180px] 2xl:w-[250px]"
+                      />
 
                       <p className="text-white text-center  2xl:text-[22px] 2xl:mt-[100px] mt-[40px]">
                         {study.description}

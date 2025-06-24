@@ -71,7 +71,7 @@ const CaseStudyCarousel = () => {
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
-          className="mySwiper"
+          className="mySwiper custom-swiper"
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index} className={`slide ${classNames[index]}`}>
@@ -95,6 +95,7 @@ const CaseStudyCarousel = () => {
                       onClick={() => {
                         window.scrollTo(0, 0);
                       }}
+                      
                       to={slide.casestudylink}
 
                     >
