@@ -32,51 +32,31 @@ const DrivenDesign = () => {
               <div>
                 <div className="grid grid-cols-12 border-gradient-b">
                   <div className="col-span-6 lg:col-span-4 flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] relative ">
-                    <img
-                      className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]  "
-                      src={bravo}
-                      alt="bravo"
-                    />
+                    <img className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]" src={bravo} alt="bravo" />
                   </div>
                   <div className="col-span-6 lg:col-span-4 bg-gradient-fill hidden lg:flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px]  relative "></div>
                   <div className="col-span-6 lg:col-span-4 flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] relative   ">
                     {" "}
-                    <img
-                      className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]  "
-                      src={locofy}
-                      alt="locofy"
-                    />
+                    <img className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]"  src={locofy} alt="locofy" />
                   </div>
                 </div>
                 <div className="grid grid-cols-12 border-gradient-b">
                   <div className="col-span-6 lg:col-span-4 hidden lg:flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] relative border-gradient-b "></div>
                   <div className="col-span-12 lg:col-span-4  flex items-center justify-center lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] relative border-gradient-b ">
                     {" "}
-                    <img
-                      className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]  "
-                      src={figjam}
-                      alt="figjam"
-                    />
+                    <img className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]" src={figjam} alt="figjam" />
                   </div>
                   <div className="col-span-6 lg:col-span-4 hidden lg:flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] relative border-gradient-b bg-gradient-fill-lr"></div>
                 </div>
                 <div className="grid grid-cols-12">
-                  <div className="lg:col-span-4 col-span-6 flex items-center justify-center lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px]">
-                    {" "}
-                    <img
-                      className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]  "
-                      src={stark}
-                      alt="stark"
-                    />
+                  <div className="lg:col-span-4 col-span-6 flex items-center justify-center lg:w-[240px]  h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px]">
+                    {" "}.
+                    <img className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]" src={stark} alt="stark"/>
                   </div>
-                  <div className="col-span-4 hidden lg:flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] "></div>
+                  <div className="col-span-4 hidden lg:flex items-center justify-center lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px] "></div>
                   <div className="lg:col-span-4 col-span-6 flex items-center justify-center  lg:w-[240px] h-20 lg:h-[90px] xl:h-[120px] 2xl:h-[195px]  ">
                     {" "}
-                    <img
-                      className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]  "
-                      src={uxpilot}
-                      alt="uxpilot"
-                    />
+                    <img className="max-w-[100px] xl:max-w[100px] 2xl:max-w-[150px]" src={uxpilot} alt="uxpilot"/>
                   </div>
                 </div>
               </div>

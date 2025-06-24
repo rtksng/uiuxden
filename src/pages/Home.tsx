@@ -6,6 +6,7 @@ import Process from "../components/Homepage/Process";
 import CaseStudy from "../components/Homepage/CaseStudy";
 import Review from "../components/Homepage/Review";
 import Footer from "../components/Footer";
+import ArrowAnimation from "../components/ArrowAnimation";
 import {
   motion,
   useMotionValueEvent,
@@ -68,6 +69,7 @@ const Home = () => {
   return (
     <main>
       <Navbar />
+
 
       {/* Mobile Header Section */}
       <div className="xl:hidden h-[50vh] sm:h-[70vh] lg:h-screen flex items-center justify-center relative">
@@ -150,14 +152,16 @@ const Home = () => {
         </section>
         <DrivenDesign />
         <Features />
+        
         <Rating />
+        {/* <ArrowAnimation /> */}
         <Process />
         <CaseStudy />
 
         <div className="2xl:my-[150px] xl:my-[80px] mt-10 lg:mt-20">
           <CaseStudyCarousel />
         </div>
-
+  
         <Review />
         <Footer />
       </div>
@@ -166,3 +170,4 @@ const Home = () => {
 };
 
 export default Home;
+

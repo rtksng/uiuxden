@@ -29,7 +29,7 @@ const Footer: React.FC<{
       boldsubheading={consultData?.boldsubheading}
       buttonText={consultData?.buttonText}
     /> */}
-    <footer>
+    <footer className="custom-footersec">
       <div className="bg-secondary-dark2">
         <Container>
           <div className="grid grid-cols-12 py-5 gap-5 2xl:py-10 ">
@@ -57,7 +57,7 @@ const Footer: React.FC<{
         </Container>
       </div>
 
-      <div className="bg-radial-gradient md:pt-16 pt-8 relative">
+      <div className="gradient-sec md:pt-16 pt-8 relative">
         <Container>
           <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between">
             <div className="inline-block mb-5 sm:mb-8 sm:w-[30%] lg:w-[35%] sm:pr-8 lg:pr-[90px]">

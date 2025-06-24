@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Container from "../Container";
-import user from "../../assets/user.png";
 import curve from "../../assets/curve.svg";
 import { FaStar } from "react-icons/fa";
 import upwork from "../../assets/upwork.png";
@@ -8,9 +7,10 @@ import google from "../../assets/google.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { span } from "framer-motion/client";
 
 const Rating = () => {
-  const [activeIndex, setActiveIndex] = useState(0); 
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const reviews = [
     {
@@ -47,7 +47,7 @@ const Rating = () => {
 
   return (
     <section className="2xl:mt-[180px] xl:mt-[50px] mt-10 sm:mt-16">
-      <div className="bg-primary-dark2 2xl:py-[160px] xl:py-[50px] py-5 lg:py-10">
+      <div className="bg-[#2D2D2D] 2xl:py-[160px] xl:py-[50px] py-5 lg:py-10">
         <Container>
           <div className="grid grid-cols-12">
             {/* User Images */}
@@ -55,19 +55,18 @@ const Rating = () => {
               <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
               </h2>
-              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] mt-10 gap-[18px]">
-                <div className="flex -2xl:space-x-12 -space-x-8">
+              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] mt-10 gap-[18px] min-h-[150px]">
+                <div className="flex items-center 2xl:-space-x-12 -space-x-8">
                   {reviews.map((_, idx) => (
-                    <img
+                    <span
                       key={idx}
-                      src={user}
-                      alt="user"
-                      className={`rounded-full 2xl:w-[100px] w-20 2xl:h-[100px] h-20 ${
-                        activeIndex === idx
-                          ? "border-gradient-green scale-110 -translate-y-5"
-                          : "border-white  border-[3px]"
-                      } transition-all duration-300 ease-in-out`}
-                    />
+                      className={`rounded-full overflow-hidden user-box user-${idx + 1} ${activeIndex === idx
+                        ? " 2xl:w-[110px]  2xl:h-[110px] h-[100px] w-[100px] scale-110 active"
+                        : "border-white 2xl:w-[100px]  2xl:h-[100px] h-20 w-20 border-[3px]"
+                        } transition-all duration-300 ease-in-out`}
+                    >
+                      <span className="userImage"></span>
+                    </span>
                   ))}
                 </div>
                 <img src={curve} alt="arrow" className="hidden xl:block" />
@@ -85,7 +84,7 @@ const Rating = () => {
               >
                 {reviews.map((review, idx) => (
                   <SwiperSlide key={idx}>
-                    <div className="bg-primary-dark3 rounded-[20px] m-[4px]">
+                    <div className="bg-[#222222] rounded-[20px] m-[4px]">
                       <div className="flex flex-wrap items-center justify-between border-b-[1px] p-4 2xl:p-[60px] xl:p-[20px] border-primary-dark">
                         <div>
                           <h6 className="2xl:text-lg text-white font-semibold tracking-widest">
@@ -95,7 +94,7 @@ const Rating = () => {
                             {Array(review.stars)
                               .fill(0)
                               .map((_, idx) => (
-                                <FaStar key={idx} color="#D9A95C" className="w-5 h-5 2xl:w-8 2xl:h-8"/>
+                                <FaStar key={idx} color="#D9A95C" className="w-5 h-5 2xl:w-8 2xl:h-8" />
                               ))}
                           </div>
                         </div>
