@@ -6,7 +6,6 @@ import Process from "../components/Homepage/Process";
 import CaseStudy from "../components/Homepage/CaseStudy";
 import Review from "../components/Homepage/Review";
 import Footer from "../components/Footer";
-import ArrowAnimation from "../components/ArrowAnimation";
 import {
   motion,
   useMotionValueEvent,
