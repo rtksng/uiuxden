@@ -7,7 +7,6 @@ import google from "../../assets/google.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { span } from "framer-motion/client";
 
 const Rating = () => {
   const [activeIndex, setActiveIndex] = useState(0);
