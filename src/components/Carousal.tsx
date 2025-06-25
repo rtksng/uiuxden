@@ -85,7 +85,7 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="custom-carousalsec relative w-full h-[500px]">
+    <div className="custom-carousalsec relative w-full h-[610px]">
       {/* Arrows (only on small screens) */}
       <button
         onClick={prevStep}
