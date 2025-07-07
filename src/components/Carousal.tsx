@@ -152,7 +152,7 @@ const Carousel: React.FC = () => {
                 </h3>
                 <p className="font-normal text-white mt-[12px]">
                   {step.description}
-                </p>
+                </p>  
               </div>
             </div>
 
