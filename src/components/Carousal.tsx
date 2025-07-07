@@ -90,7 +90,7 @@ const Carousel: React.FC = () => {
       <button
         onClick={prevStep}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white text-black px-3 py-1 rounded-full md:hidden"
-      >
+      >     
         &#8592;
       </button>
       <button
