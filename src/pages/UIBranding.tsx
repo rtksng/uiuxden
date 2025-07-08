@@ -50,7 +50,7 @@ const UXAudit = () => {
             <div className="relative h-[auto] sm:h-[50vh] lg:h-[70vh] xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             UIUXDen, help to build trust
                             though visual interface.
                         </h1>
@@ -101,7 +101,7 @@ const UXAudit = () => {
                         </div>
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-[60px]  xl:mt-0 ">
+                    {/* <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-[60px]  xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}
@@ -116,7 +116,7 @@ const UXAudit = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
                 </Container>
             </div>
 
@@ -124,15 +124,13 @@ const UXAudit = () => {
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 lg:col-span-7 xl:col-span-6 xl:pr-20 mb-8 mlg:mb-0">
-                            <p className="text-[24px] text-center lg:text-start sm:text-[42px] xl:text-[60px]  font-semibold">
+                            <p className="text-[24px] text-center lg:text-start sm:text-[42px] xl:text-[60px]  font-semibold leading-[1.2]">
                                 UIUXDen, carries the spirit, purpose, values, and the pride of your brand in everything we do.
                             </p>
                             <div className="flex justify-center lg:justify-start">
-                                <Button
-                                    variant="secondary"
-                                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 lg:mt-[70px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
-                                    Consult Us Now
-                                </Button>
+                                <Button variant='primary' className="mt-[40px] py-[14px]">
+                                                 Consult Us Now
+                                                </Button>
                             </div>
 
                         </div>
@@ -171,7 +169,7 @@ const UXAudit = () => {
                                     alt="image"
                                 />
 
-                                <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[38px] pb-[18px] text-white">
+                                <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[16px] pb-[18px] text-white">
                                     Creating a Unique and Memorable Brand Identity
                                 </h5>
                                 <p className="text-[18px] font-normal text-white">
@@ -186,7 +184,7 @@ const UXAudit = () => {
                                 alt="image"
                             />
 
-                            <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[38px] pb-[18px] text-white">
+                            <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[16px] pb-[18px] text-white">
                                 Enhancing User Engagement Through Thoughtful Design
                             </h5>
                             <p className="text-[18px] font-normal text-white">
@@ -201,7 +199,7 @@ const UXAudit = () => {
                                     alt="image"
                                 />
 
-                                <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[38px] pb-[18px] text-white">
+                                <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[16px] pb-[18px] text-white">
                                     Innovating with
                                     the Latest Technologies
                                 </h5>
@@ -217,7 +215,7 @@ const UXAudit = () => {
                                 alt="image"
                             />
 
-                            <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[38px] pb-[18px] text-white">
+                            <h5 className="text-[20px] sm:text-[24px] lg:text-[30px] font-semibold pt-[16px] sm:pt-[16px] pb-[18px] text-white">
                                 Aligning Design
                                 with Business
                                 Goals
