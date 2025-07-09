@@ -89,7 +89,7 @@ export function VelocityScroll({
 
         const directionFactor = React.useRef<number>(1);
         useAnimationFrame((_t, delta) => {
-            let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+            let moveBy = directionFactor.current * baseVelocity * (delta / 200);
 
             if (velocityFactor.get() < 0) {
                 directionFactor.current = -1;
@@ -122,25 +122,25 @@ export function VelocityScroll({
         <div className="relative w-full">
             <ParallaxText baseVelocity={default_velocity} className={className}>
                 <div className="flex min-w-[2400px] justify-between">
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point1}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point2}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point3}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point4}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point5}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point6}
                     </span>
-                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} alt="Start Img" />
+                    <span className="inline-flex items-center text-xl 2xl:text-2xl gap-[4px] font-normal"><img src={AbstractImg} className="max-w-[20px]" alt="Start Img" />
                         {point7}
                     </span>
 
