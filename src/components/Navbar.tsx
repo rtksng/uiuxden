@@ -48,7 +48,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
           <li
             key={idx}
             ref={idx === 0 ? dropdownRef : null}
-            className={` w-full xl:w-auto hover:text-black text-primary-dark font-medium transition-all text-base xl:text-base whitespace-nowrap services-link 
+            className={` w-full xl:w-auto hover:text-black hover:font-bold text-primary-dark font-medium transition-all text-base xl:text-base whitespace-nowrap services-link 
               ${idx === 0
                 ? firstLinkActive
                   ? "relative minus pe-5"
@@ -275,7 +275,7 @@ const Navbar: React.FC = () => {
 
           <motion.div
             initial={{ opacity: 1 }}
-            animate={{ opacity: isSearchOpen ? 0.5 : 1 }}
+            // animate={{ opacity: isSearchOpen ? 0.5 : 1 }}
             transition={{ duration: 0.3 }}
             className="hidden xl:block"
           >
@@ -289,7 +289,7 @@ const Navbar: React.FC = () => {
                   <motion.input
                     type="text"
                     placeholder="Search..."
-                    className="w-64 pe-3 ps-6 h-12 2xl:h-16 py-1 text-sm border rounded-full focus:ring-gray-300"
+                    className="w-64 pe-3 ps-6 h-[40px] 2xl:h-[40px] py-1 text-sm border rounded-full focus:ring-gray-300"
                     initial={{ width: 0, opacity: 0 }}
                     animate={{ width: "16rem", opacity: 1 }}
                     exit={{ width: 0, opacity: 0 }}

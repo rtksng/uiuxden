@@ -21,27 +21,27 @@ const UserAnimation = () => {
 
       const timers: number[] = [];
 
-      timers.push(setTimeout(() => setShowAnswerOne(true), 3000));
-      timers.push(setTimeout(() => setShowAnswerOne(false), 6000));
-      timers.push(setTimeout(() => setShowAnswerTwo(true), 6000));
-      timers.push(setTimeout(() => setShowAnswerTwo(false), 9000));
-      timers.push(setTimeout(() => setShowAnswerThree(true), 9000));
-      timers.push(setTimeout(() => setShowAnswerThree(false), 12000));
-      timers.push(setTimeout(() => setShowQuestion(false), 12000));
+      timers.push(setTimeout(() => setShowAnswerOne(true), 400));
+      timers.push(setTimeout(() => setShowAnswerOne(false), 1600));
+      timers.push(setTimeout(() => setShowAnswerTwo(true), 1600));
+      timers.push(setTimeout(() => setShowAnswerTwo(false), 2500));
+      timers.push(setTimeout(() => setShowAnswerThree(true), 2500));
+      timers.push(setTimeout(() => setShowAnswerThree(false), 3500));
+      timers.push(setTimeout(() => setShowQuestion(false), 3500));
 
       setTimeout(() => {
         timers.forEach((timer) => clearTimeout(timer));
         setShowAnswerOne(false);
         setShowAnswerTwo(false);
         setShowAnswerThree(false);
-      }, 12000);
+      }, 3500);
 
       return timers;
     };
 
     runSequence();
 
-    const intervalId = setInterval(runSequence, 14000);
+    const intervalId = setInterval(runSequence, 3500);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -133,7 +133,7 @@ const UserAnimation = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
-                    className="w-80 answers answerThree absolute -top-20 -right-20 2xl:right-24 rounded-xl 2xl:rounded-br-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
+                    className="w-80 answers answerThree absolute -top-20 -right-20 2xl:-right-50 rounded-xl 2xl:rounded-bl-none font-semibold text-lg bg-primary-dark4 flex items-center justify-center px-4 py-2 text-white"
                   >
                     Use a fade effect at the end of the text, with no explicit
                     button.
