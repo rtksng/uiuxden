@@ -128,7 +128,7 @@ const Carousel: React.FC = () => {
                     alt={step.title}
                     className="w-full object-cover rounded-xl mb-4"
                   />
-                  <a
+                  {/* <a
                     target="_blank"
                     href={step.url}
                     className="w-[80px] h-[80px] bg-contactus-gradient flex items-center justify-center rounded-full border-[6px] border-[#2D2D2D] absolute top-[-15px] right-[-30px]"
@@ -145,7 +145,7 @@ const Carousel: React.FC = () => {
                         fill="black"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                 </div>
                 <h3 className="text-[20px] text-white font-bold">
                   {step.title}
