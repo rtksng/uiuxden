@@ -102,7 +102,7 @@ const UIDesign = () => {
                 <p className="text-xl font-medium mb-5">
                   We specialize in user-centric designs that elevate brands. Combining creativity with technical skill, our team crafts intuitive, visually stunning interfaces that drive engagement and conversions.
                 </p>
-                <Button variant='primary' className="mt-[60px] py-[14px]">
+                <Button variant='primary' className="mt-[30px] py-[14px]">
                   Claim Free Design Review
                 </Button>
               </div>

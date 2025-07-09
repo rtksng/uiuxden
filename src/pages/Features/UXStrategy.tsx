@@ -78,7 +78,7 @@ const UXStrategy = () => {
       <Navbar />
       <section className="gradientHeroBg h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen flex items-center justify-center px-3">
         <div>
-          <h1 className="text-center text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px]  max-w-[1380px] mx-auto font-semibold leading-[128.5%] 2xl:py-[90px]">
+          <h1 className="text-center text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px]  max-w-[1380px] mx-auto font-semibold leading-[128.5%] 2xl:py-[60px]">
             UIUX den creates product strategy in creative way.
           </h1>
           <div className="flex justify-center mt-5 sm:mt-10 lg:mt-20">
@@ -90,7 +90,7 @@ const UXStrategy = () => {
         <Container>
           <div className="grid grid-cols-12 lg:gap-24">
             <div className="lg:col-span-6 col-span-12">
-              <h2 className="xl:text-[60px] text-[32px] sm:text-[48px] font-semibold">
+              <h2 className="xl:text-[60px] text-[32px] sm:text-[48px] font-semibold leading-[1.2]">
                 Empowering vision with a bold strategy for impactful ideas.
               </h2>
               <ul className="list-disc">
@@ -109,7 +109,7 @@ const UXStrategy = () => {
                             {item.description}
                           </p>
                         </div>
-                        <GoArrowUpRight size={48} />
+                        {/* <GoArrowUpRight size={48} /> */}
                       </div>
                     </Link>
                   </li>
@@ -135,9 +135,9 @@ const UXStrategy = () => {
               {capabilities.map((capability, index) => (
                 <div
                   key={index}
-                  className={`xl:space-y-8 space-y-2 ${index % 2 !== 0 ? "xl:self-end" : ""
+                  className={`xl:space-y-4 space-y-2 ${index % 2 !== 0 ? "xl:self-end" : ""
                     }`}
-                >
+                >  
                   <img src={capability.icon} alt="icon" />
                   <h5 className="font-semibold text-[24px] sm:text-[30px] linearCapabilities">
                     {capability.title}
