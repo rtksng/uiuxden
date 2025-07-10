@@ -45,13 +45,13 @@ const DesignSprint = () => {
       <div className="relative h-[auto] lg:h-[100vh] green-linear">
         <Container>
           <div className="text-center pt-[80px]  sm:pt-[120px]  2xl:pt-[170px] flex flex-col items-center">
-            <h1 className="text-[34px] lg:text-[48px] max-w-[1100px] xl:text-[56px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
+            <h1 className="text-[34px] lg:text-[48px] max-w-[1100px] xl:text-[56px] 2xl:text-[90px] text-black font-semibold mb-base leading-[1.1]">
               UIUXDen takes deep dive into design sprints to get better
               solutions
             </h1>
           </div>
 
-          <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
+          {/* <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
             <div className="xl:flex xl:items-center">
               <img
                 src={rightLongArrow}
@@ -65,7 +65,7 @@ const DesignSprint = () => {
                 </h6>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex justify-center flex-wrap items-center mt-8 mt-lg-0 pt:5 lg:pt-10 xl:scale-[.9] 2xl:scale-[1]">
             {/* ------- Box 1 -------- */}

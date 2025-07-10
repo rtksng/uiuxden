@@ -23,7 +23,7 @@ const ContactUS = () => {
       <Navbar />
 
       {/* ---------- Banner Section ---------- */}
-      <div className="contactus-banner updated-contactus pt-[100px]">
+      <div className="contactus-banner updated-contactus pt-[60px]">
         <Container>
           <div className="lg:h-[370px] flex justify-center items-center">
             <p className="mb-8 md:mb-4 text-[32px] lg:text-[50px] xl:text-[60px] 2xl:text-[80px] text-black text-center font-semibold leading-[unset] 2xl:leading-[115px]">
@@ -263,7 +263,7 @@ const ContactUS = () => {
                   <div className="col-span-12">
                     <button
                       type="submit"
-                      className="bg-[#1A1A1A] p-4 text-2xl text-white font-medium sm:max-w-[200px] w-[100%] ms-auto block rounded-full"
+                      className="bg-[#1A1A1A] p-4 text-2xl text-white font-medium sm:max-w-[200px] w-[100%] ms-auto block rounded-full duration-200 bg-primary-dark2 text-white hover:bg-transparent border-2 border-transparent hover:text-primary-dark hover:border-primary-dark  focus:ring-2 focus:ring-primary-dark"
                     >
                       Let’s talk
                     </button>
@@ -277,7 +277,7 @@ const ContactUS = () => {
                 <div className=" border-b border-b-[#818181] border-opacity-25 sm:border-opacity-100 pb-5 mb-5">
                   <p className="text-2xl lg:text-[28px] text-white text-center md:text-start font-semibold mb-2 pr-6">
                   Development Office
-                  </p>
+                  </p>  
                   <p className="text-white  text-opacity-60 sm:text-opacity-100 text-center md:text-start font-medium text-[16px] lg:text-xl pr-6">
                     55 Village Centre Place Suite 307, Mississauga Ontario
                     L4Z1V9 Canada
