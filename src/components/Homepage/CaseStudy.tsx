@@ -51,13 +51,13 @@ const CaseStudy = () => {
         <div className="xl:pt-[100px] 2xl:pt-[160px] lg:pt-[60px] xl:pb-[60px] py-10 lg:py-20">
           <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] text-white text-center font-semibold">
             We love to make{" "}
-            <span className="animationStroke casestudy">
+            <span className="animationStroke casestudy !bg-none">
               <SVGAnimation height={120} width={222} /> things{" "}
             </span>{" "}
             easy
           </h2>
 
-          <div className=" 2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto ">
+          <div className="2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto px-[160px] ">
             <Swiper
               slidesPerView={2}
               spaceBetween={20}
@@ -84,23 +84,23 @@ const CaseStudy = () => {
                   key={index}
                   className="lg:col-span-4 sm:col-span-6 col-span-12"
                 >
-                  <div className="itemcase flex flex-col items-center justify-center relative">
+                  <div className="itemcase h-auto max-h-[350px] flex flex-col items-center justify-center relative">
                     <div className="flex flex-col max-w-[330px] justify-center items-center">
                       <img src={arrow} alt="icon" className="absolute top-[20px] right-[20px]" />
-
-                      <motion.img src={study.imgSrc}
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{
-                          duration: 0.5,
-                          delay: 0.5,
-                          ease: [0, 0.71, 0.2, 1.01],
-                        }}
-                        viewport={{ once: true, amount: 0.2 }}
-                        alt={study.altText} className="w-[180px] 2xl:w-[250px]"
-                      />
-
-                      <p className="text-white text-center  2xl:text-[22px] 2xl:mt-[100px] mt-[40px]">
+                      <div className="min-h-[100px] max-w-[160px] flex items-center justify-center">
+                        <motion.img src={study.imgSrc}
+                          initial={{ opacity: 0, scale: 0.5 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{
+                            duration: 0.5,
+                            delay: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01],
+                          }}
+                          viewport={{ once: true, amount: 0.2 }}
+                          alt={study.altText} className="w-[180px] 2xl:w-[250px]"
+                        />
+                      </div>
+                      <p className="text-white text-center  2xl:text-[22px] ">
                         {study.description}
                       </p>
                     </div>

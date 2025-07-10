@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import type { Swiper as SwiperType } from "swiper"; // ✅ Import Swiper type
 import Container from "../Container";
-import curve from "../../assets/curve.svg";
+import Arrow from "../Arrow2Animation";
 import { FaStar } from "react-icons/fa";
 import upwork from "../../assets/upwork.png";
 import google from "../../assets/google.png";
@@ -10,6 +11,7 @@ import "swiper/css";
 
 const Rating = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperType | null>(null); // ✅ Properly typed
 
   const reviews = [
     {
@@ -49,7 +51,7 @@ const Rating = () => {
       <div className="bg-[#2D2D2D] 2xl:py-[160px] xl:py-[50px] py-5 lg:py-10">
         <Container>
           <div className="grid grid-cols-12">
-            {/* User Images */}
+            {/* Left Column - User Images and Title */}
             <div className="md:col-span-6 col-span-12 self-center">
               <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
                 Flexible solution for all kinds of business
@@ -59,27 +61,36 @@ const Rating = () => {
                   {reviews.map((_, idx) => (
                     <span
                       key={idx}
-                      className={`rounded-full overflow-hidden user-box user-${idx + 1} ${activeIndex === idx
-                        ? " 2xl:w-[110px]  2xl:h-[110px] h-[100px] w-[100px] scale-110 active"
-                        : "border-white 2xl:w-[100px]  2xl:h-[100px] h-20 w-20 border-[3px]"
+                      onClick={() => {
+                        setActiveIndex(idx);
+                        swiperRef.current?.slideToLoop(idx); // ✅ Click logic
+                      }}
+                      className={`cursor-pointer rounded-full overflow-hidden user-box user-${idx + 1
+                        } ${activeIndex === idx
+                          ? "2xl:w-[110px] 2xl:h-[110px] h-[100px] w-[100px] scale-110 active"
+                          : "border-white 2xl:w-[100px] 2xl:h-[100px] h-20 w-20 border-[3px]"
                         } transition-all duration-300 ease-in-out`}
                     >
                       <span className="userImage"></span>
                     </span>
                   ))}
                 </div>
-                <img src={curve} alt="arrow" className="hidden xl:block" />
+                <Arrow />
               </div>
             </div>
 
+            {/* Right Column - Review Swiper */}
             <div className="md:col-span-6 col-span-12 mt-10 lg:mt-0">
               <Swiper
                 modules={[Autoplay]}
                 loop
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                onActiveIndexChange={(swiper) =>
-                  setActiveIndex(swiper.realIndex)
-                }
+                onSwiper={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                onActiveIndexChange={(swiper) => {
+                  setActiveIndex(swiper.realIndex);
+                }}
               >
                 {reviews.map((review, idx) => (
                   <SwiperSlide key={idx}>
@@ -92,8 +103,8 @@ const Rating = () => {
                           <div className="flex mt-[18px] gap-[1px]">
                             {Array(review.stars)
                               .fill(0)
-                              .map((_, idx) => (
-                                <FaStar key={idx} color="#D9A95C" className="w-5 h-5 2xl:w-8 2xl:h-8" />
+                              .map((_, i) => (
+                                <FaStar key={i} color="#D9A95C" className="w-5 h-5 2xl:w-8 2xl:h-8" />
                               ))}
                           </div>
                         </div>
