@@ -221,7 +221,7 @@ const Sustainable = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:bg-white after:absolute after:bottom-0 after:left-0">
+                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:border-b after:border-[#6e6a6a] after:absolute after:bottom-0 after:left-0">
                                 Global Carbon Emissions
                             </p>
                             <p className="text-white text-lg px-[20px]">
@@ -243,7 +243,7 @@ const Sustainable = () => {
                                 </svg>
 
                             </div>
-                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:bg-white after:absolute after:bottom-0 after:left-0">
+                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:border-b after:border-[#6e6a6a] after:absolute after:bottom-0 after:left-0">
                                 CO₂ Per Page
                                 View
                             </p>
@@ -266,7 +266,7 @@ const Sustainable = () => {
                                 </svg>
 
                             </div>
-                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:bg-white after:absolute after:bottom-0 after:left-0">
+                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:border-b after:border-[#6e6a6a] after:absolute after:bottom-0 after:left-0">
                                 Energy Consumption of Streaming
                             </p>
                             <p className="text-white text-lg px-[20px]">
@@ -288,7 +288,7 @@ const Sustainable = () => {
                                 </svg>
 
                             </div>
-                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:bg-white after:absolute after:bottom-0 after:left-0">
+                            <p className="text-[#FFFFFF] text-[30px] px-[20px] font-semibold relative pb-[24px] mb-[24px] after:w-[100%] after:h-[1px] after:border-b after:border-[#6e6a6a] after:absolute after:bottom-0 after:left-0">
                                 Potential
                                 Reduction
                             </p>
