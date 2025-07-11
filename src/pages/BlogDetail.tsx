@@ -36,7 +36,6 @@ const BlogDetail = () => {
                 className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
                     }`}
             ></div>
-            <Navbar />
 
             <section className="relative pt-12 ">
                 <div className="blog-detail-header mt-6">

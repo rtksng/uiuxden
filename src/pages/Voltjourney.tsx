@@ -12,10 +12,26 @@ import Footer from "../components/Footer";
 import Container from "../components/Container";
 import SVGAnimation from "../components/StrokeAnimation";
 import ArrowAnimation from "../components/ArrowAnimation";
+import { useEffect, useState } from "react";
+
 const Voltjourney = () => {
+
+   const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 10);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
   return (
     <main>
       <Navbar />
+      <div
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+          }`}
+      ></div>
 
       <div className="relative  h-[45vh] lg:h-[100vh] green-linear">
         <Container>
@@ -205,9 +221,9 @@ const Voltjourney = () => {
               </div>
             </div>
             <div className="col-span-2 lg:col-span-1">
-            <div className="relative">
-            <ArrowAnimation nameOfClass=" absolute -left-[170px] -top-20 w-[130px] lg:flex hidden " />
-              <img src={AiChatbotBanner} alt="image" />
+              <div className="relative">
+                <ArrowAnimation nameOfClass=" absolute -left-[170px] -top-20 w-[130px] lg:flex hidden " />
+                <img src={AiChatbotBanner} alt="image" />
               </div>
             </div>
           </div>
