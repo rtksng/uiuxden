@@ -70,7 +70,7 @@ const NavLinks: React.FC<{ isMobile?: boolean; onClick?: () => void }> = ({
               >
                 {link}
                 <div
-                  className={`px-4 xl:px-7 xl:bg-[#fff]  xl:border-[transparent]  xl:rounded-[10px]  xl:sm:left-[50px] xl:top-[60px] w-[100%] xl:w-[750px] 2xl:w-[1000px] xl:shadow-2xl transition-height  xl:transition-transform transform duration-300 xl:duration-500 ease-in-out transform xl:absolute ${idx === 0 && firstLinkActive ? " mt-5 xl:mt-0 py-0  xl:p-9 translate-y-0 xl:border xl:border-[1px] border-[#EDEDED] " : "h-[0] xl:-translate-y-10 overflow-hidden p-0 border-0"
+                  className={`px-4 xl:px-7 xl:bg-[#fff]  xl:border-[transparent]  xl:rounded-[10px]  xl:sm:left-[50px] xl:top-[60px] w-[100%] xl:w-[750px] xl:shadow-2xl transition-height  xl:transition-transform transform duration-300 xl:duration-500 ease-in-out  xl:absolute ${idx === 0 && firstLinkActive ? " mt-5 xl:mt-0 py-0  xl:p-9 translate-y-0 border-[#EDEDED] " : "h-[0] xl:-translate-y-10 overflow-hidden p-0 border-0"
                     }`}
                 >
                   <div className="grid grid-cols-12 gap-4 sm:gap-6">

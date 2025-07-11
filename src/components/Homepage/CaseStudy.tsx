@@ -48,7 +48,7 @@ const CaseStudy = () => {
   return (
     <section className="casestudy 2xl:mt-[192px] lg:mt-[0] xl:mt-[50px] sm:mt-15 mt-10 bg-neutral-900 xl:bg-transparent px-3">
       <Container>
-        <div className="xl:pt-[100px] 2xl:pt-[160px] lg:pt-[60px] xl:pb-[60px] py-10 lg:py-20">
+        <div className="xl:pt-[100px] 2xl:pt-[160px] lg:pt-[60px] xl:pb-[20px] py-10 lg:py-20">
           <h2 className="2xl:text-[60px] xl:text-[40px] text-[28px] md:text-[36px] text-white text-center font-semibold">
             We love to make{" "}
             <span className="animationStroke casestudy !bg-none">
@@ -57,7 +57,7 @@ const CaseStudy = () => {
             easy
           </h2>
 
-          <div className="2xl:mt-[140px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto px-[160px] ">
+          <div className="2xl:mt-[90px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto px-[160px] ">
             <Swiper
               slidesPerView={2}
               spaceBetween={20}
@@ -84,7 +84,7 @@ const CaseStudy = () => {
                   key={index}
                   className="lg:col-span-4 sm:col-span-6 col-span-12"
                 >
-                  <div className="itemcase h-auto max-h-[350px] flex flex-col items-center justify-center relative">
+                  <div className="itemcase h-auto max-h-[380px] flex flex-col items-center justify-center relative">
                     <div className="flex flex-col max-w-[330px] justify-center items-center">
                       <img src={arrow} alt="icon" className="absolute top-[20px] right-[20px]" />
                       <div className="min-h-[100px] max-w-[160px] flex items-center justify-center">

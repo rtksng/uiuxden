@@ -77,18 +77,21 @@ const CaseStudyCarousel = () => {
             <SwiperSlide key={index} className={`slide ${classNames[index]}`}>
               <div>
                 <div className="flex md:items-center items-start flex-col md:flex-row md:justify-between gap-5">
-                  <h2 className=" text-[24px] sm:text-[36px] xl:text-[40px] 2xl:text-[60px] font-normal 2xl:max-w-[800px] max-w-[600px] text-primary-dark2">
+                  <h2 className=" text-[24px] sm:text-[36px] xl:text-[40px] leading-tight font-bold max-w-[600px] text-primary-dark2">
                     {slide.title}
                   </h2>
-                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" />
+                  {/* <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" /> */}
                 </div>
                 <div className="grid grid-cols-12 xl:mt-12 mt-6 gap-6">
                   <div className="xl:col-span-8 col-span-12 custom-box innerItem relative p-2 sm:p-8 xl:px-[52px] xl:py-[54px] bg-[#EBFDDD] xl:bg-transparent">
-                    <div className="xl:text-[20px] 2xl:text-[30px] font-semibold border inline-block border-black rounded-full px-6 py-3 text-primary-dark2">
-                      {slide.buttontext}
+                    <div className="xl:text-[20px] 2xl:text-[30px] font-semibold border-0 inline-block text-primary-dark2">
+                      {/* {slide.buttontext} */}
+                  <img src={slide.logo} alt="logo" className=" max-w-[200px] 2xl:max-w-[200px]" />
+
                     </div>
-                    <p className=" sm:max-w-[440px] xl:max-w-[500px] innertext text-2xl font-semibold mt-4 xl:mt-8 text-primary-dark2">
+                    <p className=" sm:max-w-[440px] xl:max-w-[500px] innertext text-2xl font-semibold mt-4 text-primary-dark2">
                       {slide.description}
+
                     </p>
 
                     <Link

@@ -1278,6 +1278,69 @@ height: 150px;
   font-size: 20px;
 }
 
+/* -------------------------- */
+
+.afterbefore-line .lineanimation {
+  stroke-dasharray: 20 10;
+  stroke-dashoffset: 180;
+  animation: dashline 3s linear infinite forwards;
+}
+
+.afterbefore-line {
+  position: relative;
+
+}
+
+.afterbefore-line::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #565963;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: -11px;
+}
+
+.afterbefore-line::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #565963;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  bottom: -11px;
+}
+
+.transforming-imgbox .before-img::before,
+.transforming-imgbox .after-img::before {
+  content: "Before";
+  background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 1)) padding-box,
+    linear-gradient(180deg, #9FF8BE 0%, #F8EDBA 87.46%) border-box;
+  padding: 10px 40px;
+  border-radius: 50px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid transparent;
+  color: #9FF8BE;
+  font-size: 18px;
+
+}
+
+.transforming-imgbox .after-img::before {
+  content: "After";
+}
+
+@keyframes dashline {
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 
 
@@ -1285,7 +1348,7 @@ height: 150px;
 
 @media (max-width: 1536px) {
   .animationStroke .svg-container.human-centered svg {
-    transform: scaleX(1.9) scaleY(0.8);
+    transform: scaleX(2) scaleY(0.9);
   }
 
   .animationStroke .svg-container.potential-human svg {
@@ -1683,4 +1746,12 @@ Button.gradient-btn {
 .custom-footersec .gradient-sec {
   background: url("./assets/footer-bg.png") no-repeat;
   background-size: cover;
+}
+
+.custom-openModal .thumbnail-img {
+  transition: 8s linear;
+}
+
+.custom-openModal:hover .thumbnail-img {
+  scale: 1.5;
 }

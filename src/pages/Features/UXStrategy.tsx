@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import CaseStudyCarousel from "../../components/Homepage/CaseStudyCarousel";
 import uxsheader from "../../assets/uxsheader.png";
+import uxsheader2 from "../../assets/uxsheader.svg";
 import { GoArrowUpRight } from "react-icons/go";
 import Container from "../../components/Container";
 import { Link } from "react-router-dom";
@@ -82,7 +83,8 @@ const UXStrategy = () => {
             UIUX den creates product strategy in creative way.
           </h1>
           <div className="flex justify-center mt-5 sm:mt-10 lg:mt-20">
-            <img src={uxsheader} alt="header_image"className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" />
+            {/* <img src={uxsheader} alt="header_image"className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" /> */}
+            <img src={uxsheader2} alt="header_image" className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" />
           </div>
         </div>
       </section>
@@ -116,8 +118,8 @@ const UXStrategy = () => {
                 ))}
               </ul>
             </div>
-            <div className="lg:col-span-6 col-span-12 hidden lg:block">
-              <img src={strategyBg} alt="strategies" />
+            <div className="lg:col-span-6 col-span-12 hidden lg:flex justify-center items-center">
+              <img src={strategyBg} alt="strategies" className="max-w-[80%]" />
             </div>
           </div>
         </Container>
@@ -137,7 +139,7 @@ const UXStrategy = () => {
                   key={index}
                   className={`xl:space-y-4 space-y-2 ${index % 2 !== 0 ? "xl:self-end" : ""
                     }`}
-                >  
+                >
                   <img src={capability.icon} alt="icon" />
                   <h5 className="font-semibold text-[24px] sm:text-[30px] linearCapabilities">
                     {capability.title}

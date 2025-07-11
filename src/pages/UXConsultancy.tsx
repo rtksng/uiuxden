@@ -41,26 +41,10 @@ const UXConsultancy = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
-            <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[66px]  2xl:text-[90px] text-black  font-semibold mb-base">
+          <div className="text-center pt-[80px]  sm:pt-[110px] flex flex-col items-center">
+            <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[66px] leading-tight mb-4 2xl:text-[90px] text-black  font-semibold mb-base">
               UIUXDen, Discover new business opportunities.
             </h1>
-          </div>
-
-          <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-0 ">
-            <div className="xl:flex xl:items-center">
-              <img
-                src={rightLongArrow}
-                alt="arrow"
-                width={50}
-                className="hidden lg:block xl:mx-auto"
-              />
-              <div className="ml-3">
-                <h6 className="text-[14px] sm:text-[16px] xl:text-[18px] text-black font-normal">
-                  Home | UX Consultancy
-                </h6>
-              </div>
-            </div>
           </div>
 
           <div className="flex justify-center flex-wrap items-center mt-5">
@@ -152,7 +136,7 @@ const UXConsultancy = () => {
       </div>
 
       {/* ---------- holistic Section ---------- */}
-      <div className="bg-[#2D2D2D] py-12">
+      <div className="bg-[#202020] py-12">
         <Container>
           <div className="text-center flex flex-col items-center mb-20">
             <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
@@ -235,12 +219,7 @@ const UXConsultancy = () => {
             </div>
           </div>
 
-          <Button
-            variant="secondary"
-            className="border-white text-white hover:text-black mt-10 !ring-0 mx-auto block py-5 font-medium"
-          >
-            Consult Us Now
-          </Button>
+          
         </Container>
       </div>
 
