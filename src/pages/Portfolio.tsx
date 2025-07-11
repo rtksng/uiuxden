@@ -24,6 +24,11 @@ import mobfourSlider from "../assets/portfolio/mob-four-slider.jpg";
 import mobsixSlider from "../assets/portfolio/mob-six-slider.jpg";
 
 
+import bannerLeftImg from "../assets/portfolio/banner-leftside.png";
+import bannerMidImg from "../assets/portfolio/banner-midmob.png";
+import bannerRightImg from "../assets/portfolio/banner-rightside.png";
+
+
 import logop from "../assets/logop.png";
 import kp from "../assets/kp.png";
 import web1 from "../assets/web1.jpg";
@@ -101,10 +106,12 @@ const Portfolio: FC = () => {
           {projects.map(({ img, title, downloads, sliderimg }, idx) => (
             <div
               key={idx}
-              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal"
+              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal custom-openModal"
               onClick={() => openModal({ img, title, downloads, sliderimg })}
             >
-              <img src={img} alt={title} className="sm:w-full rounded-xl" />
+              <div className="overflow-hidden rounded-[12px]">
+                <img src={img} alt={title} className="sm:w-full rounded-xl thumbnail-img" />
+              </div>
               <div className="md:mt-8 mt-3 flex items-center flex-wrap gap-4 md:gap-6">
                 <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
@@ -166,13 +173,24 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">0
         <Container>
           <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px]">
             Your business deserves a unique approach
           </h1>
           <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
-            <img src={herobg} alt="background" className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" />
+            {/* <img src={herobg} alt="background" className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" /> */}
+            <div className="flex items-end justify-center">
+              <div className="leftside-img -mr-[15%]">
+                <img src={bannerLeftImg} alt="Banner image" />
+              </div>
+              <div className="midmob-img relative z-10">
+                <img src={bannerMidImg} alt="Banner image" />
+              </div>
+              <div className="rightside-img -ml-[15%]">
+                <img src={bannerRightImg} alt="Banner image" />
+              </div>
+            </div>
           </div>
           <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
             <div className="xl:flex xl:items-center">
@@ -229,7 +247,7 @@ const Portfolio: FC = () => {
             X
           </button>
 
-          <div className={`transition-all duration-500 bg-white p-5 sm:p-11 rounded-xl shadow-lg overflow-auto h-full ${modalActive ? 'w-[calc(100%-50px)] sm:w-[calc(100%-300px)]' : 'w-0'}`}>
+          <div className={`transition-all duration-500 bg-white p-5 sm:p-11 rounded-xl shadow-lg w-[calc(100%-50px)] sm:w-[calc(100%-300px)] custommodal-fullimg overflow-auto h-full ${modalActive ? 'active' : 'no-underline'}`}>
             {selectedProject && (
               <>
                 <h2 className="text-2xl font-semibold mt-4">{selectedProject.title}</h2>
@@ -237,17 +255,13 @@ const Portfolio: FC = () => {
                 <img
                   src={selectedProject.sliderimg}
                   alt={selectedProject.title}
-                  className="w-full rounded-xl w-[100%]"
-                />
-
+                  className={`w-full rounded-xl`}
+                  />
               </>
             )}
           </div>
-
-
         </div>
       </div>
-
       <Footer />
     </main>
   );

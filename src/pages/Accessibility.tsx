@@ -59,11 +59,11 @@ const Accessibility = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[80vh] lg:h-[100vh] green-linear">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
-            <h1 className="text-[34px] sm:text-[48px] max-w-[1160px] lg:text-[66px] 2xl:text-[80px] text-black leading-tight font-semibold mb-base lg:mt-[0] mt-[80px]">
+          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[130px] flex flex-col items-center">
+            <h1 className="text-[34px] sm:text-[48px] max-w-[1160px] lg:text-[66px] 2xl:text-[80px] text-black leading-[1.2] font-semibold mb-base lg:mt-[0] mt-[80px]">
               UIUXDen removes all barriers and provides the benefit of technology for everyone.
             </h1>
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-[80px]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-[80px] 2xl:mt-[100px]">
               <div><img src={CheckMarkbtn} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
               <div><img src={SeeButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
               <div><img src={HeerButton} alt="image" className="w-[220px] md:w-[250px] lg:w-[250px] xl:w-[96%]" /></div>
@@ -73,7 +73,7 @@ const Accessibility = () => {
 
 
 
-          <div className="lg:absolute bottom-5 left-2 2xl:left-9 text-center lg:text-start mt-[30px] md:mt-[80px] sm:mt-[60px]">
+          {/* <div className="lg:absolute bottom-5 left-2 2xl:left-9 text-center lg:text-start mt-[30px] md:mt-[80px] sm:mt-[60px]">
             <div className="xl:flex xl:items-center">
               <img
                 src={rightLongArrow}
@@ -87,7 +87,7 @@ const Accessibility = () => {
                 </h6>
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </div>
 
@@ -130,9 +130,9 @@ const Accessibility = () => {
               <img src={accessbilityimg} alt="image" />
               <div className="flex items-start text-white p-6 w-[534px] h-[126px] rounded-[32px] relative curve-img mt-4">
                 {/* Square Icon Box */}
-                <div className="w-8 h-8 border border-white rounded-md flex items-center justify-center mr-4 mt-2">
-                  {/* Icon (Replace with actual SVG or Icon component) */}
-                </div>
+                {/* <div className="w-8 h-8 border border-white rounded-md flex items-center justify-center mr-4 mt-2">
+                  Icon (Replace with actual SVG or Icon component)
+                </div> */}
 
                 {/* Text Content */}
                 <p className="text-2xl font-semibold">
@@ -156,9 +156,9 @@ const Accessibility = () => {
           </h6>
 
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-[30px] pb-[140px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-[30px] pb-[80px]">
             <div className="flex flex-col items-start justify-center lg:px-6 px-0 lg:mt-[150px]">
-              <div className="mb-6 border border-white p-2 rounded-lg">
+              <div className="mb-3 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
 
@@ -171,7 +171,7 @@ const Accessibility = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] mt:lg-[0]">
-              <div className="mb-6 border border-white p-2 rounded-lg">
+              <div className="mb-3 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
 
@@ -181,7 +181,7 @@ const Accessibility = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] lg:mt-[140px]">
-              <div className="mb-6 border border-white p-2 rounded-lg">
+              <div className="mb-3 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
 
@@ -191,7 +191,7 @@ const Accessibility = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-center lg:px-6 px-0 mt-[60px] mt:lg-[0]">
-              <div className="mb-6 border border-white p-2 rounded-lg">
+              <div className="mb-3 border border-white p-2 rounded-lg">
                 <img src={VectorImg} alt="image" />
               </div>
 

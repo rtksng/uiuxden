@@ -57,7 +57,7 @@ const Rating = () => {
                 Flexible solution for all kinds of business
               </h2>
               <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] mt-10 gap-[18px] min-h-[150px]">
-                <div className="flex items-center 2xl:-space-x-12 -space-x-8">
+                <div className="flex items-center 2xl:-space-x-8 -space-x-8 me-8">
                   {reviews.map((_, idx) => (
                     <span
                       key={idx}
@@ -67,11 +67,11 @@ const Rating = () => {
                       }}
                       className={`cursor-pointer rounded-full overflow-hidden user-box user-${idx + 1
                         } ${activeIndex === idx
-                          ? "2xl:w-[110px] 2xl:h-[110px] h-[100px] w-[100px] scale-110 active"
-                          : "border-white 2xl:w-[100px] 2xl:h-[100px] h-20 w-20 border-[3px]"
+                          ? "2xl:w-[80px] 2xl:h-[80px] h-[80px] w-[80px] scale-110 active"
+                          : "border-white 2xl:w-[70px] 2xl:h-[70px] h-20 w-20 border-[3px]"
                         } transition-all duration-300 ease-in-out`}
                     >
-                      <span className="userImage"></span>
+                      <span className="userImage bg-cover"></span>
                     </span>
                   ))}
                 </div>

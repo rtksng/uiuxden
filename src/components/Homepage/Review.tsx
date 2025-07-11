@@ -31,13 +31,13 @@ const Review = () => {
             <Link
               to='blog-detail'
             >
-              <div className=" h-[400px] lg:h-[500px] 2xl:h-[764px] group bg-gray-500 relative">
+              <div className=" h-[400px] lg:h-[500px] group bg-gray-500 relative">
                 <img
                   src={image}
                   alt={`review_img_${index}`}
                   className=" relative w-full object-cover h-full mix-blend-luminosity xl:mix-blend-normal group-hover:mix-blend-luminosity"
                 />
-                <div className=" h-[85%] lg:h-[75%] xl:h-0  2xl:group-hover:h-[500px] xl:group-hover:h-[400px] group-hover:h-[auto] absolute bottom-0 w-full content-overlay pt-[40px] xl:pt-[0px] group-hover:pt-[40px] 2xl:group-hover:pt-[100px] px-[24px] xl:px-[30px] group-hover:pb-[80px] text-primary-dark2 duration-300 ease-out transition-all">
+                <div className=" h-[85%] lg:h-[75%] xl:h-0  xl:group-hover:h-[400px] group-hover:h-[auto] absolute bottom-0 w-full content-overlay pt-[40px] xl:pt-[0px] group-hover:pt-[40px] 2xl:group-hover:pt-[60px] px-[24px] xl:px-[30px] group-hover:pb-[40px] text-primary-dark2 duration-300 ease-out transition-all flex justify-center flex-col overflow-hidden">
 
                   <div className="flex items-center gap-4">
                     <h6 className="text-lg font-semibold">UX Research</h6>
@@ -46,13 +46,13 @@ const Review = () => {
                   <h2 className="2xl:text-3xl text-xl font-semibold mt-2">
                     Can User Testing Help You Reduce Product Cycles?
                   </h2>
-                  <p className="text-primary-dark2 mt-3 2xl:mt-[50px] 2xl:leading-7">
+                  <p className="text-primary-dark2 mt-3 2xl:mt-[20px] 2xl:leading-7">
                     Get an in-depth analysis of what’s working well and what’s
                     broken on your product. Get an in-depth analysis of what’s
                     working.
                   </p>
 
-                  <div className="flex items-center flex-wrap justify-between mt-6 2xl:mt-12">
+                  <div className="flex items-center flex-wrap justify-between mt-6 2xl:mt-8">
                     <Button
                       variant="primary"
                       className="!hover:bg-transparent py-[10px] 2xl:py-4 px-4 xl:px-[20px] 2xl:px-[30px] mr-auto"
