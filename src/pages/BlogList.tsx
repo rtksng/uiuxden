@@ -41,7 +41,7 @@ const BlogList = () => {
             <div className="relative h-[auto] sm:h-[50vh] xl:h-[70vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             Where Every Story Sparks a New Perspective
                         </h1>
                     </div>
@@ -71,7 +71,7 @@ const BlogList = () => {
                     <div>
                         <div className="grid grid-cols-12 gap-y-6 sm:gap-[40px] ">
                             <div className="col-span-12 xl:col-span-7">
-                                <div className="h-full big-card-bg p-4">
+                                <div className="h-full big-card-bg p-4 transition-all duration-300 hover:scale-[1.03]">
                                     <div className=" pt-5 pb-7 block xl:hidden">
                                         <h5 className="text-[24px] font-normal text-primary-dark2">
                                             UX Research
@@ -130,7 +130,7 @@ const BlogList = () => {
 
                             <div className="col-span-12 xl:col-span-5">
                                 <div className="h-full flex flex-col sm:flex-row xl:flex-col justify-between  gap-y-6 sm:gap-10 xl: gap-0">
-                                    <div className=" sm:w-[50%] xl:w-auto lg:h-[48%]">
+                                    <div className=" sm:w-[50%] xl:w-auto lg:h-[48%] transition-all duration-300 hover:scale-[1.03]">
                                         <div className="xl:h-full big-card-bg p-4">
                                             <div className=" lg:pt-5 pb-7 block xl:hidden">
                                                 <h5 className="text-[24px] font-normal text-primary-dark2">
@@ -170,7 +170,7 @@ const BlogList = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className=" sm:w-[50%] xl:w-auto lg:h-[48%]">
+                                    <div className=" sm:w-[50%] xl:w-auto lg:h-[48%] transition-all duration-300 hover:scale-[1.03]">
                                         <div className="xl:h-full big-card-bg p-4">
                                             <div className=" lg:pt-5 pb-7 block xl:hidden">
                                                 <h5 className="text-[24px] font-normal text-primary-dark2">
