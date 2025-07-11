@@ -20,7 +20,6 @@ const ContactUS = () => {
           isScrolled ? "bg-white shadow-sm" : "bg-transparent"
         }`}
       ></div>
-      <Navbar />
 
       {/* ---------- Banner Section ---------- */}
       <div className="contactus-banner updated-contactus pt-[60px]">
