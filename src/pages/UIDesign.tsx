@@ -46,14 +46,14 @@ const UIDesign = () => {
 
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[55vh] md:h-[60vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
+      <div className="relative h-[55vh] md:h-[56vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
         <Container>
           <div className="text-center pt-[140px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
               Where Creativity Meets Functionality
             </h1>
             <div className="mt-[20px] lg:mt-[80px] xl:mt-[20px]">
-              <img src={Design_Logo} alt={"UIDesign"} className="max-w-[80%] md:max-w-[80%] lg:max-w-[80%] xl:max-w-[100%] mx-auto" />
+              <img src={Design_Logo} alt={"UIDesign"} className="max-w-[80%] md:max-w-[100%] lg:max-w-[80%] xl:max-w-[100%] mx-auto" />
             </div>
           </div>
 
@@ -95,14 +95,14 @@ const UIDesign = () => {
                 <div className="text-[18px] font-semibold text-black">
                   Innovate
                 </div>
-                <div className=" text-[24px] 2xl:text-[60px] leading-[72px] font-semibold 2xl:mb-6">
+                <div className=" text-[24px] 2xl:text-[60px] leading-[72px] font-semibold 2xl:mb-6 md:leading-[45px] lg:leading-[72px]">
                   Your Vision,
                   Our Design Expertise
                 </div>
                 <p className="text-xl font-medium mb-5">
                   We specialize in user-centric designs that elevate brands. Combining creativity with technical skill, our team crafts intuitive, visually stunning interfaces that drive engagement and conversions.
                 </p>
-                <Button variant='primary' className="mt-[30px] py-[14px]">
+                <Button variant='primary' className="lg:mt-[30px] md:mt-[10px] py-[14px]">
                   Claim Free Design Review
                 </Button>
               </div>
