@@ -93,7 +93,7 @@ const UXStrategy = () => {
               <h2 className="xl:text-[60px] text-[32px] sm:text-[48px] font-semibold leading-[1.2]">
                 Empowering vision with a bold strategy for impactful ideas.
               </h2>
-              <ul className="list-disc">
+              <ul className="list-disc md:px-8 lg:px-0">
                 {items.map((item, index) => (
                   <li key={index}>
                     <Link

@@ -53,7 +53,7 @@ const UIBranding = () => {
             <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base md:leading-[1.2] lg:leading-[1.4]">
                             UIUXDen is capable of understanding how users behave with your existing product.
                         </h1>
                     </div>
@@ -123,7 +123,7 @@ const UIBranding = () => {
                     <div className="grid grid-cols-12">
 
                         <div className="col-span-12 xl:col-span-5 xl:col-span-5">
-                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px]">
+                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:max-w-[70%] lg:max-w-[100%]">
                                 Why does every product need a UX audit
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
