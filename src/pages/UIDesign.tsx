@@ -117,7 +117,7 @@ const UIDesign = () => {
       <section className="transformation-bg mt-[40px] lg:mt-[0] pt-[80px] lg:pt-[100px] relative">
         <img src={ClunkyBg} alt="image" className="transformation-img absolute" />
         <Container>
-          <h6 className="text-[24px] md:text-[47px] 2xl:text-[60px] leading-[40px] lg:leading-[90px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading">
+          <h6 className="text-[24px] md:text-[47px] 2xl:text-[60px] leading-[40px] lg:leading-[90px] md:leading-[80px] font-semibold 2xl:mb-6 text-center text-white relative ui-heading">
             From <span className="animationStroke">
               <SVGAnimation nameOfClass="svg-container clunky" />
               Clunky to Clean:

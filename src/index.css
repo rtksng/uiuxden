@@ -1684,3 +1684,8 @@ Button.gradient-btn {
   background: url("./assets/footer-bg.png") no-repeat;
   background-size: cover;
 }
+@media (max-width: 991px) {
+    .animationStroke .svg-container.clunky svg {
+        transform: scaleX(2) scaleY(0.7);
+    }
+}
