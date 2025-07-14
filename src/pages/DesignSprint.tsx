@@ -39,7 +39,6 @@ const DesignSprint = () => {
       >
 
       </div>
-      <Navbar />
 
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear">

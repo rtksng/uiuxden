@@ -47,7 +47,6 @@ const UIBranding = () => {
                 className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
                     }`}
             ></div>
-            <Navbar />
 
             {/* ---------- Banner Section ---------- */}
             <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
@@ -123,7 +122,7 @@ const UIBranding = () => {
                     <div className="grid grid-cols-12">
 
                         <div className="col-span-12 xl:col-span-5 xl:col-span-5">
-                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:max-w-[70%] lg:max-w-[100%]">
+                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0">
                                 Why does every product need a UX audit
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
@@ -819,21 +818,21 @@ const UIBranding = () => {
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                         </Swiper>

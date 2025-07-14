@@ -4,12 +4,15 @@ import Process from "../components/Homepage/Process";
 import CaseStudyCarousel from "../components/Homepage/CaseStudyCarousel";
 import Rating from "../components/Homepage/Rating";
 import Container from "../components/Container";
-import futureimg from "../assets/future.png";
+import futureimg from "../assets/about/future.svg";
 import aboutimg1 from "../assets/aboutimg1.png";
 import { Link } from "react-router-dom";
 import SVGAnimation from "../components/StrokeAnimation";
+import VideoThumbnail from '../components/videoThumbnail';
 import Tabs from "../components/Tabs";
 import HeaderBelowBannerVideo from "../assets/about/about-youtube-video.png";
+
+
 const About = () => {
 
   const tabData = [
@@ -17,19 +20,19 @@ const About = () => {
       id: 1,
       label: "Our Future Focus",
       sublabel: "(Vision)",
-      content: `1 To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
+      content: `To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
     },
     {
       id: 2,
       label: "Driven by Purpose",
       sublabel: "(Mission)",
-      content: `2 To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
+      content: `To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
     },
     {
       id: 3,
       label: "What We Stand For",
       sublabel: "(Values)",
-      content: `3 To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
+      content: `To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
     },
   ];
   return (
@@ -39,7 +42,7 @@ const About = () => {
         <Container>
           <div className="grid grid-cols-12">
             <div className=" md:col-span-6 2xl:col-span-8 col-span-12 2xl:block flex items-center">
-              <h1 className="font-semibold text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[70px] 2xl:text-[90px]">
+              <h1 className="font-semibold text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[70px] leading-tight">
                 Creating Exceptional Products, Shaping a Better Future
               </h1>
             </div>
@@ -47,8 +50,11 @@ const About = () => {
               <img src={futureimg} alt="image" className="mx-auto" />
             </div>
           </div>
-          <div className=" mt-9 lg:mt-28">
-            <img src={HeaderBelowBannerVideo} alt="image" className="mx-auto" />
+          <div className="p-4">
+            <VideoThumbnail
+              videoId="dQw4w9WgXcQ" 
+              thumbnail={HeaderBelowBannerVideo}
+            />
           </div>
         </Container>
       </section>
@@ -80,7 +86,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex justify-start mt-4 md:mt-0 lg:justify-end lg:col-span-5 col-span-12 self-center">
-            <Link to="">
+            <Link to="/contact-us">
               <img src={aboutimg1} alt="image" />
             </Link>
           </div>

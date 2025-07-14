@@ -97,7 +97,6 @@ const Sustainable = () => {
                 className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
                     }`}
             ></div>
-            <Navbar />
 
             <div className="relative h-[auto] lg:h-[84vh] xl:h-[100vh] green-linear py-12">
                 <Container>

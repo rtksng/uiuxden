@@ -15,14 +15,28 @@ import ProblemthreeBannerAbsolute from "../assets/problem3-absolute.png";
 import SolutionthreeBanner from "../assets/solution3-banner.png";
 import ArrowAnimation from "../components/ArrowAnimation";
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
 import Container from "../components/Container";
 import SVGAnimation from "../components/StrokeAnimation";
 
 const Schumacher = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 10);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
   return (
     <main>
       <Navbar />
+      <div
+        className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
+          }`}
+      ></div>
 
       <div className="relative  h-[45vh] lg:h-[100vh] green-linear ">
         <Container>

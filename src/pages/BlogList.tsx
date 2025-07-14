@@ -36,7 +36,6 @@ const BlogList = () => {
                 className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"
                     }`}
             ></div>
-            <Navbar />
 
             <div className="relative h-[auto] sm:h-[50vh] xl:h-[70vh] green-linear py-12">
                 <Container>

@@ -12,7 +12,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import SVGAnimation from "../components/StrokeAnimation";
 import ClunkyBg from "../assets/clunkybg.png";
-import TransformingSliderFirst from "../assets/humanization/human-cetered-first-slide.png";
+
+import Beforeimg from "../assets/humanization/transforming-before-img.png";
+import Afterimg from "../assets/humanization/transforming-after-img.png";
 import Heroimage from "../assets/humanization/hero-main-banner.png";
 import Empathy from "../assets/humanization/empathy-icon.svg";
 import Emothional from "../assets/humanization/emothional-icon.svg";
@@ -55,10 +57,10 @@ const Humanization = () => {
             ></div>
             <Navbar />
 
-            <div className="relative h-[auto] lg:h-[84vh] xl:h-[100vh] green-linear py-12">
+            <div className="relative h-[auto] xl:h-auto 2xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px] leading-tight  2xl:text-[90px] text-black  font-semibold mb-base">
                             UIUXDen, Designing for Humans, Not Just Users
                         </h1>
                     </div>
@@ -66,11 +68,11 @@ const Humanization = () => {
                     <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] lg:mt-[80px] xl:mt-[40px] 2xl:mt-[50px] ">
                         <img
                             src={Heroimage}
-                            className=" max-w-[90%] sm:max-w-[46%] xl:max-w-[43%] h-auto"
+                            className=" max-w-[90%] sm:max-w-[46%] xl:max-w-[90%] h-auto"
                         />
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
+                    {/* <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}
@@ -84,14 +86,14 @@ const Humanization = () => {
                                 </h6>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </Container>
             </div>
 
             <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px]">
                 <Container>
                     <div className="grid grid-cols-12">
-                        <div className="col-span-12 xl:col-span-7 xl:col-span-7 ">
+                        <div className="col-span-12 xl:col-span-7 ">
                             <h5 className=" text-center xl:text-start text-[24px] sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
                                 HumanizeUX Believes in the Power of{""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
@@ -99,18 +101,18 @@ const Humanization = () => {
                                     Human-Centered{" "}
                                 </span>{" "}       Design
                             </h5>
-                            <p className="text-[18px] text-center xl:text-start sm:text-[24px] 2xl:text-[28px] font-medium text-primary-dark2 mt-4 xl:mt-8 ">
+                            <p className="text-[18px] text-center xl:text-start 2xl:text-[22px] font-medium text-primary-dark2 mt-4 xl:mt-8 ">
                                 At UIUX den, we believe that great design goes beyond aesthetics—it’s about creating experiences that feel intuitive, meaningful, and deeply human. Our UI/UX services are built on the principle of humanization, putting people at the heart of every interaction, interface, and innovation.
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
                                 <Button
                                     variant="primary"
-                                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 mt-5 xl:mt-[70px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
+                                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 mt-5 xl:mt-[30px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
                                     Learn More About Our Philosophy
                                 </Button>
                             </div>
                         </div>
-                        <div className="col-span-12 xl:col-span-5 xl:col-span-5">
+                        <div className="col-span-12 xl:col-span-5">
                             <img
                                 src={HumanCentered}
                                 alt="Image"
@@ -133,7 +135,7 @@ const Humanization = () => {
                             </span>{" "}-Centered Design
                         </h1>
                     </div>
-                    <div className="border-b border-t border-white py-4 xl:py-9 ">
+                    <div className="border-b border-t border-white border-opacity-5 py-4 xl:py-9 ">
                         <div className="grid grid-cols-12 gap-4 lg:gap-[40px] items-center ">
                             <div className="col-span-12 lg:col-span-7  xl:col-span-8 ">
                                 <div className="lg:flex items-center gap-10">
@@ -159,7 +161,7 @@ const Humanization = () => {
 
                     </div>
 
-                    <div className="border-b border-t border-white py-4 xl:py-9 ">
+                    <div className="border-b border-t border-white border-opacity-5 py-4 xl:py-9 ">
                         <div className="grid grid-cols-12  gap-4 lg:gap-[40px] items-center ">
                             <div className="col-span-12 lg:col-span-7  xl:col-span-8 ">
                                 <div className="lg:flex items-center gap-10">
@@ -182,7 +184,7 @@ const Humanization = () => {
 
 
                     </div>
-                    <div className="border-b border-t border-white py-4 xl:py-9 ">
+                    <div className="border-b border-t border-white border-opacity-5 py-4 xl:py-9 ">
                         <div className="grid grid-cols-12  gap-4 lg:gap-[40px] items-center ">
                             <div className="col-span-12 lg:col-span-7  xl:col-span-8 ">
                                 <div className="lg:flex items-center gap-10">
@@ -207,7 +209,7 @@ const Humanization = () => {
 
 
                     </div>
-                    <div className="border-b border-t border-white py-4 xl:py-9 ">
+                    <div className="border-b border-t border-white border-opacity-5 py-4 xl:py-9 ">
                         <div className="grid grid-cols-12 gap-4 lg:gap-[40px] items-center ">
                             <div className="col-span-12 lg:col-span-7  xl:col-span-8 ">
                                 <div className="lg:flex items-center gap-10">
@@ -254,7 +256,7 @@ const Humanization = () => {
 
             <section className="py-10 lg:py-20 2xl:py-[100px]">
                 <Container>
-                    <div className="grid grid-cols-12 xl:grid-cols-12 mb-4 lg:mb-8 2xl:mb-[70px]">
+                    <div className="grid grid-cols-12 xl:grid-cols-12 mb-4 lg:mb-8 ">
                         <div className=" col-span-12 sm:col-span-10 xl:col-span-10">
                             <h2 className=" text-[24px] sm:text-[42px] 2xl:text-[84px] font-semibold text-primary-dark2">
                                 Why Humanization Matters?
@@ -308,7 +310,7 @@ const Humanization = () => {
                     </div>
 
                     <div className="hidden xl:grid grid-cols-12 ">
-                        <div className=" block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative">
+                        <div className=" block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative hover:bg-grey-top-gradient ">
                             <div className="text-primary-dark2 ">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     User Engagement
@@ -325,7 +327,7 @@ const Humanization = () => {
                                 />
                             </div>
                         </div>
-                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative">
+                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative hover:bg-grey-top-gradient ">
                             <div className="text-primary-dark2 ">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Retention & Loyalty
@@ -342,7 +344,7 @@ const Humanization = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative block bg-grey-top-gradient ">
+                        <div className="col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative block hover:bg-grey-top-gradient ">
                             <div className="flex  ">
                                 <div className="text-primary-dark2 ">
                                     <h5 className="text-[20px] font-bold text-primary-dark2 ">
@@ -361,7 +363,7 @@ const Humanization = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative ">
+                        <div className="block col-span-12 sm:col-span-6 xl:col-span-3 p-3 sm:p-6 xl:p-[30px] relative hover:bg-grey-top-gradient">
                             <div className="text-primary-dark2 ">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Drives Meaningful Innovation
@@ -398,18 +400,31 @@ const Humanization = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
+                                <div className="flex items-center justify-center transforming-imgbox">
+                                    <div className="before-img z-10 relative">
+                                        <img src={Beforeimg} alt="Ui Designs" className="max-w-full h-auto" />
+                                    </div>
+                                    <div className="afterbefore-line -ml-4 -mr-4">
+                                        <svg width="492" height="207" viewBox="0 0 492 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                            <path className="lineanimation" d="M0.5 3.77539H277.306C287.247 3.77539 295.306 11.8343 295.306 21.7754V185.161C295.306 195.102 303.365 203.161 313.306 203.161H492" stroke="#565963" stroke-width="6" />
+
+                                        </svg>
+
+                                    </div>
+                                    <div className="after-img z-10 relative">
+                                        <img src={Afterimg} alt="Ui Designs" className="max-w-full h-auto" />
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
+                                    {/* <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" /> */}
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div>
-                                    <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" />
+                                    {/* <img src={TransformingSliderFirst} alt={"UIDesign"} className="mx-auto max-w-[70%]" /> */}
                                 </div>
                             </SwiperSlide>
                         </Swiper>
