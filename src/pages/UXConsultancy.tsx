@@ -40,7 +40,7 @@ const UXConsultancy = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[110px] flex flex-col items-center">
+          <div className="text-center lg:pt-[110px]  sm:pt-[110px] md:pt-[50px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[66px] leading-tight mb-4 2xl:text-[90px] text-black  font-semibold mb-base">
               UIUXDen, Discover new business opportunities.
             </h1>
@@ -69,7 +69,7 @@ const UXConsultancy = () => {
                 <div className="img-box hidden md:block">
                   <img src={ReachArrows} alt="Arrows" className="hidden" />
                   <svg
-                    className="w-[28px] lg:w-[36px] lg:h-[344px]"
+                    className="w-[28px] lg:w-[36px] lg:h-[344px] md:h-[293px]"
                     viewBox="0 0 36 344"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const UXConsultancy = () => {
                 </div>
                 <div className="list-box mt-5">
                   <div className="2xl:max-w-[70%] mb-3">
-                    <p className="text-xl font-medium mb-4 text-center md:text-start">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
                       Create exceptional user experiences
                     </p>
                     <p className="text-[#767676] text-center md:text-start">
@@ -103,7 +103,7 @@ const UXConsultancy = () => {
                     </p>
                   </div>
                   <div className="2xl:max-w-[70%] mb-3">
-                    <p className="text-xl font-medium mb-4 text-center md:text-start">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
                       Improve the UX maturity of your company
                     </p>
                     <p className="text-[#767676] text-center md:text-start">
@@ -112,7 +112,7 @@ const UXConsultancy = () => {
                     </p>
                   </div>
                   <div className="2xl:max-w-[70%]">
-                    <p className="text-xl font-medium mb-4 text-center md:text-start">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
                       Increase ROI
                     </p>
                     <p className="text-[#767676] text-center md:text-start">
@@ -137,7 +137,7 @@ const UXConsultancy = () => {
       {/* ---------- holistic Section ---------- */}
       <div className="bg-[#202020] py-12">
         <Container>
-          <div className="text-center flex flex-col items-center mb-20">
+          <div className="text-center flex flex-col items-center mb-20 md:mb-[40px] lg:mb-[100px]">
             <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
               UIUXDen provide{" "}
               <span className="animationStroke w-fit h-fit inline-block">

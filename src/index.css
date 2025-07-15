@@ -1754,6 +1754,7 @@ Button.gradient-btn {
     .animationStroke .svg-container.resource svg {
     transform: scaleX(1) scaleY(0.7);
 }
+
 }
 
 .custom-openModal .thumbnail-img {

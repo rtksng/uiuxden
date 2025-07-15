@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import rightLongArrow from "../assets/right-long-arrow.svg";
-import CheckMarkbtn from "../assets/checkmarkbtn.png";
-import SeeButton from "../assets/seebutton.png";
-import HeerButton from "../assets/hearbtn.png";
-import SpeakButton from "../assets/speakbtn.png";
+import CheckMarkbtn from "../assets/checkmarkbtn.svg";
+import SeeButton from "../assets/seebutton.svg";
+import HeerButton from "../assets/hearbtn.svg";
+import SpeakButton from "../assets/speakbtn.svg";
 import accessbilityimg from "../assets/accessbilityimg.png";
 import VectorImg from "../assets/vectorimg.svg";
 import rightBar from "../assets/rightbar.png";
@@ -57,10 +57,10 @@ const Accessibility = () => {
 
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[80vh] lg:h-[100vh] green-linear">
+      <div className="relative h-[80vh] lg:h-[100vh] md:h-[48vh] green-linear">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[130px] flex flex-col items-center">
-            <h1 className="text-[34px] sm:text-[48px] max-w-[1160px] lg:text-[66px] 2xl:text-[80px] text-black leading-[1.2] font-semibold mb-base lg:mt-[0] mt-[80px]">
+          <div className="text-center pt-[80px] sm:pt-[120px] 2xl:pt-[130px] flex flex-col items-center">
+            <h1 className="text-[34px] sm:text-[48px] max-w-[1160px] lg:text-[66px] 2xl:text-[80px] text-black leading-[1.2] font-semibold mb-base lg:mt-[0] md:mt-[0] mt-[80px]">
               UIUXDen removes all barriers and provides the benefit of technology for everyone.
             </h1>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-[80px] 2xl:mt-[100px]">
