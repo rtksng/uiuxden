@@ -416,8 +416,6 @@ height: 150px;
   transform: scaleX(1.4);
 }
 
-
-
 .animationStroke .svg-container.clunky svg {
   transform: scaleX(2.6);
 }
@@ -1270,7 +1268,7 @@ height: 150px;
 
 .services-link.plus::after {
   content: "+";
-  display: inline-block;    
+  display: inline-block;
   position: absolute;
   right: 0;
   width: 15px;
@@ -1734,31 +1732,41 @@ Button.gradient-btn {
   background-image: url("./assets/review-image-4.png");
 }
 
-.user-box.user-5 .userImage {    
+.user-box.user-5 .userImage {
   background-image: url("./assets/review-image-5.png");
 }
 
 .custom-swiper .swiper-pagination .swiper-pagination-bullet {
   min-width: 15px;
   min-height: 15px;
-} 
+}
 
-.custom-footersec .gradient-sec {  
+.custom-footersec .gradient-sec {
   background: url("./assets/footer-bg.png") no-repeat;
   background-size: cover;
 }
+
 @media (max-width: 991px) {
-    .animationStroke .svg-container.clunky svg {
-        transform: scaleX(2) scaleY(0.7);
-    }
-    .animationStroke .svg-container.resource svg {
+  .animationStroke .svg-container.clunky svg {
+    transform: scaleX(2) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.resource svg {
     transform: scaleX(1) scaleY(0.7);
-}
+  }
+
+  .animationStroke .svg-container.clunky.animation-non svg {
+    transform: scaleX(1.4) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.everyuser svg {
+    transform: scaleX(0.9) scaleY(0.8);
+  }
 
 }
 
 .custom-openModal .thumbnail-img {
-  transition: 8s linear;   
+  transition: 8s linear;
 }
 
 .custom-openModal:hover .thumbnail-img {
