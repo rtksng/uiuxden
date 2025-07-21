@@ -47,17 +47,17 @@ const Rating = () => {
   ];
 
   return (
-    <section className="2xl:mt-[180px] xl:mt-[50px] mt-10 sm:mt-16">
+    <section className="flexible-solution-outer 2xl:mt-[180px] xl:mt-[50px] mt-10 sm:mt-16">
       <div className="bg-[#2D2D2D] 2xl:py-[160px] xl:py-[50px] py-5 lg:py-10">
         <Container>
           <div className="grid grid-cols-12">
             {/* Left Column - User Images and Title */}
             <div className="md:col-span-6 col-span-12 self-center">
-              <h2 className="max-w-[450px] text-3xl md:text-[40px] leading-[128.5%] text-white font-semibold">
+              <h2 className="max-w-[450px] text-3xl text-center sm:text-left md:text-[40px] leading-[128.5%] text-white font-semibold mt-[20px] sm:mt-[0]">
                 Flexible solution for all kinds of business
               </h2>
-              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] mt-10 gap-[18px] min-h-[150px]">
-                <div className="flex items-center 2xl:-space-x-8 -space-x-8 me-8">
+              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] sm:mt-10 mt-8  gap-[18px] sm:min-h-[150px] min-h-[0] order-last sm:order-first mb-[30px] sm:mb-[0]">
+                <div className="flex items-center 2xl:-space-x-8 -space-x-8 me-0 sm:me-8 sm:justify-start sm:justify-center">
                   {reviews.map((_, idx) => (
                     <span
                       key={idx}
@@ -80,7 +80,7 @@ const Rating = () => {
             </div>
 
             {/* Right Column - Review Swiper */}
-            <div className="md:col-span-6 col-span-12 mt-10 lg:mt-0">
+            <div className="md:col-span-6 col-span-12 mt-10 lg:mt-0 order-first sm:order-last">
               <Swiper
                 modules={[Autoplay]}
                 loop

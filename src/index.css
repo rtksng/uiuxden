@@ -1764,6 +1764,16 @@ Button.gradient-btn {
   }
 
 }
+@media (max-width: 767px) {
+
+.flexible-solution-outer .svg-container svg{
+display: none;
+}
+  .mask-card .inner-content {
+    min-height: 280px;
+  }
+}
+
 
 .custom-openModal .thumbnail-img {
   transition: 8s linear;

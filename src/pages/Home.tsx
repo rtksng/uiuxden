@@ -71,7 +71,7 @@ const Home = () => {
 
 
       {/* Mobile Header Section */}
-      <div className="xl:hidden h-[50vh] sm:h-[70vh] lg:h-screen flex items-center justify-center relative">
+      <div className="xl:hidden h-[35vh] mt-6 sm:mt-0 sm:h-[70vh] lg:h-screen flex items-center justify-center relative">
         <div className="px-3">
           <h1 className="md:text-7xl text-3xl sm:text-5xl font-bold text-center text-primary-dark2">
             Humanize Your Product
