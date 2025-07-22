@@ -38,7 +38,7 @@ const ArrowAnimation: React.FC<ArrowAnimationProps> = ({ width = 194, height = 1
                 />
             </svg> */}
 
-            <svg
+            <svg 
                 ref={ref}
                 width={width}
                 height={height}
