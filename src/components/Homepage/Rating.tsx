@@ -56,8 +56,8 @@ const Rating = () => {
               <h2 className="max-w-[450px] text-3xl text-center sm:text-left md:text-[40px] leading-[128.5%] text-white font-semibold mt-[20px] sm:mt-[0]">
                 Flexible solution for all kinds of business
               </h2>
-              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] sm:mt-10 mt-8  gap-[18px] sm:min-h-[150px] min-h-[0] order-last sm:order-first mb-[30px] sm:mb-[0]">
-                <div className="flex items-center 2xl:-space-x-8 -space-x-8 me-0 sm:me-8 sm:justify-start sm:justify-center">
+              <div className="flex items-center 2xl:mt-[100px] xl:mt-[50px] sm:mt-10 mt-8  sm:gap-[18px] gap-[0] sm:min-h-[150px] min-h-[0] order-last sm:order-first mb-[30px] sm:mb-[0] sm:justify-start justify-center">
+                <div className="flex items-center 2xl:-space-x-8 -space-x-8 me-0 sm:me-8">
                   {reviews.map((_, idx) => (
                     <span
                       key={idx}

@@ -31,13 +31,13 @@ const Review = () => {
             <Link
               to='blog-detail'
             >
-              <div className=" h-[400px] lg:h-[500px] group bg-gray-500 relative">
+              <div className=" h-[400px] lg:h-[500px] group bg-done sm:bg-gray-500 relative">
                 <img
                   src={image}
                   alt={`review_img_${index}`}
-                  className=" relative w-full object-cover h-full mix-blend-luminosity xl:mix-blend-normal group-hover:mix-blend-luminosity"
+                  className=" relative w-full object-cover h-full mix-blend-luminosity xl:mix-blend-normal group-hover:mix-blend-luminosity sm:visible invisible"
                 />
-                <div className=" h-[85%] lg:h-[75%] xl:h-0  xl:group-hover:h-[400px] group-hover:h-[auto] absolute bottom-0 w-full content-overlay pt-[40px] xl:pt-[0px] group-hover:pt-[40px] 2xl:group-hover:pt-[60px] px-[24px] xl:px-[30px] group-hover:pb-[40px] text-primary-dark2 duration-300 ease-out transition-all flex justify-center flex-col overflow-hidden">
+                <div className=" h-[95%] sm:[85%] lg:h-[75%] xl:h-0  xl:group-hover:h-[400px] group-hover:h-[auto] absolute bottom-0 w-full content-overlay pt-[40px] xl:pt-[0px] group-hover:pt-[40px] 2xl:group-hover:pt-[60px] px-[24px] xl:px-[30px] group-hover:pb-[40px] text-primary-dark2 duration-300 ease-out transition-all flex justify-center flex-col overflow-hidden">
 
                   <div className="flex items-center gap-4">
                     <h6 className="text-lg font-semibold">UX Research</h6>
