@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
-import rightLongArrow from "../assets/right-long-arrow.svg";
+import GraphChart from "../components/SustainableChart";
 import Container from "../components/Container";
 import { useEffect, useState } from "react";
 import HumanCentered from "../assets/sustainability/webdesign-img.png";
-import DYKImg from "../assets/sustainability/DYK-img.png";
+// import DYKImg from "../assets/sustainability/DYK-img.png";
 import CalculateSusImg from "../assets/sustainability/calculate-image.png";
 import Footer from "../components/Footer";
 import "swiper/css";
@@ -311,7 +311,7 @@ const Sustainable = () => {
                             <h5 className="text-[24px] xl:text-start text-center md:text-start sm:text-[42px] 2xl:text-[60px] font-semibold text-primary-dark2">
                                 Do you {""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
-                                    <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />
+                                    <SVGAnimation nameOfClass="svg-container pl-4 sustainable-sec" />
                                     Know?
                                 </span>{" "}
                             </h5>
@@ -365,11 +365,12 @@ const Sustainable = () => {
                             </div>
                         </div>
                         <div className="col-span-12 xl:col-span-5">
-                            <img
+                            {/* <img
                                 src={DYKImg}
                                 alt="Image"
                                 className="xl:pl-8 max-w-[80%] md:max-w-[60%] lg:max-w-full mx-auto xl:mx-0"
-                            />
+                            /> */}
+                            <GraphChart />
                         </div>
                     </div>
                 </Container>

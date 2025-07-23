@@ -266,7 +266,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           <button
-            className="xl:hidden w-10 h-10 flex items-center justify-center rounded-full text-gray-900 hover:bg-gray-100 z-50 transition-colors"
+            className="xl:hidden w-auto  h-10 flex items-center justify-center rounded-full text-gray-900 hover:bg-gray-100 z-50 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >

@@ -75,7 +75,9 @@ const Rating = () => {
                     </span>
                   ))}
                 </div>
-                <Arrow />
+                <div className="hidden lg:block">
+                  <Arrow />
+                </div>
               </div>
             </div>
 
