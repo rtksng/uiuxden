@@ -57,7 +57,7 @@ const CaseStudy = () => {
             easy
           </h2>
 
-          <div className="2xl:mt-[90px] lg:mt-[50px] xl:mt-[70px] mt-10 sm:w-[90%] 2xl:w-[100%] mx-auto lg:px-[160px] px-3">
+          <div className="2xl:mt-[90px] lg:mt-[50px] xl:mt-[70px] mt-10 sm:w-[90%] 2xl:w-[100%] mx-auto lg:sm:px-[160px] px-3px-[0]">
             <Swiper
               slidesPerView={1}
               spaceBetween={20}

@@ -59,7 +59,7 @@ const Humanization = () => {
 
             <div className="relative h-[auto] xl:h-auto 2xl:h-[100vh] green-linear py-12">
                 <Container>
-                    <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
+                    <div className="text-center pt-[30px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px] leading-tight  2xl:text-[90px] text-black  font-semibold mb-base">
                             UIUXDen, Designing for Humans, Not Just Users
                         </h1>
@@ -94,14 +94,14 @@ const Humanization = () => {
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 ">
-                            <h5 className=" text-center xl:text-start text-[24px] sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
+                            <h5 className="text-left sm:text-center xl:text-start text-[24px] sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
                                 HumanizeUX Believes in the Power of{""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
                                     <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />{" "}
                                     Human-Centered{" "}
                                 </span>{" "}       Design
                             </h5>
-                            <p className="text-[18px] text-center xl:text-start 2xl:text-[22px] font-medium text-primary-dark2 mt-4 xl:mt-8 ">
+                            <p className="text-[18px] text-left sm:text-center xl:text-start 2xl:text-[22px] font-medium text-primary-dark2 mt-4 xl:mt-8 ">
                                 At UIUX den, we believe that great design goes beyond aesthetics—it’s about creating experiences that feel intuitive, meaningful, and deeply human. Our UI/UX services are built on the principle of humanization, putting people at the heart of every interaction, interface, and innovation.
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">

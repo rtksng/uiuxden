@@ -416,8 +416,6 @@ height: 150px;
   transform: scaleX(1.4);
 }
 
-
-
 .animationStroke .svg-container.clunky svg {
   transform: scaleX(2.6);
 }
@@ -1748,6 +1746,35 @@ Button.gradient-btn {
   background-size: cover;
 }
 
+@media (max-width: 991px) {
+  .animationStroke .svg-container.clunky svg {
+    transform: scaleX(2) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.resource svg {
+    transform: scaleX(1) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.clunky.animation-non svg {
+    transform: scaleX(1.4) scaleY(0.7);
+  }
+
+  .animationStroke .svg-container.everyuser svg {
+    transform: scaleX(0.9) scaleY(0.8);
+  }
+
+}
+@media (max-width: 767px) {
+
+.flexible-solution-outer .svg-container svg{
+display: none;
+}
+  .mask-card .inner-content {
+    min-height: 280px;
+  }
+}
+
+
 .custom-openModal .thumbnail-img {
   transition: 8s linear;
 }
@@ -1755,7 +1782,6 @@ Button.gradient-btn {
 .custom-openModal:hover .thumbnail-img {
   scale: 1.5;
 }
-
 
 @media (max-width: 1536px) {
   .carouselStudy .innerItem.custom-box button {

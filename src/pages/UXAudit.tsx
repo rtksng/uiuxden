@@ -52,7 +52,7 @@ const UIBranding = () => {
             <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base md:leading-[1.2] lg:leading-[1.4]">
                             UIUXDen is capable of understanding how users behave with your existing product.
                         </h1>
                     </div>
@@ -122,7 +122,7 @@ const UIBranding = () => {
                     <div className="grid grid-cols-12">
 
                         <div className="col-span-12 xl:col-span-5 xl:col-span-5">
-                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px]">
+                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0">
                                 Why does every product need a UX audit
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
@@ -793,7 +793,7 @@ const UIBranding = () => {
                     </div> */}
                 </Container>
             </section>
-
+  
 
 
             <div className="bg-[#2D2D2D] pt-12 2xl:pt-[80px]">
@@ -818,21 +818,21 @@ const UIBranding = () => {
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
                                     src={InsightSliderImg}
                                     alt="Image"
-                                    className="mx-auto max-w-[80%] md:max-w-[60%] lg:max-w-full"
+                                    className="mx-auto max-w-[80%] md:max-w-[90%] lg:max-w-full"
                                 />
                             </SwiperSlide>
                         </Swiper>
