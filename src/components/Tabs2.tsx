@@ -28,10 +28,10 @@ const Tabs: React.FC<TabsProps> = ({ tabs, autoSwitchInterval = 3000 }) => {
         return () => clearInterval(interval); // Cleanup on unmount
     }, [tabs.length, autoSwitchInterval]);
 
-    return (
+    return (   
         <div className="flex flex-col md:flex-row justify-center py-5 sm:py-[60px] lg:pt-[60px] lg:pb-[140px]">
             <div className="relative min-w-[50%] sm:gap-[40px] flex flex-col md:items-end items-center before:content-[''] before:absolute before:w-[100%] md:before:w-[1px] 
-before:h-[1px] md:before:h-[100%] before:bottom-0 md:before:right-0 before:border-t before:md:border-r before:border-[#6e6a6a] pb-12 md:pb-0 md:pe-[70px]">
+before:h-[1px] md:before:h-[100%] before:bottom-0 md:before:right-0 before:border-t before:md:border-r before:border-[#6e6a6a] pb-12 md:pb-0 md:pe-[70px] hidden sm:flex">
                 {tabs.map((tab, index) => (
                     <button
                         className={
