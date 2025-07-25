@@ -341,7 +341,7 @@ const DesignSprint = () => {
 
               <div className="grid upperbox-sec grid-cols-12 gap-5 mt-10 lg:mt-20">
                 {/* --- Box 1 --- */}
-                <div className="col-span-4 ">
+                <div className="col-span-4 w-full sm:w-auto">
                   <div className="standout-box relative">
                     <p className="text-lg lg:text-xl ">
                       Distraction-free environment
@@ -350,7 +350,7 @@ const DesignSprint = () => {
                 </div>
 
                 {/* --- Box 2 --- */}
-                <div className="col-span-4 ">
+                <div className="col-span-4 w-full sm:w-auto">
                   <div className="standout-box relative">
                     <p className="text-lg lg:text-xl">
                       Collaborative Workshops
@@ -359,7 +359,7 @@ const DesignSprint = () => {
                 </div>
 
                 {/* --- Box 3 --- */}
-                <div className="col-span-4 ">
+                <div className="col-span-4 w-full sm:w-auto">
                   <div className="standout-box relative">
                     <p className="text-lg lg:text-xl">
                       Align towards a common goal
@@ -413,7 +413,7 @@ const DesignSprint = () => {
             <div className="col-span-12 lg:col-span-6 xl:col-span-5 specialistsec-wrapper relative">
 
               <div className="specialistsec-boxoutter">
-                <div className="specialistsec-box flex gap-[25px]">
+                <div className="specialistsec-box flex gap-[25px] flex-col sm:flex-row">
                   <div className="star-boxoutter flex flex-col justify-center items-center">
                     <div className="star-box flex items-center justify-center">
                       <svg width="164" height="86" viewBox="0 0 164 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +454,7 @@ const DesignSprint = () => {
 
         <div className="human-thinksec pt-[50px] md:pt-[100px] lg:pt-[150px]">
           <Container>
-            <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[100px]">
+            <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[100px] sm:leading-[50px] lg:leading-[80px] leading-[40px]">
               UIUXDen, facilitating ideation sessions
               involves an understanding of human thinking and mental model
             </p>
