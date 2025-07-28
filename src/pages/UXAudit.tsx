@@ -51,7 +51,7 @@ const UIBranding = () => {
             {/* ---------- Banner Section ---------- */}
             <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
                 <Container>
-                    <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
+                    <div className="text-center pt-[20px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base md:leading-[1.2] lg:leading-[1.4]">
                             UIUXDen is capable of understanding how users behave with your existing product.
                         </h1>
@@ -122,7 +122,7 @@ const UIBranding = () => {
                     <div className="grid grid-cols-12">
 
                         <div className="col-span-12 xl:col-span-5 xl:col-span-5">
-                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0">
+                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0 mx-[40px]">
                                 Why does every product need a UX audit
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
@@ -236,8 +236,8 @@ const UIBranding = () => {
                     </div>
 
                     <div className="grid xl:hidden grid-cols-12 xl:grid-cols-10">
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Branding
                                 </h5>
@@ -254,8 +254,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Design & Typography
                                 </h5>
@@ -272,8 +272,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Navigation & Structure
                                 </h5>
@@ -290,8 +290,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Usability Evaluation
                                 </h5>
@@ -308,8 +308,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     User Journey
                                 </h5>
@@ -327,8 +327,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Analytics & Research
                                 </h5>
@@ -345,8 +345,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Responsiveness
                                 </h5>
@@ -363,8 +363,8 @@ const UIBranding = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                        <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] sm:border-b-0 border-b border-grey">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Content
                                 </h5>
@@ -382,7 +382,7 @@ const UIBranding = () => {
                             </div>
                         </div>
                         <div className="col-span-12 sm:col-span-6  p-3 sm:p-6 xl:p-[30px] ">
-                            <div className="text-primary-dark2 ">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Conclusion
                                 </h5>
@@ -399,7 +399,7 @@ const UIBranding = () => {
                     </div>
                     <div className="hidden xl:grid grid-cols-12 xl:grid-cols-10">
                         <div className=" block col-span-12 sm:col-span-6 xl:col-span-2 p-3 sm:p-6 xl:p-[30px] relative bg-grey-top-gradient">
-                            <div className="text-primary-dark2 ">
+                            <div className="text-primary-dark2">
                                 <h5 className="text-[20px] font-bold text-primary-dark2 ">
                                     Branding
                                 </h5>
@@ -793,7 +793,7 @@ const UIBranding = () => {
                     </div> */}
                 </Container>
             </section>
-  
+
 
 
             <div className="bg-[#2D2D2D] pt-12 2xl:pt-[80px]">
@@ -839,7 +839,7 @@ const UIBranding = () => {
                     </div>
 
                 </Container>
-            </div>
+            </div>  
             <Footer consultData={consultData} />
         </main>
     );

@@ -8,7 +8,7 @@ import BlogWriter from "../assets/blog-writer-img.png";
 import Button from "../components/Button";
 import CardImg from "../assets/blog-card-img.png";
 import { FaRegClock } from "react-icons/fa";
-import { IoSettingsOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 
 const BlogList = () => {
@@ -39,7 +39,7 @@ const BlogList = () => {
 
             <div className="relative h-[auto] sm:h-[50vh] xl:h-[70vh] green-linear py-12">
                 <Container>
-                    <div className="text-center pt-[80px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
+                    <div className="text-center pt-[30px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             Where Every Story Sparks a New Perspective
                         </h1>
@@ -57,7 +57,7 @@ const BlogList = () => {
                                 <h6 className="text-[14px] sm:text-[16px] xl:text-[18px] text-black font-normal">
                                     Home | Casestudy
                                 </h6>
-                            </div>
+                            </div>    
 
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const BlogList = () => {
                                             <p className="text-[16px] font-medium text-primary-dark2 ml-2">
                                                 17 Aug 2023
                                             </p>
-                                        </div>
+                                        </div>  
 
                                         <div className="flex justify-end items-center items-center">
                                             <IoEyeOutline className="text-[#67D17E] " />
@@ -216,7 +216,7 @@ const BlogList = () => {
                 </Container>
             </section>
 
-            <section className="top-blog pb-10 xl:pb-[96px]">
+            <section className="top-blog pb-10 xl:pb-[96px]">    
                 <Container>
                     <div>
                         <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-10 xl:mb-[60px]">
@@ -225,7 +225,7 @@ const BlogList = () => {
                             </h3>
                             <div className="flex items-center bg-[#F3F6F8] rounded-full  py-4 px-5">
                                 <input type="text" className='w-full outline-none bg-[#F3F6F8] mr-1 placeholder-[#7F7F7F]' placeholder='Search on UiUx Den' />
-                                <IoSettingsOutline className="text-[#49454F]" />
+                                <IoSearchOutline size={24} className="text-[#49454F]" />
                             </div>
                         </div>
                         <div className="grid grid-cols-12  gap-y-6 sm:gap-10 xl:gap-[40px] ">
