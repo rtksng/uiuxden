@@ -209,7 +209,7 @@ const Accessibility = () => {
       <section className="py-10 lg:py-20 pb-10">
         <Container>
           <h6 className=" text-[24px] 2xl:text-[60px] leading-[50px] 2xl:mb-6 text-left">
-            Our Approach:
+            Our Approach:     
           </h6>
           <h6 className=" text-[24px] 2xl:text-[84px] leading-[50px] font-bold 2xl:mb-6 text-left leading-[32px]">
             Crafting an Inclusive Experience
@@ -246,7 +246,7 @@ const Accessibility = () => {
                   <p className="text-secondary-dark text-base md:text-xl font-normal">We implement WCAG-compliant design
                     improvements and ensure a seamless experience for all users.
                   </p>
-                </div>
+                </div>  
                 <div>
                   <img
                     src={rightBar}
