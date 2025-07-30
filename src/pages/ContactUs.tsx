@@ -66,7 +66,7 @@ const ContactUS = () => {
                       <input
                         type="text"
                         id="firstName"
-                        className="w-full p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
+                        className="w-full p-[10px] sm:p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
                         placeholder="Enter your first name"
                       />
                     </div>
@@ -100,7 +100,7 @@ const ContactUS = () => {
                       <input
                         type="text"
                         id="lastName"
-                        className="w-full p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
+                        className="w-full outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px] p-[10px] sm:p-4"
                         placeholder="Enter your last name"
                       />
                     </div>
@@ -130,7 +130,7 @@ const ContactUS = () => {
                       <input
                         type="text"
                         id="emailId"
-                        className="w-full p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
+                        className="w-full p-[10px] sm:p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -160,7 +160,7 @@ const ContactUS = () => {
                       <input
                         type="text"
                         id="lastName"
-                        className="w-full p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
+                        className="w-full p-[10px] sm:p-4 outline-none border border-[#CBCBCB] rounded-[12px] pr-[60px]"
                         placeholder="Enter your contact number"
                       />
                     </div>
@@ -176,7 +176,7 @@ const ContactUS = () => {
                       <textarea
                         id="description"
                         rows={5}
-                        className="w-full  border border-[#CBCBCB] resize-none p-4 outline-none rounded-[12px] pr-[60px]"
+                        className="w-full  border border-[#CBCBCB] resize-none p-[10px] sm:p-4 outline-none rounded-[12px] pr-[60px]"
                         placeholder="Tell us little about the project "
                       ></textarea>
                     </div>
