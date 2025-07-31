@@ -22,7 +22,7 @@ const Review = () => {
 
         </section>
       </Container>
-      <div className="grid grid-cols-12 lg:grid-cols-3 gap-2 xl:gap-0 2xl:mt-[84px] xl:mt-[50px] mt-6 words-mind-card-wrapper">
+      <div className="grid grid-cols-12 lg:grid-cols-3 gap-2 xl:gap-0 2xl:mt-[84px] xl:mt-[50px] mt-6 words-mind-card-wrapper px-2 pb-2">
         {images.map((image, index) => (
           <div
             key={index}

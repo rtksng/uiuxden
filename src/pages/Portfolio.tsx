@@ -147,10 +147,12 @@ const Portfolio: FC = () => {
           {projects.map(({ img, title, downloads, sliderimg }, idx) => (
             <div
               key={idx}
-              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal"
+              className="lg:col-span-4 col-span-12 sm:col-span-6 openModal custommob-modal"
               onClick={() => openModal({ img, title, downloads, sliderimg })}
             >
-              <img src={img} alt={title} className="sm:w-full rounded-xl" />
+              <div className="overflow-hidden rounded-[12px]">
+                <img src={img} alt={title} className="sm:w-full rounded-xl" />
+              </div>
               <div className="md:mt-8 mt-3 flex flex-wrap items-center gap-4 md:gap-6">
                 <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
@@ -256,7 +258,7 @@ const Portfolio: FC = () => {
                   src={selectedProject.sliderimg}
                   alt={selectedProject.title}
                   className={`w-full rounded-xl`}
-                  />
+                />
               </>
             )}
           </div>

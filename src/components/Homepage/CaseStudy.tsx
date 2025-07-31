@@ -57,14 +57,14 @@ const CaseStudy = () => {
             easy
           </h2>
 
-          <div className="2xl:mt-[90px] lg:mt-[50px] xl:mt-[70px] mt-10 xl:w-[60%] 2xl:w-[100%] mx-auto sm:px-[160px] px-[0]">
+          <div className="2xl:mt-[90px] lg:mt-[50px] xl:mt-[70px] mt-10 sm:w-[90%] 2xl:w-[100%] mx-auto lg:sm:px-[160px] px-3px-[0]">
             <Swiper
-              slidesPerView={2}
+              slidesPerView={1}
               spaceBetween={20}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               breakpoints={{
                 576: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   spaceBetween: 30,
                 },
                 768: {
@@ -82,7 +82,7 @@ const CaseStudy = () => {
                   }}
                   to={study.link}
                   key={index}
-                  className="lg:col-span-4 sm:col-span-6 col-span-12"
+                  className="sm:col-span-4 col-span-12"
                 >
                   <div className="itemcase h-auto max-h-[380px] flex flex-col items-center justify-center relative">
                     <div className="flex flex-col max-w-[330px] justify-center items-center">
@@ -106,24 +106,14 @@ const CaseStudy = () => {
                     </div>
                   </div>
                 </Link></SwiperSlide>
-
               ))}
 
-
-
-
-
-
-
-
-
-
-
-
-              {/* <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide> */}
+              {
+                /* <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide> */
+              }
             </Swiper>
           </div>
         </div>

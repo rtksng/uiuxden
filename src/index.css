@@ -1767,21 +1767,121 @@ Button.gradient-btn {
   }
 
 }
+
 @media (max-width: 767px) {
 
-.flexible-solution-outer .svg-container svg{
-display: none;
-}
+  .flexible-solution-outer .svg-container svg {
+    display: none;
+  }
+
   .mask-card .inner-content {
     min-height: 280px;
   }
 }
 
 
-.custom-openModal .thumbnail-img {
+.custom-openModal .thumbnail-img,
+.openModal.custommob-modal img {
   transition: 8s linear;
 }
 
 .custom-openModal:hover .thumbnail-img {
   scale: 1.5;
 }
+
+.openModal.custommob-modal:hover img {
+  scale: 1.5;
+}
+
+@media (max-width: 1536px) {
+  .carouselStudy .innerItem.custom-box button {
+    position: absolute;
+    font-size: 22px;
+    padding: 30px 60px;
+  }
+
+  .carouselStudy .swiper-slide .innerItem {
+    background-image: url('./assets/casestudyCarousalbg-desk-1.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-two .innerItem {
+    background-image: url('./assets/casestudyCarousalbg-desk-2.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-three .innerItem {
+    background-image: url('./assets/casestudyCarousalbg-desk-3.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-four .innerItem {
+    background-image: url('./assets/casestudyCarousalbg-desk-4.png');
+  }
+}
+
+
+@media (max-width: 1399px) {
+  .carouselStudy .innerItem.custom-box {
+    background-image: url("./assets/casestudyCarousalbg-leptop-1.png");
+    height: 450px;
+  }
+
+  .carouselStudy .swiper-slide.slide-two .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-leptop-2.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-three .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-leptop-3.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-four .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-leptop-4.png');
+  }
+}
+
+@media (max-width: 1024px) {
+  .casestudy .itemcase {
+    height: 275px;
+    padding: 20px;
+  }
+
+  .carouselStudy .innerItem.custom-box {
+    background-image: url("./assets/casestudyCarousalbg-Tab-1.png");
+    height: 450px;
+  }
+
+  .carouselStudy .swiper-slide.slide-two .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-Tab-2.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-three .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-Tab-3.png');
+  }
+
+  .carouselStudy .swiper-slide.slide-four .innerItem.custom-box {
+    background-image: url('./assets/casestudyCarousalbg-Tab-4.png');
+  }
+
+  .carouselStudy .innerItem.custom-box button {
+    position: unset;
+    bottom: unset;
+
+  }
+
+  .carouselStudy .innerItem.custom-box .innertext {
+    margin-bottom: 40px;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  .carouselStudy .innerItem.custom-box {
+    background: linear-gradient(182.65deg, #FFFFFF -39.18%, #EAFFE2 -15.38%, #F8EDBA 154.97%) !important;
+    height: auto;
+  }
+
+  .carouselStudy .innerItem.custom-box .innertext {
+    max-width: 100% ;
+  }
+
+}
+
