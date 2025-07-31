@@ -1764,22 +1764,29 @@ Button.gradient-btn {
   }
 
 }
+
 @media (max-width: 767px) {
 
-.flexible-solution-outer .svg-container svg{
-display: none;
-}
+  .flexible-solution-outer .svg-container svg {
+    display: none;
+  }
+
   .mask-card .inner-content {
     min-height: 280px;
   }
 }
 
 
-.custom-openModal .thumbnail-img {
+.custom-openModal .thumbnail-img,
+.openModal.custommob-modal img {
   transition: 8s linear;
 }
 
 .custom-openModal:hover .thumbnail-img {
+  scale: 1.5;
+}
+
+.openModal.custommob-modal:hover img {
   scale: 1.5;
 }
 
@@ -1865,12 +1872,13 @@ display: none;
 
 @media (max-width: 767px) {
   .carouselStudy .innerItem.custom-box {
-    background: linear-gradient(182.65deg, #FFFFFF -39.18%, #EAFFE2 -15.38%, #F8EDBA 154.97%) !important ;
+    background: linear-gradient(182.65deg, #FFFFFF -39.18%, #EAFFE2 -15.38%, #F8EDBA 154.97%) !important;
     height: auto;
   }
 
   .carouselStudy .innerItem.custom-box .innertext {
-    max-width: 100%;
+    max-width: 100% ;
   }
 
 }
+
