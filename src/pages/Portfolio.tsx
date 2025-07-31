@@ -60,7 +60,7 @@ type Project = {
   title: string;
   downloads: string;
   sliderimg: string;
-};
+};  
 
 const tabs: Tab[] = [
   { id: "ux", label: "UX Design" },
@@ -113,7 +113,7 @@ const Portfolio: FC = () => {
                 <img src={img} alt={title} className="sm:w-full rounded-xl thumbnail-img" />
               </div>
               <div className="md:mt-8 mt-3 flex items-center flex-wrap gap-4 md:gap-6">
-                <div className="w-20 h-20 rounded-full border border-gray-300 flex items-center justify-center">
+                <div className="w-[50px] h-[50px] sm:w-20 sm:h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
                 </div>
                 <div>
@@ -175,9 +175,9 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">0
+      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
         <Container>
-          <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px]">
+          <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px] pb-[110px]">
             Your business deserves a unique approach
           </h1>
           <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">

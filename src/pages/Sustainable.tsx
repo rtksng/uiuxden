@@ -137,7 +137,7 @@ const Sustainable = () => {
                 <Container>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-7 ">
-                            <h5 className="text-[24px] text-center xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
+                            <h5 className="text-[24px] text-left sm:text-center xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold 2xl:mr-[100px] text-primary-dark2">
                                 What Is {""}
                                 <span className="animationStroke w-fit h-fit inline-block mx-1">
                                     <SVGAnimation nameOfClass="svg-container pl-4 human-centered" />
@@ -146,11 +146,11 @@ const Sustainable = () => {
                                 Web Design?
                         
                             </h5>
-                            <p className="text-[18px] text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 xl:pe-5 xl:me-5">
+                            <p className="text-[18px] text-left sm:text-center xl:text-start sm:text-[18px]font-medium text-primary-dark2 mt-4 xl:mt-8 xl:pe-5 xl:me-5">
                                 Sustainable web design focuses on optimizing resources, reducing energy consumption, and lowering the environmental impact of digital products. By adopting eco-friendly practices, designers can create efficient, high-performing websites with a minimal carbon footprint.
                             </p>
-                            <div className="flex flex-wrap md:flex-nowrap justify-center xl:justify-start gap-[50px] mb-12 xl:mb-0 mt-[50px]">
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
+                            <div className="flex flex-wrap md:flex-nowrap justify-center xl:justify-start gap-[20px] mb-12 xl:mb-0 mt-[50px]">
+                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] sm:py-[24px] py-[10px]">
                                     <p className="text-xl text-[#1A1A1A] mb-[10px] font-semibold">
                                         Reduced Energy
                                         Use
@@ -160,7 +160,7 @@ const Sustainable = () => {
                                     </p>
                                 </div>
 
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
+                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] sm:py-[24px] py-[10px]">
                                     <p className="text-xl text-[#1A1A1A] mb-[10px] font-semibold">
                                         Improved User
                                         Experience
@@ -169,7 +169,7 @@ const Sustainable = () => {
                                         Faster load times and streamlined performance create a better experience for your visitors.
                                     </p>
                                 </div>
-                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] py-[24px]">
+                                <div className="sus-wd-boxes max-w-[224px] p-[35px] pr-[20px] sm:py-[24px] py-[10px]">
                                     <p className="text-xl text-[#1A1A1A] mb-[10px] font-semibold">
                                         Positive
                                         Environmental
@@ -329,35 +329,35 @@ const Sustainable = () => {
 
                                 </div>
                                 <div className="list-box mt-5">
-                                    <div className="2xl:max-w-[70%] mb-5">
-                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                    <div className="2xl:max-w-[70%] mb-5 border-b-[1px] sm:border-b-[0] border-neutral-300 pb-[20px] sm:pb[0]">
+                                        <p className="text-xl font-medium mb-4 md:text-start">
                                             Streaming's Environmental Impact
                                         </p>
-                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                        <p className="text-[#1A1A1A] md:text-start">
                                             Streaming video accounts for over 60% of all internet traffic and related emissions.
                                         </p>
                                     </div>
-                                    <div className="2xl:max-w-[70%] mb-5">
-                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                    <div className="2xl:max-w-[70%] mb-5 border-b-[1px] sm:border-b-[0] border-neutral-300 pb-[20px] sm:pb[0]">
+                                        <p className="text-xl font-medium mb-4 md:text-start">
                                             Data Centers' Growing Energy Consumption
                                         </p>
-                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                        <p className="text-[#1A1A1A] md:text-start">
                                             Data centers use 1% of global electricity, projected to rise to 3-8% by 2030.
                                         </p>
                                     </div>
-                                    <div className="2xl:max-w-[70%] mb-5">
-                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                    <div className="2xl:max-w-[70%] mb-5 border-b-[1px] sm:border-b-[0] border-neutral-300 pb-[20px] sm:pb[0]">
+                                        <p className="text-xl font-medium mb-4 md:text-start">
                                             Website CO₂ Emissions
                                         </p>
-                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                        <p className="text-[#1A1A1A] md:text-start">
                                             A website with 10,000 monthly views generates about 211 kg of CO₂ yearly.
                                         </p>
                                     </div>
                                     <div className="2xl:max-w-[70%]">
-                                        <p className="text-xl font-medium mb-4 text-center md:text-start">
+                                        <p className="text-xl font-medium mb-4 md:text-start">
                                             Growing Web Page Size
                                         </p>
-                                        <p className="text-[#1A1A1A] text-center md:text-start">
+                                        <p className="text-[#1A1A1A] md:text-start">
                                             The average web page size has grown from 500KB in 2010 to over 2MB in 2023.
                                         </p>
                                     </div>

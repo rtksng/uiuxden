@@ -40,7 +40,7 @@ const UXConsultancy = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
         <Container>
-          <div className="text-center lg:pt-[110px]  sm:pt-[110px] md:pt-[50px] flex flex-col items-center">
+          <div className="text-center pt-[20px] lg:pt-[110px]  sm:pt-[110px] md:pt-[50px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[66px] leading-tight mb-4 2xl:text-[90px] text-black  font-semibold mb-base">
               UIUXDen, Discover new business opportunities.
             </h1>
@@ -61,7 +61,7 @@ const UXConsultancy = () => {
         <Container>
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-7 xl:col-span-6 md:pr-20 mb-8 mlg:mb-0">
-              <p className="text-[24px] text-center md:text-start md:text-[60px] font-semibold">
+              <p className="text-[24px] text-start sm:text-center md:text-start md:text-[60px] font-semibold">
                 Reach your full potential with creative UIUXDen
               </p>
 
@@ -93,29 +93,29 @@ const UXConsultancy = () => {
                   </svg>
                 </div>
                 <div className="list-box mt-5">
-                  <div className="2xl:max-w-[70%] mb-3">
-                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
+                  <div className="2xl:max-w-[70%] mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-start sm:text-center md:text-start">
                       Create exceptional user experiences
                     </p>
-                    <p className="text-[#767676] text-center md:text-start">
+                    <p className="text-[#767676] sm:text-center md:text-start text-start">
                       In order to craft a plan for how to get somewhere, you
                       first have to know where you’re going and why.
                     </p>
                   </div>
-                  <div className="2xl:max-w-[70%] mb-3">
-                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
+                  <div className="2xl:max-w-[70%] mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-left sm:text-center md:text-start">
                       Improve the UX maturity of your company
                     </p>
-                    <p className="text-[#767676] text-center md:text-start">
+                    <p className="text-[#767676] text-start sm:text-center md:text-start">
                       A UX consultant can evaluate your business needs and
                       address them through UX recommendations
                     </p>
                   </div>
                   <div className="2xl:max-w-[70%]">
-                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-center md:text-start">
+                    <p className="text-xl font-medium lg:mb-4 md:mb-0 text-start sm:text-center md:text-start">
                       Increase ROI
                     </p>
-                    <p className="text-[#767676] text-center md:text-start">
+                    <p className="text-[#767676] text-start sm:text-center md:text-start">
                       UX Advisory & Consulting helps you outrun the competition
                       by providing expert advice and support
                     </p>
@@ -137,7 +137,7 @@ const UXConsultancy = () => {
       {/* ---------- holistic Section ---------- */}
       <div className="bg-[#202020] py-12">
         <Container>
-          <div className="text-center flex flex-col items-center mb-20 md:mb-[40px] lg:mb-[100px]">
+          <div className="text-center flex flex-col items-center mb-[30px] md:mb-[40px] lg:mb-[100px]">
             <h1 className="text-[34px] md:text-[42px] lg:text-[60px] max-w-[1250px]  text-white  font-semibold mb-base">
               UIUXDen provide{" "}
               <span className="animationStroke w-fit h-fit inline-block">

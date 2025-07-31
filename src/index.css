@@ -1673,6 +1673,9 @@ Button.gradient-btn {
   .humanthinkimage-sec .image-box {
     width: 100%;
   }
+  .custom-specialistsec .specialistsec-boxoutter .specialistsec-box .star-boxoutter {
+  max-width: 90%;
+}
 }
 
 
