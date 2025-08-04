@@ -54,7 +54,7 @@ const About = () => {
             <VideoThumbnail
               videoId="dQw4w9WgXcQ" 
               thumbnail={HeaderBelowBannerVideo}
-            />
+            />   
           </div>
         </Container>
       </section>
@@ -98,9 +98,9 @@ const About = () => {
           <div className="pt-[60px] lg:pt-[50px] 2xl:pt-[90px]">
             <h4 className="font-semibold text-[24px] text-center text-white sm:text-[32px] lg:text-[40px] 2xl:text-[60px]">
               Our Commitment to
-              <span className="animationStroke">
+               <span className="animationStroke ml-[10px]">
                 <SVGAnimation nameOfClass="svg-container excellence" />
-                Excellence
+                 Excellence
               </span>
             </h4>
             <Tabs tabs={tabData} autoSwitchInterval={5000} />

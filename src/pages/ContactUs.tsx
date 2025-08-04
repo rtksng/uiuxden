@@ -25,7 +25,7 @@ const ContactUS = () => {
       <div className="contactus-banner updated-contactus pt-[60px]">
         <Container>
           <div className="lg:h-[370px] flex justify-center items-center">
-            <p className="mb-8 md:mb-4 text-[32px] lg:text-[50px] xl:text-[60px] 2xl:text-[80px] text-black text-center font-semibold leading-[unset] 2xl:leading-[115px]">
+            <p className="mb-8 md:mb-4 text-[32px] lg:text-[50px] xl:text-[60px] 2xl:text-[80px] text-black text-center font-semibold leading-[unset] 2xl:leading-[115px] px-0 md:px-[100px] lg:px-[0]">
               Get in touch with us for collaborations, inquiries, or support!
             </p>
           </div>
