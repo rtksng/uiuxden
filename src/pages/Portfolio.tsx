@@ -175,7 +175,7 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+      <section className="h-[50vh] sm:h-[40vh] md:h-[50vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
         <Container>
           <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[75px] pb-[110px]">
             Your business deserves a unique approach
