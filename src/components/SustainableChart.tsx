@@ -39,14 +39,14 @@ export default function InteractiveSVGChart() {
   return (
     <div className="relative w-fit mx-auto" onMouseMove={handleMouseMove}>
       <svg
-        width="627" height="518" viewBox="0 0 627 518"
+        width="500" height="518" viewBox="0 0 627 518"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="transition-all duration-300"
       >
         <defs>
           <linearGradient
-            id="paint0_linear_5677_639"
+            id="paint0_linear_5677_639"    
             x1="377.146"
             y1="197.641"
             x2="377.146"
