@@ -1884,4 +1884,18 @@ Button.gradient-btn {
   }
 
 }
-
+@media screen and (min-width:1440px) and (max-width:1800px) {
+    .creativity-banner {
+    height: 60vh !important;
+}
+.brand-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.animationStroke .svg-container.clunky svg
+ {
+    transform: scaleX(2.0) scaleY(1.2);
+}
+}
