@@ -38,7 +38,7 @@ const About = () => {
   return (
     <main className="aboutPage">
       <Navbar />
-      <section className="flex justify-center items-center h-auto pt-[100px] lg:pt-[120px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
+      <section className="flex justify-center items-center h-auto pt-[100px] md:pt-[50px] lg:pt-[120px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
         <Container>
           <div className="grid grid-cols-12">
             <div className=" md:col-span-6 2xl:col-span-8 col-span-12 2xl:block flex items-center">
@@ -47,18 +47,17 @@ const About = () => {
               </h1>
             </div>
             <div className=" md:col-span-6 2xl:col-span-4 col-span-10 self-center mt-8">
-              <img src={futureimg} alt="image" className="mx-auto" />
+              <img src={futureimg} alt="image" className="mx-auto w-full md:max-w-80 lg:max-w-fit" />
             </div>
           </div>
           <div className="p-4">
             <VideoThumbnail
-              videoId="dQw4w9WgXcQ" 
+              videoId="dQw4w9WgXcQ"
               thumbnail={HeaderBelowBannerVideo}
             />
           </div>
         </Container>
       </section>
-
       <Container>
         <div className="md:gap-16 grid grid-cols-12 pt-[50px] sm:pt-0">
           <div className="lg:col-span-7 col-span-12 self-center">
@@ -98,14 +97,14 @@ const About = () => {
           <div className="pt-[60px] lg:pt-[50px] 2xl:pt-[90px]">
             <h4 className="font-semibold text-[24px] text-center text-white sm:text-[32px] lg:text-[40px] 2xl:text-[60px]">
               Our Commitment to
-              <span className="animationStroke">
+              <span className="animationStroke ml-[10px]">
                 <SVGAnimation nameOfClass="svg-container excellence" />
                 Excellence
               </span>
             </h4>
             <Tabs tabs={tabData} autoSwitchInterval={5000} />
-          </div>
-        </Container>
+          </div>  
+        </Container>     
       </div>
       <Process />
       <Rating />

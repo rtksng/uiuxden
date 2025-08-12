@@ -24,9 +24,9 @@ import mobfourSlider from "../assets/portfolio/mob-four-slider.jpg";
 import mobsixSlider from "../assets/portfolio/mob-six-slider.jpg";
 
 
-import bannerLeftImg from "../assets/portfolio/banner-leftside.png";
-import bannerMidImg from "../assets/portfolio/banner-midmob.png";
-import bannerRightImg from "../assets/portfolio/banner-rightside.png";
+import bannerLeftImg from "../assets/portfolio/banner-leftside.svg";
+import bannerMidImg from "../assets/portfolio/banner-midmob.svg";
+import bannerRightImg from "../assets/portfolio/banner-rightside.svg";
 
 
 import logop from "../assets/logop.png";
@@ -123,10 +123,10 @@ const Portfolio: FC = () => {
                   <small className="text-lg text-gray-800">
                     {downloads} Download IOS
                   </small>
-                </div>
+                </div>      
               </div>
             </div>
-          ))}
+          ))}  
         </div>
       );
     }
@@ -175,9 +175,9 @@ const Portfolio: FC = () => {
   return (
     <main>
       <Navbar />
-      <section className="h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
+      <section className="h-[50vh] sm:h-[40vh] md:h-[50vh] lg:h-[62vh] xl:h-screen gradientHeroBg relative flex items-center justify-center sm:block">
         <Container>
-          <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[108px] pb-[110px]">
+          <h1 className="text-center text-[32px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px] max-w-[1180px] mx-auto font-semibold leading-[128.5%] sm:py-[75px] pb-[110px]">
             Your business deserves a unique approach
           </h1>
           <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
