@@ -37,15 +37,15 @@ const BlogList = () => {
                     }`}
             ></div>  
 
-            <div className="relative h-[auto] sm:h-[50vh] xl:h-[70vh] green-linear py-12">
+            <div className="relative h-[auto] 2xl:h-[50vh] xl:h-[50vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[30px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
+                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px] 2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             Where Every Story Sparks a New Perspective
                         </h1>
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
+                    {/* <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
                         <div className="xl:flex xl:items-center">
                             <img
                                 src={rightLongArrow}
@@ -60,7 +60,7 @@ const BlogList = () => {
                             </div>    
 
                         </div>
-                    </div>
+                    </div> */}
    
                 </Container>
             </div>

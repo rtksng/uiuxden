@@ -94,10 +94,10 @@ const Accessibility = () => {
 
       <section>
         <Container>
-          <div className="grid 2xl:grid-cols-2 gap-20 2xl:mt-[158px] mt-10 sm:mt-16 lg:pb-[70px] pb-[70px]">
-            <div className="2xl:col-span-1  self-center">
+          <div className="flex 2xl:grid  2xl:grid-cols-2 gap-20 2xl:mt-[158px] mt-10 sm:mt-16 lg:pb-[70px] pb-[70px]">
+            <div className="2xl:col-span-1 self-center">
               <div>
-                <div className=" text-[30px] 2xl:text-[60px] lg:leading-[72px] leading-[45px] font-semibold 2xl:mb-6 lg:mb-[40px] md:mb-[0]">
+                <div className=" text-[30px] xl:text-[60px] lg:leading-[72px] leading-[45px] font-semibold 2xl:mb-6 lg:mb-[40px] md:mb-[0]">
                   Accessibility is primary focus while creating a design for people.
                 </div>
 
@@ -126,7 +126,7 @@ const Accessibility = () => {
                 </Button>
               </div>
             </div>
-            <div className="col-span-1 hidden 2xl:block">
+            <div className="2xl:col-span-1">
               <img src={accessbilityimg} alt="image" />
               <div className="flex items-start text-white p-6 w-[534px] h-[126px] rounded-[32px] relative curve-img mt-4">
                 {/* Square Icon Box */}
@@ -150,7 +150,7 @@ const Accessibility = () => {
         <Container>
           <h6 className=" text-[30px] 2xl:text-[56px] lg:leading-[90px] leading-[40px] font-semibold 2xl:mb-6 text-left lg:text-center text-white relative">
             Why Accessibility is <span className="animationStroke">
-              <SVGAnimation nameOfClass="svg-container clunky animation-non" />
+              <SVGAnimation nameOfClass="svg-container clunky non-negotiable animation-non" />
               Non-Negotiable?
             </span>
           </h6>
@@ -208,10 +208,10 @@ const Accessibility = () => {
 
       <section className="py-10 lg:py-20 pb-10">
         <Container>
-          <h6 className=" text-[24px] 2xl:text-[60px] leading-[50px] 2xl:mb-6 text-left">
+          <h6 className=" text-[24px] xl:text-[40px] 2xl:text-[60px] leading-tight 2xl:mb-6 text-left">
             Our Approach:     
           </h6>
-          <h6 className=" text-[24px] 2xl:text-[84px] leading-[50px] font-bold 2xl:mb-6 text-left leading-[32px]">
+          <h6 className=" text-[24px] xl:text-[64px] 2xl:text-[84px] leading-tight font-bold 2xl:mb-6 text-left ">
             Crafting an Inclusive Experience
           </h6>
           <div className="grid xl:grid grid-cols-12 xl:grid-cols-8 mt-[20px] lg:mt-[100px] none-bg-grey-graident">
@@ -301,7 +301,7 @@ const Accessibility = () => {
         </Container>
       </section>
 
-      <section className="bg-[#2D2D2D] lg:pt-[100px] pt-[50px] relative">
+      <section className="bg-[#2D2D2D] 2xl:pt-[100px] pt-[50px] relative">
         <Container>
           <h6 className=" text-[30px] 2xl:text-[56px] lg:leading-[90px] lg:leading-[40px] font-semibold 2xl:mb-6 text-left lg:text-center text-white relative">
             Reimagining Digital Products for <span className="animationStroke">

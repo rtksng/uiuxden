@@ -38,7 +38,7 @@ const About = () => {
   return (
     <main className="aboutPage">
       <Navbar />
-      <section className="flex justify-center items-center h-auto pt-[100px] lg:pt-[150px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
+      <section className="flex justify-center items-center h-auto pt-[100px] lg:pt-[120px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
         <Container>
           <div className="grid grid-cols-12">
             <div className=" md:col-span-6 2xl:col-span-8 col-span-12 2xl:block flex items-center">

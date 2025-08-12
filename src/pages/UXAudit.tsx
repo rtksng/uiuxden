@@ -97,22 +97,7 @@ const UIBranding = () => {
 
                     </div>
 
-                    <div className="lg:absolute bottom-5 left-2  2xl:left-9 text-center lg:text-start mt-3 sm:mt-8 xl:mt-0 ">
-                        <div className="xl:flex xl:items-center">
-                            <img
-                                src={rightLongArrow}
-                                alt="arrow"
-                                width={50}
-                                className="hidden lg:block xl:mx-auto"
-                            />
-                            <div className="ml-3">
-                                <h6 className="text-[14px] sm:text-[16px] xl:text-[18px] text-black font-normal">
-                                    Home | UX Audit
-                                </h6>
-                            </div>
-
-                        </div>
-                    </div>
+                   
 
                 </Container>
             </div>
@@ -122,13 +107,13 @@ const UIBranding = () => {
                     <div className="grid grid-cols-12">
 
                         <div className="col-span-12 xl:col-span-5 xl:col-span-5">
-                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0 mx-[40px]">
+                            <p className="text-[24px] text-center xl:text-start sm:text-[42px] xl:text-[60px] font-semibold 2xl:mr-[100px] md:mx-[120px] lg:mx-0 mx-[40px] leading-tight 2xl:leading-normal">
                                 Why does every product need a UX audit
                             </p>
                             <div className="flex justify-center xl:justify-start mb-6 xl:mb-0">
                                 <Button
                                     variant="primary"
-                                    className="border !px-5 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm 2xl:text-base border-primary-dark2 sm:mt-5 xl:mt-[70px]  !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
+                                    className="border !px-5 xl:!px-[44px] 2xl:!px-[24px] !py-3 2xl:!py-[18px] text-sm xl:text-base border-primary-dark2 sm:mt-5 xl:mt-[30px] 2xl:mt-[70px] !ring-0 text-primary-dark2 hover:text-primary-dark2 rounded-full">
                                     Let’s talk
                                 </Button>
                             </div>
