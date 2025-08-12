@@ -50,7 +50,7 @@ const UXConsultancy = () => {
             <img
               src={BannerImg}
               alt="banner image"
-              className="md:max-w-[70%] lg:max-w-full"
+              className="md:max-w-[50%] 2xl:max-w-[70%]"
             />
           </div>
         </Container>
@@ -61,7 +61,7 @@ const UXConsultancy = () => {
         <Container>
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-7 xl:col-span-6 md:pr-20 mb-8 mlg:mb-0">
-              <p className="text-[24px] text-start sm:text-center md:text-start md:text-[60px] font-semibold">
+              <p className="text-[24px] text-start sm:text-center md:text-start md:text-[60px] font-semibold leading-tight 2xl:leading-normal">
                 Reach your full potential with creative UIUXDen
               </p>
 
@@ -93,7 +93,7 @@ const UXConsultancy = () => {
                   </svg>
                 </div>
                 <div className="list-box mt-5">
-                  <div className="2xl:max-w-[70%] mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
+                  <div className="2xl:max-w-[70%] mb-[18px] 2xl:mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
                     <p className="text-xl font-medium lg:mb-4 md:mb-0 text-start sm:text-center md:text-start">
                       Create exceptional user experiences
                     </p>
@@ -102,7 +102,7 @@ const UXConsultancy = () => {
                       first have to know where you’re going and why.
                     </p>
                   </div>
-                  <div className="2xl:max-w-[70%] mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
+                  <div className="2xl:max-w-[70%] mb-[18px] 2xl:mb-3 sm:border-b-0 border-b border-grey pb-[20px] sm:py-0">
                     <p className="text-xl font-medium lg:mb-4 md:mb-0 text-left sm:text-center md:text-start">
                       Improve the UX maturity of your company
                     </p>

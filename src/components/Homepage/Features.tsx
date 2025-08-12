@@ -119,7 +119,7 @@ const Features = () => {
   return (
     <Container>
       <section className="2xl:mt-[100px] xl:mt-[60px] mt-10 sm:mt-16 sm:px-3 text-primary-dark2">
-        <h2 className="2xl:text-[60px] xl:text-[40px] md:text-4xl text-2xl mb-10 lg:mb-0 font-semibold  2xl:max-w-6xl mx-auto text-left sm:text-center !leading-[128.5%]">
+        <h2 className="2xl:text-[60px] xl:text-[40px] md:text-4xl text-2xl mb-10 lg:mb-0 font-semibold xl:max-w-4xl 2xl:max-w-6xl mx-auto text-left sm:text-center !leading-[128.5%]">
           User Experiences that{" "}
           <span className="animationStroke feature">
             <SVGAnimation height={120} width={222} /> Inspire{" "}

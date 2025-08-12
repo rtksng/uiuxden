@@ -339,7 +339,7 @@ const DesignSprint = () => {
                 in the market
               </p>
 
-              <div className="grid upperbox-sec grid-cols-12 gap-5 mt-10 lg:mt-20">
+              <div className="grid upperbox-sec grid-cols-12 gap-5 mt-10 xlC:mt-20">
                 {/* --- Box 1 --- */}
                 <div className="col-span-4 w-full sm:w-auto">
                   <div className="standout-box relative">
@@ -395,7 +395,7 @@ const DesignSprint = () => {
           <div className="flex justify-center lg:mt-10 md:mt-0">
             <Carousal />
             {/* <img src={CriticalIMG} alt="Image" /> */}
-          </div>   
+          </div>
         </Container>
       </div>
 
@@ -453,35 +453,37 @@ const DesignSprint = () => {
         </Container>
 
         <div className="human-thinksec pt-[50px] md:pt-[50px] lg:pt-[150px]">
-          <Container>
-            <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[20px] lg:mb-[100px] sm:leading-[50px] lg:leading-[80px] leading-[40px]">
-              UIUXDen, facilitating ideation sessions
-              involves an understanding of human thinking and mental model
-            </p>
-          </Container>
-          <div className="humanthinkimage-sec flex">
-            <div className="image-box">
-              <img src={humanThinkImg1} alt="Image" />
-            </div>
+          <div className="human-thinksec pt-[50px] md:pt-[80px] xl:pt-[150px]">
+            <Container>
+              <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[20px] lg:mb-[100px] sm:leading-[50px] lg:leading-[80px] leading-[40px]">
+                UIUXDen, facilitating ideation sessions
+                involves an understanding of human thinking and mental model
+              </p>
+            </Container>
+            <div className="humanthinkimage-sec flex">
+              <div className="image-box">
+                <img src={humanThinkImg1} alt="Image" />
+              </div>
 
-            <div className="image-box md:mt-[10%]">
-              <img src={humanThinkImg2} alt="Image" />
-            </div>
-            <div className="image-box">
-              <img src={humanThinkImg3} alt="Image" />
-            </div>
-            <div className="image-box md:mt-[10%]">
-              <img src={humanThinkImg4} alt="Image" />
-            </div>
-            <div className="image-box">
-              <img src={humanThinkImg5} alt="Image" />
-            </div>
-            <div className="image-box md:mt-[10%]">
-              <img src={humanThinkImg6} alt="Image" />
+              <div className="image-box md:mt-[10%]">
+                <img src={humanThinkImg2} alt="Image" />
+              </div>
+              <div className="image-box">
+                <img src={humanThinkImg3} alt="Image" />
+              </div>
+              <div className="image-box md:mt-[10%]">
+                <img src={humanThinkImg4} alt="Image" />
+              </div>
+              <div className="image-box">
+                <img src={humanThinkImg5} alt="Image" />
+              </div>
+              <div className="image-box md:mt-[10%]">
+                <img src={humanThinkImg6} alt="Image" />
+              </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
       <Footer consultData={consultData} />
