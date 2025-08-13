@@ -98,16 +98,14 @@ const Sustainable = () => {
                     }`}
             ></div>
 
-            <div className="relative h-[auto] lg:h-[84vh] xl:h-[100vh] green-linear py-12">
+            <div className="greener-web-outer relative h-[auto] lg:h-[84vh] xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[30px] xl:pt-[90px] flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base">
                             Designing a Greener Web
                         </h1>
                     </div>
-
-
-
+    
                     <div className="flex flex-wrap justify-center items-center gap-4 xl:gap-6 w-full mt-4 sm:mt-[50px] lg:mt-[80px] xl:mt-[40px] 2xl:mt-[50px] ">
                         <img
                             src={Heroimage}
@@ -397,7 +395,7 @@ const Sustainable = () => {
 
             <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px] custom-dynsec">
                 <Container>
-                    <div className="grid grid-cols-12">
+                    <div className="sustainable-outer grid grid-cols-12">
                         <div className="col-span-12 xl:col-span-8 ">
                             <h5 className="text-[24px] mb-[24px] xl:text-start sm:text-[42px] 2xl:text-[60px] font-semibold text-primary-dark2">
                                 How Sustainable Is Your Website?

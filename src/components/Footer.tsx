@@ -30,7 +30,7 @@ const Footer: React.FC<{
       buttonText={consultData?.buttonText}
     /> */}
     <footer className="custom-footersec">
-      <div className="bg-secondary-dark2">
+      <div className="bg-secondary-dark2 free-audit-outer">
         <Container>
           <div className="grid grid-cols-12 py-5 gap-5 2xl:py-10 ">
             <div className="col-span-12  md:flex md:justify-center items-center gap-6 lg:flex-wrap my-5 2xl:my-0">
