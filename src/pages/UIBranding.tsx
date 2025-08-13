@@ -46,7 +46,7 @@ const UXAudit = () => {
                     }`}
             ></div>
 
-            <div className="relative h-[auto] sm:h-[39vh] lg:h-[70vh] xl:h-[100vh] green-linear py-12">
+            <div className="ui-den-outer relative h-[auto] sm:h-[39vh] lg:h-[70vh] xl:h-[100vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[80px] sm:pt-[50px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] sm:max-w-[610px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
@@ -272,7 +272,7 @@ const UXAudit = () => {
                                             </div>
                                         </div>
                                         <div className="xl:absolute bottom-0 p-[30px] 2xl:p-10 rounded-[32px] bg-secondary-dark2 xl:w-[62%]">
-                                            <p className="text-white text-[26px] font-normal sm:w-[73%] mb-4">
+                                            <p className="help-business text-white text-[26px] font-normal sm:w-[73%] mb-4">
                                                 We help businesses solve problems and achieve their goals with smart, creative solutions that fit their brand
                                             </p>
                                             <FaArrowRightLong size={20} className="text-white" />

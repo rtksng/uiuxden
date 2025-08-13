@@ -1872,7 +1872,6 @@ Button.gradient-btn {
     margin-bottom: 40px;
   }
 
-
 }
 
 @media (max-width: 767px) {
@@ -1884,9 +1883,47 @@ Button.gradient-btn {
   .carouselStudy .innerItem.custom-box .innertext {
     max-width: 100%;
   }
+    
+}
+@media screen and (min-width:1440px) and (max-width:1800px) {
+    .creativity-banner {
+    height: 60vh !important;
+}
+.brand-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.animationStroke .svg-container.clunky svg
+ {
+    transform: scaleX(2.0) scaleY(1.2);
+}
+.strategy-banner {
+    height: 35vh !important;
+}
+.capabilities-list {
+    margin-top: 40px !important;
+}
+.ui-den-outer{
+height: 65vh !important;
 
 }
-
+.greener-web-outer {
+    height: 40vh !important;
+}
+.sustainable-outer img {
+    max-width: 80%;
+}
+.bg-secondary-dark2 {
+    width: 60% !important;
+}
+.free-audit-outer
+ {
+    width: 100% !important;
+}
+}       
+   
 
 @media (min-width: 1199px) and (max-width: 1399px) {
   .carouselStudy .innerItem.custom-box button {

@@ -46,7 +46,7 @@ const UIDesign = () => {
 
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[55vh] md:h-[56vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
+      <div className="creativity-banner relative h-[55vh] md:h-[56vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
         <Container>
           <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
@@ -89,7 +89,7 @@ const UIDesign = () => {
 
       <section>
         <Container>
-          <div className="grid 2xl:grid-cols-2 gap-20 2xl:mt-[158px] mt-10 sm:mt-16 lg:pb-[70px]">
+          <div className="vision-outer grid xl:grid-cols-2 gap-20 2xl:mt-[158px] mt-10 sm:mt-16 lg:pb-[70px]">
             <div className="2xl:col-span-1  self-center">
               <div>
                 <div className="text-[18px] font-semibold text-black">
@@ -107,7 +107,7 @@ const UIDesign = () => {
                 </Button>
               </div>
             </div>
-            <div className="col-span-1 hidden 2xl:block">
+            <div className="col-span-1 hidden xl:block">
               <img src={VisionImg} alt="image" />
             </div>
           </div>
@@ -152,12 +152,14 @@ const UIDesign = () => {
       <section className="pt-[40px] lg:pt-[100px]">
         <Container>
           <div>
+            <div className="brand-outer">
             <h6 className=" text-[28px] 2xl:text-[60px] leading-[35px] lg:leading-[50px] 2xl:mb-6 text-center">
               Why Most
             </h6>
             <h6 className=" text-[28px] 2xl:text-[60px] leading-[35px] lg:leading-[50px] font-semibold 2xl:mb-6 text-center">
               Brands Fails ?
             </h6>
+            </div>
             <img src={BarGraph} alt="image" />
           </div>
         </Container>

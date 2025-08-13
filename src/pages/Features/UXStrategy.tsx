@@ -1,9 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import CaseStudyCarousel from "../../components/Homepage/CaseStudyCarousel";
-import uxsheader from "../../assets/uxsheader.png";
 import uxsheader2 from "../../assets/uxsheader.svg";
-import { GoArrowUpRight } from "react-icons/go";
 import Container from "../../components/Container";
 import { Link } from "react-router-dom";
 import strategyBg from "../../assets/strategyBg.png";
@@ -77,7 +75,7 @@ const UXStrategy = () => {
   return (
     <main>
       <Navbar />
-      <section className="gradientHeroBg h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen flex items-center justify-center px-3">
+      <section className="strategy-banner gradientHeroBg h-[50vh] sm:h-[40vh] lg:h-[62vh] xl:h-screen flex items-center justify-center px-3">
         <div>
           <h1 className="text-center text-[24px] sm:text-[38px] lg:text-[48px] 2xl:text-[90px]  lg:max-w-[1380px] mx-auto font-semibold leading-[128.5%] 2xl:py-[60px] md:max-w-[70%] mt-[30px] sm:mt[0]">
             UIUX den creates product strategy in creative way.
@@ -119,7 +117,7 @@ const UXStrategy = () => {
               </ul>
             </div>
             <div className="lg:col-span-6 col-span-12 hidden lg:flex justify-center items-center">
-              <img src={strategyBg} alt="strategies" className="max-w-[80%]" />
+              <img src={strategyBg} alt="strategies" className="max-w-[80%] xl:max-w-[70%]" />
             </div>
           </div>
         </Container>
@@ -133,7 +131,7 @@ const UXStrategy = () => {
             <h4 className="xl:text-[60px] text-[32px] sm:text-[48px] text-center font-semibold mt-6">
               Capabilities that make us standout
             </h4>
-            <div className="grid  xl:grid-cols-5 xl:h-[340px] xl:mt-36 mt-8 sm:mt-8 md:mt-16 gap-[30px]">
+            <div className="capabilities-list grid  xl:grid-cols-5 xl:h-[340px] xl:mt-[80px] mt-8 sm:mt-8 md:mt-16 gap-[30px]">
               {capabilities.map((capability, index) => (
                 <div
                   key={index}
@@ -168,7 +166,7 @@ const UXStrategy = () => {
                       <div
                         className="allOverValue border p-2  rounded-lg font-semibold flex items-center gap-2">
                         <LuArrowDown className="text-red-400" />
-                        70%
+                        70%/
                       </div>
                     </div>
                     <div className="mt-10">
