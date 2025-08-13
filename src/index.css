@@ -1673,9 +1673,10 @@ Button.gradient-btn {
   .humanthinkimage-sec .image-box {
     width: 100%;
   }
+
   .custom-specialistsec .specialistsec-boxoutter .specialistsec-box .star-boxoutter {
-  max-width: 90%;
-}
+    max-width: 90%;
+  }
 }
 
 
@@ -1818,6 +1819,7 @@ Button.gradient-btn {
 }
 
 
+
 @media (max-width: 1399px) {
   .carouselStudy .innerItem.custom-box {
     background-image: url("./assets/casestudyCarousalbg-leptop-1.png");
@@ -1879,7 +1881,7 @@ Button.gradient-btn {
   }
 
   .carouselStudy .innerItem.custom-box .innertext {
-    max-width: 100% ;
+    max-width: 100%;
   }
     
 }
@@ -1922,3 +1924,21 @@ height: 65vh !important;
 }
 }       
    
+
+
+@media (min-width: 1199px) and (max-width: 1399px) {
+  .carouselStudy .innerItem.custom-box button {
+    padding: 34px 64px;
+  }
+
+}
+
+@media (max-width: 1399px) {
+  .animationStroke .svg-container.clunky.non-negotiable svg {
+    transform: scaleX(1.4);
+  }
+
+  .animationStroke .svg-container.everyuser svg {
+    transform: scaleX(.9);
+  }
+}

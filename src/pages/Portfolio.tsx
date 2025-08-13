@@ -113,11 +113,11 @@ const Portfolio: FC = () => {
                 <img src={img} alt={title} className="sm:w-full rounded-xl thumbnail-img" />
               </div>
               <div className="md:mt-8 mt-3 flex items-center flex-wrap gap-4 md:gap-6">
-                <div className="w-[50px] h-[50px] sm:w-20 sm:h-20 rounded-full border border-gray-300 flex items-center justify-center">
+                <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] 2xl:w-20 2xl:h-20 rounded-full border border-gray-300 flex items-center justify-center">
                   <img src={logop} alt="logo" />
                 </div>
                 <div>
-                  <h6 className="text-[24px] sm:text-[30px] font-semibold">
+                  <h6 className="text-[24px] 2xl:text-[30px] font-semibold">
                     {title}
                   </h6>
                   <small className="text-lg text-gray-800">
@@ -183,13 +183,13 @@ const Portfolio: FC = () => {
           <div className="absolute inset-x-0 bottom-0 flex justify-center items-center">
             {/* <img src={herobg} alt="background" className="w-[70%] sm:w-[58%] lg:w-[50%] 2xl:w-[48%]" /> */}
             <div className="flex items-end justify-center">
-              <div className="leftside-img -mr-[15%]">
+              <div className="leftside-img -mr-[15%] max-w-[320px] 2xl:max-w-full">
                 <img src={bannerLeftImg} alt="Banner image" />
               </div>
-              <div className="midmob-img relative z-10">
+              <div className="midmob-img relative z-10 max-w-[320px] 2xl:max-w-full">
                 <img src={bannerMidImg} alt="Banner image" />
               </div>
-              <div className="rightside-img -ml-[15%]">
+              <div className="rightside-img -ml-[15%] max-w-[320px] 2xl:max-w-full">
                 <img src={bannerRightImg} alt="Banner image" />
               </div>
             </div>
