@@ -41,7 +41,7 @@ const DesignSprint = () => {
       </div>
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[auto] lg:h-[100vh] green-linear">
+      <div className="ui-ux-banner relative h-[auto] lg:h-[100vh] green-linear">
         <Container>
           <div className="text-center pt-[80px]  sm:pt-[120px]  2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] lg:text-[48px] lg:max-w-[1100px] md:max-w-[590px] xl:text-[56px] 2xl:text-[90px] text-black font-semibold mb-base leading-[1.1]">

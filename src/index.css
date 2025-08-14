@@ -163,7 +163,7 @@ M0 379.608V15.6962C0 6.99935 6.52567 0 14.5151 0H233.528H366.583C374.572 0 381.0
 
 .mySwiper .swiper-pagination-bullet-active {
   background-color: #212121;
-}
+}   
 
 .green-linear {
   background: linear-gradient(182deg, #9FF8BE 1.12%, #EAFFE2 76.66%, #F8EDBA 157.07%);
@@ -744,7 +744,7 @@ height: 150px;
 .process-sec .top-cards .card-box {
   padding-left: 20px !important;
 }
-
+     
 .animationStroke .svg-container.excellence svg {
   transform: scaleX(1.5)scaleY(0.9);
 }
@@ -1240,7 +1240,7 @@ height: 150px;
   padding: 20px;
   padding-left: 45px;
 }
-
+   
 .animationStroke.critical .svg-container svg {
   transform: scaleX(1.1) scaleY(0.8);
 }
@@ -1642,7 +1642,11 @@ Button.gradient-btn {
 @media (max-width: 1279px) {
   .animationStroke.critical .svg-container svg {
     transform: scaleX(0.9) scaleY(0.7);
-  }
+    -webkit-transform: scaleX(0.9) scaleY(0.7);
+    -moz-transform: scaleX(0.9) scaleY(0.7);
+    -ms-transform: scaleX(0.9) scaleY(0.7);
+    -o-transform: scaleX(0.9) scaleY(0.7);
+}
 
 }
 
@@ -1650,7 +1654,11 @@ Button.gradient-btn {
 @media (max-width: 1024px) {
   .animationStroke.critical .svg-container svg {
     transform: scaleX(0.7) scaleY(0.6);
-  }
+    -webkit-transform: scaleX(0.7) scaleY(0.6);
+    -moz-transform: scaleX(0.7) scaleY(0.6);
+    -ms-transform: scaleX(0.7) scaleY(0.6);
+    -o-transform: scaleX(0.7) scaleY(0.6);
+}
 
   .humanthinkimage-sec {
     flex-wrap: wrap;
@@ -1691,6 +1699,10 @@ Button.gradient-btn {
   background-size: contain;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 /* @media (max-width: 991px) {
@@ -1886,9 +1898,15 @@ Button.gradient-btn {
     
 }
 @media screen and (min-width:1440px) and (max-width:1800px) {
-    .creativity-banner {
+    /* .creativity-banner {
     height: 60vh !important;
+} */
+ .ui-ux-banner {
+    height: 85vh;
 }
+ .creativity-heading{
+  padding-top: 90px !important;
+ }
 .brand-outer {
     display: flex;
     align-items: center;
@@ -1900,18 +1918,21 @@ Button.gradient-btn {
     transform: scaleX(2.0) scaleY(1.2);
 }
 .strategy-banner {
-    height: 35vh !important;
+    height: 85vh !important;
 }
 .capabilities-list {
     margin-top: 40px !important;
 }
-.ui-den-outer{
+/* .ui-den-outer{
 height: 65vh !important;
 
-}
-.greener-web-outer {
+} */ 
+ .ui-heading{
+  padding-top: 60px !important;
+ }
+/* .greener-web-outer {
     height: 40vh !important;
-}
+} */
 .sustainable-outer img {
     max-width: 80%;
 }
