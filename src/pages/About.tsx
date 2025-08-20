@@ -16,7 +16,7 @@ import HeaderBelowBannerVideo from "../assets/about/about-youtube-video.png";
 const About = () => {
 
   const tabData = [
-    {
+    { 
       id: 1,
       label: "Our Future Focus",
       sublabel: "(Vision)",
@@ -34,11 +34,11 @@ const About = () => {
       sublabel: "(Values)",
       content: `To be the world's leading and most trusted <span class="font-semibold"> human experience design </span> company, delivering innovative and impactful solutions.`
     },
-  ];
+  ]; 
   return (
-    <main className="aboutPage">
+    <main className="aboutPage">   
       <Navbar />
-      <section className="flex justify-center items-center h-auto pt-[100px] md:pt-[50px] lg:pt-[120px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
+      <section className="creating-outer flex justify-center items-center h-auto pt-[100px] md:pt-[50px] lg:pt-[120px] 2xl:pt-[200px] sm:mb-9 xl:mb-[150px]">
         <Container>
           <div className="grid grid-cols-12">
             <div className=" md:col-span-6 2xl:col-span-8 col-span-12 2xl:block flex items-center">
@@ -54,10 +54,10 @@ const About = () => {
             <VideoThumbnail
               videoId="dQw4w9WgXcQ"
               thumbnail={HeaderBelowBannerVideo}
-            />
-          </div>
-        </Container>
-      </section>
+            />  
+          </div>    
+        </Container>    
+      </section>    
       <Container>
         <div className="md:gap-16 grid grid-cols-12 pt-[50px] sm:pt-0">
           <div className="lg:col-span-7 col-span-12 self-center">
@@ -88,10 +88,9 @@ const About = () => {
             <Link to="/contact-us">
               <img src={aboutimg1} alt="image" />
             </Link>
-          </div>
+          </div>         
         </div>
-      </Container>
-
+      </Container>     
       <div className="mx-auto mt-9 sm:mt-[70px] lg:mt-[150px] 2xl:mt-[200px] max-w-[1792px] h-auto lg:h-[500px] 2xl:h-[800px] text-white commitment">
         <Container>
           <div className="pt-[60px] lg:pt-[50px] 2xl:pt-[90px]">
@@ -105,7 +104,7 @@ const About = () => {
             <Tabs tabs={tabData} autoSwitchInterval={5000} />
           </div>  
         </Container>     
-      </div>
+      </div>   
       <Process />
       <Rating />
       <div className="mt-10 md:mt-20 lg:mt-24 2xl:mt-[150px] mb-20">

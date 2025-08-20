@@ -1901,8 +1901,23 @@ Button.gradient-btn {
     /* .creativity-banner {
     height: 60vh !important;
 } */
+ .creating-outer{
+  padding-top: 70px !important;
+ }
+ .story-sparks-outer {
+    height: 65vh !important;
+}
+ .upperbox-sec { 
+    margin-top: 10px;
+}
+.story-sparks {
+    max-width: 660px;
+}
+ .human-thinksec {
+    padding-top: 50px !important;
+}
  .ui-ux-banner {
-    height: 85vh;
+    height: 85vh !important;
 }
  .creativity-heading{
   padding-top: 90px !important;
@@ -1919,14 +1934,14 @@ Button.gradient-btn {
 }
 .strategy-banner {
     height: 85vh !important;
-}
+}   
 .capabilities-list {
     margin-top: 40px !important;
 }
 /* .ui-den-outer{
 height: 65vh !important;
 
-} */ 
+} */  
  .ui-heading{
   padding-top: 60px !important;
  }
@@ -1949,7 +1964,7 @@ height: 65vh !important;
 @media (min-width: 1199px) and (max-width: 1399px) {
   .carouselStudy .innerItem.custom-box button {
     padding: 34px 64px;
-  }
+  }   
 
 }
 

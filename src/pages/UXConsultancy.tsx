@@ -40,7 +40,7 @@ const UXConsultancy = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="relative h-[auto] lg:h-[100vh] green-linear py-12">
         <Container>
-          <div className="text-center pt-[20px] lg:pt-[110px]  sm:pt-[110px] md:pt-[50px] flex flex-col items-center">
+          <div className="text-center pt-[20px] lg:pt-[70px]  sm:pt-[110px] md:pt-[50px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[66px] leading-tight mb-4 2xl:text-[90px] text-black  font-semibold mb-base">
               UIUXDen, Discover new business opportunities.
             </h1>
@@ -53,7 +53,7 @@ const UXConsultancy = () => {
               className="md:max-w-[50%] 2xl:max-w-[70%]"
             />
           </div>
-        </Container>
+        </Container>    
       </div>
 
       {/* --------- Budget Friendly Section --------- */}
@@ -61,7 +61,7 @@ const UXConsultancy = () => {
         <Container>
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-7 xl:col-span-6 md:pr-20 mb-8 mlg:mb-0">
-              <p className="text-[24px] text-start sm:text-center md:text-start md:text-[60px] font-semibold leading-tight 2xl:leading-normal">
+              <p className="text-[24px] text-start sm:text-center md:text-start md:text-[60px] font-semibold leading-[1.10] 2xl:leading-normal">
                 Reach your full potential with creative UIUXDen
               </p>
 

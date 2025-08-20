@@ -37,10 +37,10 @@ const BlogList = () => {
                     }`}
             ></div>  
 
-            <div className="relative h-[auto] 2xl:h-[50vh] md:h-[28vh] xl:h-[50vh] green-linear py-12">
+            <div className="story-sparks-outer relative h-[auto] 2xl:h-[50vh] md:h-[28vh] xl:h-[50vh] green-linear py-12">
                 <Container>
                     <div className="text-center pt-[30px] sm:pt-[100px] xl:pt-[90px] flex flex-col items-center">
-                        <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
+                        <h1 className="story-sparks text-[34px] sm:text-[48px] max-w-[1400px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             Where Every Story Sparks a New Perspective
                         </h1>
                     </div>
@@ -60,7 +60,7 @@ const BlogList = () => {
                             </div>    
 
                         </div>
-                    </div> */}
+                    </div> */}  
    
                 </Container>
             </div>
