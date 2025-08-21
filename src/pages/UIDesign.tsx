@@ -48,7 +48,7 @@ const UIDesign = () => {
       {/* ---------- Banner Section ---------- */}
       <div className="creativity-banner relative h-[55vh] md:h-[56vh] lg:h-[100vh] dark:bg-[#000] green-linear pb-[40px] md:pb-[60px]">
         <Container>
-          <div className="text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
+          <div className="creativity-heading text-center pt-[80px]  sm:pt-[120px] 2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] sm:text-[48px] max-w-[1100px] lg:text-[66px] 2xl:text-[90px] text-black leading-tight font-semibold mb-base">
               Where Creativity Meets Functionality
             </h1>

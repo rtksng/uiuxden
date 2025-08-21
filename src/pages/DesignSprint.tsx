@@ -41,7 +41,7 @@ const DesignSprint = () => {
       </div>
 
       {/* ---------- Banner Section ---------- */}
-      <div className="relative h-[auto] lg:h-[100vh] green-linear">
+      <div className="ui-ux-banner relative h-[auto] lg:h-[100vh] green-linear">
         <Container>
           <div className="text-center pt-[80px]  sm:pt-[120px]  2xl:pt-[170px] flex flex-col items-center">
             <h1 className="text-[34px] lg:text-[48px] lg:max-w-[1100px] md:max-w-[590px] xl:text-[56px] 2xl:text-[90px] text-black font-semibold mb-base leading-[1.1]">
@@ -63,8 +63,8 @@ const DesignSprint = () => {
                   Home | Design Sprint
                 </h6>
               </div>
-            </div>
-          </div> */}
+            </div>   
+          </div> */}    
 
           <div className="flex justify-center flex-wrap items-center mt-8 mt-lg-0 pt:5 lg:pt-10 xl:scale-[.9] 2xl:scale-[1]">
             {/* ------- Box 1 -------- */}
@@ -192,7 +192,7 @@ const DesignSprint = () => {
                           stroke="black"
                           stroke-dasharray="1 10"
                         />
-                      </svg>
+                      </svg>     
 
                       <span className="font-semibold text-xl -rotate-90 text-center absolute">
                         Wed
@@ -322,7 +322,7 @@ const DesignSprint = () => {
               </div>
             </div>
           </div>
-        </Container>
+        </Container> 
       </div>
 
       {/* --------- Budget Friendly Section --------- */}
@@ -453,7 +453,6 @@ const DesignSprint = () => {
         </Container>
 
         <div className="human-thinksec pt-[50px] md:pt-[50px] lg:pt-[150px]">
-          <div className="human-thinksec pt-[50px] md:pt-[80px] xl:pt-[150px]">
             <Container>
               <p className="text-[34px] lg:text-[48px] xl:text-[56px] 2xl:text-[60px] text-[#1A1A1A] font-semibold text-center max-w-[1240px] mx-auto mb-[20px] md:mb-[20px] lg:mb-[100px] sm:leading-[50px] lg:leading-[80px] leading-[40px]">
                 UIUXDen, facilitating ideation sessions
@@ -482,8 +481,6 @@ const DesignSprint = () => {
               </div>
             </div>
           </div>
-
-        </div>
       </div>
 
       <Footer consultData={consultData} />

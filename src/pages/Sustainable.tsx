@@ -224,7 +224,7 @@ const Sustainable = () => {
                             <p className="text-white text-lg px-[20px]">
                                 The internet contributes 4% of global carbon emissions, and this is rising due to higher data consumption and energy-intensive technologies like streaming and cloud computing.
                             </p>
-                        </div>
+                        </div>    
                         {/* --- Box 2 --- */}
                         <div className="dcf-custom-box max-w-[376px] min-h-[460px] max-h-[460px] p-[20px] mt-[50px] sm:mt-[0] lg:mt-[50px]">
                             <div className="svg-box border border-opacity-100 mx-[20px] mt-[30px] mb-[16px] border-white  w-[40px] h-[40px] flex items-center justify-center">

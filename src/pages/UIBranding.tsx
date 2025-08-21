@@ -48,7 +48,7 @@ const UXAudit = () => {
 
             <div className="ui-den-outer relative h-[auto] sm:h-[39vh] lg:h-[70vh] xl:h-[100vh] green-linear py-12">
                 <Container>
-                    <div className="text-center pt-[80px] sm:pt-[50px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
+                    <div className="ui-heading text-center pt-[80px] sm:pt-[50px] xl:pt-[90px]  2xl:pt-[120px]  flex flex-col items-center">
                         <h1 className="text-[34px] sm:text-[48px] max-w-[1400px] sm:max-w-[610px] lg:text-[46px] xl:text-[56px]  2xl:text-[90px] text-black  font-semibold mb-base leading-[1.2]">
                             UIUXDen, help to build trust
                             though visual interface.

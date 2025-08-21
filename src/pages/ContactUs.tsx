@@ -19,7 +19,7 @@ const ContactUS = () => {
         className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${
           isScrolled ? "bg-white shadow-sm" : "bg-transparent"
         }`}
-      ></div>
+      ></div>   
 
       {/* ---------- Banner Section ---------- */}
       <div className="contactus-banner updated-contactus pt-[60px]">
@@ -204,7 +204,7 @@ const ContactUS = () => {
                       <li className="relative contactus-checkboxes mb-5">
                         <input
                           type="checkbox"
-                          id="uxdesign"
+                          id="uxdesign" 
                           className="hidden"
                         />
                         <span className="border-2 inline-block absolute top-[50%]  -translate-y-[50%] pointer-events-none border-[#868686] w-[22px] h-[22px] rounded-[5px]"></span>
