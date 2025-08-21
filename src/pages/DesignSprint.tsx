@@ -63,8 +63,8 @@ const DesignSprint = () => {
                   Home | Design Sprint
                 </h6>
               </div>
-            </div>
-          </div> */}
+            </div>   
+          </div> */}    
 
           <div className="flex justify-center flex-wrap items-center mt-8 mt-lg-0 pt:5 lg:pt-10 xl:scale-[.9] 2xl:scale-[1]">
             {/* ------- Box 1 -------- */}
@@ -192,7 +192,7 @@ const DesignSprint = () => {
                           stroke="black"
                           stroke-dasharray="1 10"
                         />
-                      </svg>
+                      </svg>     
 
                       <span className="font-semibold text-xl -rotate-90 text-center absolute">
                         Wed

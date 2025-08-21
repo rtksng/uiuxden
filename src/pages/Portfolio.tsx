@@ -129,7 +129,7 @@ const Portfolio: FC = () => {
           ))}  
         </div>
       );
-    }
+    } 
     if (activeTab === "mobile") {
       const projects: Project[] = [
         { img: rysonate, title: "Rysonate", downloads: "50K", sliderimg: rysonateSlider },

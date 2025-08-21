@@ -47,7 +47,7 @@ const Humanization = () => {
             return `<span class="${className}">${index + 1}</span>`;
         },
     };
-
+  
     return (
         <main>
             <Navbar />

@@ -94,12 +94,9 @@ const UIBranding = () => {
                             </p>
                             <img src={LeftArrowHalf} alt="arrow" className="hidden xl:block xl:absolute top-[45%] left-[100%] rotate-180" />
                         </div>
-
+      
                     </div>
-
-                   
-
-                </Container>
+                </Container>  
             </div>
 
             <div className="py-8 lg:py-20 xl:pt-[120px] xl:pb-[140px]">

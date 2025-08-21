@@ -83,7 +83,7 @@ const About = () => {
                 attract and retain customers.
               </p>
             </div>
-          </div>
+          </div>  
           <div className="flex justify-start mt-4 md:mt-0 lg:justify-end lg:col-span-5 col-span-12 self-center">
             <Link to="/contact-us">
               <img src={aboutimg1} alt="image" />
